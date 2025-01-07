@@ -3,108 +3,106 @@ A. PLANIFICACIÓN
 B. ANÁLISIS Y DISEÑO
 C. REVISIÓN
 D. CIERRE
-RESPUESTA: C
-
+ANSWER: C
 
 ¿Qué metodología de desarrollo de software se caracteriza por ciclos iterativos cortos y entregas frecuentes?
 A. CASCADA
 B. AGILE
 C. ESPIRAL
 D. PROTOTIPADO
-RESPUESTA: B
+ANSWER: B
 
 ¿Cuál de las siguientes es una técnica de estimación de esfuerzo en proyectos de software?
 A. DIAGRAMA DE GANTT
 B. PUNTOS DE FUNCIÓN
 C. DIAGRAMA DE PERT
 D. ANÁLISIS DE RIESGOS
-RESPUESTA: B
+ANSWER: B
 
 ¿Qué documento define el alcance, objetivos y entregables de un proyecto de software?
 A. PLAN DE PRUEBAS
 B. ESPECIFICACIÓN DE REQUISITOS
 C. DIAGRAMA DE FLUJO DE DATOS
 D. MANUAL DE USUARIO
-RESPUESTA: B
+ANSWER: B
 
 ¿Cuál de las siguientes herramientas se utiliza para la gestión de tareas y el seguimiento del progreso en un proyecto?
 A. COMPILADOR
 B. DEPURADOR
 C. GESTOR DE VERSIONES
 D. HERRAMIENTA DE GESTIÓN DE PROYECTOS (EJ: JIRA, TRELLO)
-RESPUESTA: D
+ANSWER: D
 
 ¿Qué significa MVP en el desarrollo de software?
 A. MÍNIMO PRODUCTO VIABLE
 B. MODELO DE PROCESO DE VALIDACIÓN
 C. MÉTODO DE PLANIFICACIÓN DE VERSIONES
 D. MÁXIMA PRODUCTIVIDAD VIRTUAL
-RESPUESTA: A
+ANSWER: A
 
 ¿Cuál de las siguientes es una buena práctica para la gestión de riesgos en un proyecto de software?
 A. IGNORAR LOS RIESGOS POTENCIALES
 B. ASUMIR TODOS LOS RIESGOS
-C. IDENTIFICAR, ANALIZAR Y PLANIFICAR LA RESPUESTA A LOS RIESGOS
+C. IDENTIFICAR, ANALIZAR Y PLANIFICAR LA ANSWER A LOS RIESGOS
 D. DEJAR LA GESTIÓN DE RIESGOS PARA EL FINAL DEL PROYECTO
-RESPUESTA: C
+ANSWER: C
 
 ¿Qué es la gestión de la configuración en un proyecto de software?
 A. LA ADMINISTRACIÓN DEL HARDWARE UTILIZADO EN EL DESARROLLO
 B. EL CONTROL DE CAMBIOS Y VERSIONES DEL SOFTWARE Y LA DOCUMENTACIÓN
 C. LA CONFIGURACIÓN DE LAS HERRAMIENTAS DE DESARROLLO
 D. LA GESTIÓN DE LA INFRAESTRUCTURA DE RED
-RESPUESTA: B
+ANSWER: B
 
 ¿Qué es una "estimación ágil" en el contexto de un proyecto de software?
 A. UNA ESTIMACIÓN RÁPIDA Y APROXIMADA BASADA EN LA EXPERIENCIA Y LA INTUICIÓN
 B. UNA ESTIMACIÓN DETALLADA Y PRECISA REALIZADA AL INICIO DEL PROYECTO
 C. UNA ESTIMACIÓN QUE NO SE PUEDE MODIFICAR DURANTE EL PROYECTO
 D. UNA ESTIMACIÓN QUE SOLO CONSIDERA EL ESFUERZO DE DESARROLLO
-RESPUESTA: A
+ANSWER: A
 
 ¿Cuál es el objetivo principal de una reunión de "daily scrum" en un proyecto Agile?
 A. PRESENTAR EL PRODUCTO FINAL AL CLIENTE
 B. REALIZAR LA PLANIFICACIÓN DEL SPRINT
 C. SINCRONIZAR EL TRABAJO DEL EQUIPO Y REPORTAR EL PROGRESO
 D. RESOLVER PROBLEMAS TÉCNICOS COMPLEJOS
-RESPUESTA: C
-
+ANSWER: C
 
 ¿Qué es un "sprint backlog" en Scrum?
 A. UNA LISTA DE TODAS LAS TAREAS PENDIENTES DEL PROYECTO
 B. UN DOCUMENTO QUE DESCRIBE LA ARQUITECTURA DEL SOFTWARE
 C. UN CONJUNTO DE HISTORIAS DE USUARIO SELECCIONADAS PARA UN SPRINT
 D. UN INFORME DE LOS DEFECTOS ENCONTRADOS EN EL SOFTWARE
-RESPUESTA: C
+ANSWER: C
 
 ¿Cuál de las siguientes NO es una característica de un equipo Agile eficaz?
 A. COMUNICACIÓN ABIERTA Y COLABORACIÓN
 B. AUTONOMÍA Y AUTO-ORGANIZACIÓN
 C. JERARQUÍA RÍGIDA Y CONTROL CENTRALIZADO
 D. ORIENTACIÓN A LA ENTREGA DE VALOR
-RESPUESTA: C
-
+ANSWER: C
 
 ¿Qué es la "velocidad" en un equipo Scrum?
 A. LA CANTIDAD DE TRABAJO QUE UN EQUIPO PUEDE COMPLETAR EN UN SPRINT
 B. LA RAPIDEZ CON LA QUE SE ESCRIBE EL CÓDIGO
 C. EL TIEMPO QUE TARDA UN DESARROLLADOR EN COMPLETAR UNA TAREA
 D. LA CANTIDAD DE DEFECTOS ENCONTRADOS EN EL SOFTWARE
-RESPUESTA: A
+ANSWER: A
 
 ¿Cuál es la diferencia entre un error y un defecto en el software?
 A. UN ERROR ES UN PROBLEMA EN EL CÓDIGO, UN DEFECTO ES EL RESULTADO DEL ERROR
 B. UN ERROR ES REPORTADO POR EL USUARIO, UN DEFECTO ES ENCONTRADO POR EL DESARROLLADOR
 C. NO HAY DIFERENCIA, SON SINÓNIMOS
 D. UN ERROR ES MÁS GRAVE QUE UN DEFECTO
-RESPUESTA: A
+ANSWER: A
 
 ¿Cuál de los siguientes es un dominio de desempeño de proyectos según la séptima edición del PMBOK?
 A. GESTIÓN DE LA CALIDAD
 B. GESTIÓN DE LOS RECURSOS HUMANOS
 C. GESTIÓN DE LAS COMUNICACIONES
 D. GESTIÓN DEL ALCANCE
-RESPUESTA: A
+ANSWER: A
+
 ¿Qué componente principal es más eficiente para tareas gráficas intensivas?
 A. CPU
 B. RAM
@@ -469,14 +467,14 @@ ANSWER: B
 ¿Qué función cumple el "Web Server" en una arquitectura de aplicaciones web?
 A. Compila el código de la aplicación móvil.
 B. Proporciona y gestiona servicios web REST que se comunican con la base de datos.
-C. Envía respuestas en formato HTML, CSS y JavaScript al cliente.
+C. Envía ANSWERs en formato HTML, CSS y JavaScript al cliente.
 D. Se comunica directamente con el hardware del dispositivo móvil.
 ANSWER: B
 
 En una aplicación web que sigue el patrón MVC, ¿Cuál es la función principal del "Controlador"?
 A. Representar la interfaz de usuario y su diseño visual.
 B. Almacenar y gestionar la lógica de negocio y los datos de la aplicación.
-C. Procesar las peticiones del usuario, coordinar la interacción entre Modelo y Vista, y devolver una respuesta.
+C. Procesar las peticiones del usuario, coordinar la interacción entre Modelo y Vista, y devolver una ANSWER.
 D. Transformar el código en formato JSON para su visualización en la página.
 ANSWER: C
 
@@ -515,7 +513,7 @@ C. Optimizar el rendimiento de la API en el servidor.
 D. Generar automáticamente código para la API en varios lenguajes de programación.
 ANSWER: B
 
-¿Qué formato de datos es más común en las respuestas de una API REST y es soportado por Postman para visualizar la respuesta?
+¿Qué formato de datos es más común en las ANSWERs de una API REST y es soportado por Postman para visualizar la ANSWER?
 A. XML
 B. YAML
 C. JSON
@@ -602,7 +600,7 @@ ANSWER: A
 
 ¿Qué es una "Promise" en JavaScript?
 A) Un tipo de objeto que almacena una función de devolución de llamada
-B) Una función que maneja múltiples respuestas de manera sincrónica
+B) Una función que maneja múltiples ANSWERs de manera sincrónica
 C) Un objeto que representa la eventual terminación o fracaso de una operación asincrónica
 D) Un tipo de función que devuelve múltiples valores
 ANSWER: C
@@ -727,35 +725,35 @@ A. DIAGRAMA DE CLASES
 B. DIAGRAMA DE SECUENCIA
 C. DIAGRAMA DE CASOS DE USO
 D. DIAGRAMA DE COMPONENTES
-RESPUESTA: B
+ANSWER: B
 
 ¿Qué principio SOLID promueve la idea de que una clase debe tener una sola responsabilidad?
 A. PRINCIPIO DE RESPONSABILIDAD ÚNICA
 B. PRINCIPIO ABIERTO/CERRADO
 C. PRINCIPIO DE SUSTITUCIÓN DE LISKOV
 D. PRINCIPIO DE INVERSIÓN DE DEPENDENCIAS
-RESPUESTA: A
+ANSWER: A
 
 ¿Cuál de los siguientes patrones de diseño se utiliza para crear objetos sin exponer la lógica de instanciación?
 A. PATRÓN FACTORY
 B. PATRÓN SINGLETON
 C. PATRÓN ADAPTER
 D. PATRÓN DECORATOR
-RESPUESTA: A
+ANSWER: A
 
 ¿Qué diagrama UML se utiliza para modelar la estructura estática de un sistema, mostrando las clases y sus relaciones?
 A. DIAGRAMA DE SECUENCIA
 B. DIAGRAMA DE ACTIVIDADES
 C. DIAGRAMA DE CLASES
 D. DIAGRAMA DE DESPLIEGUE
-RESPUESTA: C
+ANSWER: C
 
 ¿Qué tipo de relación en un diagrama de clases indica que una clase "es un tipo de" otra clase?
 A. ASOCIACIÓN
 B. AGREGACIÓN
 C. COMPOSICIÓN
 D. HERENCIA
-RESPUESTA: D
+ANSWER: D
 Justificación: La herencia (o generalización) representa una relación "es un tipo de" entre clases, donde una subclase hereda las propiedades y métodos de una superclase.
 
 ¿Qué es un diagrama de flujo de datos (DFD)?
@@ -763,14 +761,14 @@ A. UN DIAGRAMA QUE MUESTRA LA SECUENCIA DE PASOS EN UN ALGORITMO
 B. UN DIAGRAMA QUE MUESTRA EL FLUJO DE DATOS A TRAVÉS DE UN SISTEMA
 C. UN DIAGRAMA QUE MUESTRA LAS RELACIONES ENTRE LAS ENTIDADES EN UNA BASE DE DATOS
 D. UN DIAGRAMA QUE MUESTRA LA ARQUITECTURA DE UN SISTEMA
-RESPUESTA: B
+ANSWER: B
 
 ¿Cuál de los siguientes NO es un elemento de un DFD?
 A. PROCESO
 B. FLUJO DE DATOS
 C. ALMACÉN DE DATOS
 D. CLASE
-RESPUESTA: D
+ANSWER: D
 Justificación: Los elementos básicos de un DFD son: proceso, flujo de datos, almacén de datos y entidad externa. Las clases son elementos de un diagrama de clases.
 
 ¿Qué es un modelo entidad-relación (MER)?
@@ -778,21 +776,21 @@ A. UN DIAGRAMA QUE MUESTRA LA ESTRUCTURA DE UNA BASE DE DATOS
 B. UN DIAGRAMA QUE MUESTRA LAS INTERACCIONES ENTRE OBJETOS
 C. UN DIAGRAMA QUE MUESTRA EL FLUJO DE CONTROL EN UN PROGRAMA
 D. UN DIAGRAMA QUE MUESTRA LA ARQUITECTURA DE UN SISTEMA DISTRIBUIDO
-RESPUESTA: A
+ANSWER: A
 
 ¿Qué símbolo se utiliza en un modelo entidad-relación (MER) para representar una entidad?
 A. RECTÁNGULO
 B. ROMBO
 C. ÓVALO
 D. CÍRCULO
-RESPUESTA: A
+ANSWER: A
 
 ¿Qué tipo de relación en un modelo entidad-relación (MER) indica que una entidad no puede existir sin otra entidad?
 A. RELACIÓN UNO A UNO
 B. RELACIÓN UNO A MUCHOS
 C. RELACIÓN MUCHOS A MUCHOS
 D. RELACIÓN DE DEPENDENCIA
-RESPUESTA: D
+ANSWER: D
 Justificación: La relación de dependencia (o identificadora) indica que la existencia de una entidad depende de la existencia de otra entidad.
 
 ¿Qué principio SOLID establece que las entidades de software (clases, módulos, etc.) deben estar abiertas para la extensión, pero cerradas para la modificación?
@@ -800,14 +798,14 @@ A. PRINCIPIO ABIERTO/CERRADO
 B. PRINCIPIO DE SUSTITUCIÓN DE LISKOV
 C. PRINCIPIO DE SEGREGACIÓN DE INTERFACES
 D. PRINCIPIO DE INVERSIÓN DE DEPENDENCIAS
-RESPUESTA: A
+ANSWER: A
 
 ¿Qué patrón de diseño define una familia de algoritmos, encapsula cada uno de ellos y los hace intercambiables?
 A. PATRÓN STRATEGY
 B. PATRÓN OBSERVER
 C. PATRÓN TEMPLATE METHOD
 D. PATRÓN COMPOSITE
-RESPUESTA: A
+ANSWER: A
 
 ¿Qué es la cohesión en el diseño de software?
 
@@ -815,21 +813,21 @@ A. LA MEDIDA EN QUE LOS MÓDULOS DE UN SISTEMA ESTÁN INTERCONECTADOS
 B. LA MEDIDA EN QUE UNA CLASE TIENE UNA SOLA RESPONSABILIDAD
 C. LA MEDIDA EN QUE UN SISTEMA ES FÁCIL DE MODIFICAR
 D. LA MEDIDA EN QUE UN SISTEMA ES FÁCIL DE ENTENDER
-RESPUESTA: B
+ANSWER: B
 
 ¿Qué es el acoplamiento en el diseño de software?
 A. LA MEDIDA EN QUE LOS MÓDULOS DE UN SISTEMA DEPENDEN UNOS DE OTROS
 B. LA MEDIDA EN QUE UNA CLASE TIENE UNA SOLA RESPONSABILIDAD
 C. LA MEDIDA EN QUE UN SISTEMA ES FÁCIL DE MODIFICAR
 D. LA MEDIDA EN QUE UN SISTEMA ES FÁCIL DE ENTENDER
-RESPUESTA: A
+ANSWER: A
 
 ¿Qué principio SOLID establece que los clientes no deben verse obligados a depender de métodos que no utilizan?
 A. PRINCIPIO DE RESPONSABILIDAD ÚNICA
 B. PRINCIPIO ABIERTO/CERRADO
 C. PRINCIPIO DE SUSTITUCIÓN DE LISKOV
 D. PRINCIPIO DE SEGREGACIÓN DE INTERFACES
-RESPUESTA: D
+ANSWER: D
 ¿Cuál es el comando correcto para crear un nuevo proyecto en Flutter desde la línea de comandos?
 A. flutter init my_app
 B. flutter start my_app
@@ -865,14 +863,14 @@ C. scrollDirection.
 D. padding.
 ANSWER: B
 
-¿Qué información se almacena en la variable respuesta después de ejecutar el siguiente código: " final respuesta = await http.get(Uri.parse('http://192.168.100.17:8080/crud/insertar.php'));" ?
-A. Un objeto http.Response que contiene el código de estado y el cuerpo de la respuesta del servidor.
+¿Qué información se almacena en la variable ANSWER después de ejecutar el siguiente código: " final ANSWER = await http.get(Uri.parse('http://192.168.100.17:8080/crud/insertar.php'));" ?
+A. Un objeto http.Response que contiene el código de estado y el cuerpo de la ANSWER del servidor.
 B. Una cadena de texto que representa la URL a la que se hizo la solicitud.
 C. Un objeto Uri que representa la URL de la solicitud.
 D. Un valor booleano que indica si la solicitud fue exitosa.
 ANSWER: A
 
-¿Cuál es la estructura para decodificar el cuerpo de la respuesta HTTP, que está en formato JSON, y convertirlo en una lista de objetos dinámicos en el contexto de una respuesta HTTP?
+¿Cuál es la estructura para decodificar el cuerpo de la ANSWER HTTP, que está en formato JSON, y convertirlo en una lista de objetos dinámicos en el contexto de una ANSWER HTTP?
 A. List<dynamic> data = jsonEncode(response.body);
 B. List<dynamic> data = jsonDecode(response.body);
 C. List<dynamic> data = jsonString(response.body);
@@ -998,7 +996,7 @@ C. Control de versiones de los conjuntos de pruebas.
 D. Demasiada confianza en una herramienta automatizada para la ejecución de pruebas de regresión.
 ANSWER: C
 
-¿Cuál de las siguientes respuestas describe una condición de prueba?
+¿Cuál de las siguientes ANSWERs describe una condición de prueba?
 A. Un atributo de un componente o sistema especificado o implícito en la documentación de requisitos.
 B. Un aspecto de la base de prueba que es relevante para lograr los objetivos específicos de la prueba.
 C. El grado en que un producto software proporciona funciones que satisfacen las necesidades explícitas e implícitas cuando el software se utiliza en condiciones específicas.
@@ -1554,7 +1552,7 @@ ANSWER: A
 A. Es el instrumento (el cuestionario o la lista de verificación) para recopilar información.
 B. Es un sistema integral de recopilación de información para describir, comparar o explicar conocimientos, actitudes y comportamientos.
 C. Estudio que se le realiza a un grupo de personas, estas no representan a una población más amplia.
-D. Es una conversación dirigida, con un propósito específico y que usa un formato de preguntas y respuestas.
+D. Es una conversación dirigida, con un propósito específico y que usa un formato de preguntas y ANSWERs.
 ANSWER: B
 
 ¿Cuál de las siguientes opciones corresponde a las características de los estudios de control en el diseño de encuestas?
@@ -1636,7 +1634,7 @@ ANSWER: B
 
 ¿Qué tipo de datos se recopila más comúnmente en estudios cualitativos?
 A. Resultados numéricos.
-B. Respuestas abiertas y observaciones.
+B. ANSWERs abiertas y observaciones.
 C. Estadísticas de desempeño.
 D. Datos de sensores automáticos.
 ANSWER: B
@@ -1679,7 +1677,7 @@ D) Séptima edición
 ANSWER: D
 El proceso de la investigación comienza con ....
 A) recopilando trabajos relacionados
-B) planteando un problema al que se busca respuesta
+B) planteando un problema al que se busca ANSWER
 C) determinando el alcance de la investigación
 D) definiendo los objetivos
 ANSWER: B
@@ -2112,7 +2110,7 @@ D. IDS.
 ANSWER: B
 ¿Qué define a un sistema operativo de tiempo real?
 A. Prioriza la interacción con el usuario.
-B. Proporciona respuestas rápidas y predecibles a eventos.
+B. Proporciona ANSWERs rápidas y predecibles a eventos.
 C. Es utilizado exclusivamente en computadoras personales.
 D. Ofrece interfaces gráficas avanzadas.
 ANSWER: B
@@ -2214,6 +2212,7 @@ B. Memoria secundaria.
 C. Memoria caché.
 D. Memoria principal.
 ANSWER: D
+
 Tomando como referencia el siguiente ejemplo: “Cuando una aplicación añade una caja de dialogo con  un mensaje de «Confirmar envío de los datos» antes de que el usuario pase a la etapa siguiente.”, es un ejemplo de principio de usabilidad:
 A. Prevención de errores
 B. Reconocimiento en vez de recuerdo
@@ -2297,7 +2296,7 @@ C. W3C- “User Agent Accesibility Guidelines (UAAG).
 D. W3C- “User Agent Accesibility Guidelines (UAAG).
 
 ANSWER: C
-Un proceso de software es un conjunto de ____________ que conducen a la creación de un producto de software: (Seleccione una respuesta)
+Un proceso de software es un conjunto de ____________ que conducen a la creación de un producto de software: (Seleccione una ANSWER)
 A. Personas
 B. Actividades
 C. Pruebas
@@ -2325,7 +2324,7 @@ C. Incremental
 D. Cascada
 ANSWER: D
 
-¿Cuál no es considerado un modelo genérico?: (Selecciones una respuesta)
+¿Cuál no es considerado un modelo genérico?: (Selecciones una ANSWER)
 A. Rup
 B. Cascada
 C. Evolutivo
@@ -2353,14 +2352,14 @@ C. AUP
 D. CASCADA
 ANSWER: D
 
-El equipo de un proyecto basado en metodología __________ es: cliente, programadores, testers, coach, manager. (Seleccione una respuesta)
+El equipo de un proyecto basado en metodología __________ es: cliente, programadores, testers, coach, manager. (Seleccione una ANSWER)
 A. AUP
 B. SCRUM
 C. XP
 D. KANBAN
 ANSWER: C
 
-Es un Software que permite modelar y documentar procesos de negocio basado en el estándar conocido como Business Process Model and Notation (BPMN) (Seleccione una respuesta)
+Es un Software que permite modelar y documentar procesos de negocio basado en el estándar conocido como Business Process Model and Notation (BPMN) (Seleccione una ANSWER)
 A. Bizagi
 B. Rational Rose
 C. Microsoft Visio

@@ -132,30 +132,33 @@
            }
        }
 
-       function parseQuestions(text) {
-           const questions = [];
-           const regex = /(.+?\?)\s+(A\.\s+.+?)\s+(B\.\s+.+?)\s+(C\.\s+.+?)\s+(D\.\s+.+?)\s+ANSWER:\s+([A-D])/g;
-           
-           let match;
-           while ((match = regex.exec(text)) !== null) {
-               const question = {
-                   text: match[1].trim(),
-                   options: [
-                       match[2].substring(2).trim(),
-                       match[3].substring(2).trim(),
-                       match[4].substring(2).trim(),
-                       match[5].substring(2).trim()
-                   ],
-                   correctAnswer: match[6].trim()
-               };
-               questions.push(question);
-           }
+        function parseQuestions(text) {
+                const questions = [];
+                const lines = text.split('\n');
+                let question = null;
 
-           totalQuestions = questions.length;
-           correctAnswers = 0;
-           updateScore();
-           return questions;
-       }
+                lines.forEach(line => {
+                    line = line.trim();
+                    if (line.length === 0) return;
+
+                    if (!question) {
+                        question = { text: line, options: [], correctAnswer: '' };
+                    } else if (line.match(/^[A-D]\.\s+/)) {
+                        question.options.push(line.substring(3).trim());
+                    } else if (line.match(/^ANSWER:\s+[A-D]/)) {
+                        question.correctAnswer = line.substring(8).trim();
+                        questions.push(question);
+                        question = null;
+                    } else {
+                        question.text += ' ' + line;
+                    }
+                });
+
+                totalQuestions = questions.length;
+                correctAnswers = 0;
+                updateScore();
+                return questions;
+        }
 
        function displayQuestions(questions) {
            const container = document.getElementById('questionsContainer');
