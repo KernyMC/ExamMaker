@@ -132,33 +132,33 @@
            }
        }
 
-        function parseQuestions(text) {
-                const questions = [];
-                const lines = text.split('\n');
-                let question = null;
+       function parseQuestions(text) {
+           const questions = [];
+           const lines = text.split('\n');
+           let question = null;
 
-                lines.forEach(line => {
-                    line = line.trim();
-                    if (line.length === 0) return;
+           lines.forEach(line => {
+               line = line.trim();
+               if (line.length === 0) return;
 
-                    if (!question) {
-                        question = { text: line, options: [], correctAnswer: '' };
-                    } else if (line.match(/^[A-D]\.\s+/)) {
-                        question.options.push(line.substring(3).trim());
-                    } else if (line.match(/^ANSWER:\s+[A-D]/)) {
-                        question.correctAnswer = line.substring(8).trim();
-                        questions.push(question);
-                        question = null;
-                    } else {
-                        question.text += ' ' + line;
-                    }
-                });
+               if (!question) {
+                   question = { text: line, options: [], correctAnswer: '' };
+               } else if (line.match(/^[A-D][.)]\s+/)) {
+                   question.options.push(line.substring(3).trim());
+               } else if (line.match(/^ANSWER:\s+[A-D]/)) {
+                   question.correctAnswer = line.substring(8).trim();
+                   questions.push(question);
+                   question = null;
+               } else {
+                   question.text += ' ' + line;
+               }
+           });
 
-                totalQuestions = questions.length;
-                correctAnswers = 0;
-                updateScore();
-                return questions;
-        }
+           totalQuestions = questions.length;
+           correctAnswers = 0;
+           updateScore();
+           return questions;
+       }
 
        function displayQuestions(questions) {
            const container = document.getElementById('questionsContainer');
