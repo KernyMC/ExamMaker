@@ -2,76 +2,12 @@
 <html>
 <head>
    <title>Cuestionario Moodle</title>
-   <style>
-       .question {
-           margin: 20px;
-           padding: 15px;
-           border: 1px solid #ddd;
-           border-radius: 5px;
-           background: #f9f9f9;
-       }
-       .question-number {
-           font-weight: bold;
-           margin-bottom: 10px;
-       }
-       .options {
-           margin-left: 20px;
-       }
-       .correct {
-           background-color: #dff0d8;
-           border-color: #d6e9c6;
-       }
-       .incorrect {
-           background-color: #f2dede;
-           border-color: #ebccd1;
-       }
-       .score {
-           font-size: 18px;
-           font-weight: bold;
-           padding: 10px;
-           margin: 20px;
-           background: #337ab7;
-           color: white;
-           border-radius: 5px;
-           position: fixed;
-           top: 20px;
-           right: 20px;
-           z-index: 1000;
-       }
-       .feedback {
-           margin-top: 10px;
-           padding: 8px;
-           display: none;
-       }
-       .upload-section {
-           margin: 20px;
-           padding: 20px;
-           border: 2px dashed #ccc;
-           text-align: center;
-       }
-       .button-section {
-           margin: 20px;
-           text-align: center;
-       }
-       .load-button {
-           padding: 10px 20px;
-           background-color: #337ab7;
-           color: white;
-           border: none;
-           border-radius: 5px;
-           cursor: pointer;
-           font-size: 16px;
-           margin: 10px;
-       }
-       .load-button:hover {
-           background-color: #286090;
-       }
-   </style>
+   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
    <div class="button-section">
        <button id="loadDefaultExam" class="load-button">Cargar Examen</button>
-       <button id="loadRandomExam" class="load-button">Cargar Examen Aleatorio</button>
+       <button id="loadRandomExam" class="load-button">🎲 Cargar Examen Aleatorio</button>
    </div>
    <div class="upload-section">
        <input type="file" id="fileInput" accept=".txt,.docx">
