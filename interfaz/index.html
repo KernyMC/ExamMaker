@@ -45,9 +45,29 @@
            border: 2px dashed #ccc;
            text-align: center;
        }
+       .button-section {
+           margin: 20px;
+           text-align: center;
+       }
+       .load-button {
+           padding: 10px 20px;
+           background-color: #337ab7;
+           color: white;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+           font-size: 16px;
+           margin: 10px;
+       }
+       .load-button:hover {
+           background-color: #286090;
+       }
    </style>
 </head>
 <body>
+   <div class="button-section">
+       <button id="loadDefaultExam" class="load-button">Cargar Examen</button>
+   </div>
    <div class="upload-section">
        <input type="file" id="fileInput" accept=".txt,.docx">
        <p>Arrastra tu archivo o haz clic para seleccionarlo</p>
@@ -60,10 +80,35 @@
        let totalQuestions = 0;
        let correctAnswers = 0;
 
+       // Cargar el examen por defecto al iniciar
+       window.onload = loadDefaultExam;
+       
+       // Evento para el botón de cargar examen
+       document.getElementById('loadDefaultExam').addEventListener('click', loadDefaultExam);
+       
+       // Evento para cargar archivo nuevo
        document.getElementById('fileInput').addEventListener('change', handleFileSelect);
+
+       function loadDefaultExam() {
+           console.log('Cargando examen por defecto...');
+           fetch('examen/examenFinal.txt')
+               .then(response => response.text())
+               .then(text => {
+                   console.log('Examen cargado:', text);
+                   const questions = parseQuestions(text);
+                   displayQuestions(questions);
+               })
+               .catch(error => console.error('Error:', error));
+       }
 
        function handleFileSelect(event) {
            const file = event.target.files[0];
+           
+           // Limpiar contenedor antes de cargar nuevo archivo
+           document.getElementById('questionsContainer').innerHTML = '';
+           totalQuestions = 0;
+           correctAnswers = 0;
+           updateScore();
            
            if (file.name.endsWith('.docx')) {
                const reader = new FileReader();

@@ -1,0 +1,2403 @@
+﻿¿Cuál de las siguientes NO es una fase del ciclo de vida de un proyecto de software?
+A. PLANIFICACIÓN
+B. ANÁLISIS Y DISEÑO
+C. REVISIÓN
+D. CIERRE
+RESPUESTA: C
+
+
+¿Qué metodología de desarrollo de software se caracteriza por ciclos iterativos cortos y entregas frecuentes?
+A. CASCADA
+B. AGILE
+C. ESPIRAL
+D. PROTOTIPADO
+RESPUESTA: B
+
+¿Cuál de las siguientes es una técnica de estimación de esfuerzo en proyectos de software?
+A. DIAGRAMA DE GANTT
+B. PUNTOS DE FUNCIÓN
+C. DIAGRAMA DE PERT
+D. ANÁLISIS DE RIESGOS
+RESPUESTA: B
+
+¿Qué documento define el alcance, objetivos y entregables de un proyecto de software?
+A. PLAN DE PRUEBAS
+B. ESPECIFICACIÓN DE REQUISITOS
+C. DIAGRAMA DE FLUJO DE DATOS
+D. MANUAL DE USUARIO
+RESPUESTA: B
+
+¿Cuál de las siguientes herramientas se utiliza para la gestión de tareas y el seguimiento del progreso en un proyecto?
+A. COMPILADOR
+B. DEPURADOR
+C. GESTOR DE VERSIONES
+D. HERRAMIENTA DE GESTIÓN DE PROYECTOS (EJ: JIRA, TRELLO)
+RESPUESTA: D
+
+¿Qué significa MVP en el desarrollo de software?
+A. MÍNIMO PRODUCTO VIABLE
+B. MODELO DE PROCESO DE VALIDACIÓN
+C. MÉTODO DE PLANIFICACIÓN DE VERSIONES
+D. MÁXIMA PRODUCTIVIDAD VIRTUAL
+RESPUESTA: A
+
+¿Cuál de las siguientes es una buena práctica para la gestión de riesgos en un proyecto de software?
+A. IGNORAR LOS RIESGOS POTENCIALES
+B. ASUMIR TODOS LOS RIESGOS
+C. IDENTIFICAR, ANALIZAR Y PLANIFICAR LA RESPUESTA A LOS RIESGOS
+D. DEJAR LA GESTIÓN DE RIESGOS PARA EL FINAL DEL PROYECTO
+RESPUESTA: C
+
+¿Qué es la gestión de la configuración en un proyecto de software?
+A. LA ADMINISTRACIÓN DEL HARDWARE UTILIZADO EN EL DESARROLLO
+B. EL CONTROL DE CAMBIOS Y VERSIONES DEL SOFTWARE Y LA DOCUMENTACIÓN
+C. LA CONFIGURACIÓN DE LAS HERRAMIENTAS DE DESARROLLO
+D. LA GESTIÓN DE LA INFRAESTRUCTURA DE RED
+RESPUESTA: B
+
+¿Qué es una "estimación ágil" en el contexto de un proyecto de software?
+A. UNA ESTIMACIÓN RÁPIDA Y APROXIMADA BASADA EN LA EXPERIENCIA Y LA INTUICIÓN
+B. UNA ESTIMACIÓN DETALLADA Y PRECISA REALIZADA AL INICIO DEL PROYECTO
+C. UNA ESTIMACIÓN QUE NO SE PUEDE MODIFICAR DURANTE EL PROYECTO
+D. UNA ESTIMACIÓN QUE SOLO CONSIDERA EL ESFUERZO DE DESARROLLO
+RESPUESTA: A
+
+¿Cuál es el objetivo principal de una reunión de "daily scrum" en un proyecto Agile?
+A. PRESENTAR EL PRODUCTO FINAL AL CLIENTE
+B. REALIZAR LA PLANIFICACIÓN DEL SPRINT
+C. SINCRONIZAR EL TRABAJO DEL EQUIPO Y REPORTAR EL PROGRESO
+D. RESOLVER PROBLEMAS TÉCNICOS COMPLEJOS
+RESPUESTA: C
+
+
+¿Qué es un "sprint backlog" en Scrum?
+A. UNA LISTA DE TODAS LAS TAREAS PENDIENTES DEL PROYECTO
+B. UN DOCUMENTO QUE DESCRIBE LA ARQUITECTURA DEL SOFTWARE
+C. UN CONJUNTO DE HISTORIAS DE USUARIO SELECCIONADAS PARA UN SPRINT
+D. UN INFORME DE LOS DEFECTOS ENCONTRADOS EN EL SOFTWARE
+RESPUESTA: C
+
+¿Cuál de las siguientes NO es una característica de un equipo Agile eficaz?
+A. COMUNICACIÓN ABIERTA Y COLABORACIÓN
+B. AUTONOMÍA Y AUTO-ORGANIZACIÓN
+C. JERARQUÍA RÍGIDA Y CONTROL CENTRALIZADO
+D. ORIENTACIÓN A LA ENTREGA DE VALOR
+RESPUESTA: C
+
+
+¿Qué es la "velocidad" en un equipo Scrum?
+A. LA CANTIDAD DE TRABAJO QUE UN EQUIPO PUEDE COMPLETAR EN UN SPRINT
+B. LA RAPIDEZ CON LA QUE SE ESCRIBE EL CÓDIGO
+C. EL TIEMPO QUE TARDA UN DESARROLLADOR EN COMPLETAR UNA TAREA
+D. LA CANTIDAD DE DEFECTOS ENCONTRADOS EN EL SOFTWARE
+RESPUESTA: A
+
+¿Cuál es la diferencia entre un error y un defecto en el software?
+A. UN ERROR ES UN PROBLEMA EN EL CÓDIGO, UN DEFECTO ES EL RESULTADO DEL ERROR
+B. UN ERROR ES REPORTADO POR EL USUARIO, UN DEFECTO ES ENCONTRADO POR EL DESARROLLADOR
+C. NO HAY DIFERENCIA, SON SINÓNIMOS
+D. UN ERROR ES MÁS GRAVE QUE UN DEFECTO
+RESPUESTA: A
+
+¿Cuál de los siguientes es un dominio de desempeño de proyectos según la séptima edición del PMBOK?
+A. GESTIÓN DE LA CALIDAD
+B. GESTIÓN DE LOS RECURSOS HUMANOS
+C. GESTIÓN DE LAS COMUNICACIONES
+D. GESTIÓN DEL ALCANCE
+RESPUESTA: A
+¿Qué componente principal es más eficiente para tareas gráficas intensivas?
+A. CPU
+B. RAM
+C. GPU
+D. HDD
+ANSWER: C
+
+¿Qué operación vectorial se utiliza para calcular la proyección de un punto sobre una línea?
+A. Producto interno
+B. Producto cruzado
+C. Determinante
+D. Transformación lineal
+ANSWER: A
+
+¿Qué es un polígono simple?
+A. Un polígono que tiene vértices colineales
+B. Un polígono cuyos lados no se cruzan
+C. Un polígono con al menos un ángulo mayor a 180°
+D. Un polígono que no tiene área
+ANSWER: B
+
+¿Cuál de las siguientes transformaciones geométricas cambia el tamaño de un objeto?
+A. Traslación
+B. Rotación
+C. Escalamiento
+D. Cambio de coordenadas
+ANSWER: C
+
+¿Qué tipo de matriz se utiliza para representar transformaciones en coordenadas homogéneas?
+A. Matriz cuadrada 3x3
+B. Matriz rectangular
+C. Matriz de identidad 4x4
+D. Matriz triangular
+ANSWER: C
+
+¿Qué algoritmo es más eficiente para dibujar líneas en un espacio discreto?
+A. Algoritmo de Bresenham
+B. Algoritmo de Cohen-Sutherland
+C. Algoritmo de DDA
+D. Algoritmo Z-Buffer
+ANSWER: A
+
+¿Qué técnica se utiliza para recortar líneas fuera de una ventana de visualización?
+A. Transformación de perspectiva
+B. Recorte de línea de Cohen-Sutherland
+C. Algoritmo de Z-Buffer
+D. Ajuste de curva B-Spline
+ANSWER: B
+
+¿Qué método es ideal para dibujar curvas suaves como las Bézier?
+A. Algoritmo de Bresenham
+B. Recorte de polígonos
+C. Ajuste de curva B-Spline
+D. Curvas de Koch
+ANSWER: C
+
+¿Qué tipo de perspectiva proyecta objetos cercanos como más grandes que los lejanos?
+A. Perspectiva isométrica
+B. Perspectiva ortogonal
+C. Perspectiva cónica
+D. Perspectiva paralela
+ANSWER: C
+
+¿Cuál de los siguientes modelos utiliza solo líneas para representar objetos?
+A. Modelo de marco de alambre (Wireframe)
+B. Modelo sólido
+C. Modelo de superficies
+D. Modelo volumétrico
+ANSWER: A
+
+¿Qué algoritmo se utiliza para eliminar caras ocultas en un modelo 3D?
+A. Algoritmo de Z-Buffer
+B. Algoritmo de Bresenham
+C. Transformación de perspectiva
+D. Ajuste de curvas Bézier
+ANSWER: A
+
+¿Qué propiedad define un fractal?
+A. Regularidad y simetría
+B. Repetición infinita de patrones
+C. Líneas rectas y ángulos perfectos
+D. Representación de modelos sólidos
+ANSWER: B
+
+¿Qué curva fractal tiene una estructura triangular?
+A. Curva de Koch
+B. Conjunto de Mandelbrot
+C. Curva de Bézier
+D. Conjunto de Julia
+ANSWER: A
+
+¿Qué técnica mejora la visualización ocultando líneas traseras?
+A. Eliminación de línea oculta
+B. Transformación lineal
+C. Proyección ortogonal
+D. Modelo volumétrico
+ANSWER: A
+
+¿Qué algoritmo divide un modelo 3D en capas para el renderizado?
+A. Algoritmo Painter
+B. Algoritmo de Cohen-Sutherland
+C. Algoritmo de triangulación
+D. Ajuste de B-Spline
+ANSWER: A
+¿Cuál de las siguientes arquitecturas necesita de una red de interconexión para poder intercambiar información?
+A. Arquitectura con memoria compartida.
+B. Arquitectura con memoria distribuida.
+C. Arquitectura con memoria de exclusión mutua.
+D. Arquitectura con memoria única.
+ANSWER: B
+
+¿Cuál es uno de los criterios que se toma para la clasificación de Flynn?
+A. El número de instrucciones que se ejecutan.
+B. El número de procesadores
+C. El número de memorias de salida
+D. El número de procesadores sobre los que se ejecutan las instrucciones
+ANSWER: A
+
+¿Cuál de las siguientes características describe mejor a las arquitecturas SIMD?
+A. Ejecutan múltiples flujos de instrucciones sobre un único flujo de datos.
+B. Ejecutan un único flujo de instrucciones sobre múltiples flujos de datos.
+C. Ejecutan múltiples flujos de instrucciones sobre múltiples flujos de datos.
+D. Ejecutan un único flujo de instrucciones sobre un único flujo de datos.
+ANSWER: B
+
+¿Cuál de las siguientes opciones representa el objetivo principal de un semáforo en programación concurrente?
+A. Permitir que múltiples hilos accedan simultáneamente a una región crítica.
+B. Sincronizar el acceso a recursos compartidos para evitar condiciones de carrera.
+C. Dividir la ejecución de procesos en varios subprocesos.
+D. Facilitar la ejecución secuencial de instrucciones.
+ANSWER: B
+
+¿Qué es una región crítica en programación concurrente?
+A. Una sección del código que no necesita protección contra acceso simultáneo.
+B. Una sección del código donde dos o más procesos pueden operar de forma simultánea sin conflicto.
+C. Una sección del código donde se accede a recursos compartidos y requiere protección contra acceso simultáneo.
+D. Una sección del código que se ejecuta de manera secuencial.
+ANSWER: C
+
+¿Qué es un monitor en programación concurrente?
+A. Un mecanismo de hardware para gestionar procesos.
+B. Un bloque de código que garantiza acceso seguro a recursos compartidos.
+C. Un dispositivo que supervisa el rendimiento del sistema.
+D. Una herramienta para ejecutar hilos en paralelo.
+ANSWER: B
+
+¿Cuál es una ventaja de la sincronización mediante paso de mensajes?
+A. Elimina la necesidad de comunicación entre procesos.
+B. Proporciona sincronización explícita entre procesos distribuidos.
+C. Siempre mejora el rendimiento del sistema.
+D. Evita completamente los bloqueos.
+ANSWER: B
+
+¿Cuál es el objetivo principal de la programación paralela?
+A. Reducir el consumo energético del sistema.
+B. Mejorar la velocidad de ejecución dividiendo tareas entre múltiples procesadores.
+C. Simplificar el desarrollo de software.
+D. Reducir la cantidad de líneas de código.
+ANSWER: B
+
+¿Qué implica la descomposición funcional en el diseño de programas paralelos?
+A. Dividir la tarea en funciones independientes que pueden ejecutarse en paralelo.
+B. Dividir los datos en subconjuntos para su procesamiento.
+C. Crear una única función para coordinar el sistema.
+D. Optimizar la memoria compartida para tareas críticas.
+ANSWER: A
+
+¿Cuál de los siguientes es un inhibidor común del paralelismo?
+A. Dependencia de datos entre tareas.
+B. Uso de múltiples procesadores.
+C. Algoritmos con alta granularidad.
+D. Memoria compartida coherente.
+ANSWER: A
+
+¿Qué caracteriza al balanceo de carga estático?
+A. La distribución de tareas se ajusta dinámicamente en tiempo de ejecución.
+B. Las tareas se asignan antes de la ejecución y no cambian.
+C. Utiliza una topología descentralizada para asignar tareas.
+D. Es ideal para sistemas con carga impredecible.
+ANSWER: B
+
+¿Qué ventaja tiene el balanceo de carga dinámico sobre el estático?
+A. Reduce la comunicación entre nodos.
+B. Es más adecuado para sistemas homogéneos.
+C. Requiere menos recursos computacionales.
+D. Permite ajustar las asignaciones en tiempo de ejecución.
+ANSWER: D
+
+¿Qué ventaja tiene el balanceo de carga dinámico distribuido?
+A. Depende de un único nodo para tomar decisiones.
+B. Escala mejor en sistemas grandes.
+C. Tiene un menor costo de comunicación entre nodos.
+D. No ajusta las tareas en tiempo de ejecución.
+ANSWER: B
+
+¿Qué caracteriza a los sistemas distribuidos?
+A. Todos los procesos se ejecutan en un solo nodo.
+B. Procesos independientes se ejecutan en múltiples nodos y se comunican entre sí.
+C. No existe necesidad de comunicación entre nodos.
+D. Utilizan solo memoria compartida para sincronización.
+ANSWER: B
+
+¿Qué problema surge si los procesos no se sincronizan correctamente?
+A. Ejecución simultánea más eficiente.
+B. Condiciones de carrera y resultados inconsistentes.
+C. Reducción del tiempo total de ejecución.
+D. Eliminación de la necesidad de exclusión mutua.
+ANSWER: B
+¿Cuál es una de las primeras tareas al desarrollar un videojuego?
+A. Crear personajes secundarios
+B. Definir roles y responsabilidades
+C. Diseñar el nivel final del juego
+D. Seleccionar el idioma de los menús
+ANSWER: B
+
+¿Las etapas del desarrollo de un videojuego son?
+A. Espiral, cascada, iterativo, incremental.
+B. Concepto, Pre-producción, producción, QA y Cierre, Post-Release.
+C. Concepto, producción, QA y Cierre, Post-Release.
+D. Explorar, descubrir,  competir y ganar.
+ANSWER: B
+
+¿Cuál es una ventaja de usar patrones de diseño?
+A. Reducen la necesidad de usar motores gráficos.
+B. Permiten que el código sea más legible y fácil de mantener.
+C. Eliminan la necesidad de pruebas de calidad.
+D. Aumentan los costos del proyecto.
+ANSWER: B
+
+¿Qué es un motor de videojuegos?
+A. Un hardware especializado para ejecutar juegos.
+B. Una plataforma que unifica programación y elementos creativos.
+C. Un lenguaje de programación exclusivo para juegos.
+D. Un sistema para gestionar servidores multijugador.
+ANSWER: B
+
+¿Qué componente gestiona las interacciones del usuario con el juego?
+A. Motor de entrada.
+B. Motor de física.
+C. Motor de animación.
+D. Motor de colisiones.
+ANSWER: A
+
+¿Cuál de los siguientes es un componente principal de un Game Engine?
+A. Motor de Persistencia
+B. Motor de Animación
+C. Motor de Red
+D. Todas las anteriores
+ANSWER: D
+
+¿Cuál es la función del Motor de Colisiones en un Game Engine?
+A. Gestionar la reproducción de sonido.
+B. Detectar y resolver colisiones entre objetos.
+C. Renderizar gráficos en 3D.
+D. Controlar las animaciones.
+ANSWER: B
+
+¿Qué motor permite gestionar el estado actual del juego mediante guardado y carga?
+A. Motor de persistencia.
+B. Motor de escenas.
+C. Motor de scripting.
+D. Motor de entrada.
+ANSWER: A
+
+¿Qué es un patrón de diseño?
+A. Asegura que una clase solo tenga una instancia y proporciona un punto de acceso global a ella.
+B. Son soluciones probadas y reutilizables para resolver problemas comunes en la programación.
+C. Permite que un objeto altere su comportamiento cuando cambia su estado.
+D. La plataforma en la que se juega el juego.
+ANSWER: B
+
+¿Qué se recomienda para acelerar el desarrollo de un videojuego?
+A. Inventar todas las herramientas desde cero
+B. Evitar el uso de prototipos
+C. Usar bibliotecas y motores existentes
+D. Focalizarse solo en el diseño visual
+ANSWER: C
+
+¿Qué etapa incluye la creación de interfaces, motores y niveles del juego?
+A. Concepto
+B. Pre-producción
+C. Producción
+D. QA y cierre
+ANSWER: C
+
+¿Qué hace el Motor de Networking en un Game Engine?
+A. Gestiona la reproducción de sonido.
+B. Renderiza gráficos en 3D.
+C. Gestiona la comunicación y sincronización en juegos multijugador.
+D. Controla las animaciones.
+ANSWER: C
+
+¿Cuál de los siguientes motores es gratuito y de código abierto con una comunidad activa?
+A. Godot Engine.
+B. Roblox Studio.
+C. Stencyl.
+D. Adventure Game Studio.
+ANSWER: A
+
+¿Por qué aplicar Ingeniería de Software en videojuegos?
+A. Para que el juego sea mas interesante.
+B. Para cumplir con las normas y estandares.
+C. Para asegurar que el software cumple con el propósito para el que fue creado.
+D. Para el desarrollo con menos presupuesto.
+ANSWER: C
+
+¿Qué representa el gameplay en el diseño del videojuego?
+A. La narrativa del juego
+B. Las mecánicas y experiencia del jugador
+C. Los efectos visuales y sonoros
+D. El diseño de los personajes secundarios
+ANSWER: B
+¿Cuál es una característica principal de las peticiones asíncronas (AJAX) en aplicaciones web?
+A. Permiten que la página se recargue cada vez que se actualiza el contenido.
+B. Permiten actualizar partes específicas de la página sin recargarla.
+C. Solo se pueden realizar en tiempo de ejecución.
+D. Solo funcionan con datos JSON.
+ANSWER: B
+
+¿Cuál de las siguientes opciones es un framework que permite el desarrollo en la nube para aplicaciones web en Python?
+A. Google AppEngine
+B. Ruby on Rails
+C. Jinja2
+D. Node.js
+ANSWER: A
+
+En términos de Web Services, ¿Cuál es una diferencia clave entre SOAP y REST?
+A. SOAP es solo compatible con JSON, mientras que REST no.
+B. REST es más complejo que SOAP.
+C. SOAP utiliza XML, mientras que REST puede utilizar múltiples formatos como JSON y XML.
+D. SOAP es compatible con Angular.
+ANSWER: C
+
+¿Qué tecnología se usa comúnmente junto con Angular para realizar almacenamiento en la nube?
+A. SOAP
+B. Cloud Endpoints
+C. PostgreSQL
+D. Jinja2
+ANSWER: B
+
+¿Qué método HTTP se usa comúnmente para eliminar un recurso?
+A. GET
+B. POST
+C. PUT
+D. DELETE
+ANSWER: D
+
+¿Cuál de los siguientes es un servicio web que suele usarse en aplicaciones empresariales para intercambiar datos de manera segura y confiable?
+A. REST
+B. SOAP
+C. JSON
+D. XML
+ANSWER: B
+
+¿Qué tipo de tecnología permite que una aplicación web se comunique con un servidor sin recargar la página por completo?
+A. HTML estático
+B. AJAX
+C. CSS
+D. SQL
+ANSWER: B
+
+¿Qué función cumple el "Web Server" en una arquitectura de aplicaciones web?
+A. Compila el código de la aplicación móvil.
+B. Proporciona y gestiona servicios web REST que se comunican con la base de datos.
+C. Envía respuestas en formato HTML, CSS y JavaScript al cliente.
+D. Se comunica directamente con el hardware del dispositivo móvil.
+ANSWER: B
+
+En una aplicación web que sigue el patrón MVC, ¿Cuál es la función principal del "Controlador"?
+A. Representar la interfaz de usuario y su diseño visual.
+B. Almacenar y gestionar la lógica de negocio y los datos de la aplicación.
+C. Procesar las peticiones del usuario, coordinar la interacción entre Modelo y Vista, y devolver una respuesta.
+D. Transformar el código en formato JSON para su visualización en la página.
+ANSWER: C
+
+En el patrón MVC, ¿Qué componente es responsable de interactuar directamente con la base de datos y manejar la lógica de negocio de la aplicación?
+A. Modelo
+B. Vista
+C. Controlador
+D. Cliente
+ANSWER: A
+
+¿Cuál de las siguientes prácticas ayuda a prevenir ataques de inyección SQL en aplicaciones web?
+A. Permitir que los usuarios ingresen consultas SQL en formularios.
+B. Escapar todos los caracteres especiales en las consultas SQL.
+C. Usar declaraciones preparadas o consultas parametrizadas.
+D. Ejecutar todas las consultas SQL desde el lado del cliente.
+ANSWER: B
+
+¿Qué es una práctica recomendada para proteger una API de ataques como el robo de datos o el acceso no autorizado?
+A. Permitir peticiones solo desde un navegador específico.
+B. No requerir autenticación para mejorar el rendimiento.
+C. Utilizar tokens de autenticación, como JWT (JSON Web Tokens).
+D. Limitar el acceso solo a usuarios de la red interna.
+ANSWER: C
+
+¿Cuál de las siguientes afirmaciones es cierta sobre las APIs REST?
+A. Siempre devuelven datos en formato XML exclusivamente.
+B. No se pueden utilizar con protocolos seguros como HTTPS.
+C. Son independientes del lenguaje de programación y del tipo de dispositivo.
+D. Solo permiten operaciones de lectura de datos.
+ANSWER: C
+
+¿Cuál es la función principal de Postman en el desarrollo de APIs REST?
+A. Diseñar la interfaz gráfica de la API.
+B. Probar y enviar peticiones HTTP a la API para verificar su funcionamiento.
+C. Optimizar el rendimiento de la API en el servidor.
+D. Generar automáticamente código para la API en varios lenguajes de programación.
+ANSWER: B
+
+¿Qué formato de datos es más común en las respuestas de una API REST y es soportado por Postman para visualizar la respuesta?
+A. XML
+B. YAML
+C. JSON
+D. CSV
+ANSWER: C
+
+
+¿Qué significa el atributo rel="noopener" en un enlace <a>?
+A) Abre el enlace en la misma ventana sin recargar la página
+B) Impide que la nueva página pueda acceder a la página original
+C) Establece un retardo en la apertura del enlace
+D) Permite que el enlace se abra en una ventana emergente
+ANSWER: B
+
+¿Cuál es la función principal de la etiqueta <picture> en HTML5?
+A) Asegurar que las imágenes se carguen de forma asíncrona
+B) Permitir la carga de imágenes en diferentes resoluciones o formatos según el tamaño de pantalla
+C) Definir la imagen de fondo de una página
+D) Proteger el contenido visual de una página web
+Justificación: La etiqueta <picture> permite proporcionar diferentes fuentes de imágenes para distintos ANSWER: B
+
+¿Qué atributo en la etiqueta <audio> especifica el archivo de audio que se va a reproducir?
+A) src
+B) href
+C) media
+D) audio-file
+ANSWER: A
+
+¿Cuál es la función del atributo async en la etiqueta <script>?
+A) Permitir que el script se ejecute de forma asíncrona con la carga de la página
+B) Asegurar que el script se ejecute en orden de aparición en el HTML
+C) Retrasar la carga del script hasta que toda la página se haya cargado
+D) Asegurar que el script no interfiera con otros scripts
+ANSWER: A
+
+¿Qué es un "data attribute" en HTML?
+A) Un atributo que contiene texto en negrita
+B) Un atributo utilizado para almacenar información personalizada que no afecta el contenido visual
+C) Un atributo obligatorio para formularios
+D) Un atributo que define la fuente de un archivo multimedia
+ANSWER: B
+
+¿Cómo se activa un diseño de columnas múltiples en CSS?
+A) display: block
+B) display: inline
+C) column-count
+D) flex-direction: column
+ANSWER: C
+
+¿Cuál es la diferencia entre position: absolute y position: fixed?
+A) absolute posiciona el elemento en relación con su contenedor y fixed lo posiciona respecto a la ventana del navegador
+B) Ambos se comportan igual
+C) fixed posiciona el elemento dentro de su contenedor y absolute en relación con la ventana
+D) absolute fija el elemento en la parte inferior de la pantalla y fixed lo mueve al centro
+ANSWER: A
+
+¿Qué es la propiedad box-sizing: border-box?
+A) Define el tamaño total de un elemento sin contar su borde
+B) Modifica la forma en que se calculan los márgenes en un elemento
+C) Incluye el borde y el padding dentro de las dimensiones definidas del elemento
+D) Cambia el color del borde del elemento
+ANSWER: C
+
+¿Qué hace el z-index en CSS?
+A) Controla el orden de apilamiento de los elementos en la página
+B) Alinea los elementos verticalmente
+C) Establece el tamaño de los márgenes de los elementos
+D) Cambia el color de fondo de un elemento
+ANSWER: A
+
+¿Cómo se puede hacer que un elemento responda a diferentes tamaños de pantalla utilizando CSS?
+A) Usando unidades absolutas como píxeles
+B) Usando propiedades como flexbox exclusivamente
+C) Mediante media queries
+D) Con la propiedad position: relative
+ANSWER: C
+
+¿Cómo puedes evitar que un formulario se envíe por defecto en JavaScript?
+A) Usando event.preventDefault()
+B) Usando event.stopPropagation()
+C) Usando return true; en el manejador de eventos
+D) Usando return false; en el evento submit
+ANSWER: A
+
+¿Qué es una "Promise" en JavaScript?
+A) Un tipo de objeto que almacena una función de devolución de llamada
+B) Una función que maneja múltiples respuestas de manera sincrónica
+C) Un objeto que representa la eventual terminación o fracaso de una operación asincrónica
+D) Un tipo de función que devuelve múltiples valores
+ANSWER: C
+
+¿Qué hace el operador this en JavaScript?
+A) Representa el objeto global
+B) Hace referencia al contexto de ejecución actual
+C) Permite modificar los valores de todas las variables globales
+D) Hace referencia a un objeto específico de la clase
+ANSWER: B
+
+¿Cómo se puede manejar errores en JavaScript de manera eficiente?
+A) Usando el bloque try...catch
+B) Usando thruw para lanzar errores manualmente
+C) Usando console.log() para imprimir los errores
+D) Usando register.log() para imprimir los errores
+ANSWER: A
+
+¿Cómo se puede transformar una cadena de texto en un número en JavaScript?
+A) Usando Number()
+B) Usando parseInt() o parseFloat()
+C) Usando el operador + delante de la cadena
+D) Todas las opciones son correctas
+ANSWER: D
+LA SIGUIENTE ACTIVIDAD "NO ESTÁ ABIERTO A COMPROMISOS CORRUPTO", ¿A QUÉ CARACTERÍSTICA DEL INGENIERO DE SOFTWARE CORRESPONDE?
+A. AUTOCONFIANZA
+B. NO DEBE SOBREESTIMAR SUS PROPIAS CAPACIDADES
+C. HABILIDAD PARA CONVENCER
+D. HABILIDAD PARA EMPATIZAR
+ANSWER: C
+EL TIEMPO DURANTE EL CUAL EL SISTEMA ESTARÁ EN SERVICIO OFRECIENDO TODA SU FUNCIONALIDAD, A QUÉ FACTOR DE CALIDAD EXTERNO CORRESPONDE
+A. INTEGRIDAD
+B. PERFORMANCE
+C. USABILIDAD
+D. DISPONIBILIDAD
+ANSWER: D
+EL SISTEMA BANCARIO SOLAMENTE PROVEERÁ DEL NOMBRE DE LOS CLIENTES, ES UN EJEMPLO DE REQUISITO NO FUNCIONAL DE:
+A. PRODUCTO
+B. ORGANIZACIÓN
+C. EXTERNO.
+D. SEGURIDAD
+ANSWER: B
+¿PARA QUIENES SON LOS REQUISITOS?
+A. USUARIOS, DESARROLLADORES, INGENIERO DE REQUERIMIENTOS, STACKEHOLDERS, CLIENTES
+B. USUARIOS, DESARROLLADORES, LÍDER DE PROYECTO, STACKEHOLDERS, CLIENTES
+C. INGENIERIOS MANTENEDORES DEL SISTEMA, DESARROLLADORES, INGENIERO DE REQUERIMIENTOS, STACKEHOLDERS, CLIENTES
+D. USUARIOS, DESARROLLADORES, INGENIERO DE REQUERIMIENTOS, STACKEHOLDERS, ADMINISTRADORES
+ANSWER: A
+LA APLICACIÓN DEBE VISUALIZARSE Y FUNCIONAR CORRECTAMENTE EN CORRECTAMENTE CON LOS NAVEGADORES: EXPLORER, FIREBIRD, MOZILLA Y NAUTILUS, ES UN EJEMPLO DE REQUISITO NO FUNCIONAL DE:
+A. PRODUCTO
+B. ORGANIZACIÓN
+C. EXTERNO.
+D. SEGURIDAD
+ANSWER: A
+CUANDO UN REQUERIMIENTO PROPORCIONA INFORMACIÓN SUFICIENTE PARA SU COMPRENSIÓN, ENTONCES ES:
+A. CORRECTO
+B. CLARO
+C. COMPLETO
+D. CONSISTENTE
+ANSWER: C
+¿CUÁL SERÍA EL ORDEN A SEGUIR PARA CAPTURAR LOS REQUERIMIENTOS?
+1. DEFINIR LÍMITES
+2. RECOLECTAR REQUERIMIENTOS
+3. RECOLECTAR LA INFORMACIÓN
+4. COMPRENDER EL PROBLEMA
+5. IDENTIFICAR USUARIOS
+A. 4,2,1,3,5
+B. 4,3,1,5,2
+C. 5,2,1,3,4
+D. 3,4,1,5,2
+ANSWER: B
+ES NECESARIO RESPONDER A LAS SIGUIENTES PREGUNTAS: ¿QUÉ SE QUIERE HACER?, ¿QUÉ PROBLEMA SE QUIERE RESOLVER? ¿PARA QUÉ SE QUIERE HACER EL SISTEMA? PARA:
+A. DEFINIR LOS LÍMITES Y RESTRICCIONES DEL SISTEMA
+B. COMPRENDER EL PROBLEMA
+C. IDENTIFICAR A LOS USUARIOS INTERESADOS EN EL SISTEMA
+D. BUSCAR Y RECOLECTAR INFORMACIÓN
+ANSWER: B
+DURANTE EL ANÁLISIS DE LOS REQUERIMIENTOS SE EXTRAEN:
+A. LAS CARACTERÍSTICAS OPERACIONALES DEL SOFTWARE, SE DETECTA SI HAY CONFLICTOS ENTRE LOS REQUERIMIENTOS Y SE RESUELVEN ESTOS CONFLICTOS, SE ESTABLECEN LAS RESTRICCIONES QUE DEBE CUMPLIR EL SOFTWARE Y SE CLASIFICAN LOS REQUERIMIENTOS.
+B. LOS ELEMENTOS BÁSICOS DE UN SISTEMA TAL COMO LO PERCIBE EL USUARIO/CLIENTE.
+C. PAUTAS A SEGUIR POR LOS DESARROLLADORES DEL SISTEMA PREVIA A SU CLASIFICACIÓN
+D. DE FORMA COMPLETA, PRECISA Y VERIFICABLE, LOS REQUISITOS, EL DISEÑO Y EL COMPORTAMIENTO U OTRAS CARACTERÍSTICAS, DE UN SISTEMA O COMPONENTE DE UN SISTEMA.
+ANSWER: A
+LOS CLIENTES Y USUARIOS PUEDEN NO SER CONSCIENTES DE SUS NECESIDADES Y PUEDE QUE NO ENTIENDAN CÓMO LA TECNOLOGÍA PUEDE AYUDARLES, CORRESPONDE A UN PROBLEMA DE:
+A. DE COMUNICACIÓN
+B. DE LIMITACIONES COGNITIVAS
+C. DE CONDUCTA HUMANA
+D. DE ARTICULACIÓN
+ANSWER: D
+EL SIGUIENTE GRUPO DE PREGUNTAS: ¿Qué están haciendo?,¿Qué objetivos tienen al hacerlo ?,¿Por qué hago esa actividad?,¿Por qué un proceso es complicado? PERMITE COMPRENDER LAS ACTIVIDADES DE:
+A. ESPECIALISTAS
+B. USUARIOS
+C. PATROCINADORES EJECUTIVOS
+D. DIRECTIVOS
+ANSWER: B
+¿CUÁLES SON LAS TÉCNICAS UTILIZADAS EN LA GESTIÓN DE REQUISITOS?
+A. APORTACIÓN DE REQUISITOS, PRIORIZACIÓN, TRAZABILIDAD, GESTIÓN DEL CAMBIO, CREACIÓN DE DIFERENTES VISTAS.
+B. APORTACIÓN DE REQUISITOS, GENERACIÓN DE INFORMES, TRAZABILIDAD, GESTIÓN DEL CAMBIO, PRIORIZACIÓN.
+C. APORTACIÓN DE REQUISITOS, PRIORIZACIÓN, GENERACIÓN DE INFORMES, TRAZABILIDAD, GESTIÓN DEL CAMBIO.
+D. APORTACIÓN DE REQUISITOS, PRIORIZACIÓN, TRAZABILIDAD, GESTIÓN DEL CAMBIO, VERSIONADO.
+ANSWER: D
+CON LA SIGUIENTE PREGUNTA: ¿LO QUE PIDIÓ EL CLIENTE, FUNCIONA CORRECTAMENTE? LE PERMITE AL INGENIERIO DE REQUISITOS:
+A. LA VERIFICACIÓN DE LOS REQUERIMIENTOS
+B. ASEGURAR UN CONOCIMIENTO EXPLICITO DEL DOMINIO DEL PROBLEMA
+C. CLASIFICAR LOS REQUISITOS PARA AYUDAR EN LAS LABORES DE NEGOCIACIÓN.
+D. GESTIONAR LOS CAMBIOS Y EL MANTENIMIENTO DE LOS REQUISITOS PARA QUE REPRESENTEN EL SISTEMA QUE SE VA A DESARROLLAR O QUE SE HA DESARROLLADO.
+ANSWER: A
+¿CUÁL DE LAS SIGUIENTES ACTIVIDADES NO SE INCLUYE EN LA FASE DE MANTENIMIENTO DE SOFTWARE?
+A. MEJORAS DE LAS CAPACIDADES.
+B. ELIMINACIÓN DE FUNCIONES OBSOLETAS.
+C. OPTIMIZACIÓN
+D. VALIDACIÓN DE REQUISITOS.
+ANSWER: D
+EN UN SISTEMA DE RESERVACIÓN DE VUELOS, ¿CUÁL DE LOS SIGUIENTES REQUERIMIENTOS ES FUNCIONAL?
+A. EL SISTEMA DEBERÁ FUNCIONAR CORRECTAMENTE EN CUALQUIER NAVEGADOR.
+B. EL SISTEMA NO DEBERÁ TARDAR MÁS DE CINCO SEGUNDOS EN MOSTRAR LOS RESULTADOS DE UNA BÚSQUEDA.
+C. EL SISTEMA DEBERÁ PERMITIRLE AL USUARIO LA POSIBILIDAD DE BUSCAR DISPONIBILIDAD DE ASIENTOS Y COSTO DE LOS VUELOS.
+D. EL SISTEMA DEBERÁ PERMITIRLE AL USUARIO BUSCAR DISPONIBILIDAD DE ASIENTOS Y COSTO DE LOS VUELOS UTILIZANDO COMO CRITERIOS:  FECHA Y TIPO DE VUELO.
+ANSWER: D
+¿Cuál de los siguientes diagramas UML se utiliza para representar la interacción entre objetos en un escenario específico?
+A. DIAGRAMA DE CLASES
+B. DIAGRAMA DE SECUENCIA
+C. DIAGRAMA DE CASOS DE USO
+D. DIAGRAMA DE COMPONENTES
+RESPUESTA: B
+
+¿Qué principio SOLID promueve la idea de que una clase debe tener una sola responsabilidad?
+A. PRINCIPIO DE RESPONSABILIDAD ÚNICA
+B. PRINCIPIO ABIERTO/CERRADO
+C. PRINCIPIO DE SUSTITUCIÓN DE LISKOV
+D. PRINCIPIO DE INVERSIÓN DE DEPENDENCIAS
+RESPUESTA: A
+
+¿Cuál de los siguientes patrones de diseño se utiliza para crear objetos sin exponer la lógica de instanciación?
+A. PATRÓN FACTORY
+B. PATRÓN SINGLETON
+C. PATRÓN ADAPTER
+D. PATRÓN DECORATOR
+RESPUESTA: A
+
+¿Qué diagrama UML se utiliza para modelar la estructura estática de un sistema, mostrando las clases y sus relaciones?
+A. DIAGRAMA DE SECUENCIA
+B. DIAGRAMA DE ACTIVIDADES
+C. DIAGRAMA DE CLASES
+D. DIAGRAMA DE DESPLIEGUE
+RESPUESTA: C
+
+¿Qué tipo de relación en un diagrama de clases indica que una clase "es un tipo de" otra clase?
+A. ASOCIACIÓN
+B. AGREGACIÓN
+C. COMPOSICIÓN
+D. HERENCIA
+RESPUESTA: D
+Justificación: La herencia (o generalización) representa una relación "es un tipo de" entre clases, donde una subclase hereda las propiedades y métodos de una superclase.
+
+¿Qué es un diagrama de flujo de datos (DFD)?
+A. UN DIAGRAMA QUE MUESTRA LA SECUENCIA DE PASOS EN UN ALGORITMO
+B. UN DIAGRAMA QUE MUESTRA EL FLUJO DE DATOS A TRAVÉS DE UN SISTEMA
+C. UN DIAGRAMA QUE MUESTRA LAS RELACIONES ENTRE LAS ENTIDADES EN UNA BASE DE DATOS
+D. UN DIAGRAMA QUE MUESTRA LA ARQUITECTURA DE UN SISTEMA
+RESPUESTA: B
+
+¿Cuál de los siguientes NO es un elemento de un DFD?
+A. PROCESO
+B. FLUJO DE DATOS
+C. ALMACÉN DE DATOS
+D. CLASE
+RESPUESTA: D
+Justificación: Los elementos básicos de un DFD son: proceso, flujo de datos, almacén de datos y entidad externa. Las clases son elementos de un diagrama de clases.
+
+¿Qué es un modelo entidad-relación (MER)?
+A. UN DIAGRAMA QUE MUESTRA LA ESTRUCTURA DE UNA BASE DE DATOS
+B. UN DIAGRAMA QUE MUESTRA LAS INTERACCIONES ENTRE OBJETOS
+C. UN DIAGRAMA QUE MUESTRA EL FLUJO DE CONTROL EN UN PROGRAMA
+D. UN DIAGRAMA QUE MUESTRA LA ARQUITECTURA DE UN SISTEMA DISTRIBUIDO
+RESPUESTA: A
+
+¿Qué símbolo se utiliza en un modelo entidad-relación (MER) para representar una entidad?
+A. RECTÁNGULO
+B. ROMBO
+C. ÓVALO
+D. CÍRCULO
+RESPUESTA: A
+
+¿Qué tipo de relación en un modelo entidad-relación (MER) indica que una entidad no puede existir sin otra entidad?
+A. RELACIÓN UNO A UNO
+B. RELACIÓN UNO A MUCHOS
+C. RELACIÓN MUCHOS A MUCHOS
+D. RELACIÓN DE DEPENDENCIA
+RESPUESTA: D
+Justificación: La relación de dependencia (o identificadora) indica que la existencia de una entidad depende de la existencia de otra entidad.
+
+¿Qué principio SOLID establece que las entidades de software (clases, módulos, etc.) deben estar abiertas para la extensión, pero cerradas para la modificación?
+A. PRINCIPIO ABIERTO/CERRADO
+B. PRINCIPIO DE SUSTITUCIÓN DE LISKOV
+C. PRINCIPIO DE SEGREGACIÓN DE INTERFACES
+D. PRINCIPIO DE INVERSIÓN DE DEPENDENCIAS
+RESPUESTA: A
+
+¿Qué patrón de diseño define una familia de algoritmos, encapsula cada uno de ellos y los hace intercambiables?
+A. PATRÓN STRATEGY
+B. PATRÓN OBSERVER
+C. PATRÓN TEMPLATE METHOD
+D. PATRÓN COMPOSITE
+RESPUESTA: A
+
+¿Qué es la cohesión en el diseño de software?
+
+A. LA MEDIDA EN QUE LOS MÓDULOS DE UN SISTEMA ESTÁN INTERCONECTADOS
+B. LA MEDIDA EN QUE UNA CLASE TIENE UNA SOLA RESPONSABILIDAD
+C. LA MEDIDA EN QUE UN SISTEMA ES FÁCIL DE MODIFICAR
+D. LA MEDIDA EN QUE UN SISTEMA ES FÁCIL DE ENTENDER
+RESPUESTA: B
+
+¿Qué es el acoplamiento en el diseño de software?
+A. LA MEDIDA EN QUE LOS MÓDULOS DE UN SISTEMA DEPENDEN UNOS DE OTROS
+B. LA MEDIDA EN QUE UNA CLASE TIENE UNA SOLA RESPONSABILIDAD
+C. LA MEDIDA EN QUE UN SISTEMA ES FÁCIL DE MODIFICAR
+D. LA MEDIDA EN QUE UN SISTEMA ES FÁCIL DE ENTENDER
+RESPUESTA: A
+
+¿Qué principio SOLID establece que los clientes no deben verse obligados a depender de métodos que no utilizan?
+A. PRINCIPIO DE RESPONSABILIDAD ÚNICA
+B. PRINCIPIO ABIERTO/CERRADO
+C. PRINCIPIO DE SUSTITUCIÓN DE LISKOV
+D. PRINCIPIO DE SEGREGACIÓN DE INTERFACES
+RESPUESTA: D
+¿Cuál es el comando correcto para crear un nuevo proyecto en Flutter desde la línea de comandos?
+A. flutter init my_app
+B. flutter start my_app
+C. flutter create my_app
+D. flutter new my_app
+ANSWER: C
+
+¿Cuál es el método principal del ciclo de vida de un StatefulWidget en Flutter que se llama cada vez que el estado del widget cambia?
+A. initState()
+B. build()
+C. setState()
+D. dispose()
+ANSWER: B
+
+¿Qué efecto tiene la llamada a runApp(MyApp()) dentro de la función main() en una aplicación Flutter?
+A. Establece MyApp como el widget raíz de la aplicación.
+B. Configura el entorno de ejecución de Flutter.
+C. Compila el widget MyApp en código nativo.
+D. Define las rutas de navegación de la aplicación.
+ANSWER: A
+
+En el siguiente fragmento de código: 'nombre_producto': _listaDatos[index]['nombre_producto'], ¿qué tipo de estructura es _listaDatos?
+A. Un Map que almacena información de producto.
+B. Una lista de mapas, donde cada mapa contiene información sobre un producto.
+C. Una instancia de una clase personalizada que maneja los datos de productos.
+D. Un widget que muestra detalles del producto.
+ANSWER: B
+
+¿Qué propiedad de ListView.builder especifica el número total de elementos en la lista?
+A. itemBuilder.
+B. itemCount.
+C. scrollDirection.
+D. padding.
+ANSWER: B
+
+¿Qué información se almacena en la variable respuesta después de ejecutar el siguiente código: " final respuesta = await http.get(Uri.parse('http://192.168.100.17:8080/crud/insertar.php'));" ?
+A. Un objeto http.Response que contiene el código de estado y el cuerpo de la respuesta del servidor.
+B. Una cadena de texto que representa la URL a la que se hizo la solicitud.
+C. Un objeto Uri que representa la URL de la solicitud.
+D. Un valor booleano que indica si la solicitud fue exitosa.
+ANSWER: A
+
+¿Cuál es la estructura para decodificar el cuerpo de la respuesta HTTP, que está en formato JSON, y convertirlo en una lista de objetos dinámicos en el contexto de una respuesta HTTP?
+A. List<dynamic> data = jsonEncode(response.body);
+B. List<dynamic> data = jsonDecode(response.body);
+C. List<dynamic> data = jsonString(response.body);
+D. List<dynamic> data = jsonCode(response.body);
+ANSWER: B
+
+¿Cuál de las siguientes herramientas es una versión mejorada de Appium que ofrece una interfaz gráfica para simplificar la configuración y ejecución de pruebas?
+A. Appium Studio
+B. Serenity
+C. TestNG
+D. Katalon Studio
+ANSWER: A
+
+¿Qué widget en Flutter se utiliza para mostrar una lista desplazable de elementos?
+A. Column
+B. ListView
+C. Stack
+D. Container
+ANSWER: B
+
+¿Cuál de los siguientes widgets es ideal para organizar otros widgets en un eje vertical?
+A. Row
+B. Column
+C. Stack
+D. Expanded
+ANSWER: B
+
+¿Qué propiedad se usa en Flutter para establecer el tamaño de un Container?
+A. alignment
+B. decoration
+C. width y height
+D. padding
+ANSWER: C
+
+¿Qué función se utiliza para navegar entre pantallas en Flutter?
+A. Navigator.pop
+B. Navigator.push
+C. Navigator.remove
+D. Navigator.popUntil
+ANSWER: B
+
+¿Cuál de los siguientes widgets se usa para desplegar una cuadrícula de elementos en Flutter?
+A. ListView
+B. GridView
+C. Stack
+D. Row
+ANSWER: B
+
+¿Qué widget en Flutter se utiliza para permitir el desplazamiento en ambas direcciones (horizontal y vertical)?
+A. SingleChildScrollView
+B. Scrollable
+C. ListView
+D. CustomScrollView
+ANSWER: D
+
+¿Qué widget se utiliza para añadir margen y/o padding alrededor de un widget en Flutter?
+A. Container
+B. Padding
+C. Margin
+D. Align
+ANSWER: A
+
+¿Cuál es la primera fase del ciclo de vida de pruebas de software?
+A. Planificación de pruebas.
+B. Diseño de pruebas.
+C. Ejecución de pruebas.
+D. Requerimientos de pruebas.
+ANSWER: A
+
+¿Cuál es el propósito principal de las pruebas de regresión en el desarrollo de software?
+A. Identificar nuevas funcionalidades.
+B. Asegurar que los cambios recientes no han introducido nuevos errores en áreas no modificadas.
+C. Medir el rendimiento del sistema bajo condiciones de carga máxima.
+D. Evaluar la usabilidad del software.
+ANSWER: B
+
+¿Cuál es una característica clave de las pruebas de caja blanca?
+A. No requiere conocimiento del código fuente.
+B. Utiliza técnicas como la cobertura de sentencias y la cobertura de decisiones.
+C. Se enfoca exclusivamente en la validación de la interfaz de usuario.
+D. Solo se realiza después de las pruebas de caja negra.
+ANSWER: B
+
+Seleccione la mejor definición de calidad de software
+A. Asegurar la inexistencia de ningún defecto.
+B. Calidad es trabajar uno solo.
+C. Conformidad con los requerimientos.
+D. Trabajar según la planificación.
+ANSWER: C
+
+¿Cuál es una de las principales ventajas de usar Mockito en pruebas unitarias?
+A. Mockito permite ejecutar pruebas en paralelo, reduciendo el tiempo total de ejecución.
+B. Mockito proporciona una interfaz gráfica para la ejecución de pruebas.
+C. Mockito permite simular (mock) el comportamiento de objetos dependientes, lo que facilita la prueba de unidades de código de manera aislada y controlada.
+D. Mockito integra análisis de rendimiento dentro de las pruebas.
+ANSWER: C
+
+Analice las siguientes afirmaciones sobre el Modelo V en Testing y seleccione la opción que las resuma correctamente
+A. El Modelo V en Testing es un modelo lineal que se sigue de forma estricta en todos los proyectos de software.
+B. El Modelo V en Testing es un modelo flexible que puede adaptarse a las necesidades específicas de cada proyecto.
+C. El Modelo V en Testing solo se aplica a pruebas de software funcionales, no a pruebas de no funcionales.
+D. El Modelo V en Testing es un modelo obsoleto que ha sido reemplazado por metodologías más modernas.
+ANSWER: B
+
+¿Cuál de las siguientes opciones describe correctamente la relación entre error, defecto y fallo en el contexto de testing de software?
+A. Un fallo ocurre debido a un error humano que no provoca ningún defecto.
+B. Un defecto es una acción humana incorrecta que lleva a un error en el software.
+C. Un error humano lleva a la introducción de un defecto en el software, que puede resultar en un fallo durante la ejecución.
+D. Un defecto y un fallo son sinónimos y ambos ocurren debido a un error en el código.
+ANSWER: C
+
+¿La técnica de caja negra en pruebas de software consiste en?
+A. Ver el programa, despreocupándonos de comportamiento del código y centrando el esfuerzo en encontrar el comportamiento incorrecto, teniendo en cuenta las entradas y salidas del programa.
+B. Ver el programa, centrándonos en el comportamiento interno y concentrando el esfuerzo en el desarrollo del código y su correcto funcionamiento.
+C. Ver el programa, despreocupándonos de comportamiento del código y centrando el esfuerzo en encontrar el comportamiento incorrecto, teniendo en cuenta únicamente las entradas del programa.
+D. Ver el programa, preocupándonos del comportamiento de las interfaces de usuario y centrando el esfuerzo en encontrar el comportamiento incorrecto, teniendo en cuenta las entradas, salidas y riesgos del programa.
+ANSWER: A
+
+Asociado al uso y la implementación de una herramienta de pruebas de software. Cuál de los siguientes normalmente es un riesgo.
+A. Gestión de las expectativas del usuario.
+B. Subestimación de la cantidad de tiempo requerida para desarrollar los scripts de ejecución de pruebas.
+C. Control de versiones de los conjuntos de pruebas.
+D. Demasiada confianza en una herramienta automatizada para la ejecución de pruebas de regresión.
+ANSWER: C
+
+¿Cuál de las siguientes respuestas describe una condición de prueba?
+A. Un atributo de un componente o sistema especificado o implícito en la documentación de requisitos.
+B. Un aspecto de la base de prueba que es relevante para lograr los objetivos específicos de la prueba.
+C. El grado en que un producto software proporciona funciones que satisfacen las necesidades explícitas e implícitas cuando el software se utiliza en condiciones específicas.
+D. El porcentaje de los resultados de todas las condiciones individuales que afectan de forma independiente al resultado de una decisión que ha sido practicada por un conjunto de casos de prueba.
+ANSWER: B
+
+¿Cuál es el objetivo principal de las pruebas de integración?
+A. Evaluar la funcionalidad completa del sistema.
+B. Validar la correcta interacción entre diferentes módulos o componentes.
+C. Identificar problemas de rendimiento bajo carga.
+D. Verificar la usabilidad del software.
+ANSWER: B
+
+¿Qué principio sigue el Desarrollo Guiado por Pruebas (TDD)?
+A. Escribir todo el código de una vez y luego probarlo.
+B. Escribir pruebas después de desarrollar el código.
+C. Escribir una prueba antes de escribir el código que debe pasar la prueba.
+D. Probar manualmente cada componente después del desarrollo.
+ANSWER: C
+
+¿Cuál de las siguientes tareas es MÁS PROBABLE que sea realizada por el jefe de la prueba?
+A. Redactar informes resumen de prueba basados en la información recopilada durante la prueba.
+B. Revisar las pruebas desarrolladas por otros.
+C. Reducir el riesgo de defectos fundamentales del diseño.
+D. Analizar, revisar y evaluar los requisitos, especificaciones y modelos en lo que respecta a la capacidad de ser probado.
+ANSWER: A
+
+¿Cuál de las siguientes afirmaciones describe mejor cómo se dividen las tareas entre el gestor de pruebas y el probador?
+A. El jefe de pruebas planifica, organiza y controla las actividades de prueba, mientras que el probador especifica y ejecuta las pruebas.
+B. El jefe de pruebas planifica las actividades de prueba y elige los estándares a seguir, mientras que el probador elige las herramientas y controles a utilizar.
+C. El jefe de pruebas planifica, supervisa y controla las actividades de prueba, mientras que el probador diseña las pruebas y decide sobre la aprobación del objeto de prueba.
+D. El jefe de pruebas planifica y organiza las pruebas, y especifica los casos de prueba, mientras que el probador prioriza y ejecuta las pruebas.
+ANSWER: A
+
+¿Cuál de los siguientes tipos de revisión es la mejor opción para seleccionar con el objeto de llevar a cabo revisiones de componentes de seguridad crítica en un proyecto de software si, además, la revisión debe demostrarse como proceso formal basado en reglas y listas de comprobación?
+A. Inspección.
+B. Revisión Informal.
+C. Revisión Técnica.
+D. Revisión Guiada.
+ANSWER: A
+¿Qué es una aplicación distribuida?
+A) Una aplicación monolítica que funciona en un solo servidor.
+B) Un sistema de software donde sus componentes están en diferentes nodos.
+C) Una base de datos centralizada conectada a múltiples usuarios.
+D) Un servidor local sin conexión a la red.
+ANSWER: B
+
+¿Qué desventaja tienen las aplicaciones distribuidas en comparación con sistemas monolíticos?
+A) Alta escalabilidad.
+B) Complejidad en la comunicación entre nodos.
+C) Mejor manejo de la concurrencia.
+D) Mayor disponibilidad de recursos.
+ANSWER: B
+
+¿Qué estilo arquitectónico es más común en las aplicaciones distribuidas modernas?
+A) Arquitectura monolítica.
+B) Arquitectura orientada a servicios (SOA).
+C) Modelo cliente-servidor.
+D) Modelo relacional centralizado.
+ANSWER: B
+
+¿Qué componente facilita la comunicación entre aplicaciones distribuidas?
+A) Middleware.
+B) Base de datos SQL.
+C) Interfaz gráfica de usuario.
+D) Red local aislada.
+ANSWER: A
+
+¿Cuál de las siguientes tecnologías representa una arquitectura de microservicios?
+A) Una aplicación de servidor centralizado con todas las funcionalidades.
+B) Una aplicación modular con servicios independientes y escalables.
+C) Un programa monolítico con acceso local a archivos.
+D) Una red local sin acceso a otros servicios.
+ANSWER: B
+
+¿Qué concepto describe la separación de funciones en aplicaciones distribuidas?
+A) Centralización.
+B) Desacoplamiento.
+C) Concurrencia.
+D) Unificación de procesos.
+ANSWER: B
+
+¿Qué técnica permite la comunicación remota entre procesos en sistemas distribuidos?
+A) Procesos síncronos.
+B) Llamadas a procedimientos remotos (RPC).
+C) Sincronización de memoria compartida.
+D) Interfaz gráfica local.
+ANSWER: B
+
+¿Cuál es una característica de la comunicación basada en mensajes?
+A) Los procesos deben estar sincronizados.
+B) Facilita la comunicación asíncrona entre componentes.
+C) Requiere una única base de datos centralizada.
+D) No soporta alta concurrencia.
+ANSWER: B
+
+¿Qué elemento se encarga de facilitar la comunicación en tiempo real entre clientes y servidores?
+A) Middleware.
+B) WebSockets.
+C) Protocolos de transferencia de archivos.
+D) Modelo monolítico.
+ANSWER: B
+
+¿Qué problema resuelven los algoritmos de sincronización en aplicaciones distribuidas?
+A) La falta de procesos independientes.
+B) La sincronización de relojes entre nodos.
+C) El acoplamiento fuerte entre componentes.
+D) La ejecución secuencial en sistemas monolíticos.
+ANSWER: B
+
+¿Qué describe mejor a los algoritmos de elección en sistemas distribuidos?
+A) Selección de un nodo para liderar una tarea específica.
+B) Implementación de conexiones permanentes con un servidor.
+C) Proceso centralizado de distribución de datos.
+D) Uso exclusivo de sincronización asíncrona.
+ANSWER: A
+
+¿Qué ventaja proporciona la sincronización adecuada en aplicaciones distribuidas?
+A) Garantiza un alto acoplamiento entre nodos.
+B) Facilita la consistencia en el orden de los eventos.
+C) Evita la ejecución de procesos paralelos.
+D) Centraliza toda la lógica del sistema.
+ANSWER: B
+
+¿Qué solución facilita la comunicación asíncrona en aplicaciones distribuidas?
+A) RPC con Thrift.
+B) Cola de mensajes.
+C) Base de datos local.
+D) Proceso monolítico.
+ANSWER: B
+
+¿Qué es la orquestación de contenedores en la nube?
+A) La administración manual de servidores virtuales.
+B) El despliegue automático y gestión de contenedores con herramientas como Kubernetes.
+C) La creación de un único servidor centralizado.
+D) La implementación de aplicaciones monolíticas.
+ANSWER: B
+
+¿Qué describe mejor el modelo de SaaS en la computación en la nube?
+A) Proporcionar software como un servicio accesible por internet.
+B) Ofrecer infraestructura virtualizada como servicio.
+C) Gestionar redes físicas para empresas locales.
+D) Proveer hardware como solución integrada.
+ANSWER: A
+Qué es requisito
+A. Categoría o rango dado a diferentes requisitos
+B. Necesidad o expectativa establecida, generalmente implícita u obligatoria
+C. Percepción del cliente  sobre el grado ene que se han cumplido los requisitos
+D. Documentos que proporcionan evidencia objetiva de las actividades o resultados obtenidos
+ANSWER: B
+Identifique las categorías genéricas de un producto
+A. Servicios. software, hardware, materiales
+B. Producto, software, hardware, materiales
+C. Procedimientos documentos
+D. Procedimientos no documentados
+ANSWER: A
+Qué es aseguramiento de la calidad
+A. Parte de la gestión de la calidad  enfocada en el establecimiento de los objetivos de la calidad
+B. Parte de la gestión de la calidad  enfocada en el establecimiento de los procesos
+C. Parte de la gestión de la calidad  enfocada en el establecimiento de mejora continua
+D. Parte de la gestión de la calidad  enfocada proporcionar confianza  en que se cumplirán  los requisitos de calidad
+ANSWER: D
+Qué es sistema de gestión
+A. Sistema para una organización
+B. Sistema  relativo a la calidad
+C. Sistema para la alta dirección
+D. Sistema para establecer la política y  los objetivos y ´para lograr dichos objetivos
+ANSWER: D
+Qué es calidad
+A. Grado  en el que un conjunto de características inherentes cumple con los requisitos,
+B. Aptitud de una organización sistema o proceso para realizar un producto
+C. Percepción del cliente sobre el grado en el que se han cumplido  los requisitos
+D. Categoría  o rango dado  a diferentes  requisitos de  calidad
+ANSWER: A
+Qué es auditoria y cuantos tipos existen
+A. Proceso sistemático, independiente y documentado para obtener evidencias de auditor, estas son de dos  tipos interna y externas,
+B. Proceso independiente y documentado para obtener evidencias de auditor, estas son de dos  tipos de primera y segunda  parte
+C. Proceso sistemático para obtener evidencias de auditor  estas son de dos  tipos de  segunda y tercera parte
+D. Proceso documentado para obtener evidencias de auditor, estas son de tercera parte
+ANSWER: A
+Qué es programa de auditoria
+A. Conjunto de una o más auditorias planificadas para un periodo de tiempo determinado y dirigidas hacía un propósito  específico.
+B. Conjunto de una o más auditorias planificadas  con un cronograma de trabajo con las actividades a ser realizadas, de  acuerdo a la norma empleada
+C. Conjunto de una o más auditorias planificadas  con un cronograma y responsables de las auditorias planificadas en un período de tiempo con un propósito especifico
+D. Conjunto de la auditoria planificadas  con un cronograma y responsables de las auditorias planificadas en un período de tiempo con un propósito especifico
+ANSWER: A
+Qué son evidencias de auditoria
+A. Registros, declaraciones  de hechos  o cualquier otra información que son pertinentes para los criterios de auditoría que son verificables .
+B. Registros, declaraciones  pertinentes para los criterios de auditoría que son verificables
+C. Registros de hechos  pertinentes para los criterios de auditoría que son verificables
+D. Registros, de  información que son pertinentes para los criterios de auditoría que son verificables
+ANSWER: A
+Qué es hallazgo de auditoria
+A. Resultados  de la evaluación de la evidencia de la auditoria  recopilada frente a los criterios de auditoría.
+B. Acción tomada para eliminar la causa de una no conformidad potencial u otra  situación potencial no deseable
+C. Acción tomada para eliminar la causa de una no conformidad detectada
+D. Acción tomada para eliminar una   no conformidad detectada.
+ANSWER: A
+Qué son las  conclusiones   de auditoria
+A. Resultados  de una auditoría  que proporciona el equipo auditor tras considerar los objetivos  de la auditoría y todos los hallazgos  de la auditoria.
+B. Resultados  de una auditoría  que proporciona el experto técnico tras considerar los objetivos  de la auditoría y todos los hallazgos  de la auditoria.
+C. Resultados  de una auditoría  que proporciona el cliente tras considerar los objetivos  de la auditoría y todos los hallazgos  de la auditoria
+D. Resultados  de una auditoría  que proporciona el auditor tras considerar los objetivos  de la auditoría y todos los hallazgos  de la auditoria
+ANSWER: A
+Cuál es la diferencia entre  verificación y validación
+A. Verificación cumplimiento de los requisitos, Validación  confirma la funcionalidad de  los requisitos.
+B. Verificación cumplimiento de especificaciones , Validación  confirma la No funcionalidad de  los requisitos.
+C. Confirmación mediante .  la aportación  de evidencia objetiva  de que se han cumplido  los requisitos  para una utilización  o aplicación especifica prevista
+D. Se centra en el cumplimiento de los requisitos técnicos o especificaciones durante el desarrollo o producción
+ANSWER: A
+Cuál es un plan de auditoria
+A. Descripción de actividades  y de los detalles  acordados en una auditoría.
+B. Auditorías internas se realizan por parte de la propia organización.
+C. Auditorías externas se realizan por parte de organizaciones auditoras independientes que  proporcionan  la certificación o registro de  conformidad con las Normas ISO 9001, ISO 14001.
+D. Cuando se juntan dos o mas sistemas de Gestión  se denominan Auditoria combinada.
+ANSWER: A
+Los modelos de calidad del producto software son
+A. ISO 9126 producto software
+B. ISO/IEC 25010 producto software
+C. ISO IEC 20000 producto software
+D. Todas de las anteriores son ciertas
+ANSWER: B
+Liste cuatro aspectos que deben ser incluidos en un reporte de auditoria
+A. Fechas de auditoría y reporte, descripción del propósito y alcance, firma del líder del equipo de auditoría, identificación de buenas prácticas.
+B. Identificar miembros del equipo auditor, descripción del propósito y alcance, firma del líder del equipo de auditoría, identificación de buenas prácticas.
+C. Identificar miembros del equipo auditor, Fechas de auditoría y reporte, descripción del propósito y alcance, firma del líder del equipo de auditoría, identificación de buenas prácticas.
+D. Identificar miembros del equipo auditor, Fechas de auditoría y reporte, descripción del propósito y alcance, identificación de buenas prácticas.
+ANSWER: B
+Qué información de entrada puede ser usada para la revisión de la dirección al sistema de calidad
+A. Resultados de la auditoría de calidad,
+B. Cumplimiento de políticas y objetivos de calidad,
+C. Cumplimiento del programa de auditorías internas, resultados de acciones preventivas y correctivas y seguimiento de las tareas asignadas de la Reunión anterior.
+D. Todas las anteriores
+ANSWER: D
+¿Cuál es la primera fase del ciclo de vida de desarrollo de software?
+A. Diseño
+B. Planificación
+C. Análisis
+D. Implementación
+ANSWER: C
+
+¿Qué se realiza en la fase de diseño en el ciclo de vida de desarrollo de software?
+A. Definir los requisitos
+B. Codificar el software
+C. Crear un plan de pruebas
+D. Crear la arquitectura del software
+ANSWER: D
+
+¿Cuál es el objetivo principal de la fase de pruebas en el ciclo de vida de desarrollo de software?
+A. Generar los requisitos del sistema
+B. Verificar que el software cumpla con los requisitos
+C. Documentar el código
+D. Capacitar a los usuarios finales
+ANSWER: B
+
+¿Qué describe el ciclo de vida de desarrollo de software?
+A. Las herramientas utilizadas en el desarrollo de software
+B. Las fases desde la concepción hasta el retiro del software
+C. La programación de aplicaciones móviles
+D. El análisis de la competencia en el mercado
+ANSWER: B
+
+En Scrum, ¿qué rol se encarga de priorizar las tareas en el Product Backlog?
+A. Scrum Master
+B. Product Owner
+C. Development Team
+D. Stakeholder
+ANSWER: B
+
+¿Cuál es la duración típica de un Sprint en Scrum?
+A. Un mes
+B. Una semana
+C. Tres meses
+D. De dos a cuatro semanas
+ANSWER: D
+
+En Scrum, ¿qué documento describe las funcionalidades que debe tener el producto final?
+A. Sprint Backlog
+B. Product Backlog
+C. Incremento
+D. Roadmap
+ANSWER: B
+
+¿Qué realiza el Scrum Master en una sesión de Daily Scrum?
+A. Establece los objetivos del Sprint
+B. Facilita la comunicación entre el equipo
+C. Define las tareas a realizar
+D. Escribe los requisitos del producto
+ANSWER: B
+
+¿Cuál es la responsabilidad principal del Development Team en Scrum?
+A. Gestionar el Product Backlog
+B. Tomar decisiones sobre la metodología de trabajo
+C. Desarrollar el software según lo estipulado en el Sprint Backlog
+D. Validar los productos entregados
+ANSWER: C
+
+En Scrum, ¿qué es un Sprint Review?
+A. Una reunión para planificar el próximo Sprint
+B. Una reunión donde se presentan los avances y el incremento del Sprint
+C. Una sesión de entrenamiento del equipo
+D. Una reunión de retroalimentación con los clientes
+ANSWER: B
+
+¿Qué es el Product Backlog en Scrum?
+A. Un registro de las tareas diarias del equipo de desarrollo
+B. Un listado de las funcionalidades y características del producto
+C. Un resumen de las lecciones aprendidas en el proyecto
+D. Un informe de las pruebas realizadas en el producto
+ANSWER: B
+
+¿Qué actividad se realiza en la fase de implementación del ciclo de vida de desarrollo de software?
+A. Definir la arquitectura del sistema
+B. Escribir y probar el código fuente
+C. Crear el diseño de la interfaz de usuario
+D. Validar los requisitos con el cliente
+ANSWER: B
+
+¿Qué sucede al final de un Sprint en Scrum?
+A. El equipo comienza un nuevo Sprint sin revisar el trabajo
+B. El equipo presenta el incremento del trabajo realizado
+C. El equipo realiza una reunión para establecer el próximo Sprint Backlog
+D. El cliente decide si el producto está listo para su lanzamiento
+ANSWER: B
+
+¿Cuál es el propósito principal del ciclo de vida de desarrollo de software?
+A. Desarrollar software lo más rápido posible
+B. Asegurar que el software cumpla con las expectativas y requisitos del cliente
+C. Minimizar los costos de desarrollo
+D. Crear productos para competir en el mercado
+ANSWER: B
+
+¿Qué debe hacer el Scrum Master si el equipo no cumple con los objetivos del Sprint?
+A. Asignar más recursos al equipo
+B. Sancionar al equipo por no cumplir con los objetivos
+C. Eliminar tareas del Sprint Backlog
+D. Facilitar la mejora continua del equipo y ayudar a resolver impedimentos
+ANSWER: D
+¿Cómo define la globalización la Real Academia Española?
+A. El desarrollo de software entre diferentes países.
+B. La tendencia de mercados y empresas a extenderse mundialmente.
+C. La coordinación y comunicación entre equipos de trabajo.
+D. La creación de software en una sola localización.
+ANSWER: B
+
+¿Qué nombre recibe el modelo de desarrollo de software?
+A. Desarrollo distribuido.
+B. Desarrollo globalizado.
+C. Desarrollo colocalizado.
+D. Desarrollo deslocalizado.
+ANSWER: C
+
+¿Cuál es una de las bases fundamentales del Desarrollo Global del Software (DSG)?
+A. Equipos colocalizados.
+B. Interacción síncrona y asíncrona.
+C. Equipos centralizados en un solo país.
+D. Limitación de comunicación y coordinación.
+ANSWER: B
+
+¿Qué significa el concepto de inshoring?
+A. La compañía contratante y subcontratante se encuentran en diferente país.
+B. La compañía contratante y subcontratante se encuentran en el mismo país.
+C. Se refiere a comprar productos en el mismo país.
+D. Trabajo relocalizado es realizado por la misma organización.
+ANSWER: B
+
+¿Cuáles son los dos tipos de offshoring que se pueden dar?
+A. Captive Offshored y Offshore Outsourcing.
+B. Lineal Offshored y Offshore Outsourcing.
+C. Captive Offshored y Lineal Outsourcing.
+D. Explícita y semántica.
+ANSWER: A
+
+¿Qué objetivos se pretenden alcanzar cuando una empresa se embarca en un proyecto DGS?
+A. Buena infraestructura.
+B. La proximidad al cliente y empleados.
+C. Más dinero y posición en el mercado.
+D. La proximidad al mercado y al cliente.
+ANSWER: D
+
+¿Cuáles son los tres tipos de distribución de tareas o trabajo?
+A. Basado en módulo, basado en fases y follow the moon.
+B. Basado en tareas, basado en actividades y follow the sun.
+C. Basado en módulo, basado en fases y follow the sun.
+D. Distribución lineal, compleja y mixta.
+ANSWER: C
+
+¿Cuál es uno de los beneficios principales del Desarrollo Global de Software (DGS) según el texto?
+A. Reducir los costos de traslado de profesionales al permitir trabajar con talento global.
+B. Eliminar por completo los gastos de coordinación e integración.
+C. Aumentar significativamente los salarios de los desarrolladores en países de bajos costos.
+D. Disminuir la calidad del software para reducir los costos de producción.
+ANSWER: A
+
+¿Cuáles son los principales desafíos del Desarrollo Global de Software (DGS)?
+A. Comunicación, Coordinación y Control.
+B. Calidad, Costos y Calendarios.
+C. Coordinación, Colaboración y Costos.
+D. Comunicación, Calidad y Clientes.
+ANSWER: A
+
+¿Cuál es uno de los problemas identificados en la aplicación del Desarrollo Global de Software (DGS)?
+A. La falta de herramientas tecnológicas en el mercado.
+B. La ausencia total de métodos y procesos de desarrollo.
+C. La resistencia de los expertos a participar en encuestas.
+D. La existencia de requisitos incompletos o pobremente especificados.
+ANSWER: D
+
+¿Por qué las diferencias lingüísticas y culturales, así como la distancia geográfica, no son consideradas factores determinantes en el éxito de los proyectos DGS?
+A. Porque los ingenieros de software no consideran importantes las diferencias entre los equipos.
+B. Porque el uso de tecnología adecuada y la mejora en el proceso de software han reducido estas distancias.
+C. Porque estos factores solo afectan proyectos pequeños y no los grandes proyectos DGS.
+D. Porque la literatura especializada no reconoce estos factores como clave en DGS.
+ANSWER: B
+
+¿Cómo ayuda la experiencia con DGS con factores como lenguaje y distancia geográfica?
+A. Proporciona soluciones definitivas para todos los problemas del DGS.
+B. Presentar únicamente las limitaciones del DGS en proyectos globales.
+C. La curva de aprendizaje incluye el uso de tecnología adecuada y mediante la mejora de procesos en entornos deslocalizados.
+D. Describir casos específicos de éxito en proyectos de DGS.
+ANSWER: C
+
+¿Qué aspecto requiere mayor investigación en el contexto del DGS?
+A. La validación empírica de cómo las metodologías ágiles benefician el DGS.
+B. La implementación de metodologías tradicionales en proyectos DGS.
+C. El impacto de los factores negativos en el desarrollo de software.
+D. La realización de experimentos con estudiantes sobre problemas de DGS.
+ANSWER: A
+
+¿Cuáles son las tres distancias que se mencionan como desafíos en DGS?
+A. Física, tecnológica y económica.
+B. Geográfica, temporal y sociocultural.
+C. Geográfica, organizacional y cultural.
+D. Temporal, tecnológica y económica.
+ANSWER: B
+
+¿Cuál es el objetivo principal de la fase Release Planning en el desarrollo global de software?
+A. Ejecutar pruebas finales del producto.
+B. Planificar el lanzamiento del producto.
+C. Identificar problemas en la coordinación del equipo.
+D. Crear un modelo de casos de uso definitivo.
+ANSWER: B
+
+¿Qué componente de un sistema de bases de datos se encarga de garantizar la atomicidad, consistencia, aislamiento y durabilidad de las transacciones?
+A. Procesador de consultas
+B. Sistema de gestión de transacciones
+C. Motor de almacenamiento
+D. Interfaz de usuario
+ANSWER: B
+¿Qué componente en una arquitectura de base de datos asegura la consistencia de los datos en un entorno distribuido?
+A. Índices secundarios
+B. Protocolo de commit en dos fases (2PC)
+C. Tablas particionadas
+D. Caché de resultados
+ANSWER: B
+¿Qué rol tiene la responsabilidad principal de gestionar los permisos y accesos a los datos en un entorno de base de datos?
+A. Administrador de seguridad
+B. Diseñador de base de datos
+C. Usuario sofisticado
+D. Administrador de datos
+ANSWER: A
+¿Qué estrategia se utiliza para minimizar la pérdida de datos al realizar copias de seguridad de una base de datos activa sin detener su funcionamiento?
+A. Backup en frío
+B. Backup diferencial
+C. Backup lógico
+D. Backup en caliente
+ANSWER: D
+¿Qué tipo de relación se modela cuando una entidad puede estar asociada con múltiples instancias de otra entidad, pero no viceversa?
+A. Relación uno a uno (1:1)
+B. Relación muchos a muchos (M:N)
+C. Relación uno a muchos (1:N)
+D. Relación autorreferencial
+ANSWER: C
+¿Cuál es la operación de Join que devuelve todos los registros de las tablas involucradas, combinando las filas que coinciden y rellenando con valores nulos cuando no hay coincidencias?
+A. Inner Join
+B. Cross Join
+C. Natural Join
+D. Outer Join
+ANSWER: D
+En el modelo EER, ¿Qué principio garantiza que una instancia de una subclase debe pertenecer siempre a su superclase?
+A. Totalidad
+B. Restricción de herencia
+C. Restricción de pertenencia
+D. Condición de participación
+ANSWER: D
+En el diseño lógico estándar de bases de datos, ¿Cuál es el propósito principal de la normalización?
+A. Reducir la cantidad de datos almacenados
+B. Eliminar redundancias y asegurar la consistencia de los datos
+C. Mejorar el rendimiento de consultas complejas
+D. Garantizar la integridad referencial entre tablas
+ANSWER: B
+¿Qué tipo de organización de archivos en bases de datos permite acceder rápidamente a los registros mediante claves de búsqueda?
+A. Organización secuencial
+B. Organización hash
+C. Organización particionada
+D. Organización indexada
+ANSWER: D
+¿Cuál de las siguientes características distingue a las API basadas en ORM (Object-Relational Mapping) en comparación con las consultas SQL directas?
+A. Mayor control sobre las operaciones de bajo nivel
+B. Generación automática de objetos basados en tablas de la base de datos
+C. Optimización automática de todas las consultas
+D. Requieren menor consumo de memoria
+ANSWER: B
+En SQL, ¿Cómo se define un índice único para evitar valores duplicados en una columna específica?
+A. CREATE INDEX idx_name ON table_name (column_name);
+B. ALTER TABLE table_name ADD INDEX (column_name);
+C. CREATE UNIQUE INDEX idx_name ON table_name (column_name);
+D. CREATE HASHED INDEX idx_name ON table_name (column_name);
+ANSWER: C
+¿Qué sucede si se intenta eliminar un registro en SQL que está referenciado por otra tabla con una restricción de clave externa y sin configuraciones adicionales?
+A. El registro será eliminado automáticamente junto con las referencias
+B. Solo se eliminará el registro en la tabla referenciada
+C. Se producirá un error, pero los registros referenciados seguirán existiendo
+D. La eliminación será bloqueada debido a la restricción de integridad referencial
+ANSWER: D
+¿Qué concepto describe la práctica de otorgar a los usuarios únicamente los permisos mínimos necesarios para realizar sus funciones?
+A. Escalamiento de privilegios
+B. Principio de privilegio mínimo
+C. Acceso discrecional
+D. Gestión de claves
+ANSWER: B
+¿Cómo puede influir el diseño de índices en el rendimiento de una consulta SQL que utiliza una cláusula JOIN?
+A. Los índices mejoran únicamente las consultas que no utilizan JOIN
+B. Los índices siempre ralentizan las consultas con JOIN debido al costo de mantenimiento
+C. El diseño de índices no afecta el rendimiento de las consultas con JOIN
+D. El uso de índices en columnas utilizadas en el JOIN reduce la necesidad de ordenamientos adicionales
+ANSWER: D
+¿Qué función tiene el lenguaje XQuery en el manejo de datos XML?
+A. Define cómo se deben validar los datos en un documento XML
+B. Sirve únicamente para extraer datos específicos de documentos JSON
+C. Permite realizar consultas estructuradas y transformaciones sobre documentos XML
+D. Convierte documentos XML en bases de datos relacionales automáticamente
+ANSWER: C
+
+
+
+
+
+
+
+
+
+
+
+¿Cuál de las siguientes opciones indica las etapas del proceso de experimentación en Ingeniería de Software en el orden adecuado?
+A. Definición del alcance, Planificación, Operación, Análisis e interpretación, Presentación y difusión.
+B. Definición del objeto, Planteamiento, Operacionalización, Arreglo e interpelación, Prestación y discreción.
+C. Planificación, Definición del alcance, Operación, Análisis e interpretación, Presentación y difusión.
+D. Presentación y alcance, Planificación, Operación, Análisis e interpretación, y Definición de la difusión.
+ANSWER: A
+
+¿Cuál de las siguientes opciones corresponde a la definición de una encuesta?
+A. Es el instrumento (el cuestionario o la lista de verificación) para recopilar información.
+B. Es un sistema integral de recopilación de información para describir, comparar o explicar conocimientos, actitudes y comportamientos.
+C. Estudio que se le realiza a un grupo de personas, estas no representan a una población más amplia.
+D. Es una conversación dirigida, con un propósito específico y que usa un formato de preguntas y respuestas.
+ANSWER: B
+
+¿Cuál de las siguientes opciones corresponde a las características de los estudios de control en el diseño de encuestas?
+A. Reúnen a los participantes y los asignan a grupos experimentales en el mismo momento. Los participantes se asignan a los grupos experimentales al azar.
+B. En este tipo de diseño, las comparaciones entre grupos se basan en datos recopilados en otras encuestas anteriores.
+C. Estos estudios se basan en medidas previas y posteriores al tratamiento, como estudios longitudinales.
+D. Son estudios en los que se solicita información a los participantes antes y después de alguna intervención.
+ANSWER: B
+
+¿Cuál de las siguientes opciones representa un ejemplo de variable dependiente en experimentos de Ingeniería de Software?
+A. El sistema operativo de los servidores.
+B. El número de desarrolladores en el equipo.
+C. La satisfacción del usuario.
+D. El lenguaje de programación utilizado.
+ANSWER: C
+
+¿Qué afirmación es cierta respecto a los cuasiexperimentos en Ingeniería de Software?
+A. Requieren asignación aleatoria de los participantes a los grupos de control y experimental.
+B. No permiten la inferencia de relaciones causales.
+C. Permiten estudiar el efecto de intervenciones en situaciones reales.
+D. Generalmente conducen a resultados menos fiables que los estudios observacionales.
+ANSWER: C
+
+¿Cuál de las siguientes opciones describe una razón para realizar un experimento en Ingeniería de Software?
+A. Validar y verificar el código fuente.
+B. Evaluar la efectividad de diferentes metodologías de desarrollo.
+C. Inhibir la interacción del usuario con el software.
+D. Determinar las preferencias de color en la interfaz de usuario.
+ANSWER: B
+
+¿Cuál de los siguientes elementos es fundamental en una revisión sistemática de la literatura?
+A. Revisar una cantidad representativa de artículos.
+B. Usar términos de búsqueda vagos para abarcar más temas.
+C. Interpretar solo los artículos que confirman la hipótesis.
+D. Analizar y sintetizar toda la información relevante.
+ANSWER: D
+
+¿Qué es una hipótesis en el contexto de la investigación en Ingeniería de Software?
+A. Una suposición arbitraria sin evidencia previa.
+B. Una declaración comprobable que busca explicar un fenómeno.
+C. Un resultado esperado basado en una prueba estadística.
+D. Una teoría general que no requiere validación.
+ANSWER: B
+
+¿Qué elemento es esencial al definir un experimento en Ingeniería de Software?
+A. Selección de herramientas avanzadas.
+B. Definición clara de variables independientes y dependientes.
+C. Recolección aleatoria de datos previos.
+D. Uso exclusivo de participantes expertos.
+ANSWER: B
+
+¿Cuál es el objetivo principal de una investigación exploratoria en Ingeniería de Software?
+A. Probar hipótesis específicas.
+B. Formular nuevas preguntas y conceptos.
+C. Comparar dos metodologías establecidas.
+D. Evaluar el impacto de una intervención.
+ANSWER: B
+
+¿Cuál de las siguientes afirmaciones corresponde al propósito de un diseño factorial en experimentación?
+A. Analizar los efectos de una sola variable independiente.
+B. Evaluar las interacciones entre múltiples variables.
+C. Reducir el tiempo de experimentación mediante simplificación.
+D. Permitir una selección más amplia de sujetos de prueba.
+ANSWER: B
+
+¿Cuál es la principal razón para realizar revisiones sistemáticas en Ingeniería de Software?
+A. Identificar lagunas en el conocimiento actual.
+B. Comparar herramientas de desarrollo existentes.
+C. Probar una hipótesis específica.
+D. Validar datos observacionales.
+ANSWER: A
+
+¿Cuál de las siguientes técnicas es clave para evitar sesgos en un experimento?
+A. Utilizar participantes expertos.
+B. Aleatorizar la asignación de tratamientos.
+C. Reducir el tamaño de la muestra.
+D. Limitar el tiempo de recolección de datos.
+ANSWER: B
+
+¿Qué tipo de datos se recopila más comúnmente en estudios cualitativos?
+A. Resultados numéricos.
+B. Respuestas abiertas y observaciones.
+C. Estadísticas de desempeño.
+D. Datos de sensores automáticos.
+ANSWER: B
+
+¿Cuál es un beneficio clave de los estudios de caso en Ingeniería de Software?
+A. Generalizan resultados para toda la industria.
+B. Proveen un análisis detallado de situaciones específicas.
+C. Requieren menos tiempo que otros métodos.
+D. Eliminan la necesidad de datos cuantitativos.
+ANSWER: B
+Su objetivo principal es determinar el alcance de la investigación  sobre un tema de investigación específico y clasificar información, mas no de profundizar la información técnica.
+A) Revisión sistemática de literatura (_SLR_)
+B) Estudio de mapeo sistemático (SMS)
+C) Revisión Sistemática de los Sistemas (SRS)
+D) Revisión Sistemática de Mapas(RSM)
+ANSWER: B
+En lugar del apellido ¿Qué se coloca en el caso que sea un autor corporativo?
+A) Nombre de la organización
+B) “Anónimo”
+C) Nombre del Representante de la Empresa
+D) _sf._
+ANSWER: A
+¿Qué se utiliza en la cita de para fraseo o no literal?
+A) La moraleja del texto
+B) Los datos del autor
+C) Las ideas de autor con sus propias palabras
+D) Se cita todo el texto en comillas _" .."_
+ANSWER: C
+¿Qué escoge un autor o escritor en la lista de referencias?
+A) Aquellas citas o fuentes que utilizo en su trabajo se las agrega como referencias.
+B) Fundamentos de la lectura.
+C) Únicamente aquellas citas o fuentes mas relevantes.
+D) No se agregan las citas, únicamente las referencias al final del documento.
+ANSWER: A
+¿Cuál es la última versión de las normas APA?
+A) Segunda edición
+B) Quinta edición
+C) Sexta edición
+D) Séptima edición
+ANSWER: D
+El proceso de la investigación comienza con ....
+A) recopilando trabajos relacionados
+B) planteando un problema al que se busca respuesta
+C) determinando el alcance de la investigación
+D) definiendo los objetivos
+ANSWER: B
+El conocimiento científico posee tres características, una de ellas es:
+A) Tener ciencia
+B) Tener conocimiento
+C) Ser científico
+D) No debe ser subjetivo
+ANSWER: D
+Las partes principales de un artículo científico son(descritos en el orden respectivo):
+A) Metodología, desarrollo, resultados, conclusiones, recomendaciones
+B) Resumen, introducción, figuras, resultados, bibliografía
+C) Resumen, introducción, metodología o desarrollo, resultados, conclusiones
+D) Indice, resumen, palabras claves, resultados, conclusiones
+ANSWER: C
+¿Qué significa APA?
+A) Asociación Americana de Psicología
+B) Asociación Pedagógica Americana
+C) Asociación de Papers Americanos
+D) Asociación de Presentadores y Autores
+ANSWER: A
+La Cita: Tuttle, L. J., & Wright, S. D. ; es una cita que se usa para _____
+A) El idioma español
+B) El idioma inglés
+C) Ningún Idioma
+D) En todos los idiomas se utiliza la misma cita
+ANSWER: B
+Su característica esencial es que se lleva a cabo en el lugar de ocurrencia del fenómeno.
+A) Investigación aplicada
+B) Investigación teórica
+C) Investigación analítica
+D) Investigación de campo
+ANSWER: D
+Investigación que responde a las consecuencias prácticas que tiene la investigación básica.
+A) Investigación aplicada
+B) Investigación teórica
+C) Investigación analítica
+D) Investigación de campo
+ANSWER: A
+La escritura _______ implica hacer un juicio sobre la calidad de algo
+A) Escritura Descriptiva
+B) Escritura crítica
+C) Escritura comparativa
+D) Escritura Reflexiva
+ANSWER: B
+La escritura _______ proporciona información introductoria y de fondo/contextual información contextual
+A) Escritura Descriptiva
+B) Escritura crítica
+C) Escritura comparativa
+D) Escritura Reflexiva
+ANSWER: B
+Al armar una cadena de búsqueda, el Operador OR indica
+A) Que los resultados se ampliaran
+B) Que los resultados disminuirán
+C) Es un operador que no cambia el numérico resultante
+D) Los resultados se dividirán acorde al número de OR que se encuentren
+ANSWER: A
+¿Qué es una base de datos multidimensional?
+A) Una base de datos que utiliza índices para almacenar información textual.
+B) Una base de datos diseñada para operaciones OLAP y análisis de datos organizados en múltiples dimensiones.
+C) Un sistema de almacenamiento basado en tablas relacionales únicamente.
+D) Una base de datos que almacena datos en formato JSON exclusivamente.
+ANSWER: B
+¿Cuál es el propósito principal de las bases de datos multidimensionales?
+A) Reemplazar las bases de datos relacionales en sistemas transaccionales.
+B) Almacenar grandes volúmenes de datos sin estructura.
+C) Facilitar el análisis de datos mediante consultas rápidas en entornos OLAP.
+D) Gestionar flujos de datos en tiempo real.
+ANSWER: C
+¿Cómo se organiza la información en una base de datos multidimensional?
+A) En tablas con filas y columnas tradicionales.
+B) En gráficos dirigidos y nodos jerárquicos.
+C) En cubos de datos que permiten vistas desde múltiples perspectivas.
+D) En estructuras planas lineales sin jerarquías.
+ANSWER: C
+¿Qué es el particionamiento en bases de datos?
+A) La creación de índices secundarios para optimizar las consultas.
+B) La división de una base de datos en segmentos más pequeños y manejables.
+C) La replicación de datos en múltiples servidores para mejorar la disponibilidad.
+D) La eliminación de datos duplicados en una base de datos.
+ANSWER: B
+¿Qué tipo de particionamiento se basa en un rango específico de valores en una columna?
+A) Particionamiento por rango.
+B) Particionamiento por hash.
+C) Particionamiento por lista.
+D) Particionamiento híbrido.
+ANSWER: A
+¿Cuál es una desventaja potencial de la fragmentación?
+A) Dificulta la creación de vistas materializadas.
+B) Incrementa los tiempos de acceso para todas las consultas.
+C) Puede requerir esfuerzos adicionales para garantizar la consistencia de datos.
+D) Aumenta los costos de almacenamiento debido a datos duplicados.
+ANSWER: C
+¿Qué tipo de replicación permite que todos los nodos puedan leer y escribir datos?
+A) Replicación maestra-maestra.
+B) Replicación maestra-esclava.
+C) Replicación por fragmentación.
+D) Replicación unidireccional.
+ANSWER: A
+¿Cuál es una característica clave de la replicación en bases de datos no relacionales como MongoDB?
+A) Soporte para transacciones ACID estrictas.
+B) Uso de réplicas en un conjunto de réplicas (replica set) para garantizar alta disponibilidad.
+C) Uso de tablas normalizadas para optimizar el almacenamiento.
+D) Dependencia de índices compuestos para la replicación.
+ANSWER: B
+¿Cuál es una ventaja de la replicación sincrónica?
+A) Mejora la velocidad de las escrituras al no esperar confirmación de los nodos.
+B) Garantiza que todos los nodos tengan los datos más actualizados en todo momento.
+C) Simplifica el proceso de recuperación ante fallos.
+D) No requiere conexión constante entre los nodos.
+ANSWER: B
+¿Qué tipo de replicación se utiliza en sistemas distribuidos donde los datos se dividen en fragmentos ?
+A) Replicación sincrónica.
+B) Replicación por sharded replication.
+C) Replicación en espejo.
+D) Replicación maestra-maestra.
+ANSWER: B
+
+¿Qué representa un número binario en un sistema digital?
+A. Una representación de estados eléctricos.
+B. Un código analógico.
+C. Una señal continua.
+D. Una forma de almacenar datos en hexadecimal.
+ANSWER: A
+
+¿Qué operación lógica básica utiliza el operador OR?
+A. Multiplicación lógica.
+B. Adición lógica.
+C. Complemento lógico.
+D. Intersección lógica.
+ANSWER: B
+
+¿Cuál es el resultado de la operación lógica AND para dos entradas verdaderas?
+A. Verdadero.
+B. Falso.
+C. Indeterminado.
+D. Alternante.
+ANSWER: A
+
+¿Qué herramienta simplifica funciones booleanas mediante diagramas?
+A. Flip Flop.
+B. Mapas de Karnaugh.
+C. Contadores.
+D. Decodificadores.
+ANSWER: B
+
+¿Qué componente almacena información temporalmente en un circuito secuencial?
+A. Comparadores.
+B. Flip Flops.
+C. Multiplexores.
+D. Codificadores.
+ANSWER: B
+
+¿Qué característica distingue a un sistema digital de un sistema analógico?
+A. Utiliza señales continuas.
+B. Trabaja exclusivamente con números decimales.
+C. Representa datos mediante señales discretas.
+D. Es incompatible con señales eléctricas.
+ANSWER: C
+
+¿Qué función realiza un decodificador en un circuito lógico?
+A. Convierte un código binario en un código decimal.
+B. Genera señales continuas para el circuito.
+C. Multiplica las entradas digitales.
+D. Almacena datos de manera temporal.
+ANSWER: A
+
+¿Qué tipo de contador puede incrementar y decrementar valores?
+A. Contador ascendente.
+B. Contador descendente.
+C. Contador bidireccional.
+D. Contador paralelo.
+ANSWER: C
+
+¿Qué lenguaje interactúa directamente con el hardware?
+A. Lenguaje de máquina.
+B. Lenguaje de alto nivel.
+C. Lenguaje ensamblador.
+D. Lenguaje de scripting.
+ANSWER: A
+
+¿Qué estructura almacena instrucciones en un CPU?
+A. Registros.
+B. ALU.
+C. Buses.
+D. Temporizadores.
+ANSWER: A
+
+¿Qué operación lógica devuelve verdadero si todas sus entradas son falsas?
+A. OR.
+B. AND.
+C. NOR.
+D. XOR.
+ANSWER: C
+
+¿Qué unidad del sistema realiza cálculos aritméticos en el procesador?
+A. ALU.
+B. CU.
+C. Registros.
+D. Memoria caché.
+ANSWER: A
+
+¿Qué representa un Flip Flop tipo D en un circuito secuencial?
+A. Un contador binario.
+B. Un circuito lógico combinacional.
+C. Un almacenamiento de un bit con control de reloj.
+D. Un decodificador de señales binarias.
+ANSWER: C
+
+¿Qué tipo de bus se utiliza para transmitir datos entre componentes de la computadora?
+A. Bus de direcciones.
+B. Bus de control.
+C. Bus de datos.
+D. Bus interno.
+ANSWER: C
+
+¿Qué método se utiliza para reducir funciones booleanas complejas?
+A. Multiplexores.
+B. Simplificación algebraica.
+C. Mapas de Karnaugh.
+D. Codificadores binarios.
+ANSWER: C
+¿Qué dispositivo se utiliza para conectar varias redes y dirigir paquetes entre ellas?
+A. Switch
+B. Router
+C. Hub
+D. Repetidor
+ANSWER: B
+
+¿Qué capa del modelo OSI se encarga de la encriptación de datos?
+A. Capa de Sesión
+B. Capa de Aplicación
+C. Capa de Presentación
+D. Capa de Transporte
+ANSWER: C
+
+¿Cuál es la principal función del protocolo DHCP?
+A. Asignar direcciones IP automáticamente.
+B. Resolver nombres de dominio.
+C. Controlar el acceso a la red.
+D. Establecer conexiones seguras.
+ANSWER: A
+
+¿Qué dirección IP pertenece al rango de direcciones privadas de clase A?
+A. 192.168.0.1
+B. 172.16.0.1
+C. 10.0.0.1
+D. 224.0.0.1
+ANSWER: C
+
+¿Qué protocolo se utiliza para transferir archivos entre dispositivos en una red?
+A. FTP
+B. HTTP
+C. SMTP
+D. SNMP
+ANSWER: A
+
+¿Qué tipo de cable es inmune a las interferencias electromagnéticas?
+A. Par trenzado sin blindaje (UTP)
+B. Cable coaxial
+C. Fibra óptica
+D. Par trenzado blindado (STP)
+ANSWER: C
+
+¿Qué método de enrutamiento utiliza tablas configuradas manualmente?
+A. Enrutamiento estático
+B. Enrutamiento dinámico
+C. Enrutamiento por defecto
+D. Enrutamiento híbrido
+ANSWER: A
+
+¿Qué estándar define las redes inalámbricas Wi-Fi?
+A. IEEE 802.3
+B. IEEE 802.11
+C. IEEE 802.15
+D. IEEE 802.16
+ANSWER: B
+
+¿Qué protocolo se utiliza para resolver direcciones IP a direcciones MAC?
+A. DNS
+B. ARP
+C. ICMP
+D. DHCP
+ANSWER: B
+
+¿Qué topología de red utiliza un único cable compartido para la transmisión de datos?
+A. Estrella
+B. Anillo
+C. Bus
+D. Malla
+ANSWER: C
+
+¿Cuál es la ventaja principal de las VLANs?
+A. Mayor velocidad de transmisión de datos.
+B. Segmentación de redes para mejorar la seguridad y el rendimiento.
+C. Reducción del número de routers en la red.
+D. Aumentar el alcance de la señal inalámbrica.
+ANSWER: B
+
+¿Qué significa VLSM en el contexto de redes IP?
+A. Variación de Longitud de Subred Máscara
+B. Variable Length Subnet Mask
+C. Virtual Link State Management
+D. Verificación de Longitud de Subred Máscara
+ANSWER: B
+
+¿Qué capa del modelo OSI se encarga de la codificación y transmisión de datos?
+A. Capa de Aplicación
+B. Capa de Red
+C. Capa de Enlace de Datos
+D. Capa Física
+ANSWER: D
+
+¿Cuál de las siguientes topologías utiliza un único cable para conectar todos los dispositivos en red?
+A. Estrella
+B. Anillo
+C. Bus
+D. Malla
+ANSWER: C
+
+¿Cuál es la principal función de un router en una red?
+A. Proporcionar direcciones IP a los dispositivos.
+B. Conectar diferentes redes y dirigir paquetes de datos.
+C. Actuar como punto de acceso inalámbrico.
+D. Servir como un servidor de archivos.
+ANSWER: B
+¿Qué objetivo principal tiene la seguridad informática?
+A. Garantizar la velocidad de los sistemas.
+B. Proteger la confidencialidad, integridad y disponibilidad de los datos.
+C. Aumentar la complejidad de las aplicaciones.
+D. Minimizar el uso de recursos tecnológicos.
+ANSWER: B
+
+¿Qué se entiende por vulnerabilidad en seguridad informática?
+A. Un intento fallido de acceso no autorizado.
+B. Una debilidad explotable en un sistema o aplicación.
+C. Un sistema con recursos limitados.
+D. La capacidad de un software para detectar ataques.
+ANSWER: B
+
+¿Qué tipo de encriptación utiliza claves diferentes para cifrar y descifrar datos?
+A. Encriptación simétrica.
+B. Encriptación asimétrica.
+C. Encriptación híbrida.
+D. Encriptación de bloques.
+ANSWER: B
+
+¿Qué herramienta tecnológica garantiza la integridad de los datos?
+A. Funciones hash.
+B. VPN.
+C. Firewalls.
+D. IDS.
+ANSWER: A
+
+¿Qué garantiza la autenticación de usuarios en un sistema?
+A. La identidad del usuario es validada correctamente.
+B. Los datos son cifrados automáticamente.
+C. La velocidad de acceso al sistema es optimizada.
+D. Se evita cualquier tipo de ataque externo.
+ANSWER: A
+
+¿Cuál es una característica del modelo de control de acceso basado en roles (RBAC)?
+A. Cada usuario tiene permisos únicos y personalizados.
+B. Los permisos se asignan según el rol del usuario en la organización.
+C. Los permisos se heredan automáticamente entre usuarios.
+D. No es compatible con grandes organizaciones.
+ANSWER: B
+
+¿Qué función cumple un firewall en la seguridad informática?
+A. Detecta malware en el sistema.
+B. Restringe y filtra el tráfico no autorizado en la red.
+C. Garantiza la velocidad máxima de la red.
+D. Cifra automáticamente las comunicaciones.
+ANSWER: B
+
+¿Qué protocolo asegura las conexiones HTTPS?
+A. FTP.
+B. TLS/SSL.
+C. IPSec.
+D. SMTP.
+ANSWER: B
+
+¿Qué herramienta se utiliza para prevenir intrusiones en una red?
+A. Firewall.
+B. IPS.
+C. PKI.
+D. VPN.
+ANSWER: B
+
+¿Qué es una firma digital?
+A. Un método para autenticar identidades electrónicas.
+B. Un resumen cifrado de un archivo o mensaje.
+C. Un protocolo de comunicación segura.
+D. Un tipo de certificado digital para VPNs.
+ANSWER: B
+
+¿Qué significa el principio de confidencialidad en seguridad informática?
+A. Asegurar que los datos estén disponibles para todos.
+B. Proteger la información contra accesos no autorizados.
+C. Garantizar la exactitud de los datos almacenados.
+D. Evitar la pérdida de datos críticos.
+ANSWER: B
+
+¿Qué herramienta tecnológica se utiliza para garantizar la autenticidad de un correo electrónico?
+A. VPN.
+B. Certificado digital.
+C. Firewall.
+D. IDS.
+ANSWER: B
+
+¿Qué modelo de control de acceso basa los permisos en reglas definidas por el administrador?
+A. DAC.
+B. MAC.
+C. RBAC.
+D. ABAC.
+ANSWER: B
+
+¿Qué protocolo se utiliza comúnmente para establecer conexiones seguras en redes privadas virtuales (VPN)?
+A. HTTPS.
+B. IPSec.
+C. SMTP.
+D. FTP.
+ANSWER: B
+
+¿Qué componente de seguridad es clave en la arquitectura de blockchain?
+A. PKI.
+B. Algoritmos de consenso.
+C. TLS/SSL.
+D. IDS.
+ANSWER: B
+¿Qué define a un sistema operativo de tiempo real?
+A. Prioriza la interacción con el usuario.
+B. Proporciona respuestas rápidas y predecibles a eventos.
+C. Es utilizado exclusivamente en computadoras personales.
+D. Ofrece interfaces gráficas avanzadas.
+ANSWER: B
+
+¿Cuál es la principal diferencia entre arquitectura monolítica y de microkernel?
+A. La arquitectura monolítica utiliza menos memoria.
+B. El microkernel divide sus funciones en módulos independientes.
+C. La arquitectura monolítica es más segura.
+D. Los microkernels no soportan multitarea.
+ANSWER: B
+
+¿Qué comando de Linux se utiliza para listar archivos y directorios?
+A. pwd
+B. ls
+C. mkdir
+D. cd
+ANSWER: B
+
+¿Qué es el BCP (Bloque de Control de Procesos)?
+A. Un registro de los archivos abiertos por el sistema operativo.
+B. Una estructura que almacena información sobre un proceso en ejecución.
+C. Un módulo de red en sistemas operativos Linux.
+D. Una herramienta para programar en bash.
+ANSWER: B
+
+¿Qué tipo de sistemas operativos se utilizan en dispositivos móviles?
+A. Sistemas operativos de tiempo real.
+B. Sistemas operativos distribuidos.
+C. Sistemas operativos empotrados.
+D. Sistemas operativos de red.
+ANSWER: C
+
+¿Qué hace el comando 'chmod' en Linux?
+A. Cambia el propietario de un archivo.
+B. Modifica los permisos de un archivo o directorio.
+C. Mueve archivos a otra ubicación.
+D. Elimina archivos permanentemente.
+ANSWER: B
+
+¿Cuál es la función principal de la memoria virtual en un sistema operativo?
+A. Almacenar procesos en ejecución.
+B. Simular más memoria RAM de la que está físicamente disponible.
+C. Aumentar la velocidad del sistema.
+D. Conectar dispositivos de almacenamiento externos.
+ANSWER: B
+
+¿Qué algoritmo de planificación de procesos utiliza un intervalo fijo de tiempo para cada proceso?
+A. FIFO
+B. Round Robin
+C. SJF
+D. Prioridad
+ANSWER: B
+
+¿Qué capa del sistema operativo se encarga de la comunicación directa con el hardware?
+A. Capa de Aplicación
+B. Kernel
+C. Interfaz de Usuario
+D. Middleware
+ANSWER: B
+
+¿Qué característica distingue a los sistemas operativos de software libre?
+A. Son gratuitos para cualquier uso.
+B. Permiten acceso al código fuente y su modificación.
+C. Solo están disponibles para servidores.
+D. Ofrecen soporte técnico exclusivo.
+ANSWER: B
+
+¿Qué caracteriza a la arquitectura monolítica de un sistema operativo?
+A. Todos los servicios del sistema operativo están integrados en un único módulo.
+B. Utiliza módulos separados para cada servicio.
+C. Es compatible únicamente con sistemas distribuidos.
+D. Se basa en comunicación directa entre procesos.
+ANSWER: A
+
+¿Qué componente del modelo de los cinco estados se activa cuando un proceso está esperando un recurso?
+A. Estado de ejecución.
+B. Estado listo.
+C. Estado de espera.
+D. Estado terminado.
+ANSWER: C
+
+¿Qué comando de Linux se utiliza para crear un nuevo proceso?
+A. exec
+B. fork
+C. kill
+D. wait
+ANSWER: B
+
+¿Qué ventaja principal ofrecen los sistemas operativos de software libre frente a los comerciales?
+A. Compatibilidad con todos los dispositivos de hardware.
+B. Mayor estabilidad en servidores empresariales.
+C. Acceso al código fuente para personalización.
+D. Interfaces gráficas más avanzadas.
+ANSWER: C
+
+¿Qué tipo de memoria utiliza el sistema operativo para almacenar temporalmente los datos de procesos activos?
+A. Memoria virtual.
+B. Memoria secundaria.
+C. Memoria caché.
+D. Memoria principal.
+ANSWER: D
+Tomando como referencia el siguiente ejemplo: “Cuando una aplicación añade una caja de dialogo con  un mensaje de «Confirmar envío de los datos» antes de que el usuario pase a la etapa siguiente.”, es un ejemplo de principio de usabilidad:
+A. Prevención de errores
+B. Reconocimiento en vez de recuerdo
+C. Diseño minimalista y estético
+D. Visibilidad del estado del sistema
+
+ANSWER: A
+
+Una aplicación de software utiliza botones diseñados con iconos fácilmente reconocibles, es una característica de principio de usabilidad:
+
+A. Prevención de errores
+B. Reconocimiento en vez de recuerdo
+C. Diseño minimalista y estético
+D. Visibilidad del estado del sistema
+
+ANSWER: B
+
+El …………………………………………. contiene todo lo que hace referencia a la parte visual de una aplicación de software, es decir, la disposición de todos los elementos con los que el usuario va a interactuar cuando entre a la aplicación.
+A. diseño de navegaciòn
+B. diseño UX (User eXperience)
+C. diseño UI (User Interface)
+D. diseño IxD (Interaction Design)
+
+ANSWER: C
+
+Está fuertemente ligado al diseño UX, es el estudio de las interacciones que realiza el usuario con una aplicación de software y su dispositivo: uso de teclado, dispositivo táctil, tiempos invertidos en hacer clic, en ampliar una sección, etc.
+
+A. diseño de navegaciòn
+B. diseño UX (User eXperience)
+C. diseño UI (User Interface)
+D. diseño IxD (Interaction Design)
+
+ANSWER: D
+
+Uno de los sistemas de evaluación de la usabilidad llamados de "inspección", se encuentra la evaluación……………… que consiste en que determinados evaluadores revisan la interfaz siguiendo unos principios de usabilidad reconocidos. La revisión se realiza de manera individual y asumiendo el papel de usuario.
+
+A. Cognitiva
+B. Observación de campo
+C. Heurística
+D. Focus group
+
+ANSWER: C
+
+¿Cuáles de los siguientes son objetivos de la web relacionados con la usabilidad?
+A. Conseguir que la información relevante esté colocada en la página principal
+B. Incrementar los ingresos del usuario
+C. Facilitar la navegación de los usuarios en la web
+D. Conseguir que los usuarios puedan comunicarse con el diseñador de la interfaz
+
+ANSWER: C
+
+¿Cuál de los siguientes son métodos para analizar la usabilidad de una interfaz?
+A. La evaluación heurística a cargo de una persona con experiencia en usabilidad
+B. Un compilador específico para el ámbito visual
+C. Una encuesta entre la población antes de divulgar la página
+D. Pensando en voz baja
+
+ANSWER: A
+
+Son reglas que sirven para limitar las acciones que el sistema o los usuarios deben realizar. Se les conoce como:
+A. Inferencias
+B. Hechos
+C. Validaciones
+D. Restricciones
+
+ANSWER: D
+
+Con el fin de alcanzar la eficiencia en una aplicación web y la satisfacción del usuario se debe tomar en consideración para la evaluación los siguientes atributos:
+A. Infraestructura, usabilidad
+B. Navegabilidad, infraestructura
+C. Seguridad, usabilidad, navegabilidad
+D. Usabilidad, diseño, tiempo
+
+ANSWER: C
+
+¿Qué guía de estilo para la Web explica sobre la navegación con teclado y otras características de las interfaces de usuario a fin de que se beneficien a usuarios con discapacidades?
+
+A. W3C- “Web Content Accesibility Guidelines (WCAG)”.
+B. W3C- “Authoring Tool Accesibility Guidelines (ATAG)”.
+C. W3C- “User Agent Accesibility Guidelines (UAAG).
+D. W3C- “User Agent Accesibility Guidelines (UAAG).
+
+ANSWER: C
+Un proceso de software es un conjunto de ____________ que conducen a la creación de un producto de software: (Seleccione una respuesta)
+A. Personas
+B. Actividades
+C. Pruebas
+D. Componentes
+ANSWER: B
+
+¿Cuál no es un elemento típico del proceso de software?:
+A. Estados
+B. Actividad
+C. Rol
+D. Producto
+ANSWER: A
+
+Algunas actividades para los procesos de software son:
+A. Especificación, diseño, validación, generación.
+B. Diseño, creación, validación, especificación.
+C. Especificación, diseño, validación, evolución.
+D. Diseño, ejecución, validación, especificación.
+ANSWER: C
+
+Se denomina modelo_____________ porque su característica principal es que no se comienza con un paso hasta que no se ha terminado el anterior.
+A. Espiral
+B. Evolutivo
+C. Incremental
+D. Cascada
+ANSWER: D
+
+¿Cuál no es considerado un modelo genérico?: (Selecciones una respuesta)
+A. Rup
+B. Cascada
+C. Evolutivo
+D. Prototipado
+ANSWER: A
+
+El orden que debe seguir las etapas del proceso de software es:
+A. Requisitos, diseño, implementación, pruebas, mantenimiento.
+B. Requisitos, implementación, diseño, mantenimiento, pruebas.
+C. Requisitos, diseño, implementación, mantenimiento, pruebas.
+D. Diseño, requisitos, implementación, pruebas, mantenimiento.
+ANSWER: A
+
+¿Cuál es el estándar que regula los modelos de evaluación del proceso del ciclo de vida del software?
+A. IEE830
+B. ISO/IEC 15504
+C. ISO/IEC/IEEE 12507
+D. ISO/IEE 15244
+ANSWER: B
+
+¿Cuál es considerada una metodología tradicional?
+A. XP
+B. SCRUM
+C. AUP
+D. CASCADA
+ANSWER: D
+
+El equipo de un proyecto basado en metodología __________ es: cliente, programadores, testers, coach, manager. (Seleccione una respuesta)
+A. AUP
+B. SCRUM
+C. XP
+D. KANBAN
+ANSWER: C
+
+Es un Software que permite modelar y documentar procesos de negocio basado en el estándar conocido como Business Process Model and Notation (BPMN) (Seleccione una respuesta)
+A. Bizagi
+B. Rational Rose
+C. Microsoft Visio
+D. Start UML
+ANSWER: A
+
+¿El modelo basado en componentes, con cuál modelo comparte características?
+A. Modelo en cascada
+B. Modelo de prototipos
+C. Modelo espiral
+D. Modelo incremental
+ANSWER: C
+
+¿Cómo construye aplicaciones el modelo basado en componentes?
+A. A través de fragmentos de software prefabricados.
+B. Creando código único para cada aplicación.
+C. Usando exclusivamente código fuente abierto.
+D. Desarrollando código sin modularización.
+ANSWER: A
+
+¿Qué característica del modelo basado en componentes reduce el ciclo de desarrollo?
+A. La inclusión de múltiples pruebas manuales
+B. La reutilización de componentes preconstruidos
+C. La dependencia de un solo equipo de desarrollo
+D. La eliminación de etapas iterativas
+ANSWER: B
+
+¿Cuál de los siguientes procesos NO está incluido en los modelos de proceso de ISO/IEC 15504?
+A. Gestión de Proyectos
+B. Desarrollo de Software
+C. Gestión de Recursos Humanos
+D. Verificación y Validación
+ANSWER: C
+
+¿Cuál es el nivel de capacidad que indica que un proceso se mejora continuamente a través de la innovación?
+A. Establecido
+B. Predecible
+C. Optimizado
+D. Realizado
+ANSWER: C
