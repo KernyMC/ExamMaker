@@ -33,6 +33,10 @@
            background: #337ab7;
            color: white;
            border-radius: 5px;
+           position: fixed;
+           top: 20px;
+           right: 20px;
+           z-index: 1000;
        }
        .feedback {
            margin-top: 10px;
@@ -67,6 +71,7 @@
 <body>
    <div class="button-section">
        <button id="loadDefaultExam" class="load-button">Cargar Examen</button>
+       <button id="loadRandomExam" class="load-button">Cargar Examen Aleatorio</button>
    </div>
    <div class="upload-section">
        <input type="file" id="fileInput" accept=".txt,.docx">
@@ -83,8 +88,9 @@
        // Cargar el examen por defecto al iniciar
        window.onload = loadDefaultExam;
        
-       // Evento para el botón de cargar examen
+       // Eventos para los botones de cargar examen
        document.getElementById('loadDefaultExam').addEventListener('click', loadDefaultExam);
+       document.getElementById('loadRandomExam').addEventListener('click', loadRandomExam);
        
        // Evento para cargar archivo nuevo
        document.getElementById('fileInput').addEventListener('change', handleFileSelect);
@@ -96,7 +102,19 @@
                .then(text => {
                    console.log('Examen cargado:', text);
                    const questions = parseQuestions(text);
-                   displayQuestions(questions);
+                   displayQuestions(questions, false);
+               })
+               .catch(error => console.error('Error:', error));
+       }
+
+       function loadRandomExam() {
+           console.log('Cargando examen aleatorio...');
+           fetch('examen/examenFinal.txt')
+               .then(response => response.text())
+               .then(text => {
+                   console.log('Examen cargado:', text);
+                   const questions = parseQuestions(text);
+                   displayQuestions(questions, true);
                })
                .catch(error => console.error('Error:', error));
        }
@@ -117,7 +135,7 @@
                        .then(result => {
                            const text = result.value;
                            const questions = parseQuestions(text);
-                           displayQuestions(questions);
+                           displayQuestions(questions, false);
                        });
                };
                reader.readAsArrayBuffer(file);
@@ -126,7 +144,7 @@
                reader.onload = function(e) {
                    const text = e.target.result;
                    const questions = parseQuestions(text);
-                   displayQuestions(questions);
+                   displayQuestions(questions, false);
                };
                reader.readAsText(file);
            }
@@ -160,9 +178,16 @@
            return questions;
        }
 
-       function displayQuestions(questions) {
+       function displayQuestions(questions, randomize) {
            const container = document.getElementById('questionsContainer');
            container.innerHTML = '';
+
+           if (randomize) {
+               questions = shuffleArray(questions);
+               questions.forEach(q => {
+                   q.options = shuffleArray(q.options);
+               });
+           }
 
            questions.forEach((q, index) => {
                const div = document.createElement('div');
@@ -220,6 +245,14 @@
                    ${percentage >= 60 ? '✓ Aprobado' : '✗ No aprobado'}
                `;
            }
+       }
+
+       function shuffleArray(array) {
+           for (let i = array.length - 1; i > 0; i--) {
+               const j = Math.floor(Math.random() * (i + 1));
+               [array[i], array[j]] = [array[j], array[i]];
+           }
+           return array;
        }
    </script>
 </body>
