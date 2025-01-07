@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Cuestionario Moodle</title>
+   <style>
+       .question {
+           margin: 20px;
+           padding: 15px;
+           border: 1px solid #ddd;
+           border-radius: 5px;
+           background: #f9f9f9;
+       }
+       .question-number {
+           font-weight: bold;
+           margin-bottom: 10px;
+       }
+       .options {
+           margin-left: 20px;
+       }
+       .correct {
+           background-color: #dff0d8;
+           border-color: #d6e9c6;
+       }
+       .incorrect {
+           background-color: #f2dede;
+           border-color: #ebccd1;
+       }
+       .score {
+           font-size: 18px;
+           font-weight: bold;
+           padding: 10px;
+           margin: 20px;
+           background: #337ab7;
+           color: white;
+           border-radius: 5px;
+       }
+       .feedback {
+           margin-top: 10px;
+           padding: 8px;
+           display: none;
+       }
+       .upload-section {
+           margin: 20px;
+           padding: 20px;
+           border: 2px dashed #ccc;
+           text-align: center;
+       }
+   </style>
+</head>
+<body>
+   <div class="upload-section">
+       <input type="file" id="fileInput" accept=".txt,.docx">
+       <p>Arrastra tu archivo o haz clic para seleccionarlo</p>
+   </div>
+   <div id="score" class="score"></div>
+   <div id="questionsContainer"></div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.0/mammoth.browser.min.js"></script>
+   <script>
+       let totalQuestions = 0;
+       let correctAnswers = 0;
+
+       document.getElementById('fileInput').addEventListener('change', handleFileSelect);
+
+       function handleFileSelect(event) {
+           const file = event.target.files[0];
+           
+           if (file.name.endsWith('.docx')) {
+               const reader = new FileReader();
+               reader.onload = function(e) {
+                   mammoth.extractRawText({arrayBuffer: e.target.result})
+                       .then(result => {
+                           const text = result.value;
+                           const questions = parseQuestions(text);
+                           displayQuestions(questions);
+                       });
+               };
+               reader.readAsArrayBuffer(file);
+           } else {
+               const reader = new FileReader();
+               reader.onload = function(e) {
+                   const text = e.target.result;
+                   const questions = parseQuestions(text);
+                   displayQuestions(questions);
+               };
+               reader.readAsText(file);
+           }
+       }
+
+       function parseQuestions(text) {
+           const questions = [];
+           const regex = /(.+?\?)\s+(A\.\s+.+?)\s+(B\.\s+.+?)\s+(C\.\s+.+?)\s+(D\.\s+.+?)\s+ANSWER:\s+([A-D])/g;
+           
+           let match;
+           while ((match = regex.exec(text)) !== null) {
+               const question = {
+                   text: match[1].trim(),
+                   options: [
+                       match[2].substring(2).trim(),
+                       match[3].substring(2).trim(),
+                       match[4].substring(2).trim(),
+                       match[5].substring(2).trim()
+                   ],
+                   correctAnswer: match[6].trim()
+               };
+               questions.push(question);
+           }
+
+           totalQuestions = questions.length;
+           correctAnswers = 0;
+           updateScore();
+           return questions;
+       }
+
+       function displayQuestions(questions) {
+           const container = document.getElementById('questionsContainer');
+           container.innerHTML = '';
+
+           questions.forEach((q, index) => {
+               const div = document.createElement('div');
+               div.className = 'question';
+               div.innerHTML = `
+                   <div class="question-number">Pregunta ${index + 1}</div>
+                   <div class="question-text">${q.text}</div>
+                   <div class="options">
+                       ${q.options.map((opt, i) => `
+                           <div class="option">
+                               <input type="radio" id="q${index}opt${i}" name="q${index}" 
+                                      value="${String.fromCharCode(65 + i)}" 
+                                      onclick="checkAnswer(${index}, '${q.correctAnswer}', this)">
+                               <label for="q${index}opt${i}">${String.fromCharCode(65 + i)}. ${opt}</label>
+                           </div>
+                       `).join('')}
+                   </div>
+                   <div class="feedback"></div>
+                   <div class="correctAnswer" style="display:none">
+                       <hr>
+                       <strong>Respuesta correcta:</strong> ${q.correctAnswer}
+                   </div>
+               `;
+               container.appendChild(div);
+           });
+       }
+
+       function checkAnswer(questionIndex, correctAnswer, selectedOption) {
+           const questionDiv = document.getElementsByClassName('question')[questionIndex];
+           const feedbackDiv = questionDiv.querySelector('.feedback');
+           const correctAnswerDiv = questionDiv.querySelector('.correctAnswer');
+           
+           feedbackDiv.style.display = 'block';
+           correctAnswerDiv.style.display = 'block';
+
+           if (selectedOption.value === correctAnswer) {
+               questionDiv.className = 'question correct';
+               feedbackDiv.innerHTML = '✓ ¡Correcto!';
+               feedbackDiv.style.color = '#3c763d';
+               correctAnswers++;
+           } else {
+               questionDiv.className = 'question incorrect';
+               feedbackDiv.innerHTML = '✗ Incorrecto';
+               feedbackDiv.style.color = '#a94442';
+           }
+           updateScore();
+       }
+
+       function updateScore() {
+           const scoreDiv = document.getElementById('score');
+           if(totalQuestions > 0) {
+               const percentage = Math.round(correctAnswers/totalQuestions*100);
+               scoreDiv.innerHTML = `
+                   Calificación: ${correctAnswers}/${totalQuestions} (${percentage}%)
+                   ${percentage >= 60 ? '✓ Aprobado' : '✗ No aprobado'}
+               `;
+           }
+       }
+   </script>
+</body>
+</html>
