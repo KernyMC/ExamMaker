@@ -533,20 +533,20 @@ A) Asegurar que las imágenes se carguen de forma asíncrona
 B) Permitir la carga de imágenes en diferentes resoluciones o formatos según el tamaño de pantalla
 C) Definir la imagen de fondo de una página
 D) Proteger el contenido visual de una página web
-Justificación: La etiqueta <picture> permite proporcionar diferentes fuentes de imágenes para distintos ANSWER: B
+ANSWER: B
 
 ¿Qué atributo en la etiqueta <audio> especifica el archivo de audio que se va a reproducir?
-A) src
-B) href
-C) media
-D) audio-file
+A. src
+B. href
+C. media
+D. audio-file
 ANSWER: A
 
 ¿Cuál es la función del atributo async en la etiqueta <script>?
-A) Permitir que el script se ejecute de forma asíncrona con la carga de la página
-B) Asegurar que el script se ejecute en orden de aparición en el HTML
-C) Retrasar la carga del script hasta que toda la página se haya cargado
-D) Asegurar que el script no interfiera con otros scripts
+A. Permitir que el script se ejecute de forma asíncrona con la carga de la página
+B. Asegurar que el script se ejecute en orden de aparición en el HTML
+C. Retrasar la carga del script hasta que toda la página se haya cargado
+D. Asegurar que el script no interfiera con otros scripts
 ANSWER: A
 
 ¿Qué es un "data attribute" en HTML?

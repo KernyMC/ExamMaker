@@ -96,15 +96,15 @@
                if (line.length === 0) return;
 
                if (!question) {
-                   question = { text: line, options: [], correctAnswer: '' };
+                   question = { text: escapeHtml(line), options: [], correctAnswer: '' };
                } else if (line.match(/^[A-D][.)]\s+/)) {
-                   question.options.push(line.substring(3).trim());
+                   question.options.push(escapeHtml(line.substring(3).trim()));
                } else if (line.match(/^ANSWER:\s+[A-D]/)) {
                    question.correctAnswer = line.substring(8).trim();
                    questions.push(question);
                    question = null;
                } else {
-                   question.text += ' ' + line;
+                   question.text += ' ' + escapeHtml(line);
                }
            });
 
@@ -189,6 +189,17 @@
                [array[i], array[j]] = [array[j], array[i]];
            }
            return array;
+       }
+
+       function escapeHtml(text) {
+           const map = {
+               '&': '&amp;',
+               '<': '&lt;',
+               '>': '&gt;',
+               '"': '&quot;',
+               "'": '&#039;'
+           };
+           return text.replace(/[&<>"']/g, function(m) { return map[m]; });
        }
    </script>
 </body>
