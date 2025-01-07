@@ -6,8 +6,16 @@
 </head>
 <body>
    <div class="button-section">
-       <button id="loadDefaultExam" class="load-button">Cargar Examen</button>
+       <button id="loadDefaultExam" class="load-button">Cargar Examen Normal</button>
        <button id="loadRandomExam" class="load-button">🎲 Cargar Examen Aleatorio</button>
+       <button id="chooseDifficulty" class="load-button">Escoger Dificultad</button>
+   </div>
+   <div id="difficultySection" style="display:none; text-align:center; margin:10px;">
+    <button class="load-button difficulty-button" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(1)">Ultrafácil </button>
+    <button class="load-button difficulty-button" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(20)">Fácil</button>
+    <button class="load-button difficulty-button" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(80)">Medio</button>
+    <button class="load-button difficulty-button" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(260)">Difícil </button>
+    <button class="load-button difficulty-button" onclick="setDifficultySelected(this); loadQuestionsByDifficulty('all')">Ultrahardcore</button>
    </div>
    <div class="upload-section">
        <input type="file" id="fileInput" accept=".txt,.docx">
@@ -20,45 +28,47 @@
    <script>
        let totalQuestions = 0;
        let correctAnswers = 0;
+       let allQuestions = [];
 
-       // Cargar el examen por defecto al iniciar
        window.onload = loadDefaultExam;
-       
-       // Eventos para los botones de cargar examen
        document.getElementById('loadDefaultExam').addEventListener('click', loadDefaultExam);
        document.getElementById('loadRandomExam').addEventListener('click', loadRandomExam);
-       
-       // Evento para cargar archivo nuevo
+       document.getElementById('chooseDifficulty').addEventListener('click', toggleDifficultySection);
+
        document.getElementById('fileInput').addEventListener('change', handleFileSelect);
 
+       function toggleDifficultySection() {
+           const sec = document.getElementById('difficultySection');
+           sec.style.display = (sec.style.display === 'none') ? 'block' : 'none';
+       }
+
+       function setDifficultySelected(button) {
+           document.querySelectorAll('.difficulty-button').forEach(b => b.classList.remove('selected'));
+           button.classList.add('selected');
+       }
+
        function loadDefaultExam() {
-           console.log('Cargando examen por defecto...');
            fetch('examen/examenFinal.txt')
                .then(response => response.text())
                .then(text => {
-                   console.log('Examen cargado:', text);
-                   const questions = parseQuestions(text);
-                   displayQuestions(questions, false);
+                   allQuestions = parseQuestions(text);
+                   displayQuestions(allQuestions, false);
                })
                .catch(error => console.error('Error:', error));
        }
 
        function loadRandomExam() {
-           console.log('Cargando examen aleatorio...');
            fetch('examen/examenFinal.txt')
                .then(response => response.text())
                .then(text => {
-                   console.log('Examen cargado:', text);
-                   const questions = parseQuestions(text);
-                   displayQuestions(questions, true);
+                   allQuestions = parseQuestions(text);
+                   displayQuestions(allQuestions, true);
                })
                .catch(error => console.error('Error:', error));
        }
 
        function handleFileSelect(event) {
            const file = event.target.files[0];
-           
-           // Limpiar contenedor antes de cargar nuevo archivo
            document.getElementById('questionsContainer').innerHTML = '';
            totalQuestions = 0;
            correctAnswers = 0;
@@ -69,21 +79,44 @@
                reader.onload = function(e) {
                    mammoth.extractRawText({arrayBuffer: e.target.result})
                        .then(result => {
-                           const text = result.value;
-                           const questions = parseQuestions(text);
-                           displayQuestions(questions, false);
+                           allQuestions = parseQuestions(result.value);
+                           displayQuestions(allQuestions, false);
                        });
                };
                reader.readAsArrayBuffer(file);
            } else {
                const reader = new FileReader();
                reader.onload = function(e) {
-                   const text = e.target.result;
-                   const questions = parseQuestions(text);
-                   displayQuestions(questions, false);
+                   allQuestions = parseQuestions(e.target.result);
+                   displayQuestions(allQuestions, false);
                };
                reader.readAsText(file);
            }
+       }
+
+       function loadQuestionsByDifficulty(count) {
+           document.getElementById('questionsContainer').innerHTML = '';
+           if (!allQuestions.length) {
+               fetch('examen/examenFinal.txt')
+                   .then(response => response.text())
+                   .then(text => {
+                       allQuestions = parseQuestions(text);
+                       showSubset(allQuestions, count);
+                   });
+           } else {
+               showSubset(allQuestions, count);
+           }
+       }
+
+       function showSubset(questions, count) {
+           const shuffled = shuffleArray([...questions]);
+           let subset = [];
+           if (count === 'all') {
+               subset = shuffled;
+           } else {
+               subset = shuffled.slice(0, count);
+           }
+           displayQuestions(subset, true);
        }
 
        function parseQuestions(text) {
@@ -94,7 +127,6 @@
            lines.forEach(line => {
                line = line.trim();
                if (line.length === 0) return;
-
                if (!question) {
                    question = { text: escapeHtml(line), options: [], correctAnswer: '' };
                } else if (line.match(/^[A-D][.)]\s+/)) {
@@ -108,18 +140,18 @@
                }
            });
 
-           totalQuestions = questions.length;
-           correctAnswers = 0;
-           updateScore();
            return questions;
        }
 
        function displayQuestions(questions, randomize) {
+           totalQuestions = questions.length;
+           correctAnswers = 0;
+           updateScore();
+
            const container = document.getElementById('questionsContainer');
            container.innerHTML = '';
 
            if (randomize) {
-               questions = shuffleArray(questions);
                questions.forEach(q => {
                    q.options = shuffleArray(q.options);
                });
@@ -155,7 +187,7 @@
            const questionDiv = document.getElementsByClassName('question')[questionIndex];
            const feedbackDiv = questionDiv.querySelector('.feedback');
            const correctAnswerDiv = questionDiv.querySelector('.correctAnswer');
-           
+
            feedbackDiv.style.display = 'block';
            correctAnswerDiv.style.display = 'block';
 
@@ -174,8 +206,8 @@
 
        function updateScore() {
            const scoreDiv = document.getElementById('score');
-           if(totalQuestions > 0) {
-               const percentage = Math.round(correctAnswers/totalQuestions*100);
+           if (totalQuestions > 0) {
+               const percentage = Math.round((correctAnswers / totalQuestions) * 100);
                scoreDiv.innerHTML = `
                    Calificación: ${correctAnswers}/${totalQuestions} (${percentage}%)
                    ${percentage >= 60 ? '✓ Aprobado' : '✗ No aprobado'}
@@ -199,7 +231,7 @@
                '"': '&quot;',
                "'": '&#039;'
            };
-           return text.replace(/[&<>"']/g, function(m) { return map[m]; });
+           return text.replace(/[&<>"']/g, m => map[m]);
        }
    </script>
 </body>

@@ -50,7 +50,7 @@
 }
 .load-button {
     padding: 10px 20px;
-    background-color: #4CAF50; /* Cambiado a verde */
+    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
@@ -59,11 +59,23 @@
     margin: 10px;
 }
 .load-button:hover {
-    background-color: #45a049; /* Cambiado a un tono más oscuro de verde */
+    background-color: #45a049;
 }
 .load-button:nth-child(2) {
-    background-color: #FF5733; /* Cambiado a naranja */
+    background-color: #FF5733;
 }
 .load-button:nth-child(2):hover {
-    background-color: #FF4500; /* Cambiado a un tono más oscuro de naranja */
+    background-color: #FF4500;
+}
+.difficulty-button {
+    background-color: #2196F3;
+    margin: 5px;
+}
+.difficulty-button:hover {
+    background-color: #1976D2;
+}
+.difficulty-button.selected {
+    background-color: #FFEB3B;
+    color: #000;
+    border: 2px solid #000;
 }
