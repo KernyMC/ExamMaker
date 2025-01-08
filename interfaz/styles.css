@@ -217,13 +217,32 @@ button {
 .score {
     font-size: 20px;
     font-weight: 500;
-    padding: 15px;
+    padding: 20px;
     margin: 20px 0;
-    background: var(--primary-color);
+    background: linear-gradient(135deg, #4CAF50, #81C784); /* Gradiente verde */
     color: #fff;
-    border-radius: 8px;
+    border-radius: 12px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+}
+
+.score .approved {
+    color: #d4edda;
+    background-color: #28a745;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.score .not-approved {
+    color: #f8d7da;
+    background-color: #dc3545;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.score:hover {
+    background: linear-gradient(135deg, #388e3c, #66bb6a); /* Gradiente verde más oscuro */
 }
 
 /* Contenedor de Preguntas */
@@ -308,12 +327,39 @@ button {
 
 /* Pie de Página */
 footer {
-    background-color: #f1f1f1;
+    background-color: #1565C0; /* Azul oscuro */
+    color: #fff;
     text-align: center;
-    padding: 15px 0;
-    color: #777;
-    font-size: 0.9em;
-    border-top: 1px solid #ddd;
+    padding: 20px 0;
+    font-size: 1em;
+    border-top: none;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #81C784; /* Verde suave al pasar el cursor */
 }
 
 /* Responsividad */
@@ -371,5 +417,96 @@ footer {
 
     .feedback {
         font-size: 0.9em;
+    }
+
+    /* Burbuja de Puntuación Estilo Messenger */
+    #scoreBubble {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        padding: 10px 15px;
+        max-width: 150px;
+    }
+
+    .bubble-content {
+        gap: 10px;
+    }
+
+    .correct-icon, .incorrect-icon {
+        font-size: 1.2em;
+    }
+
+    #scoreBubble span {
+        font-size: 1em;
+    }
+}
+
+/* Burbuja de Puntuación Estilo Messenger */
+#scoreBubble {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0084ff; /* Color similar al de Messenger */
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    max-width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#scoreBubble:hover {
+    transform: scale(1.05);
+}
+
+.bubble-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-count {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.correct-icon {
+    color: #28a745; /* Verde para correctas */
+    font-size: 1.5em;
+}
+
+.incorrect-icon {
+    color: #dc3545; /* Rojo para incorrectas */
+    font-size: 1.5em;
+}
+
+#scoreBubble span {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Responsividad */
+@media (max-width: 480px) {
+    #scoreBubble {
+        bottom: 10px;
+        right: 10px;
+        padding: 10px 15px;
+        max-width: 150px;
+    }
+
+    .bubble-content {
+        gap: 10px;
+    }
+
+    .correct-icon, .incorrect-icon {
+        font-size: 1.2em;
+    }
+
+    #scoreBubble span {
+        font-size: 1em;
     }
 }

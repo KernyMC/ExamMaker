@@ -66,9 +66,25 @@ ANSWER: A
         <section id="questionsContainer" class="questions-container"></section>
     </main>
 
+    <!-- Burbuja de Puntuación Estilo Messenger -->
+    <div id="scoreBubble">
+        <div class="bubble-content">
+            <div class="icon-count">
+                <i class="fas fa-check-circle correct-icon"></i>
+                <span id="correctCount">0</span>
+            </div>
+            <div class="icon-count">
+                <i class="fas fa-times-circle incorrect-icon"></i>
+                <span id="incorrectCount">0</span>
+            </div>
+        </div>
+    </div>
+
     <!-- Pie de Página -->
     <footer>
-        <p>&copy; 2025 Cuestionario Moodle. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <p>Desarrollado por <strong>Kevinsaurio</strong> &copy; 2025</p>
+        </div>
     </footer>
 
     <!-- Librerías y Scripts -->
@@ -222,6 +238,7 @@ ANSWER: A
             questions.forEach((q, index) => {
                 const div = document.createElement('div');
                 div.className = 'question';
+                
                 // Crear elementos de manera segura sin usar innerHTML
                 const questionNumber = document.createElement('div');
                 questionNumber.className = 'question-number';
@@ -300,13 +317,13 @@ ANSWER: A
                 questionDiv.classList.add('correct');
                 questionDiv.classList.remove('incorrect');
                 feedbackDiv.textContent = '✓ ¡Correcto!';
-                feedbackDiv.style.color = '#3c763d';
+                feedbackDiv.style.color = '#d4edda'; /* Color más suave */
                 correctAnswers++;
             } else {
                 questionDiv.classList.add('incorrect');
                 questionDiv.classList.remove('correct');
                 feedbackDiv.textContent = '✗ Incorrecto';
-                feedbackDiv.style.color = '#a94442';
+                feedbackDiv.style.color = '#f8d7da'; /* Color más suave */
             }
 
             // Deshabilitar todas las opciones de esta pregunta para evitar cambios
@@ -316,7 +333,7 @@ ANSWER: A
             updateScore();
         }
 
-        // Se actualiza la calificación en pantalla.
+        // Se actualiza la calificación en pantalla y en la burbuja de puntuación.
         function updateScore() {
             const scoreDiv = document.getElementById('score');
             if (totalQuestions > 0) {
@@ -328,6 +345,10 @@ ANSWER: A
             } else {
                 scoreDiv.innerHTML = '';
             }
+
+            // Actualizar la burbuja de puntuación
+            document.getElementById('correctCount').textContent = correctAnswers;
+            document.getElementById('incorrectCount').textContent = totalQuestions - correctAnswers;
         }
 
         // Mezcla los elementos de un array (Fisher-Yates).
