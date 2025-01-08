@@ -38,13 +38,29 @@
 
 
         <!-- Sección de Subida de Archivos -->
+     
         <section class="upload-section" onclick="document.getElementById('fileInput').click();">
             <input type="file" id="fileInput" accept=".txt,.docx" hidden>
             <label for="fileInput" class="upload-label">
                 <i class="fas fa-upload upload-icon"></i>
                 <span>Arrastra tu archivo o haz clic para seleccionarlo</span>
             </label>
+            <!-- Guía sobre Formato Aiken -->
+            <div class="aiken-guide">
+                <h2>¿Cómo preparar tu archivo en formato Aiken?</h2>
+                <p>Para subir tus preguntas, asegúrate de que tu archivo sea un <strong>.txt</strong> y siga el <strong>formato Aiken</strong>. A continuación, te mostramos un ejemplo:</p>
+                <pre>
+        ¿Cuál es la capital de Francia?
+        A. Berlín
+        B. Madrid
+        C. París
+        D. Roma
+        ANSWER: C
+                </pre>
+                <p>Puedes seguir esta estructura para todas tus preguntas. Asegúrate de indicar correctamente la respuesta correcta con <code>ANSWER: </code> seguido de la letra correspondiente.</p>
+            </div>
         </section>
+
 
         <!-- Sección de Calificación -->
         <section id="score" class="score"></section>
