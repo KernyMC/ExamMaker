@@ -47,19 +47,13 @@
                 <h2>¿Cómo preparar tu archivo en formato Aiken?</h2>
                 <p>Para subir tus preguntas, asegúrate de que tu archivo sea un <strong>.txt</strong> y siga el <strong>formato Aiken</strong>. A continuación, te mostramos un ejemplo:</p>
                 <pre>
-¿Cuál es la capital de Francia?
-A. Berlín
-B. Madrid
-C. París
-D. Roma
-ANSWER: C
 
-¿Cuál es el símbolo químico del agua?
-A. CO2
-B. H2O
-C. O2
-D. NaCl
-ANSWER: B
+¿Quién escribió "Cien años de soledad"?
+A. Gabriel García Márquez
+B. Mario Vargas Llosa
+C. Isabel Allende
+D. Julio Cortázar
+ANSWER: A
                 </pre>
                 <p>Puedes seguir esta estructura para todas tus preguntas. Asegúrate de indicar correctamente la respuesta correcta con <code>ANSWER: </code> seguido de la letra correspondiente.</p>
             </div>
@@ -147,7 +141,7 @@ ANSWER: B
                         allQuestions = parseQuestions(e.target.result);
                         displayQuestions(allQuestions, false);
                     };
-                    reader.readAsText(file);
+                    reader.readAsText(file, 'UTF-8'); // Especificar codificación UTF-8
                 }
             }
         }
@@ -188,11 +182,11 @@ ANSWER: B
                 line = line.trim();
                 if (line.length === 0) return;
                 if (!question) {
-                    question = { text: escapeHtml(line), options: [], correctAnswer: '', answered: false };
+                    question = { text: line, options: [], correctAnswer: '', answered: false };
                 } else if (line.match(/^[A-D][.)]\s+/)) {
-                    question.options.push(escapeHtml(line.substring(3).trim()));
+                    question.options.push(line.substring(3).trim());
                 } else if (line.match(/^ANSWER:\s+[A-D]/)) {
-                    const letter = line.substring(8).trim();
+                    const letter = line.substring(8).trim().toUpperCase();
                     // Calcula índice en options (A=0, B=1, etc.)
                     const letterIndex = letter.charCodeAt(0) - 65;
                     // Guarda el texto completo de la respuesta correcta.
@@ -200,7 +194,7 @@ ANSWER: B
                     questions.push(question);
                     question = null;
                 } else {
-                    question.text += ' ' + escapeHtml(line);
+                    question.text += ' ' + line;
                 }
             });
 
@@ -228,27 +222,51 @@ ANSWER: B
             questions.forEach((q, index) => {
                 const div = document.createElement('div');
                 div.className = 'question';
-                // Para evitar problemas con comillas, usaremos valor = la opción entera
-                // y compararemos en checkAnswer con q.correctAnswer.
-                div.innerHTML = `
-                    <div class="question-number">Pregunta ${index + 1}</div>
-                    <div class="question-text">${q.text}</div>
-                    <div class="options">
-                        ${q.options.map((opt, i) => `
-                            <div class="option">
-                                <input type="radio" id="q${index}opt${i}" name="q${index}" 
-                                       value="${opt}" 
-                                       onclick="checkAnswer(${index}, this.value)">
-                                <label for="q${index}opt${i}">${String.fromCharCode(65 + i)}. ${opt}</label>
-                            </div>
-                        `).join('')}
-                    </div>
-                    <div class="feedback"></div>
-                    <div class="correctAnswer">
-                        <hr>
-                        <strong>Respuesta correcta:</strong> ${q.correctAnswer}
-                    </div>
-                `;
+                // Crear elementos de manera segura sin usar innerHTML
+                const questionNumber = document.createElement('div');
+                questionNumber.className = 'question-number';
+                questionNumber.textContent = `Pregunta ${index + 1}`;
+
+                const questionText = document.createElement('div');
+                questionText.className = 'question-text';
+                questionText.textContent = q.text;
+
+                const optionsDiv = document.createElement('div');
+                optionsDiv.className = 'options';
+
+                q.options.forEach((opt, i) => {
+                    const optionDiv = document.createElement('div');
+                    optionDiv.className = 'option';
+
+                    const radioInput = document.createElement('input');
+                    radioInput.type = 'radio';
+                    radioInput.id = `q${index}opt${i}`;
+                    radioInput.name = `q${index}`;
+                    radioInput.value = opt;
+                    radioInput.onclick = () => checkAnswer(index, opt);
+
+                    const label = document.createElement('label');
+                    label.htmlFor = `q${index}opt${i}`;
+                    label.textContent = `${String.fromCharCode(65 + i)}. ${opt}`;
+
+                    optionDiv.appendChild(radioInput);
+                    optionDiv.appendChild(label);
+                    optionsDiv.appendChild(optionDiv);
+                });
+
+                const feedbackDiv = document.createElement('div');
+                feedbackDiv.className = 'feedback';
+
+                const correctAnswerDiv = document.createElement('div');
+                correctAnswerDiv.className = 'correctAnswer';
+                correctAnswerDiv.innerHTML = `<hr><strong>Respuesta correcta:</strong> ${q.correctAnswer}`;
+
+                div.appendChild(questionNumber);
+                div.appendChild(questionText);
+                div.appendChild(optionsDiv);
+                div.appendChild(feedbackDiv);
+                div.appendChild(correctAnswerDiv);
+
                 container.appendChild(div);
             });
         }
@@ -273,16 +291,21 @@ ANSWER: B
             feedbackDiv.style.display = 'block';
             correctAnswerDiv.style.display = 'block';
 
-            if (selectedValue === question.correctAnswer) {
+            // Comparación más robusta: ignorar espacios y diferencias de mayúsculas/minúsculas
+            const isCorrect = selectedValue.trim().toLowerCase() === question.correctAnswer.trim().toLowerCase();
+
+            console.log(`Pregunta ${questionIndex + 1}: Seleccionada "${selectedValue}", Correcta "${question.correctAnswer}" - Correcto: ${isCorrect}`);
+
+            if (isCorrect) {
                 questionDiv.classList.add('correct');
                 questionDiv.classList.remove('incorrect');
-                feedbackDiv.innerHTML = '✓ ¡Correcto!';
+                feedbackDiv.textContent = '✓ ¡Correcto!';
                 feedbackDiv.style.color = '#3c763d';
                 correctAnswers++;
             } else {
                 questionDiv.classList.add('incorrect');
                 questionDiv.classList.remove('correct');
-                feedbackDiv.innerHTML = '✗ Incorrecto';
+                feedbackDiv.textContent = '✗ Incorrecto';
                 feedbackDiv.style.color = '#a94442';
             }
 
@@ -317,16 +340,7 @@ ANSWER: B
         }
 
         // Escapa caracteres especiales para que se muestren correctamente.
-        function escapeHtml(text) {
-            const map = {
-                '&': '&amp;',
-                '<': '&lt;',
-                '>': '&gt;',
-                '"': '&quot;',
-                "'": '&#039;'
-            };
-            return text.replace(/[&<>"']/g, m => map[m]);
-        }
+        // Función eliminada para manejar correctamente los caracteres acentuados.
     </script>
 </body>
 </html>

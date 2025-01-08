@@ -60,7 +60,7 @@ button {
     cursor: pointer;
     font-size: 16px;
     color: #fff;
-    transition: background-color 0.3s, transform 0.2s;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -99,18 +99,15 @@ button {
     margin: 20px 0;
 }
 
-/* Botones de dificultad */
 .difficulty-button {
-    display: inline-block;
-    margin: 5px;
-    font-size: 15px;
     background: linear-gradient(135deg, #03A9F4 0%, #0288D1 100%);
     color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
     border: none;
     border-radius: 8px;
-    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
-    padding: 10px 20px;
     cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -129,8 +126,6 @@ button {
 }
 
 /* Opcional: Diferentes colores para cada nivel de dificultad */
-/* Si deseas asignar colores específicos según la dificultad, puedes agregar clases adicionales */
-
 .difficulty-button.ultrafacil.selected {
     background: linear-gradient(135deg, #81C784 0%, #4CAF50 100%); /* Verde claro a verde */
     box-shadow: 0 0 15px rgba(76, 175, 80, 0.6);
@@ -155,7 +150,6 @@ button {
     background: linear-gradient(135deg, #D32F2F 0%, #C62828 100%); /* Rojo oscuro */
     box-shadow: 0 0 15px rgba(195, 40, 40, 0.6);
 }
-
 
 /* Sección de Subida de Archivos */
 .upload-section {
@@ -218,7 +212,6 @@ button {
     padding: 2px 4px;
     border-radius: 3px;
 }
-
 
 /* Calificación */
 .score {

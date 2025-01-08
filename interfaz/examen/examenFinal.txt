@@ -871,11 +871,11 @@ D. Un valor booleano que indica si la solicitud fue exitosa.
 ANSWER: A
 
 ¿Cuál es la estructura para decodificar el cuerpo de la ANSWER HTTP, que está en formato JSON, y convertirlo en una lista de objetos dinámicos en el contexto de una ANSWER HTTP?
-A. List<dynamic> data = jsonEncode(response.body);
-B. List<dynamic> data = jsonDecode(response.body);
-C. List<dynamic> data = jsonString(response.body);
-D. List<dynamic> data = jsonCode(response.body);
-ANSWER: B
+A. List<dynamic> data = jsonCode(response.body);
+B. List<dynamic> data = jsonString(response.body);
+C. List<dynamic> data = jsonEncode(response.body);
+D. List<dynamic> data = jsonDecode(response.body);
+ANSWER: D
 
 ¿Cuál de las siguientes herramientas es una versión mejorada de Appium que ofrece una interfaz gráfica para simplificar la configuración y ejecución de pruebas?
 A. Appium Studio
