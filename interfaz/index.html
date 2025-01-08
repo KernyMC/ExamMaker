@@ -27,13 +27,15 @@
         </section>
 
         <!-- Sección de Dificultad (Desplegable) -->
+<!-- Sección de Dificultad (Desplegable) -->
         <section id="difficultySection" class="difficulty-section">
-            <button class="load-button difficulty-button" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(1)">Ultrafácil</button>
-            <button class="load-button difficulty-button" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(20)">Fácil</button>
-            <button class="load-button difficulty-button" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(80)">Medio</button>
-            <button class="load-button difficulty-button" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(260)">Difícil</button>
-            <button class="load-button difficulty-button" onclick="setDifficultySelected(this); loadQuestionsByDifficulty('all')">Ultrahardcore</button>
+            <button class="load-button difficulty-button ultrafacil" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(1)">Ultrafácil</button>
+            <button class="load-button difficulty-button facil" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(20)">Fácil</button>
+            <button class="load-button difficulty-button medio" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(80)">Medio</button>
+            <button class="load-button difficulty-button dificil" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(260)">Difícil</button>
+            <button class="load-button difficulty-button ultrahardcore" onclick="setDifficultySelected(this); loadQuestionsByDifficulty('all')">Ultrahardcore</button>
         </section>
+
 
         <!-- Sección de Subida de Archivos -->
         <section class="upload-section" onclick="document.getElementById('fileInput').click();">

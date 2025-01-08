@@ -99,15 +99,18 @@ button {
     margin: 20px 0;
 }
 
+/* Botones de dificultad */
 .difficulty-button {
+    display: inline-block;
+    margin: 5px;
+    font-size: 15px;
     background: linear-gradient(135deg, #03A9F4 0%, #0288D1 100%);
     color: #fff;
-    padding: 10px 20px;
-    margin: 5px;
     border: none;
     border-radius: 8px;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s, color 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -116,11 +119,43 @@ button {
     transform: scale(1.05);
 }
 
+/* Estado seleccionado para los botones de dificultad */
 .difficulty-button.selected {
-    background: #FFEB3B;
-    color: #000;
-    border: 2px solid #000;
+    /* Gradiente de colores que representan diferentes temperaturas */
+    background: linear-gradient(135deg, #FF7043 0%, #FF5722 100%);
+    color: #fff;
+    box-shadow: 0 0 15px rgba(255, 87, 34, 0.6);
+    transform: scale(1.05);
 }
+
+/* Opcional: Diferentes colores para cada nivel de dificultad */
+/* Si deseas asignar colores específicos según la dificultad, puedes agregar clases adicionales */
+
+.difficulty-button.ultrafacil.selected {
+    background: linear-gradient(135deg, #81C784 0%, #4CAF50 100%); /* Verde claro a verde */
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.6);
+}
+
+.difficulty-button.facil.selected {
+    background: linear-gradient(135deg, #FFB74D 0%, #FFA726 100%); /* Naranja claro a naranja */
+    box-shadow: 0 0 15px rgba(255, 167, 38, 0.6);
+}
+
+.difficulty-button.medio.selected {
+    background: linear-gradient(135deg, #FFCA28 0%, #FFC107 100%); /* Amarillo claro a amarillo */
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.6);
+}
+
+.difficulty-button.dificil.selected {
+    background: linear-gradient(135deg, #FF7043 0%, #FF5722 100%); /* Naranja oscuro a rojo */
+    box-shadow: 0 0 15px rgba(255, 87, 34, 0.6);
+}
+
+.difficulty-button.ultrahardcore.selected {
+    background: linear-gradient(135deg, #D32F2F 0%, #C62828 100%); /* Rojo oscuro */
+    box-shadow: 0 0 15px rgba(195, 40, 40, 0.6);
+}
+
 
 /* Sección de Subida de Archivos */
 .upload-section {
