@@ -14,7 +14,7 @@
     <button class="load-button difficulty-button" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(1)">Ultrafácil </button>
     <button class="load-button difficulty-button" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(20)">Fácil</button>
     <button class="load-button difficulty-button" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(80)">Medio</button>
-    <button class="load-button difficulty-button" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(260)">Difícil </button>
+    <button class="load-button difficulty-button" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(260)">Difícil</button>
     <button class="load-button difficulty-button" onclick="setDifficultySelected(this); loadQuestionsByDifficulty('all')">Ultrahardcore</button>
    </div>
    <div class="upload-section">
@@ -29,6 +29,8 @@
        let totalQuestions = 0;
        let correctAnswers = 0;
        let allQuestions = [];
+       // Almacena las preguntas actualmente mostradas (para checkAnswer).
+       let displayedQuestions = [];
 
        window.onload = loadDefaultExam;
        document.getElementById('loadDefaultExam').addEventListener('click', loadDefaultExam);
@@ -119,6 +121,8 @@
            displayQuestions(subset, true);
        }
 
+       // En esta función, guardamos en question.correctAnswer
+       // el texto correcto en lugar de la letra (A, B, C, D).
        function parseQuestions(text) {
            const questions = [];
            const lines = text.split('\n');
@@ -132,7 +136,11 @@
                } else if (line.match(/^[A-D][.)]\s+/)) {
                    question.options.push(escapeHtml(line.substring(3).trim()));
                } else if (line.match(/^ANSWER:\s+[A-D]/)) {
-                   question.correctAnswer = line.substring(8).trim();
+                   const letter = line.substring(8).trim();
+                   // Calcula índice en options (A=0, B=1, etc.)
+                   const letterIndex = letter.charCodeAt(0) - 65;
+                   // Guarda el texto completo de la respuesta correcta.
+                   question.correctAnswer = question.options[letterIndex] || '';
                    questions.push(question);
                    question = null;
                } else {
@@ -143,7 +151,10 @@
            return questions;
        }
 
+       // Guardamos las preguntas que se muestran en una variable global (displayedQuestions)
+       // para que coincida el índice a la hora de verificar la respuesta.
        function displayQuestions(questions, randomize) {
+           displayedQuestions = questions;
            totalQuestions = questions.length;
            correctAnswers = 0;
            updateScore();
@@ -152,6 +163,7 @@
            container.innerHTML = '';
 
            if (randomize) {
+               // Mezclar opciones de cada pregunta.
                questions.forEach(q => {
                    q.options = shuffleArray(q.options);
                });
@@ -160,6 +172,8 @@
            questions.forEach((q, index) => {
                const div = document.createElement('div');
                div.className = 'question';
+               // Para evitar problemas con comillas, usaremos valor = la opción entera
+               // y compararemos en checkAnswer con q.correctAnswer.
                div.innerHTML = `
                    <div class="question-number">Pregunta ${index + 1}</div>
                    <div class="question-text">${q.text}</div>
@@ -167,8 +181,8 @@
                        ${q.options.map((opt, i) => `
                            <div class="option">
                                <input type="radio" id="q${index}opt${i}" name="q${index}" 
-                                      value="${String.fromCharCode(65 + i)}" 
-                                      onclick="checkAnswer(${index}, '${q.correctAnswer}', this)">
+                                      value="${opt}" 
+                                      onclick="checkAnswer(${index}, this.value)">
                                <label for="q${index}opt${i}">${String.fromCharCode(65 + i)}. ${opt}</label>
                            </div>
                        `).join('')}
@@ -183,7 +197,8 @@
            });
        }
 
-       function checkAnswer(questionIndex, correctAnswer, selectedOption) {
+       // Aquí comparamos el valor seleccionado (texto) con la respuesta correcta (texto).
+       function checkAnswer(questionIndex, selectedValue) {
            const questionDiv = document.getElementsByClassName('question')[questionIndex];
            const feedbackDiv = questionDiv.querySelector('.feedback');
            const correctAnswerDiv = questionDiv.querySelector('.correctAnswer');
@@ -191,7 +206,9 @@
            feedbackDiv.style.display = 'block';
            correctAnswerDiv.style.display = 'block';
 
-           if (selectedOption.value === correctAnswer) {
+           // Obtenemos la pregunta desde displayedQuestions
+           const question = displayedQuestions[questionIndex];
+           if (selectedValue === question.correctAnswer) {
                questionDiv.className = 'question correct';
                feedbackDiv.innerHTML = '✓ ¡Correcto!';
                feedbackDiv.style.color = '#3c763d';
@@ -204,6 +221,7 @@
            updateScore();
        }
 
+       // Se actualiza la calificación en pantalla.
        function updateScore() {
            const scoreDiv = document.getElementById('score');
            if (totalQuestions > 0) {
@@ -215,6 +233,7 @@
            }
        }
 
+       // Mezcla los elementos de un array (Fisher-Yates).
        function shuffleArray(array) {
            for (let i = array.length - 1; i > 0; i--) {
                const j = Math.floor(Math.random() * (i + 1));
@@ -223,6 +242,7 @@
            return array;
        }
 
+       // Escapa caracteres especiales para que se muestren correctamente.
        function escapeHtml(text) {
            const map = {
                '&': '&amp;',
