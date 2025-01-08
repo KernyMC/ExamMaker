@@ -27,7 +27,6 @@
         </section>
 
         <!-- Sección de Dificultad (Desplegable) -->
-<!-- Sección de Dificultad (Desplegable) -->
         <section id="difficultySection" class="difficulty-section">
             <button class="load-button difficulty-button ultrafacil" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(1)">Ultrafácil</button>
             <button class="load-button difficulty-button facil" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(20)">Fácil</button>
@@ -36,9 +35,7 @@
             <button class="load-button difficulty-button ultrahardcore" onclick="setDifficultySelected(this); loadQuestionsByDifficulty('all')">Ultrahardcore</button>
         </section>
 
-
         <!-- Sección de Subida de Archivos -->
-     
         <section class="upload-section" onclick="document.getElementById('fileInput').click();">
             <input type="file" id="fileInput" accept=".txt,.docx" hidden>
             <label for="fileInput" class="upload-label">
@@ -50,17 +47,23 @@
                 <h2>¿Cómo preparar tu archivo en formato Aiken?</h2>
                 <p>Para subir tus preguntas, asegúrate de que tu archivo sea un <strong>.txt</strong> y siga el <strong>formato Aiken</strong>. A continuación, te mostramos un ejemplo:</p>
                 <pre>
-        ¿Cuál es la capital de Francia?
-        A. Berlín
-        B. Madrid
-        C. París
-        D. Roma
-        ANSWER: C
+¿Cuál es la capital de Francia?
+A. Berlín
+B. Madrid
+C. París
+D. Roma
+ANSWER: C
+
+¿Cuál es el símbolo químico del agua?
+A. CO2
+B. H2O
+C. O2
+D. NaCl
+ANSWER: B
                 </pre>
                 <p>Puedes seguir esta estructura para todas tus preguntas. Asegúrate de indicar correctamente la respuesta correcta con <code>ANSWER: </code> seguido de la letra correspondiente.</p>
             </div>
         </section>
-
 
         <!-- Sección de Calificación -->
         <section id="score" class="score"></section>
@@ -185,7 +188,7 @@
                 line = line.trim();
                 if (line.length === 0) return;
                 if (!question) {
-                    question = { text: escapeHtml(line), options: [], correctAnswer: '' };
+                    question = { text: escapeHtml(line), options: [], correctAnswer: '', answered: false };
                 } else if (line.match(/^[A-D][.)]\s+/)) {
                     question.options.push(escapeHtml(line.substring(3).trim()));
                 } else if (line.match(/^ANSWER:\s+[A-D]/)) {
@@ -256,11 +259,20 @@
             const feedbackDiv = questionDiv.querySelector('.feedback');
             const correctAnswerDiv = questionDiv.querySelector('.correctAnswer');
 
+            // Obtenemos la pregunta desde displayedQuestions
+            const question = displayedQuestions[questionIndex];
+
+            // Verificamos si la pregunta ya ha sido respondida
+            if (question.answered) {
+                return; // Si ya fue respondida, no hacemos nada
+            }
+
+            // Marcar la pregunta como respondida
+            question.answered = true;
+
             feedbackDiv.style.display = 'block';
             correctAnswerDiv.style.display = 'block';
 
-            // Obtenemos la pregunta desde displayedQuestions
-            const question = displayedQuestions[questionIndex];
             if (selectedValue === question.correctAnswer) {
                 questionDiv.classList.add('correct');
                 questionDiv.classList.remove('incorrect');
@@ -273,6 +285,11 @@
                 feedbackDiv.innerHTML = '✗ Incorrecto';
                 feedbackDiv.style.color = '#a94442';
             }
+
+            // Deshabilitar todas las opciones de esta pregunta para evitar cambios
+            const radioButtons = questionDiv.querySelectorAll('input[type="radio"]');
+            radioButtons.forEach(rb => rb.disabled = true);
+
             updateScore();
         }
 
