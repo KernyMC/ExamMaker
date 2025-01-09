@@ -2400,3 +2400,108 @@ B. Predecible
 C. Optimizado
 D. Realizado
 ANSWER: C
+
+¿Cuál es la principal característica de un agente inteligente?
+A. Ser capaz de realizar cálculos complejos y tareas repetitivas.
+B. Interactuar con sistemas expertos.
+C. Tomar decisiones basadas en percepciones y acciones.
+D. Ejecutar algoritmos de búsqueda.
+ANSWER: C
+
+¿Qué diferencia principal existe entre las búsquedas a ciegas y heurísticas?
+A. Las búsquedas a ciegas se basan en reglas específicas.
+B. Las búsquedas a ciegas son más eficientes que las heurísticas.
+C. Ninguna diferencia, ambas son métodos equivalentes utilizados mediante reglas específicas.
+D. Las búsquedas heurísticas utilizan funciones de evaluación para guiarse.
+ANSWER: D
+
+¿Qué técnica de búsqueda es más apropiada para resolver juegos de adversarios como el ajedrez?
+A. Búsqueda por amplitud.
+B. Minimax con poda alfa-beta.
+C. Búsqueda en profundidad iterativa.
+D. Búsqueda primero el mejor.
+ANSWER: B
+
+¿Cuál es el propósito principal de la inferencia en lógica de predicados?
+A. Probar todas las combinaciones posibles de valores.
+B. Derivar conclusiones a partir de hechos y reglas.
+C. Modelar sistemas expertos basados en reglas.
+D. Definir el contexto de un agente.
+ANSWER: B
+
+¿Cómo se representa la formalización de la incertidumbre en sistemas basados en probabilidad?
+A. Por medio de algoritmos deterministas.
+B. Mediante la lógica proposicional.
+C. Usando el Teorema de Bayes.
+D. A través de cadenas de Markov.
+ANSWER: C
+
+¿Cuál es la diferencia fundamental entre el aprendizaje supervisado y no supervisado?
+A. El aprendizaje supervisado requiere etiquetas en los datos de entrenamiento.
+B. El aprendizaje no supervisado utiliza redes neuronales profundas.
+C. El aprendizaje supervisado genera clústeres para la organización y procesamiento de datos.
+D. El aprendizaje no supervisado usa árboles de decisión.
+ANSWER: A
+
+¿Qué modelo de red neuronal es más adecuado para procesar datos secuenciales, como texto o series de tiempo?
+A. Redes convolucionales.
+B. Redes densamente conectadas.
+C. Perceptrón multicapa.
+D. Redes neuronales recurrentes.
+ANSWER: D
+
+¿Qué técnica es crucial para reducir el sobreajuste en redes neuronales profundas?
+A. Incrementar el número de capas ocultas.
+B. Aplicar regularización y dropout.
+C. Usar redes recurrentes.
+D. Incrementar la tasa de aprendizaje.
+ANSWER: B
+
+¿Cuál de las siguientes técnicas se utiliza para reducir la dimensionalidad en conjuntos de datos?
+A. Regresión lineal.
+B. Algoritmo k-means.
+C. Análisis de componentes principales (PCA).
+D. Redes neuronales convolucionales.
+ANSWER: C
+
+¿Qué ventaja tienen las redes multicapa sobre un perceptrón simple?
+A. Mayor velocidad de entrenamiento.
+B. Capacidad para resolver problemas no lineales.
+C. Requieren menos datos de entrenamiento.
+D. Utilizan menos parámetros.
+ANSWER: B
+
+¿Qué caracteriza a las redes convolucionales para tareas de visión por computadora?
+A. Usan funciones lineales en todas las capas.
+B. Utilizan regularización en cada capa.
+C. Solo funcionan con imágenes etiquetadas.
+D. Tienen capas especializadas en detectar patrones espaciales.
+ANSWER: D
+
+¿Qué técnica avanzada de visión computacional se utiliza para la detección de objetos en movimiento?
+A. Support Vector Machine (SVM).
+B. Random Forest.
+C. Modelos de deformación de partes (DPM).
+D. Redes neuronales recurrentes.
+ANSWER: C
+
+¿Cómo se denomina el proceso de convertir texto natural en datos utilizables por un modelo de aprendizaje profundo?
+A. Tokenización.
+B. Clustering.
+C. Normalización.
+D. Generación automática.
+ANSWER: A
+
+¿Qué componente es esencial en los modelos de traducción automática moderna?
+A. Redes neuronales convolucionales.
+B. Redes recurrentes tradicionales.
+C. Transformadores.
+D. Árboles de decisión.
+ANSWER: C
+
+¿Qué enfoque utiliza el procesamiento de lenguaje natural para generar respuestas en un chatbot avanzado?
+A. Algoritmos de búsqueda a ciegas.
+B. Redes convolucionales.
+C. Árboles de regresión.
+D. Modelos de lenguaje preentrenados.
+ANSWER: D

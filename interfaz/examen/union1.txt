@@ -1,0 +1,1933 @@
+El diseño estructurado, tiende a transformar el desarrollo de software de una práctica artesanal a una disciplina de ingeniería, llevando consigo diferentes características como:
+A. Claridad
+B. Suficiencia
+C. Eficiencia
+D. Mantenibilidad
+E. Durabilidad
+ANSWERS: C, D
+
+En Ingeniería de software, en análisis de dominio consiste en analizar sistemas o software relacionados en un dominio, con la finalidad de encontrar:
+A. Sus partes comunes y partes que los diferencian
+B. Sus partes elementales y especializadas
+C. Sus partes sencillas y complejas
+D. Sus partes generales y específicas.
+ANSWER: A
+
+En el Lenguaje de Modelado Unificado (UML), un caso de uso es una secuencia de __________ entre un __________ y alguien o algo que usa alguno de sus servicios.
+A. Actividades – modelo 
+B. Interacciones - sistema
+C. Partes – componente 
+D. Acciones – sistema 
+ANSWER: B
+
+Se conduce un proceso de análisis intenso de una aplicación web, verificando que no poséa ningúna _______ capaz de exponer la ________ de su empresa o la de sus clientes.
+A. Actividad – gestión
+B. Amenaza – debilidad 
+C. Vulnerabilidad – información
+D. Actividad – estructura
+ANSWER: C
+
+Los patrones de diseño más utilizados se clasifican en tres categorías principales, que son:
+A. Creativos – modelados - diseñados
+B. Correlacionales – descriptivos – prescriptivos 
+C. Correlativos – imperativos – definidos 
+D. Creacionales – estructurales – comportamiento 
+ANSWER: D
+
+En el patrón de arquitectura Modelo Vista Controlador (MVC), el controlador maneja la entrada del usuario. La vista y el controlador en conjunto constituyen: la interfaz de usuario. Un cambio en el mecanismo de propagación garantiza la coherencia entre la interfaz de usuario y el modelo.”
+A. El elemento importante 
+B. La interfaz de usuario
+C. El comportamiento del sistema
+D. La regla básica a seguir en el sistema 
+ANSWER: B
+
+Una de las características del estilo de la arquitectura basado en capas es: Describe la descomposición de _______ de forma que la mayoría de la _________ocurre solamente entre capas vecinas.
+A. Servicios – interacción 
+B. Elementos - actividad 
+C. Partes - parte
+D. Reglas – condiciones
+ANSWER: A
+
+El método del diseño estructurado proporciona dos herramientas para representar el diseño:
+A. Diagrama de interacción
+B. Diagrama de estructura
+C. Lenguaje de comportamiento
+D. Lenguaje de especificación de módulos
+ANSWERS: B, D
+
+En el diseño orientado a objetos, los objetos necesitan interactuar y comunicarse, para realizar dicha comunicación, los objetos utilizan su propia interfaz pública, dicha interfaz se compone principalmente de ________ y _______.
+A. Objetos – clases
+B. Métodos – propiedades 
+C. Interfaces – elementos
+D. Modelos y estructuras
+ANSWER: B
+
+El diseño de la interfaz de usuario crea un medio eficaz de comunicación entre los seres humanos y la computadora. Siguiendo un conjunto de principios de diseño de la interfaz, el diseño identifica los ________ y ______ de ésta y luego crea una pantalla que constituye la base del prototipo de la interfaz de usuario.
+A. Componentes – funciones 
+B. Componentes – elementos 
+C. Elementos – descripciones 
+D. Objetos - acciones 
+ANSWER: D
+
+Indique cuáles son los principales estándares de comunicación en los que se basan los servicios WEB.
+A. HTML, SOAP, REST
+B. UML, REST, XML
+C. XML, SOAP, WSDL
+D. TCPIP, WSDL, HTML
+ANSWER: C
+
+Seleccione el orden correcto de evolución de las aplicaciones distribuidas:
+A. Arquitectura centralizada, aplicaciones de 3 capas, aplicaciones cliente servidor, aplicaciones N capas.
+B. Aplicaciones cliente servidor, aplicaciones N capas, arquitectura centralizada, aplicaciones de 3 capas.
+C. Aplicaciones N capas, arquitectura centralizada, aplicaciones de 3 capas, aplicaciones de 2 capas.
+D. Arquitectura centralizada, aplicaciones cliente servidor de 2 capas, aplicaciones de 3 capas, aplicaciones de N capas.
+ANSWER: D
+
+Seleccione la definición correcta de un Socket:
+A. Es una tecnología de servicios web que permite el consumo de componentes de software.
+B. Es una tecnología que permite enlazar 2 o más aplicaciones con el objetivo de enviar y recibir datos.
+C. Es una tecnología de programación que facilita la programación concurrente.
+D. Representa a un puerto abierto de un computador para la comunicación entre aplicaciones.
+ANSWER: B
+
+Indique los tipos de mensajería que pueden existir aplicados al concepto de un servidor de colas de mensajes
+A. Correo de entrada y salida.
+B. Chat público y privado
+C. Punto a punto y publicación-subscripción
+D. Puertos de entrada y salida
+ANSWER: C
+
+Cuál es la principal característica de un Thread
+A. Facilitar la programación de sockets.
+B. Establecer conexiones entre aplicaciones.
+C. Facilitar la ejecución concurrente de programas.
+D. Establecer una secuencia lógica en la programación.
+ANSWER: C
+
+Relacione las siguientes columnas:
+Líneas de código                                                Tecnologías y/o lenguajes.
+1. <h:outputText value="#{cliente.mensaje}"/>			a) Prime faces.
+2 @ManagedBean(name = "editor")					b) JSF.
+3. <p:dataTable value="#{dataTableView.studen}" var="st">       c) Html 5.                                                                                                                  
+4. <figure>                                                     d) Backin Bean.
+A. 1b, 2d, 3a, 4c 
+B. 1d, 2a,3c, 4d
+C. 1d, 2c, 3b, 4a
+D. 1b, 2d, 3c, 4a
+ANSWER: A
+
+Qué es el Modelo Vista Controlador:
+A. Es un conjunto de tecnologías para desarrollo de software.
+B. Es un lenguaje de programación.
+C. Es un framework basado en JAVA.
+D. Es un patrón de arquitectura de software.
+ANSWER: D
+
+Seleccione las características (una o varias) de la tecnología RMI:
+1)Permite disponer de objetos distribuidos en distintas máquinas.
+2)Permite la invocación remota de servicios web.
+3)Está basada en RPC.
+4)Es igual a la tecnología CORBA
+A. 1, 4
+B. 1, 3
+C. 1,3, 2
+D. 3, 4
+ANSWER: B
+
+La tecnología de Websockets establece la posibilidad de envío de mensajes entre:
+A. Solo cliente y servidor.
+B. Solo servidor y cliente
+C. Solo Cliente y varios servidores.
+D. Cliente y servidor. Adicionalmente, servidor y cliente.
+ANSWER: D
+
+Seleccione y ordene las capas del modelo N – tier cuando se realiza una solicitud por parte del usuario: 
+a)Client.
+b)Back end.
+c)Persistence Tier.
+d)Web tier
+e)Business Tier.
+A. a, e, c, b, d 
+B. a, d, e, c, b
+C. a, c, d, e, b
+D. e, d, c, d, a
+ANSWER: B
+
+¿Qué es REST?
+A. Es una manera de almacenar e intercambiar datos de una manera estructurada.
+B. Es un estilo arquitectónico para diseñar aplicaciones de servicio web.
+C. Es un protocolo que permite que los administradores manejen los nodos en una red IP.
+D. Es un formato legible para humanos, usado por aplicaciones para almacenar, transferir y leer información.
+ANSWER: B
+
+¿Qué código de estado de respuesta HTTP indica que se ha completado la solicitud para actualizar la base de datos?
+A. 404
+B. 201
+C. 400
+D. 200
+ANSWER: B
+
+¿Qué tipo de codificación se usa en la autenticación básica para las API REST?
+A. Base64
+B. UTF-8
+C. Base32
+D. UTF-16
+ANSWER: A
+
+¿Qué operación RESTful corresponde al método HTTP GET?
+A. update
+B. post
+C. patch
+D. read
+ANSWER: D
+
+¿Qué código de estado de respuesta HTTP indica que el usuario no está autenticado para acceder al sitio?
+A. 400
+B. 401
+C. 403
+D. 404
+ANSWER: B
+
+¿Qué estilo arquitectónico de API utiliza un protocolo de mensajería basado en XML para comunicarse entre aplicaciones?
+A. SOAP
+B. NFS
+C. XML-RPC
+D. REST
+ANSWER: A
+
+¿Qué elemento raíz de mensaje SOAP define el documento XML como un mensaje SOAP?
+A. Meta tag
+B. Body
+C. Envelope
+D. Header
+ANSWER: C
+
+¿Cuál es una característica de una API RESTful?
+A. Facilita los cambios de configuración de un controlador de red a los dispositivos finales.
+B. Utiliza métodos HTTP para recopilar y manipular datos.
+C. Admite una transmisión segura de datos entre un usuario remoto y una red empresarial.
+D. Es una API en dirección sur.
+ANSWER: B
+
+¿Qué tipo de información de credenciales se utiliza para la autenticación al portador en las API REST?
+A. Un nombre de usuario y contraseña establecidos por el cliente
+B. Una cadena generada por un servidor de autenticación
+C. Una contraseña codificada usando Base64
+D. Una cadena hash MD5 generada por la aplicación cliente
+ANSWER: B
+
+¿Qué ataque implica la inserción de código malicioso en sentencias SQL?
+A. Fuerza bruta
+B. Inyección SQL
+C. inclusión de archivos locales
+D. Scripts entre sitios
+ANSWER: B
+
+¿Qué técnica se utiliza para ayudar a mitigar los ataques de inyección SQL?
+A. utilizando procedimientos almacenados con el rol predeterminado «db_owner»
+B. asignar derechos de acceso de administrador o de DBA a la cuenta de la aplicación
+C. utilizando el mismo propietario o cuenta de administrador en las aplicaciones web para conectarse a la base de datos
+D. limitar el acceso de lectura a campos específicos de una tabla o combinaciones de tablas
+ANSWER: D
+
+Un usuario está desarrollando una aplicación para administrar de forma remota un dispositivo de red a través de la API. Las características de la API deben admitir el modelo cliente-servidor, el formato de datos JSON o XML y la operación sin estado. ¿Qué es un estilo de arquitectura API que el desarrollador podría usar?
+A. Webhook
+B. REST
+C. SOAP
+D. RPC
+ANSWER: B
+
+Una empresa manufacturera internacional está implementando una infraestructura industrial de la planta de Internet de las cosas. El diseño requiere que los recursos informáticos se encuentren lo más cerca posible del usuario. ¿Qué modelo de nube es adecuado para esta situación?
+A. Pública
+B. Híbrida
+C. Privada
+D. Perimetral
+ANSWER: D
+
+Un operador de red está probando una aplicación de administración de red que utiliza la API REST para comunicarse con dispositivos de red. El operador recibió un código de respuesta HTTP 403 en un paso de prueba. ¿Qué indica este código de respuesta?
+A. La página en la ubicación de URL HTTP no existe o está oculta.
+B. Error en la solicitud debido a un problema del lado del cliente.
+C. El cliente no se ha autenticado para acceder al sitio o a la llamada API.
+D. El acceso no se concede en función de las credenciales proporcionadas.
+ANSWER: D
+
+¿Qué funcione HTTP corresponde a la función ACTUALIZAR en CRUD?
+A. POST
+B. DELETE
+C. PUT
+D. GET
+ANSWER: C
+
+¿Qué categoría de código de estado HTTP se usa en la respuesta para indicar que una solicitud de API REST contiene un error en el lado del cliente?
+A. 2xx
+B. 3xx
+C. 4xx
+D. 5xx
+ANSWER: C
+
+Una empresa de fabricación internacional está implementando una infraestructura industrial de plantas de Internet de las cosas. El diseño requiere que los recursos informáticos estén ubicados lo más cerca posible del usuario. ¿Qué modelo de nube es adecuado para esta situación?
+A. público
+B. borde
+C. privado
+D. Perimetral
+ANSWER: D
+
+¿Qué protocolo se utiliza para automatiza la asignación de direcciones IP en una red?
+A. DHCP
+B. DNS
+C. SMB
+D. TFTP
+ANSWER: A
+
+¿Cuáles es una ventaja del patrón de diseño del software Modelo-vista-controlador?
+A. Simplifica la automatización de la red
+B. Permite múltiples vistas del mismo modelo
+C. Hace que el código sea más fácil de implementar usando canalizaciones Cl / CD
+D. Reduce la necesidad de manejo de errores
+ANSWER: B
+
+¿Cuáles son los modelos de despliegue de Cloud Computing?
+A. SaaS,  PaaS, IaaS, MaaS
+B. Privado, Perimetral, Público, Híbrido
+C. SaaS, PaaS, IaaS
+D. Privado, Distributivo, Público, Híbrido.
+ANSWER: B
+
+¿A qué se refiere verificación y validación de software?
+A. La verificación se refiere al conjunto de tareas que aseguran la implementación del software. En cambio, la validación es un conjunto diferente de tareas que aseguran los requerimientos del cliente con el software desarrollado.
+B. La verificación es un conjunto diferente de tareas que aseguran que el software que se construye sigue los requerimientos del cliente. En cambio, la validación se refiere al conjunto de tareas que garantizan que el software implementa correctamente una función específica.
+C. La verificación se refiere al conjunto de tareas que garantizan que el software implementa correctamente una función específica. En cambio, la validación es un conjunto diferente de tareas que aseguran que el software que se construye sigue los requerimientos del cliente.
+D. La verificación es un conjunto de tareas que aseguran al cliente y sus requerimientos respecto al software desarrollado. En cambio, la validación se refiere al conjunto de tareas que garantizan que el software implementa correctamente una función específica.
+ANSWER: C
+
+Una metodología generalizada de evaluación propondría las siguientes etapas (no necesariamente se presentan en un orden) para el proceso de evaluación de la calidad de software:
+A. Presentar informe, planificar la evaluación, recoger requerimientos, evaluar código con métricas.
+B. Efectuar medición, presentar informe, establecer resultados, planificar la evaluación.
+C. Evaluar código con métricas, presentar informe, establecer el modelo de calidad.
+D. Establecer el modelo de calidad, efectuar la medición, analizar resultados y presentar documentación.
+ANSWER: B
+
+¿Cuáles características corresponderían a un modelo de calidad en uso?
+A. Efectividad, Satisfacción, Mantenibilidad, Usabilidad.
+B. Productividad, Seguridad, Usabilidad, Portabilidad.
+C. Efectividad, Portabilidad, Mantenibilidad, Seguridad.
+D. Productividad, Seguridad, Efectividad, Satisfacción.
+ANSWER: D
+
+Una aplicación de software que pasa exitosamente las pruebas que se realizan en los sprints de Scrum:
+A. Es un software que demuestra calidad formal
+B. Es un software que ha superado los criterios base de calidad interna
+C. Es un software que ha superado los criterios base de calidad externa
+D. Es un software que ha sido probado, según especificaciones del ciclo de vida
+ANSWER: D
+
+Empate cada tipo de calidad de software con su objetivo correspondiente:
+1.Calidad de Uso			(a) Proceso de software
+2.Calidad Interna			(b) Producto de software
+3.Calidad Externa			(c) Efecto del producto de software
+4.Calidad de Proceso	
+A. 1b, 2b, 3b, 4a
+B. 1c, 2b, 3c, 4a
+C. 1c, 2b, 3b, 4a
+D. 1a, 2b, 3b, 4c
+ANSWER: C
+
+Empate cada norma con su objetivo correspondiente:
+1.ISO9000			(a) Producto y evaluación del producto de software
+2.ISO25000			(b) Producto de software
+3.ISO14598			(c) Evaluación del producto de software
+4.ISO 9126			(d) Madurez del proceso de software
+5.CMMi				(e) Sistema de gestión de calidad 
+A. 1e, 2b, 3c, 4a, 5d
+B. 1e, 2a, 3c, 4b, 5d
+C. 1e, 2b, 3a, 4b, 5d
+D. 1d, 2a, 3c, 4b, 5e
+ANSWER: C
+
+La capacidad del software de permitir a los usuarios gastar la cantidad apropiada de recursos en relación a la efectividad obtenida, se refiere a:
+A. Efectividad
+B. Productividad
+C. Seguridad
+D. Satisfacción
+ANSWER: B
+
+Señale la definición completa de SQA (Software Quality Assurance)
+A. SQA es un proceso que controla que todos los procesos, métodos, actividades y elementos de trabajo de la ingeniería de software han sido monitoreados y cumplen con los estándares definidos.
+B. SQA es un medio y una práctica para monitorear los procesos, métodos y productos de trabajo de ingeniería de software usando criterios técnicos universalmente aceptados
+C. SQA es un procedimiento que garantiza que todos los procesos, metodologías, actividades y elementos de trabajo de ingeniería de software se controlen con estándares universalmente aceptados
+D. SQA es un proceso que asegura que todos los procesos, métodos, actividades y elementos de trabajo de la ingeniería de software sean monitoreados y cumplan con los estándares definidos.
+ANSWER: D
+
+Considerando la regla de Pareto, con relación a las causas de la mala calidad del software, señale la afirmación correcta
+A. El 80% de las posibles causas explican el 100% de la mala calidad del software 
+B. El 20% de las posibles causas explican el 80 % de la mala calidad del software
+C. El 20% de las posibles causas explican el 100 % de la mala calidad del software
+D. El 80% de las posibles causas explican el 20 % de la mala calidad del software
+ANSWER: B
+
+Señale los componentes correctos de la norma ISO 29110, Parte 5, para Perfiles del ciclo de vida para las pequeñas organizaciones
+A. Guía de ingeniería. Grupo de perfil genérico. Perfil básico
+B. Guía de gestión e ingeniería. Grupo de perfil genérico. Perfil básico
+C. Guía de Evaluación. Grupo de perfil genérico. Perfil básico
+D. Guía de gestión e ingeniería: Grupo de perfil. Perfil básico
+ANSWER: B
+
+Dado el siguiente número hexadecimal AE2B16, seleccione el número binario equivalente.
+A. 1010111000110001
+B. 1010111000101011
+C. 10101110101011
+D. 10111110101011
+ANSWER: B
+
+Establezca la relación entre el microprocesador A= 8080, B=80286, C=80386, D=PENTIUM IV y el año de lanzamiento 1: 1974, 2: 1982, 3:1985, 4:2004. 
+A. A1,B2,C4,D3
+B. A1,B2,C3,D4
+C. A1,B3,C4,D2
+D. A1,B4,C3,D2
+ANSWER: B
+
+Establezca la relación entre tipo de memoria A=Registros en el CPU, B=Cache (sRAMs), C=Memoria Principal (dRAMs), D=Disco de almacenamiento, E=Unidades de cinta y el nivel que tiene {0,1,2,3,4}
+A. A1,B0,C3,D2,E4
+B. A2,B4,C0,D1,E3
+C. A0,B1,C2,D3,E4
+D. A3,B4,C0,D1,E2
+ANSWER: C
+
+Establezca la relación entre tipo de registro A: AX, B: BX, C: CX, D: SP, E: CS, F: IP y su descripción 1: REGISTRO DEL ACUMULADOR, 2: REGISTRO DE LA BASE, 3: REGISTRO PARA CONTEO, 4: REGISTRO APUNTADOR DE PILA, 5: REGISTRO DE SEGMENTO DE CODIGO, 6: APUNTADOR DE INSTRUCCIONES
+A. A1,B2,C3,D4,E5,F6
+B. A2,B1,C3,D5,E4,F6
+C. A3,B4,C6,D2,E1,F5
+D. A4,B5,C3,D1,E2,F6
+ANSWER: A
+
+Considere que se tiene un computador que puede almacenar 3 dígitos decimales.  Seleccione como es almacenado el número 27 en código 2421
+A. 0100 1111 0000
+B. 0100 1101 0001
+C. 0100 1111 0001 
+D. 1100 1111 0001
+ANSWER: C
+
+Dada la expresión:  a’b’c’ + a’bc’ +a’bc + ab’c’, seleccione la respuesta correcta luego de simplificarla
+A. b’c’ + ab
+B. b’c’ + a’b
+C. b’c’ + a’b’
+D. b’c + ab 
+ANSWER: B
+
+El número binario 110100101 es igual al número decimal 421
+A. VERDADERO
+B. FALSO
+ANSWER: A
+
+El número hexadecimal 1C3 es igual al número decimal 450
+A. VERDADERO
+B. FALSO
+ANSWER: B
+
+El hardware de los sistemas embebidos se compone de _______, ______ y ________.
+A. CPU, adaptador, dispositivos.
+B. Memoria, entradas, componentes.
+C. CPU, memoria, componentes.
+D. CPU, memoria, dispositivos.
+ANSWER: D
+
+Un ______ es un canal de comunicación normalmente compartido entre varios dispositivos.
+A. Control
+B. Bus
+C. Procesador
+D. Dato
+ANSWER: B
+
+Los sistemas __________, son aquellos sistemas de manipulación de datos físicos representados por valores _________
+A. digitales – continuos
+B. analógicos – finitos
+C. digitales – discretos
+D. analógicos – continuos
+ANSWER: D
+
+Un circuito medio sumador es  capaz de sumar dos datos de _______ bit/s y producir un bit de acarreo de ________.
+A. un / entrada
+B. dos / salida
+C. un / salida
+D. dos / entrada
+ANSWER: C
+
+Cuál es el significado de las siglas  PCI
+A. Peripheral Component Interface
+B. Peripheral Chanel Interface
+C. Peripheral Characteristic  Interface
+D. Peripheral Computer Institute
+ANSWER: A
+
+El _______ es un microprocesador de _______, tanto en lo que se refiere a su estructura como en sus conexiones externas.
+A. 8088, 8 bits
+B. 8080, 4 bits
+C. 8086, 16 bits
+D. 8088, 16 bits
+ANSWER: C
+
+La unidad de _______ es un bloque de lógica cableada dentro del CI. Esta parte del sistema controla y sincroniza las transferencias de _____ y las __________ que se realizan con ellos.
+A. ejecución - instrucciones - operaciones
+B. control - datos - operaciones
+C. ejecución – datos - instrucciones
+D. control – datos – direcciones
+ANSWER: B
+
+De acuerdo a la planificación de construcción de software en esta etapa se realizan cronogramas para todas las fases enunciadas excepto la de ___________________
+A. Diseño
+B. Implementación 
+C. Pruebas de Unidad
+D. Integración
+E. Pruebas de Sistema
+ANSWER: D
+
+Después de acabar con la construcción de software problemas encontrados con la arquitectura típicamente _____________________________________
+A. son más costosos que los errores de codificación
+B. son menos costosos que los errores de codificación
+C. son debido a un levantamiento de requisitos
+D. son debido a requerimientos no considerados
+E. pueden no considerarse
+ANSWER: A
+
+El mejor lugar para enfocarse para el aseguramiento de la calidad de software es en el _________________
+A. producto
+B. proceso
+C. proyecto
+D. persona
+E. arquitectura
+ANSWER: B
+
+¿Cuál de las siguientes opciones tiene menos probabilidades de ser considerada una fuente de ineficiencia con respecto al ajuste de código?
+A. líneas de código
+B. llamadas de sistema
+C. paginación
+D. operaciones de entrada/salida
+E. operaciones en general
+ANSWER: A
+
+Devops es una combinación de__________________________ que incrementan la habilidad de una organización para entregar aplicaciones y servicios a una gran velocidad.
+A. documentación, herramientas y destrezas 
+B. filosofía cultural, prácticas y herramientas
+C. prácticas, pruebas y herramientas
+D. documentación, pruebas y destrezas
+E. e. documentación, destrezas y habilidades
+ANSWER: B
+
+DevOps es un término que viene de la combinación de _____________________ y __________________. 
+A. Decodificación y oportunidad
+B. Desarrollo y operaciones
+C. Desenvolvimiento y oportunidad 
+D. Desencadenamiento y operatividad
+E. Decodificación y operación
+ANSWER: B
+
+De La evolución de software dentro de sus actividades no compromete______________________
+A. actividades de Desarrollo
+B. negociación con el cliente
+C. actividades de mantenimiento
+D. actividades de reingeniería
+E. actividades de operaciones
+ANSWER: B
+
+El mantenimiento está clasificado en __________________ categorías.
+A. seis
+B. cinco
+C. tres
+D. dos
+E. cuatro
+ANSWER: E
+
+El proceso de generar documentos de análisis y diseño es conocido como _______________
+A. Ingeniería de software
+B. Reingeniería de software
+C. Ingeniería de Usabilidad
+D. Reingeniería
+E. Ingeniería inversa
+ANSWER: E
+
+El modelo ___________________________ no es un modelo de mantenimiento de software.
+A. en cascada 
+B. orientado a re uso
+C. parche
+D. iterativo mejorado
+ANSWER: A
+
+Android es:
+A. Un modelo de dron
+B. Un sistema operativo
+C. Un servidor web
+D. Un navegador web
+E. Una arquitectura detallada de un sistema
+ANSWER: B
+
+¿Android está basado en cuál lenguaje? 
+A. C
+B. C++
+C. C#
+D. Java
+ANSWER: D
+
+APK es acrónimo de:
+A. Android Phone Kit
+B. Android Page Kit
+C. Android Package Kit
+D. Android Pain Killer
+E. Android Packet Kit
+ANSWER: C
+
+API es corto para ________________
+A. Application Programming Interface
+B. Android Programming Interface
+C. Android Page Interface
+D. Application Page Interface
+E. Android Programming Interconnection
+ANSWER: A
+
+Una actividad en android es _______________
+A. Una clase  
+B. Un paquete
+C. Una pantalla única en una aplicación que soporta código de java
+D. Un evento
+E. Una GUI
+ANSWER: C
+
+El núcleo sobre el cual trabaja Android es _____
+A. MAC
+B. WIndows
+C. Linux
+D. RedHat
+E. Ubuntu
+ANSWER: C
+
+¿Cuál de los siguientes métodos no son métodos del ciclo de vida de una actividad?
+A. onClick() 
+B. onCreate()
+C. onStart()
+D. onBackPressed() 
+E. onDestroy()
+ANSWER: D
+
+¿Cuál es el primero método callback que es invocado por el sistema durante el ciclo de vida de una actividad?
+A. Método onClick() 
+B. Método onCreate()
+C. Método onStart()
+D. Método onRestart()
+E. Método onInit()
+ANSWER: B
+
+¿Cuál es el uso de un proveedor de contenido de Android?
+A. Para almacenar datos dentro de la base de datos
+B. Para compartir datos entre aplicaciones
+C. Para enviar datos de una aplicación a otra aplicación
+D. Para poner la información de la IU
+E. Para monitorear las clases usadas
+ANSWER: C
+
+La clase que despliega información por un periodo corto de tiempo y desaparece después de un rato es la clase ___________
+A. Toast
+B. Log
+C. View
+D. maketest
+E. ViewGroup
+ANSWER: A
+
+¿Qué es el desarrollo de Software Global?
+A. Habla de desarrollo entre varios equipos en distintos departamentos.
+B. Habla de desarrollo entre varios equipos en localidades distribuidas geográficamente.
+C. Habla de desarrollo entre varios equipos en distintos niveles de seguridad.
+D. Habla de desarrollo entre varios equipos en distintos edificios.
+E. Habla de desarrollo entre varios equipos en distintos paradigmas de programación.
+ANSWER: B
+
+¿Cuál es el término que engloba la siguiente frase? Se transfieren las infraestructuras y el personal al proveedor y se hace cargo de todas las fases de implementación y asume el riesgo de la propiedad de los recursos.
+A. OUTSOURCING
+B. OUTSOURCING TOTAL
+C. OUTSOURCING SELECTIVO
+D. OUTSOURCING LIMITADO
+E. OUTSOURCING REDUCIDO
+ANSWER: B
+
+¿Cuál es el término que engloba la siguiente frase? Con este tipo outsourcing se permite al cliente cubrir ciertas necesidades. Se externalizan áreas secundarias especiales que son más extensas que las tareas individuales pero que, sin embargo, no corresponden a un proceso completo
+A. OUTSOURCING
+B. OUTSOURCING TOTAL
+C. OUTSOURCING SELECTIVO
+D. OUTSOURCING LIMITADO
+E. OUTSOURCING REDUCIDO
+ANSWER: C
+
+En el desarrollo de software global existen retos que las empresas deben aprender a resolver, por ejemplo: Las barreras del idioma, las diferencias en formas de pensar y expresarse, así como diferentes costumbres y formas de trabajar pueden afectar a las relaciones entre equipos, disminuir confianza, y por lo tanto, ser causante de retrasos. ¿Cuál es el término con el que clasificaríamos este tipo de retos?
+A. Procesos
+B. Comunicación
+C. Culturales
+D. Coordinación del trabajo
+E. Visibilidad y control
+ANSWER: C
+
+En el desarrollo de software global existen retos que las empresas deben aprender a resolver, por ejemplo: Distribuir las tareas entre varios sitios y zonas horarias es mucho más complejo que hacerlo para un proyecto de un solo sitio. ¿Cuál es el término con el que clasificaríamos este tipo de retos?
+A. Procesos
+B. Comunicación
+C. Culturales
+D. Coordinación del trabajo
+E. Visibilidad y control
+ANSWER: D
+
+¿Cuál es el  marco de trabajo por el cual  las personas pueden abordar problemas  complejos adaptativos, a la vez que  entregan productos del máximo valor  posible productiva y creativamente?
+A. Agile
+B. Scrum
+C. XP
+D. Project manager
+E. Cascada
+ANSWER: B
+
+¿Cuáles son los pilares en los que se basa Scrum?
+A. Pureza/Inspección/Adaptación
+B. Transparencia/Intervención/Adaptación
+C. Transparencia/Inspección/Armonía
+D. Transparencia/Inspección/Adaptación
+E. Mentalidad/Requerimientos/Cambios
+ANSWER: D
+
+Si necesitamos 20 ingenieros para desarrollar un motor de búsqueda avanzada, ¿Cómo se podrían conformar los equipos? 
+A. Podríamos formar cinco equipos de desarrollo de cuatro miembros cada uno, donde cada equipo de desarrollo tiene su propio Scrum Master, y todos los equipos de desarrollo tiene un Product Owner.
+B. Podríamos formar un equipo de desarrollo de 20 miembros, el equipo tiene su propio Scrum Master, Product Owner.
+C. Podríamos formar ocho  equipos de desarrollo de tres miembros cada uno, donde cada equipo de desarrollo tiene su propio Scrum Master, y todos los equipos de desarrollo tiene un Product Owner.
+D. Podríamos formar veinte  equipos de desarrollo de un miembro cada uno, donde cada equipo de desarrollo tiene su propio Scrum Master, y todos los equipos de desarrollo tiene un Product Owner.
+E. No sería necesario crear equipos, cada quien puede trabajar de manera individual.
+ANSWER: A
+
+¿Qué enunciado describe mejor la responsabilidad de un Scrum Master?
+A. Responsable de promover y apoyar Scrum.
+B. La gestión del equipo como el Gerente del Proyecto.
+C. Asegurar que el trabajo cumpla con los prerrequisitos de los Stakeholders.
+D. Mantener a raya a los interesados
+E. Refinar el Backlog.
+ANSWER: A
+
+Como Scrum Master de su equipo, usted debe asegurarse de que se lleve a cabo la Revisión del Sprint. Basándose en la Guía Oficial de Scrum. ¿Con qué finalidad se realiza este evento?
+A. Inspeccionar al equipo Scrum y crear un plan de mejoras que sean abordadas durante el siguiente Sprint.
+B. Permitir al Equipo Scrum sincronizar sus actividades y crear un plan para las próximas 24 horas.
+C. Definir el trabajo a realizar durante el Sprint.
+D. Inspeccionar el incremento y adaptar el Product Backlog si fuese necesario.
+E. Refinar el Scrum diario.
+ANSWER: D
+
+Un componente Front-End interactúa
+A. Directamente con la base de datos
+B. Con interfaces de usuario de otros dispositivos
+C. Con el usuario
+D. Interactúa con otras interfaces de usuario
+ANSWER: C
+
+Biblioteca para desarrollo de aplicaciones Web Front-End
+A. VueJS
+B. Angular
+C. React
+D. AngularJS
+ANSWER: C
+
+¿Qué componente del patrón arquitectónico MVC, no forma parte de un proyecto de desarrollo de servicios REST?
+A. Model
+B. View
+C. Controller
+D. Acceso a Bases de Datos
+ANSWER: B
+
+Código NodeJS utilizado para incluir el módulo (biblioteca) necesario para programar aplicaciones Web 
+A. #include <stdio.h>
+B. import com.mylibrary.FileManager;
+C. var express = require(“express”);
+D. var app = express();
+ANSWER: C
+
+Arquitectura de una aplicación web moderna
+A. HTML&Forms + Web Server + Web Services + EIS
+B. HTML&Forms + Web Server + EIS
+C. HTML&Forms&F-E_Framework + Web Server + Web Services + Cloud EIS
+D. HTML&Forms + PHP + EIS
+ANSWER: C
+
+Un servicio Web (API pública), por lo general retorna
+A. URLs
+B. Texto Plano
+C. Páginas web
+D. Recursos en Formato JSON
+ANSWER: D
+
+Seleccione el ejemplo de datos en formato JSON
+A. <student_id>0015</student_id><name>Edison</name><address>El Valle</address>
+B. {"student_id":"005802615","name":"Edison”,"address":"El Valle”}
+C. {student_id:005802615,name:Edison,address:”El Valle”}
+D. 005802615, Edison, El Valle
+ANSWER: B
+
+Framework de NodeJS utilizado para programar servicios web
+A. Django
+B. ExpressJS
+C. Laravel
+D. Ruby on Rails
+ANSWER: B
+
+Método http utilizado para insertar datos en el sistema
+A. GET
+B. PUT
+C. POST
+D. CREATE
+ANSWER: C
+
+Lenguaje de Programación que puede ser utilizado para desarrollar Web Front-End y Web Back-End
+A. Java
+B. PHP
+C. JavaScript
+D. Python
+ANSWER: C
+
+¿Cuál es la definición de la IA?
+A. El nuevo y excitante esfuerzo de hacer que los computadores piensen, máquinas con mentes, en el más amplio sentido literal.
+B. La automatización de actividades que vinculamos con procesos de pensamiento humano, actividades como la toma de decisiones, resolución de problemas, aprendizaje. 
+C. Sistemas que manifiestan un comportamiento no inteligente, pues son capaces de analizar su entorno y pasar a la acción con cierto grado de autonomía con el fin de alcanzar objetivos específicos. 
+D. Sistemas que piensan por su propia cuenta.
+ANSWER: B
+
+Las técnicas de búsqueda son una serie de esquemas de representación del conocimiento, que mediante diversos algoritmos nos permite resolver ciertos problemas desde el punto de vista de la I.A. ¿Cuál de las siguientes es una técnica de búsqueda a ciegas?
+A. Algoritmo búsqueda en amplitud.
+B. Algoritmo de búsqueda A*.
+C. Redes neuronales.
+D. Calculo de probabilidad.
+ANSWER: A
+
+Las técnicas de búsqueda son una serie de esquemas de representación del conocimiento, que mediante diversos algoritmos nos permite resolver ciertos problemas desde el punto de vista de la I.A. ¿Cuál de las siguientes es una técnica de búsqueda heurística?
+A. Algoritmo búsqueda en amplitud.
+B. Algoritmo de búsqueda A*.
+C. Redes neuronales.
+D. Calculo de probabilidad.
+ANSWER: B
+
+¿Cuál es la teoría que proporciona los métodos para cuantificar las posibilidades, o probabilidades, asociadas con los diversos resultados?
+A. Teoría de la seguridad
+B. Teoría de probabilidad.
+C. Teoría sistemas expertos.
+D. Teoría de grafos.
+ANSWER: B
+
+Espacio de muestreo, si el experimento consiste en el lanzamiento de una moneda, entonces el espacio de muestreo será S = {cara, cruz}, ya que estas dos alternativas representan a todos los resultados posibles del experimento. Si en lugar de considerar el lanzamiento de una moneda, lanzamos dos monedas. ¿Cuál sería el espacio de muestreo?
+A. S={ 2 caras, 2 cruz, cara y cruz, cruz y cara}
+B. S={ 2 caras, cara y cruz, cruz y cara}
+C. S={ 2 cruz, cara y cruz, cruz y cara}
+D. S={ 1 caras, 1 cruz, cara y cruz, cruz y cara}
+ANSWER: A
+
+¿Cuál es la rama de la inteligencia artificial que permite que las maquinas aprendan sin ser expresamente programadas para ello? 
+A. Machine Listening
+B. Multiple Linear Regression
+C. Modelos de regresión
+D. Machine Learning
+ANSWER: D
+
+¿Cuál es el nombre del teorema que expresa la probabilidad de que ocurra el evento A, dado que ha ocurrido B, en función de la probabilidad de que ocurra B dado que ha ocurrido A, de la probabilidad de A y de la probabilidad de B?
+A. Teorema de pitagoras.
+B. Teorema de tales.
+C. Teorema de límites.
+D. Teorema de bayes.
+ANSWER: D
+
+Son un modelo inspirado en el funcionamiento del cerebro humano. Está formado por un conjunto de nodos que están conectados y transmiten señales entre sí, Estas señales se transmiten desde la entrada hasta generar una salida. ¿Cuál es el nombre de esté modelo?
+A. Machine learning.
+B. Deep learning.
+C. Redes neuronales artificiales. 
+D. Forward learning.
+ANSWER: D
+
+¿Cuál es el nombre del modelo matemático inspirado en una estructura y función simplificadas de una única neurona biológica?
+A. Perceptrón
+B. Bias
+C. Función de activación
+D. Función de negación
+ANSWER: A
+
+¿Cuáles son los componentes principales del Perceptrón?
+A. Entradas /Suma Ponderada/Función de activación/Salida
+B. Entradas/Pesos /Función de activación/Salida
+C. Entradas/Pesos/Suma Ponderada /Salida /Función de activación
+D. Entradas/Pesos/Suma Ponderada/Función de activación/Salida
+ANSWER: D
+
+La CPU se asigna a un proceso durante un tiempo definido llamado CUANTO o cuantum, Su unidad de tiempo se mide es en?
+A. seg
+B. ms
+C. ns
+D. otra
+ANSWER: D
+
+En qué Modo de Procesamiento, que necesariamente el tiempo de respuesta debe ser menor a un tiempo predeterminado, ¿se conoce como?
+A. Sistema para proceso de transacciones
+B. Sistema en tiempo real
+C. Procesamiento en lotes
+D. Sistema en tiempo real
+ANSWER: B
+
+El proceso mediante el cual la computadora introduce trabajos en un buffer (un área especial en memoria o en un disco), de manera que un dispositivo pueda acceder a ellos cuando esté listo, se denomina.
+A. Paginación
+B. Buffering
+C. Spooler
+D. Caching
+ANSWER: C
+
+Dados los procesos P1 y P2, llegan en los instantes 4 y 8, respectivamente, y en el instante 16 acaba P2 y en el instante 24 acaba P1. Entonces: Cuál es la respuesta correcta
+A. El tiempo de retorno medio es 12
+B. Faltan datos para calcular el tiempo de retorno medio
+C. El tiempo de retorno medio es 14
+D. El tiempo de retorno medio es 15
+ANSWER: C
+
+En un sistema operativo, la gestión de la E/S se relaciona con: 
+A. El encargado de la creación, planificación y destrucción de procesos
+B. Ocupa de facilitar el manejo de los dispositivos periféricos
+C. El encargado del manejo de archivos y directorios y de la administración del almacenamiento secundario.
+D. El encargado de ofrecer mecanismos para que los procesos puedan comunicase y sincronizarse
+ANSWER: B
+
+¿Cuál es el comando para las consultas de DNS?
+A. #who
+B. #who DNS
+C. #ss –t
+D. #dig
+ANSWER: D
+
+Uno de los recursos y servicios de un sistema operativo que se encarga de la creación, planificación y destrucción de procesos es:
+A.  Gestión de memoria.
+B. Gestión de procesos.
+C. Gestión de archivos y directorios.
+D. Gestión de la E/S.
+ANSWER: B
+
+Uno de los recursos y servicios de un sistema operativo que se encarga de la creación, planificación y destrucción de procesos es:
+A. Gestión de memoria.
+B. Gestión de procesos.
+C. Gestión de archivos y directorios.
+D. Gestión de la E/S.
+ANSWER: A
+
+En el algoritmo del Minimax aplicado al Juego del Tres en Raya, uno de los tres posibles escenarios para el movimiento de la izquierda es:
+A. Si X juega [2,0]; entonces O jugara [2,1] y ganara el juego; El valor de este movimiento es -10.
+B. Si X juega [2,1]; entonces O jugara [2,2] que empata el juego; El valor de este movimiento es 0.
+C. Si X juega [2,2]; entonces la X ganara el juego; El valor de este movimiento es +10.
+D. Ninguna de las anteriores.
+ANSWER: A
+
+Considere la siguiente clase del juego del Zig-Zag: 
+public class Player : MonoBehaviour {}
+¿Qué función se llama justo antes de llamar por primera vez a cualquiera de los métodos?
+A. void Start() {}
+B. void Update() {}
+C. void FixedUpdate() {}
+D. void OnTriggerEnter(Collider Obj) {} 
+ANSWER: A
+
+Considere la siguiente clase del juego del Game-Labyrinth: 
+public class Player : MonoBehaviour {}
+¿Qué función llama a cada fotograma siempre que la clase MonoBehaviour no esté habilitada?
+A. void Start() {}
+B. void Update() {}
+C. void OnTriggerEnter(Collider Obj) {} 
+D. Ninguna de las anteriores.
+ANSWER: D
+
+Considere la siguiente clase del juego del Zig-Zag: 
+public class Player : MonoBehaviour {}
+¿Qué función maneja el colisionador other para que escriba en el disparador?
+A. void Start() {}
+B. void Update() {}
+C. void OnTriggerEnter(Collider Obj) {} 
+D. Ninguna de las anteriores.
+ANSWER: C
+
+Para controlar el movimiento del ratón con el clic derecho se utiliza la función _________ y con el clic izquierdo se utiliza la función _________.
+A. Input.GetMouseButtonDown(0), Input.GetMouseButtonDown(1)
+B. Input.GetMouseButtonDown(1), Input.GetMouseButtonDown(0)
+C. Input.GetMouseButtonDown(0), Input.GetMouseButtonDown(2)
+D. Ninguna de las anteriores.
+ANSWER: B
+
+Si se quisiera controlar el movimiento del ratón con el clic izquierdo la posición hacia Abajo y a la Izquierda se debería utilizar una estructura de selección if-else, donde los valores del Vector3 para la dirección deben ser _________ y _________.
+A. (0, 0, -1); (-1, 0, 0)
+B. (0, 0, 1); (-1, 0, 0)
+C. (0, 0, 1); (1, 0, 0)
+D. (0, 0, -1); (1, 0, 0)
+ANSWER: D
+
+Si se quisiera controlar el movimiento del ratón con el clic derecho la posición hacia Arriba y a la Derecha se debería utilizar una estructura de selección if-else, donde los valores del Vector3 para la dirección deben ser _________ y _________.
+A. (0, 0, -1); (-1, 0, 0)
+B. (0, 0, 1); (-1, 0, 0)
+C. (0, 0, 1); (1, 0, 0)
+D. (0, 0, -1); (1, 0, 0)
+ANSWER: B
+
+Verdadero o falso: a) En el juego del Laberinto, la clase global GameStatus define sus datos miembro como privados y sus descriptores de acceso son públicos y de tipo static; b) Para acceder a los getters y setters de una clase global se debe utilizar la misma clase en cualquier parte del programa. 
+A. Verdadero, Verdadero
+B. Verdadero, Falso
+C. Falso, Verdadero
+D. Falso, Falso
+ANSWER: C
+
+Verdadero o falso: a) En el juego del Laberinto, el Player debe tener habilitada la propiedad Is Trigger del Sphere Collider para poder colisionar con los coins; b) En el juego del Laberinto, cada uno de los coins debe tener deshabilitada la propiedad Is Trigger del Sphere Collider para poder colisionar con el Player. 
+A. Verdadero, Verdadero
+B. Verdadero, Falso
+C. Falso, Verdadero
+D. Falso, Falso
+ANSWER: D
+
+Para reemplazar la instrucción obsoleta: Application.loadedLevelName == "MainScene"; se debe utilizar la siguiente instrucción: __________, que permite identificar la escena en la cual se encuentra el Player.
+A. SceneManager.LoadScene(SceneManager.GetActiveScene().name.Equals("MainScene");
+B. SceneManager.GetActiveScene().name.Equals("MainScene")
+C. SceneManager.GetActiveScene().name.Equals(Index(1));
+D. Ninguna de las anteriores.
+ANSWER: B
+
+Cuál de los siguientes enunciados es VERDADERO acerca de la Estructura de Desglose del Trabajo (EDT)?
+A. La EDT es creada por el Patrocinador (Sponsor) del proyecto y los interesados (Stakehokders).
+B. La  EDT representa todo el trabajo que debe ser hecho en el proyecto.
+C. Cada ítem de la EDT representa una característica del alcance del producto.
+D. El Director de proyecto establece la EDT.
+ANSWER: B
+
+A usted se le asigna el cargo del proyecto que ya está en ejecución. Mientras revisaba la documentación del proyecto, descubre que no hay Estructura de Desglose del Trabajo (EDT). Revisa el Plan de Gestión del Alcance y descubre que debería haber una EDT para su proyecto. ¿Qué es lo MEJOR que podría hacer?
+A. Detener el trabajo del proyecto y crear una EDT. No permitir que se siga trabajando hasta que la EDT sea creadA.
+B. Anotarlo en las lecciones Aprendidas para que no suceda en proyectos futurosB
+C. Asegurarse de gestionar las comunicaciones de cerca para que el equipo no omCta ningún trabajo no documentado.
+D. Continuar el proyecto sin crear una EDTD
+ANSWER: A
+
+El Director de Proyecto (Project Manager), de un proyecto de diseño está realizando el  proceso Definir el Alcance ¿Qué alternativa describe MEJOR dicho proceso?
+A. Crear una representación gráfica de cómo las fases y entregables se descomponen en paquetes de trabajo.
+B. Crear un documento que describa todo el trabajo que el equipo debe hacer para lograr los Entregables
+C. Crear un documento que enumera las características del producto.
+D. Crear un documento de comunicación que establezca las reuniones a desarrollar para la planificación.
+ANSWER: B
+
+¿Cuál de las siguientes alternativas describe MEJOR el propósito del Enunciado del Alcance del Proyecto?
+A. Describe los objetivos, requisitos, entregables del proyecto y el trabajo necesario para crearlos.
+B. Descompone Entregables en paquetes de trabajo.
+C. Describe las características del producto de un proyecto.
+D. Describe el análisis de la rentabilidad.
+ANSWER: A
+
+Cuál es el objetivo de la gestión y análisis de riesgos en los proyectos de software?
+A. Que la amenaza se presente.
+B. Que exista restricciones sobre los recursos a utilizar en su desarrollo.
+C. Adelantarse a lo previsto y a lo imprevisto.
+D. Que las causas no existan.
+ANSWER: C
+
+Para estimar el tamaño de un software que se va a desarrollar, cuál es el método más común que se puede utilizar?
+A. Técnica Delphi
+B. Análisis de puntos de Función.
+C. Juicio de expertos.
+D. Lluvia de ideas.
+ANSWER: B
+
+Como gerente del proyecto, debes trabajar con tu equipo de proyecto para identificar la iniciativa y sus fases dentro del cronogramA. Esta identificación ayuda a comunicar las expectativas y los resultados del trabajo. La compilación de todas las fases dentro de un proyecto es lo que se conoce como:
+A. Ciclo de vida de un proyectB
+B. Ciclo de vida del productC
+C. Finalización del proyectoD
+D. Aseguramiento de la calidad
+ANSWER: A
+
+¿Cuáles son los principales roles dentro de un proyecto?
+A. Patrocinador, líder, secretaria
+B. Gerente, patrocinador y administrativo.
+C. Director, patrocinador, equipo.
+D. Inspector, líder, equipo.
+ANSWER: C
+
+La planificación de proyectos establece las actividades que se van a realizar, darles _     ___________, ___________sus interrelaciones y ordenarlas sucesivamente en el tiempo. 
+A. Prioridades - analizar
+B. Escalabilidad - Rendimiento
+C. Diferencia - Resolución
+D. Correspondencia - soporte
+ANSWER: A
+
+El balanceo de restricciones contrapuestas que incluyen el ________, el _________, el presupuesto, los recursos y el riesgo es la gestión de proyectos.
+A. Alcance - programa
+B. Registro - control
+C. Recurso - desglose
+D. Análisis - detalle
+ANSWER: A
+
+Seleccione la opción que indique los 3 objetivos principales de la seguridad (Triada CIA)
+A. Confidencialidad, Integridad y Disponibilidad
+B. Autenticación, Autorización y Accounting
+C. Encriptación simétrica, encriptación asimétrica y hash
+D. Seguridad física, seguridad lógica y seguridad de personal
+ANSWER: A
+
+Seleccione la opción que liste solamente algoritmos de encriptación simétrica.
+A. DES, 3DES, AES
+B. AES, RSA, ECC
+C. RSA, ECC
+D. DES, AES, SHA1
+ANSWER: A
+
+Seleccione la opción correcta para completar la siguiente afirmación: La criptografía de llave pública (o asimétrica) hace uso de: _________________
+A. 1 sola llave secreta que debe ser conocido por todas las personas que desean comunicarse de manera confidencial
+B. 2 llaves (1 llave pública y 1 llave privada) generados por el usuario. Cada usuario comparte ambas llaves entre todas las personas que desean comunicarse de manera confidencial
+C. 2 llaves (1 llave pública y 1 llave privada) por usuario. Cada usuario genera su llave pública y privada. Cada usuario comparte su llave pública con otros usuarios, pero mantiene en secreto su llave privada.
+D. 3 llaves (1 llave púbica, 1 semi-pública y 1 llave privada). Cada usuario comparte su llave pública y semi-pública, pero mantiene secreto su llave privada.
+ANSWER: C
+ 
+Se dice que existen cuatro factores de autenticación, seleccione la opción que indique esos factores de autenticación.
+A. Algo que la persona conoce, algo que la persona posee, algo que la persona es (biometría estática) y algo que la persona hace (biometría dinámica)
+B. Algo que la persona puede descubrir, algo que la persona posee, algo que la persona es (biometría estática) y algo que la persona hace (biometría dinámica)
+C. Algo que la persona conoce, algo que la persona puede descubrir, algo que la persona es (biometría estática)
+D. La contraseña, el token, la huella digital, la voz
+ANSWER: A
+
+El SGSI significa:
+A. Sistema de Gestión de la Seguridad de Información
+B. Sistema de Gerenciamiento de la Seguridad de la Información
+C. Solución de Gestión de la Seguridad Informática
+D. Sistema de Gestión de la Seguridad Informática
+ANSWER: A
+
+Una DMZ interna de una configuración de Firewall es:
+A. Es el segmento de red que se conecta directamente al Internet sin ningún tipo de seguridad.
+B. Red que se ubica entre la red interna de una organización e Internet.
+C. Red interna (LAN) de la organización.
+D. Es un segmento de red totalmente segura sin ningún tipo de accesos.
+ANSWER: B
+ 
+Un firewall de filtrado de paquetes puede realizar controles de conexión basado en:
+A. Direcciones IP
+B. Puertos fuente
+C. Puertos destino
+D. Todas las opciones son correctas.
+ANSWER: D
+
+Una medida de seguridad para evitar el eavesdropping en un enlace de comunicación es:
+A. Encriptación
+B. Username y password
+C. Nonce
+D. Firma digital
+ANSWER: A
+
+El propósito de un firewall es:
+A. Prevenir conexiones no deseadas de red
+B. Filtrar malwares
+C. Evitar la sobrecarga de procesamiento de las computadoras
+D. Compartir una conexión de Internet entre varias computadoras
+ANSWER: A
+
+A qué objetivo de la seguridad (de la Triada CIA) afecta el ataque de sniffing:
+A. Confidencialidad
+B. Integridad
+C. Disponibilidad
+D. Integridad y Disponibilidad
+ANSWER: A
+
+Un proceso de software es un conjunto de ____________ que conducen a la creación de un producto de software
+A. Personas 
+B. Actividades 
+C. Pruebas 
+D. Componentes 
+ANSWER: B
+
+¿Cuál no es un elemento típico del proceso de software?
+A. Estados 
+B. Actividad 
+C. Rol 
+D. Producto 
+ANSWER: A
+
+Algunas actividades para los procesos de software son:
+A. Especificación, diseño, validación, generación.  
+B. Diseño, creación, validación, especificación.  
+C. Especificación, diseño, validación, evolución. 
+D. Diseño, ejecución, validación, especificación. 
+ANSWER: C
+
+Se denomina modelo_____________ porque su característica principal es que no se comienza con un paso hasta que no se ha terminado el anterior
+A. Espiral 
+B. Evolutivo 
+C. Incremental 
+D. Cascada  
+ANSWER: D
+
+¿Cuál no es considerado un modelo genérico?
+A. Rup  
+B. Cascada 
+C. Evolutivo 
+D. Prototipado  
+ANSWER: A
+
+El orden que debe seguir las etapas del proceso de software es:
+A. Requisitos, diseño, implementación, pruebas, mantenimiento. 
+B. Requisitos, implementación, diseño, mantenimiento, pruebas. 
+C. Requisitos, diseño, implementación, mantenimiento, pruebas. 
+D. Diseño, requisitos, implementación, pruebas, mantenimiento. 
+ANSWER: A
+
+¿Cuál es el estándar que regula los modelos de evaluación del proceso del ciclo de vida del software?
+A. IEE830  
+B. ISO/IEC 15504 
+C. ISO/IEC/IEEE 12507 
+D. ISO/IEE 15244 
+ANSWER: B
+
+¿Cuál es considerada una metodología tradicional?
+A. XP 
+B. SCRUM 
+C. AUP 
+D. CASCADA 
+ANSWER: D
+
+El equipo de un proyecto basado en metodología __________ es: cliente, programadores, testers, coach, manager.
+A. AUP 
+B. SCRUM 
+C. XP 
+D. KANBAN 
+ANSWER: C
+
+Es un Software que permite modelar y documentar procesos de negocio basado en el estándar conocido como Business Process Model and Notation (BPMN)
+A. Bizagi 
+B. Rational Rose 
+C. Microsoft Visio 
+D. Start UML 
+ANSWER: A
+
+Las aplicaciones web están compuestas por: 
+A. Estructura – modelo – acceso  
+B. Base de datos navegador – modelo conceptual 
+C. Modelo - Código de aplicación -Documentación  
+D. Base de Datos – Código de aplicación – Acceso por Navegador  
+ANSWER: D
+
+El HTML no es considerado un lenguaje de programación, ya que no puede crear funcionalidades dinámicas. En su lugar, con HTML, los usuarios web pueden crear y estructurar secciones, párrafos y enlaces mediante elementos, _________ y ________.
+A. propiedades - valores 
+B. valores – estados  
+C. relaciones – valores 
+D. etiquetas – atributos 
+ANSWER: D
+
+Form: Es la etiqueta que define que estamos creando un formulario. Los atributos básicos son:
+A. method - action
+B. relation - function 
+C. function - action 
+D. relation - method  
+ANSWER: A
+
+Para enviar ciertos tipos de información al servidor, el protocolo HTTP provee diferentes métodos de petición. Los dos más importantes son:  _________ y _________, los cuales, aunque entregan los mismos resultados, revelan algunas diferencias entre ellos. 
+A. GET - POST 
+B. REFERENCIA 
+C. RELACIONALES 
+D. POST - DELETE 
+ANSWER: A
+
+CSS es la mejor forma de separar los _________ y su ________ y es imprescindible para crear páginas web complejas. 
+A. valores - dinamismo 
+B. elementos - comportamiento 
+C. elementos – valores  
+D. contenidos – presentación    
+ANSWER: D
+
+Para activar la cuadrícula grid hay que utilizar sobre el elemento contenedor la propiedad display y especificar cualquiera de los valores:
+A. grid - inline-grid
+B. fit - inline-fit 
+C. flex
+D. val  
+ANSWER: A
+
+Los lenguajes de scripting son una subcategoría de los lenguajes de programación. Este tipo de lenguajes son interpretados, es decir, que para ejecutar las instrucciones existe un programa o intérprete que se encarga de procesar cada una de las órdenes y producir los resultados deseados.  
+A. compilados  
+B. interpretados 
+C. hibridos  
+D. descriptivos 
+ANSWER: B
+
+En Javascript, cuando nos referimos al DOM nos referimos a esta estructura, que podemos modificar de forma dinámica desde Javascript, principalmente: 
+A. interpretando etiquetas 
+B. interpretando las funciones 
+C. añadiendo nuevas etiquetas  
+D. generando funciones 
+ANSWER: C
+
+Seguridad en Aplicaciones, es el uso de principios y/o buenas prácticas de SEGURIDAD durante el ciclo de vida del software (SDLC), pudiendo ser este ___________ o ___________. 
+A. interpretado - analizado 
+B. adquirido – desarrollado  
+C. estudiado - revisado  
+D. generado – revisado  
+ANSWER: B
+
+Básicamente un servidor WEB consta de un intérprete HTTP el cual se mantiene a la espera de peticiones de clientes y le responde con el contenido según sea solicitado. El cliente, una vez recibido el código, lo:  interpreta y lo exhibe en pantalla. 
+A. lo muestra en pantalla  
+B. interpreta y lo exhibe en pantalla  
+C. guarda en memoria  
+D. guarda y lo muestra en pantalla  
+ANSWER: B
+
+El objetivo de un Ingeniero Software debe ser entregar un producto con el nivel de __________________  que las técnicas de evaluación que hoy permitan
+A. IEEE 830 
+B. Que indique el Analista de Requisitos 
+C. Que indique el Director de Proyecto de Software 
+D. Calidad 
+E. La arquitectura detallada del sistema 
+ANSWER: D
+
+Calidad de Software (QA) vs Calidad Productos (fábrica). Escoja 2 (dos) que son relacionados a la calidad de software
+A. El software se deteriora con el tiempo. 
+B. Se fabrica (proceso diseño - errores). 
+C. Se desarrolla, no se fabrica (proceso diseño - errores). 
+D. El software no es un producto mental. 
+E. El software es un producto mental. 
+ANSWERS: C, E
+
+Indique 3 (tres) principios de las pruebas de software
+A. Realizar las pruebas con un buen “debug” (F5) se encuentran los defectos 
+B. Las pruebas demuestran la presencia de defectos, no su ausencia 
+C. Las pruebas se las utiliza siempre y cuando el desarrollador tiene tiempo. 
+D. Las pruebas exhaustivas no existen (o son imposibles). 
+E. Las pruebas tempranas ahorran tiempo y dinero. 
+ANSWERS: B, D, E
+
+Un Ingeniero de Pruebas son aquellos profesionales que _____________ sobre la _____________ a lo largo de ________________ 
+A. inspeccionan e informan -  calidad de los productos 
+B. no inspeccionan e informan -  prueba de los productos – la primera fase el ciclo de Desarrollo 
+C. inspeccionan e informan -  calidad de los productos - todo el ciclo de Desarrollo 
+D. a veces inspeccionan e informan -  falta calidad de los productos – la cuarta fase del ciclo de Desarrollo 
+E. calidad de los productos - todo el ciclo de Desarrollo 
+ANSWER: C
+
+Qué cualidades debe tener el Ingeniero de Pruebas (seleccione 3 tres)?
+A. Ser Ingeniero de Software 
+B. Minucioso en el detalle 
+C. Ser certificado en AWS  
+D. Ser imaginativo 
+E. Buen comunicador    
+ANSWERS: B, D, E
+
+Las técnicas de evaluación estática son realizadas  ________  de la  aplicación y su objetivo son realizar la ______________________ documentación y código fuente.
+A. sin ejecutar el código – revisión y/o inspección de la 
+B. ejecutar el código – implementación de la 
+C. sin ejecutar el código – implementación de la 
+D. ejecutar el código – revisión y/o inspección de la 
+E. ejecutar el código – debug (F5) de la   
+ANSWER: A
+
+Las pruebas de caja Negra (selecciona tres): 
+A. Se genera cobertura de caminos. 
+B. La estructura interna del objeto de prueba es irrelevante o desconocida. 
+C. Se puede generar estructuras de flujo de control/datos. 
+D. Los casos de prueba se obtienen a partir del análisis de la especificación (funcional o no funcional) de un componente o sistema 
+E. La técnica de caja negra también se denomina prueba funcional o prueba orientada a la especificación 
+ANSWERS: B, D, E
+
+Validación de software es:
+A. proceso de validar algo. 
+B. proceso de evaluar un sistema o componente para determinar si los productos de una determinada fase satisfacen las condiciones impuestas al comienzo de la fase. 
+C. proceso de evaluar un sistema o componente durante o al final del proceso de desarrollo para determinar si satisface los requisitos especificados. 
+D. proceso para evaluar si el código fuente se puede compilar 
+E. proceso para evaluar la documentación si es necesario. 
+ANSWER: C
+
+Verificación de software es:
+A. proceso de validar algo. 
+B. proceso de evaluar un sistema o componente para determinar si los productos de una determinada fase satisfacen las condiciones impuestas al comienzo de cada fase. 
+C. proceso de evaluar un sistema o componente durante o al final del proceso de desarrollo para determinar si satisface los requisitos especificados. 
+D. proceso para evaluar si el código fuente se puede compilar 
+E. proceso para evaluar la documentación si es necesario. 
+ANSWER: B
+
+Caso de prueba es (selecciones tres):
+A. entradas + acciones + salidas 
+B. salida obtenida == salida obtenida -> OK 
+C. salida obtenida == salida esperada -> OK 
+D. salida esperada == salida esperada -> INCONFORMIDAD 
+E. salida obtenida != salida esperada -> INCONFORMIDAD  
+ANSWERS: A, C, E 
+
+¿En qué momento sería más beneficioso utilizar un protocolo de enrutamiento dinámico en lugar de un enrutamiento estático?.
+A. En una organización con una red más pequeña que no se espera que crezca en tamaño.
+B. En una red donde hay muchos cambios de topología.
+C. En una organización donde los routers sufren problemas de rendimiento.
+D. En una red auxiliar que tiene un único punto de salida.
+ANSWER: B
+
+Al verificar una tabla de enrutamiento, un técnico de red nota la siguiente entrada: O*E2 0.0.0.0/0 [110/1] a través de 192.168.16.3, 00:20:22, Serial0/0/0. ¿Qué información se puede recopilar?.
+A. Esta ruta es una ruta predeterminada propagada.
+B. La métrica para esta ruta es 110.
+C. El borde del área OSPF 0 es la interfaz a la que se dirige 192.168.16.3.
+D. La ruta se encuentra a dos saltos de distancia.
+ANSWER: A
+
+¿Cuál es la cantidad utilizable de direcciones IP de host en una red que tiene una máscara / 26?.
+A. 128
+B. 32
+C. 16
+D. 62
+ANSWER: D
+
+Dividir la red 192.168.10.0/24 en subredes con máscara / 26. ¿Cuántas subredes de igual tamaño se crean?.
+A. 1
+B. 16
+C. 4
+D. 8
+ANSWER: C
+
+¿Qué subred incluiría la dirección 192.168.1.96 como dirección de host utilizable?.
+A. 192.168.1.64/26
+B. 192.168.1.32/28
+C. 192.168.1.64/29
+D. 192.168.1.32/27
+ANSWER: A
+
+¿Qué sucede cuando se introduce el comando transport input ssh en las líneas vty del switch?.
+A. El cliente SSH en el switch se activa.
+B. La comunicación entre el switch y los usuarios remotos está cifrada.
+C. El switch requiere conexiones remotas a través de un software de cliente propietario.
+D. El switch requiere una combinación de nombre y contraseña para el acceso remoto.
+ANSWER: B
+
+Dentro de una red. ¿cuál es el propósito de configurar un switch con una dirección de puerta de enlace predeterminada?.
+A. La dirección de puerta de enlace predeterminada se utiliza para reenviar los paquetes originados en el switch a redes remotas.
+B. Un switch debe tener una puerta de enlace predeterminada para que Telnet y SSH puedan acceder a él.
+C. Proporciona una dirección de siguiente salto para todo el tráfico que fluye a través del switch.
+D. Los hosts que están conectados al switch pueden utilizar la dirección de puerta de enlace predeterminada del switch para reenviar paquetes a un destino remoto.
+ANSWER: A
+
+¿Qué término se refiere a una red que brinda acceso seguro a las oficinas de la empresa por parte de proveedores, clientes y colaboradores?
+A. Internet
+B. Extranet
+C. Intranet
+D. Red extendida
+ANSWER: B
+
+¿Qué capa es la responsable de enrutar los mensajes a través de una red de internet en el modelo TCP / IP?.
+A. Transporte
+B. Sesión
+C. Internet
+D. Acceso a la red
+ANSWER: C
+
+Un router ha utilizado el protocolo OSPF para aprender una ruta a la red 172.16.32.0/19. ¿Qué comando implementará una ruta estática de respaldo a esta red?
+A. ip route 172.16.0.0 255.255.240.0 S0/0/0 200
+B. ip route 172.16.0.0 255.255.224.0 S0/0/0 100
+C. ip route 172.16.32.0 255.255.224.0 S0/0/0 200
+D. ip route 172.16.32.0 255.255.0.0 S0/0/0 100
+ANSWER: C
+
+Relacione las cuatro actividades principales de Ingenieria de Requisitos 1: Elicitar 2: Documentar 3: Verificar y ajustar 4: Administrar con su definición A: Asegurar la calidad en una fase temprana. B: Extraer Información y requerimientos utilizando diferentes técnicas. C: Estructurar y organizar los requerimientos, gestionar su disponibilidad, modificar de forma consistente e implementarlos en el proyecto. D: Definir la forma de fundamentar de forma adecuada el proyecto.
+A. 1B, 2D,3A,4C
+B. 1D, 2B,3C,4A
+C. 1C, 2A,3D,4B
+D. 1A, 2C,3B,4D
+ANSWER: A
+
+¿Para qué sirven los requisitos?
+A. Determinar la metodología más adecuada para el desarrollo de software.
+B. Para dar a los interesados la oportunidad de describir lo que quieren.
+C. Entender y documentar los deseos y necesidades de los implicados.
+D. Garantizar que los diagramas de UML sean correctos.
+ANSWER: B
+
+“El sistema no debe revelar ninguna información personal sobre los clientes excepto su nombre y su número de referencia” ¿A que requisito no funcional corresponde?
+A. Requisito de organización ambientales.
+B. Requisito de organización de desarrollo.
+C. Requisito externo regulatorios.
+D. Requisito externo éticos.
+E. Requisito externo legales
+ANSWER: D
+
+¿Qué son los requisitos funcionales? 
+A. Son enunciados acerca del servicio que el software deberá proveer y como debería comportarse en situaciones específicas. 
+B. Son aplicaciones acerca de servicios que el software deberá proveer y de como debería reaccionar frente a entradas particulares y de como debería comportarse en situaciones generales. 
+C. Son enunciados acerca del servicio que el software deberá proveer y como debería reaccionar  frente a entradas particulares. 
+D. Son enunciados acerca de servicios que el software deberá proveer y de como debería reaccionar frente a entradas particulares y de como debería comportarse en situaciones específicas.
+ANSWER: D
+
+Cuando un requerimiento proporciona información suficiente para su comprensión, entonces es:
+A. Correcto
+B. Completo
+C. Claro
+D. Consistente
+E. Verificable
+ANSWER: B
+
+Los clientes y usuarios pueden no ser conscientes de sus necesidades y puede que no entiendan cómo la tecnología puede ayudarles, corresponde a un problema de:
+A. De articulación
+B. De comunicación 
+C. De limitaciones cognitivas
+D. De conducta humana 
+ANSWER: A
+
+En una reunión: ¿A que participante le corresponde tomar la decisión final de que se lleve a cabo el desarrollo del producto software?
+A. Patrocinador ejecutivo
+B. Analista
+C. Especialistas
+D. Representantes de los usuarios
+E. Representantes de sistemas de información
+ANSWER: A
+
+¿Cuál de los siguientes diagramas NO es propicio para el análisis de requisitos?
+A. Diagrama de estimación de proyectos
+B. Diagrama de colaboración
+C. Diagrama de casos de uso
+D. Diagrama de estados
+ANSWER: A
+
+¿Cuáles son las técnicas utilizadas en la gestión de requisitos?
+A. Aportación de requisitos, Priorización, Trazabilidad, Gestión del cambio, Creación de diferentes vistas.
+B. Aportación de requisitos, Generación de informes, Trazabilidad, Gestión del cambio, Priorización.
+C. Aportación de requisitos, Priorización ,Generación de informes, Trazabilidad, Gestión del cambio.
+D. Aportación de requisitos, Priorización, Trazabilidad, Gestión del cambio, Versionado.
+ANSWER: D
+
+¿A qué  característica de un buen SRS corresponde la siguiente afirmación ? Si cada requisito declarado se encuentra en el software.
+A. Correcto
+B. Completo 
+C. Consistente 
+D. Comprobable
+ANSWER: A
+
+Las relaciones principalmente ______________________
+A. Vinculan tablas
+B. Garantizan integridad referencial de los datos
+C. Asocian datos
+D. Vinculan información
+ANSWER: B
+
+El nivel _____________ describe como se almacenan los datos. El nivel ___________   que datos se almacenan y como están relacionados.
+A. Interno-conceptual
+B. Externo-interno
+C. Conceptual-interno
+D. Lógico-físico
+ANSWER: A
+
+El objetivo principal al normalizar una base de datos es:
+A. Gestionar correctamente toda la información
+B. Organizar los datos
+C. Aplicar reglas a las relaciones
+D. Evitar duplicidades
+ANSWER: D
+
+El modelo ________________ , se compone de una tabla de ______________ rodeada de ____________ de dimensiones, que pueden estar conectadas a otras tablas de _____________
+A. Estrella, hechos, tablas, dimensiones 
+B. Estrella, dimensiones, tablas, hechos
+C. Copo de nieve, hechos, tablas, dimensiones 
+D. Copo de nieve, dimensiones, tablas, hechos
+ANSWER: C
+
+Seleccione el elemento de la arquitectura  Data Warehouse, donde se guarda la información de un departamento específico para la toma de decisiones.
+A. ODBC
+B. Base de datos
+C. ETL
+D. Data Mart
+ANSWER: D
+
+La tabla usuarios, con los campos: cod_usuario, apellidos_nombres, correo, contrasenia, al ser fragmentada en: cod_usuario, contrasenia (información de contraseña) y cod_usuario, apellidos_nombres, correo (información de nombre y correo), es un ejemplo de :
+A. Fragmentación vertical
+B. Fragmentación horizontal
+C. Fragmentación híbrida
+D. Partición
+ANSWER: A
+
+La _____________ de datos es una medida de _______________ en una aplicación informática.
+A. Creación-diseño
+B. Integridad-diseño
+C. Réplica-seguridad
+D. Seguridad-protección
+ANSWER: C
+
+Seleccione el lenguaje, que permite definir las interfaces de los tipos de objetos, sobre una base de datos orientada a objetos
+A. OQL
+B. ODL
+C. SQL
+D. Ninguno de los anteriores
+ANSWER: B
+
+En una base de datos orientada a objetos, el _________ a los datos es más __________, debido a que un ___________ puede ser recuperado directamente.
+A. Acceso, lento, objeto
+B. Proceso, corto, método
+C. Proceso, largo, método 
+D. Acceso, rápido, objeto
+ANSWER: D
+
+En una base de datos orientada a objetos, insert into nombre_BBDD.nombre_tabla ( columna,columna,columna,...) values (datos, datos, datos), es la sintaxis básica de una sentencia: 
+A. OQL
+B. ODL
+C. SQL
+D. CORBA
+ANSWER: A
+
+Las Entidades.
+A. Representan cosas u objetos reales que se asemejan claramente entre sí.
+B. Representan cosas u objetos reales o abstractos que se diferencian claramente entre sí
+C. Representan cosas u objetos abstractos que se diferencian claramente entre sí.
+D. Representan cosas u objetos abstractos que se asemejan claramente entre sí.
+ANSWER: B
+
+Describen propiedades que posee cada ocurrencia de un conjunto de entidades
+A. Columnas
+B. Atributos
+C. Entidades
+D. Filas
+ANSWER: B
+
+Si decimos que un estudiante puede matricularse en muchas clases y una clase puede incluir un solo estudiante, es una relación:
+A. Muchos a muchos.
+B. Uno a varios
+C. Uno a Uno.
+D. Uno a algunos.
+ANSWER: B
+
+Dependen obligatoriamente de una clave primaria y sirven de enlace mediante este campo:
+A. Clave Primaria.
+B. Clave Foránea
+C. Clave Principal.
+D. Clave Secundaria.
+ANSWER: B
+
+Consiste en la primera fase de diseño de una BD:
+A. Diseño Lógico.
+B. Diseño Conceptual
+C. Diseño Físico.
+D. Diseño Entidad Relación.
+ANSWER: B
+
+El vínculo que existe entre 2 o más entidades se llama:
+A. Unión.
+B. Relación
+C. Asociación.
+D. Generalización/Especialización.
+ANSWER: B
+
+En sí misma posee significado relevante para quien lo recibe:
+A. Dato.
+B. Información
+C. Conocimiento.
+D. Experiencia.
+ANSWER: B
+
+Algunas propiedades de los datos son:
+A. Complejidad, precisión e interpretabilidad.
+B. Completitud, credibilidad y precisión
+C. Completitud, perfección e interpretabilidad.
+D. Complejidad, perfección e interpretabilidad.
+ANSWER: B
+
+En álgebra relacional, ¿Cuál de las siguientes es una operación unaria?:
+A. Union.
+B. Proyección
+C. Producto cartesiano.
+D. Diferencia.
+ANSWER: B
+
+En álgebra relacional, la expresión “(TABLA1) – (σ Cond1 TABLA2):
+A. Devuelve las tuplas de TABLA2 menos las que coincidan con las tuplas de TABLA1.
+B. Devuelve las tuplas de TABLA1 menos las que coincidan con las tuplas de TABLA2.
+C. Devuelve las tuplas de TABLA1 menos las que coincidan con la condición Cond1.
+D. Devuelve las tuplas de TABLA2 que cumplen con la Cond1.
+ANSWER: B
+
+Señala la respuesta correctA. Las perspectivas de las pruebas de seguridad basadas en el riesgo son las siguientes:
+A. Perspectiva gerencia y uBuario 
+B. Perspectiva atacante y dCfensor
+C. Perspectiva usuario y clDente.
+D. Perspectiva de atacante y cliente.
+ANSWER: B
+
+Indique cuál de las siguientes respuestas no es una causa de aparición de vulnerabilidades en el software:
+A. No realización de pruebas seguridad basadas en riesgo.
+B. No seguimiento, por los desarrolladores, de guías de normalizadas de estilo en la codificación.
+C. Desarrollo de las aplicaciones por una asistencia técnica o entidades subcontratadas.
+D. No control de la cadena de suministro del software, lo puede dar lugar a la introducción de código malicioso en origen.
+ANSWER: C
+
+Las fuentes de las vulnerabilidades se deben a:
+A. Fallos provenientes de la codificación de los diseños del software realizados.
+B. Fallos provenientes de la cadena de distribución del software.
+C. Los sistemas hardware o software contienen frecuentemente fallos de binarios.
+D. Fallos provenientes de Inyección de código SQL
+ANSWER: A
+
+Señalar la correcta, Con respecto a los errores y excepciones:
+A. Si un método declara que lanza una excepción checked, todos los objetos que lo utilizan deben o manejar la excepción o declarar que lo lanzan también.
+B. Los compiladores de Java no hacen cumplir las reglas en cuanto a excepciones checked. 	
+C. Todas las excepciones en C++ son checked.
+D. Almacenar los archivos temporales bajo un directorio que es públicamente accesible, eliminando así toda la discusión con respecto a ataques.
+ANSWER: A
+
+¿En qué fase se debe realizar un hash MD5 de todas las herramientas que van a utilizar para verificar la integridad de las mismas?
+A. Análisis estático.
+B. Análisis dinámico.
+C. Acciones iniciales.
+D. Clasificación.
+ANSWER: C
+
+Cual es una acción que el malware suele realizar sobre la máquina víctimA.
+A. Integración en espacios vacíos de ficherosB
+B. Integer OverflowsC
+C. Envío de correos Dersonales.
+D. Degradación del rendimiento.
+ANSWER: D
+
+¿Qué principales mejoras introduce la Generación III de Honeynet?
+A. Las tareas de control y captura de datos ahora están centralizadas en un solo dispositivo llamado Honeywall.
+B. Utiliza como Gateway acceso un dispositivo de Capa que actúa como un puente, en lugar de un router.
+C. Normaliza los datos registrados por cada herramienta de captura de datos.
+D. Mejora la versiones del Hardware.
+ANSWER: C
+
+Indique cual es un beneficio del análisis de malware.
+A. Integración en espacios vacíos de ficheros.
+B. Identificar patrones de codificación.
+C. Identificar la vulnerabilidad que fue aprovechada por el malware, para obtener la actualización del software que la mitigue, si está disponible.
+D. Identificar patrones de distribución del software
+ANSWER: C
+
+A qué principio de diseño le corresponde la siguiente afirmación: “Estrategia de protección consistente en introducir múltiples capas de seguridad, que permitan reducir la probabilidad de compromiso en caso de que una de las capas falle y en el peor de los casos minimizar el impacto”.
+A. Separación de dominios.
+B. Defensa en profundidad.
+C. Seguridad por defecto.
+D. Separación de privilegios.
+ANSWER: B
+
+Señale la correcta respecto a los casos de uso de seguridad:
+A. Analizan y especifican las amenazas a la seguridad.
+B. Analizan y especifican los requisitos de seguridad.
+C. Análisis de vulnerabilidades de activos y amenazas.
+D. Análisis forense de las actividades maliciosas.
+ANSWER: B
+
+Uno de las técnicas de evaluación de la usabilidad llamados de "inspección", se encuentra la evaluación ……………… que consiste en que determinados evaluadores revisan la interfaz siguiendo unos principios de usabilidad reconocidos. La revisión se realiza de manera individual y asumiendo el papel de usuario.
+A. Cognitiva 
+B. Observación de campo 
+C. Heurística 
+D. Focus group 
+ANSWER: C
+
+Se desea medir el atributo de usabilidad sobre “Facilidad de Aprendizaje” una de las métricas a utilizar es?
+A. Tiempo usado para terminar una tarea la primera vez. 
+B. Número de incidentes detectados 
+C. Tamaño de letra ajustable 
+D. Cantidad de palabras por página 
+ANSWER: A
+
+Seleccione el objetivo de usabilidad, cuando el sistema hace lo que se supone que debe hacer
+A. Que sea efectivo 
+B. Que sea eficiente 
+C. Que sea seguro 
+D. Que sea útil 
+ANSWER: A
+
+Un ejemplo de métrica de usabilidad relacionado con …………….  es evaluar el porcentaje de tareas completadas en el primer intento.
+A. El rendimiento de la interfaz 
+B. La satisfacción del usuario 
+C. Efectividad de la interfaz 
+D. Los requisitos no funcionales 
+ANSWER: C
+
+Cuál es la filosofía de diseño que parte de la idea de que el usuario debe tener un papel activo durante todo el proceso de desarrollo del producto, incluyéndose sus necesidades, intereses, motivaciones, y limitaciones reales. 
+A. Diseño centrado en el usuario 
+B. Accesibilidad 
+C. Usabilidad 
+D. Experiencia de usuario
+ANSWER: A
+
+Un estudiante envía un archivo de su deber.doc al Tutor a través del correo electrónico Gmail, cuando envía el correo, el estudiante se “arrepiente” del envio, Gmail da la opción de” Deshacer”, indique a qué tipo de diseño corresponde: 
+A. Minimizar las posibilidades de error 
+B. Proveer recuperación de errores 
+C. Flexibilidad y eficiencia de uso 
+D. Estética y diseño minimalista 
+ANSWER: B
+
+Cuando se realiza una evaluación de un sitio web por ejemplo a través de un testing como page speed  que muestra el tiempo que tarda en cargar todos los recursos, indique a que se refiere la métrica First Contentful Paint (FCP).
+A. Esta medición determina cual es el elemento más grande visible en la ventana actual y en cuanto tiempo se muestra en pantalla. 
+B. Mide la estabilidad visual. Cuánto ha cambiado el diseño de la página mientras se cargaba 
+C. Mide desde la primera interacción del usuario con su sitio web (cuando hace clic en un enlace, botón, teclas), hasta el momento en que el navegador realmente puede responder a la interacción 
+D. Es una métrica de rendimiento que mide cuánto tiempo ha transcurrido antes de que el navegador comience a mostrar los primeros elementos del sitio 
+ANSWER: D
+
+Para realizar la evaluación de usabilidad con expertos, se puede seguir los métodos: 
+A. Test de usabilidad, Evaluación heurística de diseño 
+B. Inspección formal de usabilidad, Evaluación heurística de diseño 
+C. Cuestionarios, entrevistas 
+D. Evaluación heurística de diseño, cuestionarios 
+ANSWER: B
+
+Cada usuario es diferente y tiene capacidades, habilidades diferentes. El facilitar los “short cuts” a los usuarios experimentados, hace que el sistema sea eficiente, esto es un ejemplo de principio de usabilidad de: 
+A. Control y libertad del usuario 
+B. Flexibilidad y eficiencia de uso 
+C. Consistencia y estándares 
+D. Estética y diseño minimalista 
+ANSWER: B
+
+La …………………. es un atributo de una buena experiencia de usuario y la …………………… es con lo que se interactúa.
+A. Accesibilidad, Interfaz del Usuario 
+B. Interfaz del Usuario, Usabilidad 
+C. Usabilidad, Interfaz del Usuario 
+D. Interfaz del Usuario, Accesibilidad, 
+ANSWER: C
+
+Indique cuál fue una(s) de la(s) necesidad(es) para la aparición de la computación paralela
+A. Modelado y simulación numérica a problemas
+B. Costos altos de los cálculos iterativos
+C. Problemas que requieren mayor tiempo de computo
+D. Todas las opciones son válidas
+ANSWER: D
+
+¿Por qué se requiere hacer simulación?
+A. Incrementar el conocimiento matemático.
+B. La simulación ayuda a modelar y tratar de resolver problemas reales mediante modelos matemáticos.
+C. Imitar solo comportamientos físicos.
+D. Adaptar un modelo matemático al cálculo de matrices
+ANSWER: B
+
+¿Qué es la programación paralela?
+A. El agrupamiento de varios programadores trabajando simultáneamente
+B. Se puede considerar al uso de varios procesadores que trabajan juntos para resolver un problema
+C. Varios programas que trabajan siempre por separado
+D. Conjunto de programas que se van ejecutando uno detrás de otro y al final resuelven un problema
+ANSWER: B
+
+¿Según la taxonomía de Flynn se tienen los siguientes tipos de computadores?
+A. CISD / CIMD / MIND
+B. SISD / SIMD / MIMD
+C. SISP / SIMP / MIMP
+D. Ninguno de ellos corresponde a los tipos
+ANSWER: B
+
+¿Indiqué cuáles son los entornos de programación existentes para la Programación Paralela?
+A. Solo existe PhTreads para programar
+B. C, C++, Java, Pthreads y OpenMP
+C. OpenMP es la única herramienta para programar
+D. Solo se dispone de C++ y Java para implementar hilos
+ANSWER: B
+
+¿Para qué sirve la siguiente instrucción omp_get_thread_num();?
+A. Permite asignar una instrucción a un thread especifico
+B. Obtiene el número de procesadores activos
+C. Obtiene el número de proceso en procesamiento paralelo
+D. Obtiene el número de procesos que están operando
+ANSWER: C
+
+¿Indiqué cuál es el concepto que se aproxima más sobre qué es el Balanceo de Carga?
+A. Técnica que permite distribuir solamente memoria
+B. Técnica empleada para compartir el trabajo a realizar entre varios procesos, computadores, discos u otros recursos
+C. Técnica para la coordinación entre la memoria principal y secundaria
+D. Técnica que permite optimizar solamente el tráfico de comunicaciones
+ANSWER: B
+
+¿Indique cuál de los algoritmos es empleado para resolver problemas de balanceo de carga?
+A. Algoritmo de Barak y Shiloh’s.
+B. Algoritmo de Deker.
+C. Algoritmo de Peterson 
+D. Algoritmo de Dijkstra. 
+ANSWER: A
+
+¿Indiqué lo que se realiza en las siguientes instrucciones?
+#pragma omp parallel shared(A) private(i)
+{  
+  for (i=0; i<100; i++)
+    A[i] = A[i] + 1;
+}
+A. Implementa un bucle de manera secuencial compartiendo la variable A en una sección privada
+B. Implementa un bucle en paralelo, donde la variable A es compartida y la variable i es privada
+C. Implementa un bucle en paralelo, donde la variable A es privada y la variable i es compartida
+D. Implementa un bucle con 100 iteraciones en donde se dividen para los i hilos y el resultado se almacena en una matriz A que es compartida por todos.
+ANSWER: B
+
+¿Indique cuáles son las fases de la metodología para el diseño de programas paralelos?
+A. Planificación / Análisis / Prototipado / Validación
+B. Particionamiento / Comunicación / Aglomeración / Proyección
+C. Análisis / Diseño / Implementación / Validación
+D. Planificación / Especificación Requisitos / Diseño / Aprobación del usuario
+ANSWER: B
+
+Qué representa la siguiente figura:
+A. Procesamiento concurrente
+B. Monoprogramación
+C. Recursos compartidos
+D. Tiempo compartido
+ANSWER: A
+
+¿Cuál es el comando para instalar el Servicio de acceso remoto SSH en Linux como Servidor? 
+A. #ps –aux | grep “root” | head -10 | sort
+B. #ps –aux | grep “root” | head -10
+C. #ps –aux | grep “root” | head -10 | s
+D. #ps –aux | grep “root” | head -10 | list
+ANSWER: A
+
+¿Cuál es el comando para instalar el Servicio de acceso remoto SSH en Linux como Servidor? 
+A. #ps –aux | grep “root” | head -10 | sort
+B. #ps –aux | grep “root” | head -10
+C. #ps –aux | grep “root” | head -10 | s
+D. #ps –aux | grep “root” | head -10 | list
+ANSWER: A
+
+Para graficar un triángulo cualquiera los valores de los vértices son:
+A. A(0,0); B(a, 0); C(b*cos(A), b*sen(A))
+B. A(0,0); B(b, 0); C(b*cos(A), b*sen(A))
+C. A(0,0); B(c, 0); C(b*sen(A), b*cos(A))
+D. A(0,0); B(c, 0); C(b*cos(A), b*sen(A))
+ANSWER: D
+
+Verdadero o falso: a) La recta de Euler de un triángulo es una recta en la que están situados el ortocentro, el circuncentro y el baricentro de un triángulo; incluye al punto de Exeter y al centro de la circunferencia de los nueve puntos notables de un triángulo escaleno; b) la recta de Euler pasa por el centro de intersección de las alturas que es el ortocentro, pasa por el centro de intersección de las medianas que es el circuncentro y el centro de intersección de las mediatrices que es el baricentro.
+A. Verdadero, Verdadero
+B. Verdadero, Falso
+C. Falso, Verdadero
+D. Falso, Falso
+ANSWER: B
+
+El valor del vértice del circuncentro de un triángulo cualquiera, donde uno de sus lados está sobre el eje horizontal, está dado por la fórmula:
+A. P(c/2, (b*b*sen(A)*cos(A)+b*b*cos(A)*sen(A)-2*b*sen(A)*(c/2))/(2*b*cos(A)))
+B. P(c/2, (b*b*sen(A)*cos(A)+b*b*cos(A)*sen(A)-2*b*cos(A)*(c/2))/(2*b*cos(A)))
+C. P(c/2, (b*b*sen(A)*sen(A)+b*b*cos(A)*cos(A)-2*b*cos(A)*(c/2))/(2*b*sen(A)))
+D. Ninguna de las anteriores.
+ANSWER: C
+
+En la función VectorToPointF(), de la clase Vector2D se convierte coordenadas del mundo real al mundo de la Computación Gráfica utilizando las siguientes fórmulas, considerando un área de trabajo de 800x600:
+A. xp = x*SF-400; yp = (-1)*(-y)*SF + 300
+B. xp = x*SF+400; yp = (-1)*y*SF + 300
+C. xp = x*SF-200; yp = (-1)*(-y)*SF + 150
+D. xp = x*SF+200; yp = (-1)*y*SF + 150
+ANSWER: B
+
+En la función VectorToPointF(), de la clase Vector2D se convierte coordenadas del mundo real al mundo de la Computación Gráfica utilizando las siguientes fórmulas, considerando un área de trabajo de (xCenter*2)x(yCenter*2) y utilizando coordenadas relativas:
+A. xp = x*SF+xCenter; yp = (-1)*y*SF+yCenter
+B. xp = x*SF+2*xCenter; yp = (-1)*(y)*SF+2*yCenter
+C. xp = x*SF+xCenter/2; yp = (-1)*(y)*SF+yCenter/2
+D. Ninguna de las anteriores.
+ANSWER: A
+
+En la función PlotAxis(), de la clase Vector3D, para graficar los ejes coordenados ‘x’ y ‘z’, se deben calcular los valores de los segmentos ‘a’ y ‘b’ cuyas fórmulas son:
+A. a = b / tan(30); b = 8.0
+B. a = 8.0; b = b / tan(30)
+C. a = b / tan(60); b = 4.0
+D. Ninguna de las anteriores.
+ANSWER: A
+
+En la función PlotPlane(), de la clase Vector3D, para graficar el plano ABCD, se deben calcular los valores de los segmentos ‘a’ y ‘b’ cuyas fórmulas son:
+A. a = b / tan(60); b = 8.0
+B. a = 4.0; b = b / tan(30)
+C. a = b / tan(30); b = 4.0
+D. Ninguna de las anteriores.
+ANSWER: C
+
+En la función PlotPlane(), de la clase Vector3D, para graficar el plano ABCD, los cuatro vértices en coordenadas relativas tienen los siguientes valores, en función de los segmentos ‘a’ y ‘b’:
+A. P1(-200, ((-1) * b * SF) + 150; P2(a * SF + 200, 150); P3(200, ((-1) * -b * SF) + 150); P4(a * SF + 200; 150)
+B. P1(200, ((-1) * b * SF) + 150; P2(a * SF + 200, 150); P3(200, ((-1) * -b * SF) + 150); P4(-a * SF + 200; 150)
+C. P1(-xCenter, ((-1) * b * SF) + yCenter; P2(a * SF + xCenter, yCenter); P3(xCenter, ((-1) * -b * SF) + yCenter); P4(a * SF + xCenter; yCenter)
+D. P1(xCenter, ((-1) * b * SF) + yCenter; P2(a * SF + xCenter, yCenter); P3(xCenter, ((-1) * -b * SF) + yCenter); P4(-a * SF + xCenter; yCenter)
+ANSWER: D
+
+En la función PlotPlane(), de la clase Vector3D, para graficar los rombos pequeños, se deben calcular los valores de los segmentos ‘p’ y ‘q’ cuyas fórmulas son:
+A. p = q / tan(60); q = 0.25
+B. p = 0.25; q = p / tan(60)
+C. p = q / tan(30); q = 0.25
+D. p = 0.25; q = p / tan(30)
+ANSWER: D
+
+En la función PlotBox(), de la clase Vector3D, para graficar la caja, se deben calcular algunos vértices como el valor del vértice A y del vértice B cuyas coordenadas son:
+A. A(a*cos(60), b+a*sin(60)); B(a*cos(60), a*sin(60))
+B. A(a*cos(60), b-a*sin(60)); B(a*cos(60), -a*sin(60))
+C. A(a*cos(30), b+a*sin(30)); B(a*cos(30), a*sin(30))
+D. A(a*cos(30), b-a*sin(30)); B(a*cos(30), -a*sin(30))
+ANSWER: D
