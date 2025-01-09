@@ -43,7 +43,7 @@ ANSWER: A
 ¿Cuál de las siguientes es una buena práctica para la gestión de riesgos en un proyecto de software?
 A. IGNORAR LOS RIESGOS POTENCIALES
 B. ASUMIR TODOS LOS RIESGOS
-C. IDENTIFICAR, ANALIZAR Y PLANIFICAR LA ANSWER A LOS RIESGOS
+C. IDENTIFICAR, ANALIZAR Y PLANIFICAR LA RESPUESTA A LOS RIESGOS
 D. DEJAR LA GESTIÓN DE RIESGOS PARA EL FINAL DEL PROYECTO
 ANSWER: C
 
@@ -513,7 +513,7 @@ C. Optimizar el rendimiento de la API en el servidor.
 D. Generar automáticamente código para la API en varios lenguajes de programación.
 ANSWER: B
 
-¿Qué formato de datos es más común en las ANSWERs de una API REST y es soportado por Postman para visualizar la ANSWER?
+¿Qué formato de datos es más común en las ANSWERs de una API REST y es soportado por Postman para visualizar LA RESPUESTA?
 A. XML
 B. YAML
 C. JSON
@@ -863,14 +863,14 @@ C. scrollDirection.
 D. padding.
 ANSWER: B
 
-¿Qué información se almacena en la variable ANSWER después de ejecutar el siguiente código: " final ANSWER = await http.get(Uri.parse('http://192.168.100.17:8080/crud/insertar.php'));" ?
-A. Un objeto http.Response que contiene el código de estado y el cuerpo de la ANSWER del servidor.
+¿Qué información se almacena en la variable respuesta después de ejecutar el siguiente código: " final ANSWER = await http.get(Uri.parse('http://192.168.100.17:8080/crud/insertar.php'));" ?
+A. Un objeto http.Response que contiene el código de estado y el cuerpo de LA RESPUESTA del servidor.
 B. Una cadena de texto que representa la URL a la que se hizo la solicitud.
 C. Un objeto Uri que representa la URL de la solicitud.
 D. Un valor booleano que indica si la solicitud fue exitosa.
 ANSWER: A
 
-¿Cuál es la estructura para decodificar el cuerpo de la ANSWER HTTP, que está en formato JSON, y convertirlo en una lista de objetos dinámicos en el contexto de una ANSWER HTTP?
+¿Cuál es la estructura para decodificar el cuerpo de LA RESPUESTA HTTP, que está en formato JSON, y convertirlo en una lista de objetos dinámicos en el contexto de una RESPUESTA HTTP?
 A. List<dynamic> data = jsonCode(response.body);
 B. List<dynamic> data = jsonString(response.body);
 C. List<dynamic> data = jsonEncode(response.body);
@@ -1552,7 +1552,7 @@ ANSWER: A
 A. Es el instrumento (el cuestionario o la lista de verificación) para recopilar información.
 B. Es un sistema integral de recopilación de información para describir, comparar o explicar conocimientos, actitudes y comportamientos.
 C. Estudio que se le realiza a un grupo de personas, estas no representan a una población más amplia.
-D. Es una conversación dirigida, con un propósito específico y que usa un formato de preguntas y ANSWERs.
+D. Es una conversación dirigida, con un propósito específico y que usa un formato de preguntas y respuestas.
 ANSWER: B
 
 ¿Cuál de las siguientes opciones corresponde a las características de los estudios de control en el diseño de encuestas?
@@ -1634,7 +1634,7 @@ ANSWER: B
 
 ¿Qué tipo de datos se recopila más comúnmente en estudios cualitativos?
 A. Resultados numéricos.
-B. ANSWERs abiertas y observaciones.
+B. Respuestas abiertas y observaciones.
 C. Estadísticas de desempeño.
 D. Datos de sensores automáticos.
 ANSWER: B
@@ -1677,7 +1677,7 @@ D) Séptima edición
 ANSWER: D
 El proceso de la investigación comienza con ....
 A) recopilando trabajos relacionados
-B) planteando un problema al que se busca ANSWER
+B) planteando un problema al que se busca respuesta
 C) determinando el alcance de la investigación
 D) definiendo los objetivos
 ANSWER: B
@@ -2110,7 +2110,7 @@ D. IDS.
 ANSWER: B
 ¿Qué define a un sistema operativo de tiempo real?
 A. Prioriza la interacción con el usuario.
-B. Proporciona ANSWERs rápidas y predecibles a eventos.
+B. Proporciona respuestas rápidas y predecibles a eventos.
 C. Es utilizado exclusivamente en computadoras personales.
 D. Ofrece interfaces gráficas avanzadas.
 ANSWER: B
@@ -2324,7 +2324,7 @@ C. Incremental
 D. Cascada
 ANSWER: D
 
-¿Cuál no es considerado un modelo genérico?: (Selecciones una ANSWER)
+¿Cuál no es considerado un modelo genérico?: (Selecciones una respuesta)
 A. Rup
 B. Cascada
 C. Evolutivo
@@ -2352,7 +2352,7 @@ C. AUP
 D. CASCADA
 ANSWER: D
 
-El equipo de un proyecto basado en metodología __________ es: cliente, programadores, testers, coach, manager. (Seleccione una ANSWER)
+El equipo de un proyecto basado en metodología __________ es: cliente, programadores, testers, coach, manager. (Seleccione una respuesta)
 A. AUP
 B. SCRUM
 C. XP
