@@ -24,15 +24,27 @@
             <button id="loadDefaultExam" class="load-button default-exam">Cargar Examen Normal</button>
             <button id="loadRandomExam" class="load-button random-exam">🎲 Cargar Examen Aleatorio</button>
             <button id="chooseDifficulty" class="load-button difficulty-exam">Escoger Dificultad</button>
+            <!-- Nuevo Botón Añadido -->
+            <button id="loadOldExams" class="load-button old-exam">EXAMENES VIEJOS</button>
         </section>
 
         <!-- Sección de Dificultad (Desplegable) -->
         <section id="difficultySection" class="difficulty-section">
-            <button class="load-button difficulty-button ultrafacil" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(1)">Ultrafácil</button>
-            <button class="load-button difficulty-button facil" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(20)">Fácil</button>
-            <button class="load-button difficulty-button medio" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(80)">Medio</button>
-            <button class="load-button difficulty-button dificil" onclick="setDifficultySelected(this); loadQuestionsByDifficulty(260)">Difícil</button>
-            <button class="load-button difficulty-button ultrahardcore" onclick="setDifficultySelected(this); loadQuestionsByDifficulty('all')">Ultrahardcore</button>
+            <button class="load-button difficulty-button ultrafacil" 
+                    onclick="setDifficultySelected(this); loadQuestionsByDifficulty(1)">Ultrafácil
+            </button>
+            <button class="load-button difficulty-button facil" 
+                    onclick="setDifficultySelected(this); loadQuestionsByDifficulty(20)">Fácil
+            </button>
+            <button class="load-button difficulty-button medio" 
+                    onclick="setDifficultySelected(this); loadQuestionsByDifficulty(80)">Medio
+            </button>
+            <button class="load-button difficulty-button dificil" 
+                    onclick="setDifficultySelected(this); loadQuestionsByDifficulty(260)">Difícil
+            </button>
+            <button class="load-button difficulty-button ultrahardcore" 
+                    onclick="setDifficultySelected(this); loadQuestionsByDifficulty('all')">Ultrahardcore
+            </button>
         </section>
 
         <!-- Sección de Subida de Archivos -->
@@ -47,7 +59,6 @@
                 <h2>¿Cómo preparar tu archivo en formato Aiken?</h2>
                 <p>Para subir tus preguntas, asegúrate de que tu archivo sea un <strong>.txt</strong> y siga el <strong>formato Aiken</strong>. A continuación, te mostramos un ejemplo:</p>
                 <pre>
-
 ¿Quién escribió "Cien años de soledad"?
 A. Gabriel García Márquez
 B. Mario Vargas Llosa
@@ -62,8 +73,14 @@ ANSWER: A
         <!-- Sección de Calificación -->
         <section id="score" class="score"></section>
 
-        <!-- Contenedor de Preguntas -->
-        <section id="questionsContainer" class="questions-container"></section>
+        <!-- Contenedor de Preguntas (Estilo Moodle, mostrando solo 1 a la vez) -->
+        <section id="questionsContainer" class="questions-container">
+            <!-- Contenedor para la Pregunta Actual -->
+            <div id="currentQuestion" class="question"></div>
+
+            <!-- Navegador de Preguntas (Botones numerados) -->
+            <div id="questionNavigator" class="question-navigator"></div>
+        </section>
     </main>
 
     <!-- Burbuja de Puntuación Estilo Messenger -->
@@ -93,26 +110,34 @@ ANSWER: A
         let totalQuestions = 0;
         let correctAnswers = 0;
         let allQuestions = [];
-        // Almacena las preguntas actualmente mostradas (para checkAnswer).
+        // Almacena las preguntas mostradas (para checkAnswer).
         let displayedQuestions = [];
+        // Índice de la pregunta actual
+        let currentQuestionIndex = 0;
 
+        // Al cargar la ventana, por defecto: Examen Normal
         window.onload = loadDefaultExam;
+
+        // Asignar eventos a los botones principales
         document.getElementById('loadDefaultExam').addEventListener('click', loadDefaultExam);
         document.getElementById('loadRandomExam').addEventListener('click', loadRandomExam);
         document.getElementById('chooseDifficulty').addEventListener('click', toggleDifficultySection);
+        document.getElementById('loadOldExams').addEventListener('click', loadOldExams);
 
+        // Evento al subir archivo
         document.getElementById('fileInput').addEventListener('change', handleFileSelect);
 
+        /* ========== MOSTRAR / OCULTAR SECCIÓN DE DIFICULTAD ========== */
         function toggleDifficultySection() {
             const sec = document.getElementById('difficultySection');
             sec.style.display = (sec.style.display === 'none' || sec.style.display === '') ? 'block' : 'none';
         }
-
         function setDifficultySelected(button) {
             document.querySelectorAll('.difficulty-button').forEach(b => b.classList.remove('selected'));
             button.classList.add('selected');
         }
 
+        /* ========== CARGAS DE EXÁMENES ========== */
         function loadDefaultExam() {
             fetch('examen/examenFinal.txt')
                 .then(response => response.text())
@@ -128,18 +153,34 @@ ANSWER: A
                 .then(response => response.text())
                 .then(text => {
                     allQuestions = parseQuestions(text);
-                    displayQuestions(allQuestions, true);
+                    displayQuestions(allQuestions, true); // Aleatorio
                 })
                 .catch(error => console.error('Error:', error));
         }
 
+        function loadOldExams() {
+            fetch('examen/union1.txt')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('No se pudo cargar el archivo union1.txt');
+                    }
+                    return response.text();
+                })
+                .then(text => {
+                    allQuestions = parseQuestions(text);
+                    displayQuestions(allQuestions, false);
+                })
+                .catch(error => {
+                    console.error('Error al cargar EXAMENES VIEJOS:', error);
+                    alert('Hubo un problema al cargar EXAMENES VIEJOS. Por favor, inténtalo de nuevo.');
+                });
+        }
+
+        // Al subir un archivo
         function handleFileSelect(event) {
             const file = event.target.files[0];
-            document.getElementById('questionsContainer').innerHTML = '';
-            totalQuestions = 0;
-            correctAnswers = 0;
-            updateScore();
-            
+            resetUI();
+
             if (file) {
                 if (file.name.endsWith('.docx')) {
                     const reader = new FileReader();
@@ -157,14 +198,16 @@ ANSWER: A
                         allQuestions = parseQuestions(e.target.result);
                         displayQuestions(allQuestions, false);
                     };
-                    reader.readAsText(file, 'UTF-8'); // Especificar codificación UTF-8
+                    reader.readAsText(file, 'UTF-8');
                 }
             }
         }
 
+        /* ========== CARGAR POR DIFICULTAD ========== */
         function loadQuestionsByDifficulty(count) {
-            document.getElementById('questionsContainer').innerHTML = '';
+            resetUI();
             if (!allQuestions.length) {
+                // Si no hay preguntas, cargamos examenFinal.txt
                 fetch('examen/examenFinal.txt')
                     .then(response => response.text())
                     .then(text => {
@@ -175,7 +218,6 @@ ANSWER: A
                 showSubset(allQuestions, count);
             }
         }
-
         function showSubset(questions, count) {
             const shuffled = shuffleArray([...questions]);
             let subset = [];
@@ -187,8 +229,7 @@ ANSWER: A
             displayQuestions(subset, true);
         }
 
-        // En esta función, guardamos en question.correctAnswer
-        // el texto correcto en lugar de la letra (A, B, C, D).
+        /* ========== PARSEAR PREGUNTAS (FORMATO AIKEN) ========== */
         function parseQuestions(text) {
             const questions = [];
             const lines = text.split('\n');
@@ -197,15 +238,21 @@ ANSWER: A
             lines.forEach(line => {
                 line = line.trim();
                 if (line.length === 0) return;
+                
                 if (!question) {
-                    question = { text: line, options: [], correctAnswer: '', answered: false };
+                    question = { 
+                        text: line, 
+                        options: [], 
+                        correctAnswer: '', 
+                        answered: false, 
+                        selectedAnswer: null, 
+                        isCorrect: false 
+                    };
                 } else if (line.match(/^[A-D][.)]\s+/)) {
                     question.options.push(line.substring(3).trim());
                 } else if (line.match(/^ANSWER:\s+[A-D]/)) {
                     const letter = line.substring(8).trim().toUpperCase();
-                    // Calcula índice en options (A=0, B=1, etc.)
                     const letterIndex = letter.charCodeAt(0) - 65;
-                    // Guarda el texto completo de la respuesta correcta.
                     question.correctAnswer = question.options[letterIndex] || '';
                     questions.push(question);
                     question = null;
@@ -217,130 +264,229 @@ ANSWER: A
             return questions;
         }
 
-        // Guardamos las preguntas que se muestran en una variable global (displayedQuestions)
-        // para que coincida el índice a la hora de verificar la respuesta.
+        /* ========== MOSTRAR PREGUNTAS (MODO MOODLE) ========== */
         function displayQuestions(questions, randomize) {
             displayedQuestions = questions;
             totalQuestions = questions.length;
             correctAnswers = 0;
-            updateScore();
-
-            const container = document.getElementById('questionsContainer');
-            container.innerHTML = '';
 
             if (randomize) {
-                // Mezclar opciones de cada pregunta.
-                questions.forEach(q => {
+                // Mezclar opciones de cada pregunta
+                displayedQuestions.forEach(q => {
                     q.options = shuffleArray(q.options);
                 });
             }
 
-            questions.forEach((q, index) => {
-                const div = document.createElement('div');
-                div.className = 'question';
-                
-                // Crear elementos de manera segura sin usar innerHTML
-                const questionNumber = document.createElement('div');
-                questionNumber.className = 'question-number';
-                questionNumber.textContent = `Pregunta ${index + 1}`;
+            // Empezamos con la primera pregunta
+            currentQuestionIndex = 0;
 
-                const questionText = document.createElement('div');
-                questionText.className = 'question-text';
-                questionText.textContent = q.text;
-
-                const optionsDiv = document.createElement('div');
-                optionsDiv.className = 'options';
-
-                q.options.forEach((opt, i) => {
-                    const optionDiv = document.createElement('div');
-                    optionDiv.className = 'option';
-
-                    const radioInput = document.createElement('input');
-                    radioInput.type = 'radio';
-                    radioInput.id = `q${index}opt${i}`;
-                    radioInput.name = `q${index}`;
-                    radioInput.value = opt;
-                    radioInput.onclick = () => checkAnswer(index, opt);
-
-                    const label = document.createElement('label');
-                    label.htmlFor = `q${index}opt${i}`;
-                    label.textContent = `${String.fromCharCode(65 + i)}. ${opt}`;
-
-                    optionDiv.appendChild(radioInput);
-                    optionDiv.appendChild(label);
-                    optionsDiv.appendChild(optionDiv);
-                });
-
-                const feedbackDiv = document.createElement('div');
-                feedbackDiv.className = 'feedback';
-
-                const correctAnswerDiv = document.createElement('div');
-                correctAnswerDiv.className = 'correctAnswer';
-                correctAnswerDiv.innerHTML = `<hr><strong>Respuesta correcta:</strong> ${q.correctAnswer}`;
-
-                div.appendChild(questionNumber);
-                div.appendChild(questionText);
-                div.appendChild(optionsDiv);
-                div.appendChild(feedbackDiv);
-                div.appendChild(correctAnswerDiv);
-
-                container.appendChild(div);
-            });
-        }
-
-        // Aquí comparamos el valor seleccionado (texto) con la respuesta correcta (texto).
-        function checkAnswer(questionIndex, selectedValue) {
-            const questionDiv = document.getElementsByClassName('question')[questionIndex];
-            const feedbackDiv = questionDiv.querySelector('.feedback');
-            const correctAnswerDiv = questionDiv.querySelector('.correctAnswer');
-
-            // Obtenemos la pregunta desde displayedQuestions
-            const question = displayedQuestions[questionIndex];
-
-            // Verificamos si la pregunta ya ha sido respondida
-            if (question.answered) {
-                return; // Si ya fue respondida, no hacemos nada
-            }
-
-            // Marcar la pregunta como respondida
-            question.answered = true;
-
-            feedbackDiv.style.display = 'block';
-            correctAnswerDiv.style.display = 'block';
-
-            // Comparación más robusta: ignorar espacios y diferencias de mayúsculas/minúsculas
-            const isCorrect = selectedValue.trim().toLowerCase() === question.correctAnswer.trim().toLowerCase();
-
-            console.log(`Pregunta ${questionIndex + 1}: Seleccionada "${selectedValue}", Correcta "${question.correctAnswer}" - Correcto: ${isCorrect}`);
-
-            if (isCorrect) {
-                questionDiv.classList.add('correct');
-                questionDiv.classList.remove('incorrect');
-                feedbackDiv.textContent = '✓ ¡Correcto!';
-                feedbackDiv.style.color = '#d4edda'; /* Color más suave */
-                correctAnswers++;
-            } else {
-                questionDiv.classList.add('incorrect');
-                questionDiv.classList.remove('correct');
-                feedbackDiv.textContent = '✗ Incorrecto';
-                feedbackDiv.style.color = '#f8d7da'; /* Color más suave */
-            }
-
-            // Deshabilitar todas las opciones de esta pregunta para evitar cambios
-            const radioButtons = questionDiv.querySelectorAll('input[type="radio"]');
-            radioButtons.forEach(rb => rb.disabled = true);
-
+            // Mostrar la primera pregunta
+            displayCurrentQuestion();
+            // Armar el navegador de preguntas
+            setupQuestionNavigator();
+            // Actualizar calificación
             updateScore();
         }
 
-        // Se actualiza la calificación en pantalla y en la burbuja de puntuación.
+        /* ========== MOSTRAR PREGUNTA ACTUAL ========== */
+        function displayCurrentQuestion() {
+            const questionDiv = document.getElementById('currentQuestion');
+            questionDiv.innerHTML = '';
+
+            if (currentQuestionIndex < 0 || currentQuestionIndex >= displayedQuestions.length) {
+                questionDiv.innerHTML = '<p>No hay preguntas para mostrar.</p>';
+                return;
+            }
+
+            const q = displayedQuestions[currentQuestionIndex];
+
+            // Contenedor de la pregunta
+            const container = document.createElement('div');
+            container.className = 'question';
+
+            // Número de pregunta
+            const questionNumber = document.createElement('div');
+            questionNumber.className = 'question-number';
+            questionNumber.textContent = `Pregunta ${currentQuestionIndex + 1} de ${displayedQuestions.length}`;
+
+            // Texto de la pregunta
+            const questionText = document.createElement('div');
+            questionText.className = 'question-text';
+            questionText.textContent = q.text;
+
+            // Opciones
+            const optionsDiv = document.createElement('div');
+            optionsDiv.className = 'options';
+
+            q.options.forEach((opt, i) => {
+                const optionDiv = document.createElement('div');
+                optionDiv.className = 'option';
+
+                const radioInput = document.createElement('input');
+                radioInput.type = 'radio';
+                radioInput.id = `q${currentQuestionIndex}opt${i}`;
+                radioInput.name = `q${currentQuestionIndex}`;
+                radioInput.value = opt;
+
+                // Al hacer clic, verificamos la respuesta
+                radioInput.onclick = () => checkAnswer(currentQuestionIndex, opt);
+
+                // Si la pregunta ya fue respondida antes
+                if (q.answered) {
+                    radioInput.disabled = true;
+                    if (opt === q.selectedAnswer) {
+                        radioInput.checked = true;
+                    }
+                }
+
+                const label = document.createElement('label');
+                label.htmlFor = `q${currentQuestionIndex}opt${i}`;
+                label.textContent = `${String.fromCharCode(65 + i)}. ${opt}`;
+
+                optionDiv.appendChild(radioInput);
+                optionDiv.appendChild(label);
+                optionsDiv.appendChild(optionDiv);
+            });
+
+            // Feedback
+            const feedbackDiv = document.createElement('div');
+            feedbackDiv.className = 'feedback';
+
+            // Respuesta Correcta
+            const correctAnswerDiv = document.createElement('div');
+            correctAnswerDiv.className = 'correctAnswer';
+            correctAnswerDiv.innerHTML = `<hr><strong>Respuesta correcta:</strong> ${q.correctAnswer}`;
+
+            // Si la pregunta ya fue respondida
+            if (q.answered) {
+                feedbackDiv.style.display = 'block';
+                correctAnswerDiv.style.display = 'block';
+                if (q.isCorrect) {
+                    container.classList.add('correct');
+                    feedbackDiv.textContent = '✓ ¡Correcto!';
+                    feedbackDiv.style.color = '#d4edda';
+                } else {
+                    container.classList.add('incorrect');
+                    feedbackDiv.textContent = '✗ Incorrecto';
+                    feedbackDiv.style.color = '#f8d7da';
+                }
+            }
+
+            // Controles de Navegación dentro de la pregunta
+            const navControls = document.createElement('div');
+            navControls.className = 'navigation-controls-inline';
+
+            // Botón Anterior
+            const prevButton = document.createElement('button');
+            prevButton.className = 'nav-button';
+            prevButton.textContent = 'Anterior';
+            prevButton.onclick = prevQuestion;
+            prevButton.disabled = (currentQuestionIndex === 0);
+
+            // Botón Siguiente
+            const nextButton = document.createElement('button');
+            nextButton.className = 'nav-button';
+            nextButton.textContent = 'Siguiente';
+            nextButton.onclick = nextQuestion;
+            nextButton.disabled = (currentQuestionIndex === displayedQuestions.length - 1);
+
+            navControls.appendChild(prevButton);
+            navControls.appendChild(nextButton);
+
+            // Añadimos todo al contenedor
+            container.appendChild(questionNumber);
+            container.appendChild(questionText);
+            container.appendChild(optionsDiv);
+            container.appendChild(feedbackDiv);
+            container.appendChild(correctAnswerDiv);
+            container.appendChild(navControls);
+
+            questionDiv.appendChild(container);
+
+            // Marcar en el navegador de preguntas la activa
+            highlightNavigator(currentQuestionIndex);
+        }
+
+        /* ========== NAVEGADOR DE PREGUNTAS ========== */
+        function setupQuestionNavigator() {
+            const navigatorDiv = document.getElementById('questionNavigator');
+            navigatorDiv.innerHTML = '';
+
+            displayedQuestions.forEach((q, index) => {
+                const btn = document.createElement('button');
+                btn.className = 'nav-item';
+                btn.textContent = index + 1;
+                btn.onclick = () => goToQuestion(index);
+
+                // Si está respondida, coloreamos
+                if (q.answered) {
+                    btn.classList.add(q.isCorrect ? 'answered-correct' : 'answered-incorrect');
+                }
+
+                navigatorDiv.appendChild(btn);
+            });
+        }
+
+        // Marcar la pregunta actual (active) en el navegador
+        function highlightNavigator(index) {
+            const allNavItems = document.querySelectorAll('.nav-item');
+            // Quitar .active de todos
+            allNavItems.forEach(item => item.classList.remove('active'));
+            // Agregar .active al item actual
+            if (allNavItems[index]) {
+                allNavItems[index].classList.add('active');
+            }
+        }
+
+        /* ========== NAVEGACIÓN ENTRE PREGUNTAS ========== */
+        function goToQuestion(index) {
+            currentQuestionIndex = index;
+            displayCurrentQuestion();
+        }
+        function prevQuestion() {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                displayCurrentQuestion();
+            }
+        }
+        function nextQuestion() {
+            if (currentQuestionIndex < displayedQuestions.length - 1) {
+                currentQuestionIndex++;
+                displayCurrentQuestion();
+            }
+        }
+
+        /* ========== VERIFICAR RESPUESTA ========== */
+        function checkAnswer(questionIndex, selectedValue) {
+            const question = displayedQuestions[questionIndex];
+            if (question.answered) return;
+
+            question.answered = true;
+            question.selectedAnswer = selectedValue;
+            question.isCorrect = (
+                selectedValue.trim().toLowerCase() === question.correctAnswer.trim().toLowerCase()
+            );
+
+            if (question.isCorrect) {
+                correctAnswers++;
+            }
+            displayCurrentQuestion();
+            updateScore();
+            setupQuestionNavigator();
+        }
+
+        /* ========== ACTUALIZAR CALIFICACIÓN ========== */
         function updateScore() {
             const scoreDiv = document.getElementById('score');
-            if (totalQuestions > 0) {
-                const percentage = Math.round((correctAnswers / totalQuestions) * 100);
+            if (displayedQuestions.length > 0) {
+                const percentage = Math.round((correctAnswers / displayedQuestions.length) * 100);
                 scoreDiv.innerHTML = `
-                    Calificación: ${correctAnswers}/${totalQuestions} (${percentage}%)
-                    ${percentage >= 60 ? '<span class="approved">✓ Aprobado</span>' : '<span class="not-approved">✗ No aprobado</span>'}
+                    Calificación: ${correctAnswers}/${displayedQuestions.length} (${percentage}%)
+                    ${
+                      percentage >= 60
+                        ? '<span class="approved">✓ Aprobado</span>'
+                        : '<span class="not-approved">✗ No aprobado</span>'
+                    }
                 `;
             } else {
                 scoreDiv.innerHTML = '';
@@ -348,10 +494,24 @@ ANSWER: A
 
             // Actualizar la burbuja de puntuación
             document.getElementById('correctCount').textContent = correctAnswers;
-            document.getElementById('incorrectCount').textContent = totalQuestions - correctAnswers;
+            document.getElementById('incorrectCount').textContent = displayedQuestions.length - correctAnswers;
         }
 
-        // Mezcla los elementos de un array (Fisher-Yates).
+        /* ========== RESETEAR UI ========== */
+        function resetUI() {
+            const container = document.getElementById('questionsContainer');
+            container.innerHTML = `
+                <div id="currentQuestion" class="question"></div>
+                <div id="questionNavigator" class="question-navigator"></div>
+            `;
+            totalQuestions = 0;
+            correctAnswers = 0;
+            displayedQuestions = [];
+            currentQuestionIndex = 0;
+            updateScore();
+        }
+
+        /* ========== FUNCIÓN AUXILIAR: Shuffle Array ========== */
         function shuffleArray(array) {
             for (let i = array.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
@@ -359,9 +519,6 @@ ANSWER: A
             }
             return array;
         }
-
-        // Escapa caracteres especiales para que se muestren correctamente.
-        // Función eliminada para manejar correctamente los caracteres acentuados.
     </script>
 </body>
 </html>

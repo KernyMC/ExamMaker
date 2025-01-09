@@ -71,7 +71,6 @@ button {
 .default-exam {
     background: linear-gradient(135deg, #673AB7 0%, #512DA8 100%);
 }
-
 .default-exam:hover {
     background: linear-gradient(135deg, #512DA8 0%, #452797 100%);
 }
@@ -79,7 +78,6 @@ button {
 .random-exam {
     background: linear-gradient(135deg, #FF5722 0%, #E64A19 100%);
 }
-
 .random-exam:hover {
     background: linear-gradient(135deg, #E64A19 0%, #D84315 100%);
 }
@@ -87,7 +85,6 @@ button {
 .difficulty-exam {
     background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);
 }
-
 .difficulty-exam:hover {
     background: linear-gradient(135deg, #388E3C 0%, #2E7D32 100%);
 }
@@ -98,7 +95,6 @@ button {
     text-align: center;
     margin: 20px 0;
 }
-
 .difficulty-button {
     background: linear-gradient(135deg, #03A9F4 0%, #0288D1 100%);
     color: #fff;
@@ -110,45 +106,45 @@ button {
     transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .difficulty-button:hover {
     background: linear-gradient(135deg, #0288D1 0%, #0277BD 100%);
     transform: scale(1.05);
 }
-
-/* Estado seleccionado para los botones de dificultad */
+/* Estado seleccionado */
 .difficulty-button.selected {
-    /* Gradiente de colores que representan diferentes temperaturas */
     background: linear-gradient(135deg, #FF7043 0%, #FF5722 100%);
     color: #fff;
     box-shadow: 0 0 15px rgba(255, 87, 34, 0.6);
     transform: scale(1.05);
 }
-
-/* Opcional: Diferentes colores para cada nivel de dificultad */
+/* Colores por nivel de dificultad */
 .difficulty-button.ultrafacil.selected {
-    background: linear-gradient(135deg, #81C784 0%, #4CAF50 100%); /* Verde claro a verde */
+    background: linear-gradient(135deg, #81C784 0%, #4CAF50 100%);
     box-shadow: 0 0 15px rgba(76, 175, 80, 0.6);
 }
-
 .difficulty-button.facil.selected {
-    background: linear-gradient(135deg, #FFB74D 0%, #FFA726 100%); /* Naranja claro a naranja */
+    background: linear-gradient(135deg, #FFB74D 0%, #FFA726 100%);
     box-shadow: 0 0 15px rgba(255, 167, 38, 0.6);
 }
-
 .difficulty-button.medio.selected {
-    background: linear-gradient(135deg, #FFCA28 0%, #FFC107 100%); /* Amarillo claro a amarillo */
+    background: linear-gradient(135deg, #FFCA28 0%, #FFC107 100%);
     box-shadow: 0 0 15px rgba(255, 193, 7, 0.6);
 }
-
 .difficulty-button.dificil.selected {
-    background: linear-gradient(135deg, #FF7043 0%, #FF5722 100%); /* Naranja oscuro a rojo */
+    background: linear-gradient(135deg, #FF7043 0%, #FF5722 100%);
     box-shadow: 0 0 15px rgba(255, 87, 34, 0.6);
 }
-
 .difficulty-button.ultrahardcore.selected {
-    background: linear-gradient(135deg, #D32F2F 0%, #C62828 100%); /* Rojo oscuro */
+    background: linear-gradient(135deg, #D32F2F 0%, #C62828 100%);
     box-shadow: 0 0 15px rgba(195, 40, 40, 0.6);
+}
+
+/* Botón "EXAMENES VIEJOS" */
+.old-exam {
+    background: linear-gradient(135deg, #9E9E9E 0%, #616161 100%);
+}
+.old-exam:hover {
+    background: linear-gradient(135deg, #616161 0%, #424242 100%);
 }
 
 /* Sección de Subida de Archivos */
@@ -164,12 +160,10 @@ button {
     cursor: pointer;
     position: relative;
 }
-
 .upload-section:hover {
     background-color: #e3f2fd;
     border-color: var(--secondary-color);
 }
-
 .upload-label {
     display: flex;
     flex-direction: column;
@@ -178,7 +172,6 @@ button {
     height: 100%;
     cursor: pointer;
 }
-
 .upload-icon {
     font-size: 50px;
     margin-bottom: 10px;
@@ -192,12 +185,10 @@ button {
     border-left: 5px solid #0288D1;
     border-radius: 5px;
 }
-
 .aiken-guide h2 {
     margin-top: 0;
     color: #1565C0;
 }
-
 .aiken-guide pre {
     background-color: #f0f4f8;
     padding: 10px;
@@ -206,7 +197,6 @@ button {
     white-space: pre-wrap;
     word-wrap: break-word;
 }
-
 .aiken-guide code {
     background-color: #f0f4f8;
     padding: 2px 4px;
@@ -219,30 +209,27 @@ button {
     font-weight: 500;
     padding: 20px;
     margin: 20px 0;
-    background: linear-gradient(135deg, #4CAF50, #81C784); /* Gradiente verde */
+    background: linear-gradient(135deg, #4CAF50, #81C784);
     color: #fff;
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: background 0.3s;
 }
-
 .score .approved {
     color: #d4edda;
     background-color: #28a745;
     padding: 5px 10px;
     border-radius: 5px;
 }
-
 .score .not-approved {
     color: #f8d7da;
     background-color: #dc3545;
     padding: 5px 10px;
     border-radius: 5px;
 }
-
 .score:hover {
-    background: linear-gradient(135deg, #388e3c, #66bb6a); /* Gradiente verde más oscuro */
+    background: linear-gradient(135deg, #388e3c, #66bb6a);
 }
 
 /* Contenedor de Preguntas */
@@ -260,29 +247,24 @@ button {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .question-number {
     font-weight: 500;
     margin-bottom: 10px;
     color: var(--primary-color);
 }
-
 .question-text {
     font-size: 1.1em;
     margin-bottom: 15px;
 }
-
 .options {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
 .option {
     display: flex;
     align-items: center;
 }
-
 .option input[type="radio"] {
     margin-right: 10px;
     transform: scale(1.2);
@@ -295,27 +277,22 @@ button {
     display: none;
     font-weight: 500;
 }
-
 .correct {
     background-color: #dff0d8;
     border: 1px solid #d6e9c6;
 }
-
 .incorrect {
     background-color: #f2dede;
     border: 1px solid #ebccd1;
 }
-
 .correct .feedback {
     color: #3c763d;
     background-color: #dff0d8;
 }
-
 .incorrect .feedback {
     color: #a94442;
     background-color: #f2dede;
 }
-
 .correctAnswer {
     margin-top: 10px;
     display: none;
@@ -325,120 +302,63 @@ button {
     padding-top: 10px;
 }
 
-/* Pie de Página */
-footer {
-    background-color: #1565C0; /* Azul oscuro */
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 1em;
-    border-top: none;
-}
-
-.footer-content {
+/* Navegación estilo Moodle (índices) */
+.question-navigator {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
 }
-
-.footer-content p {
-    margin: 0;
-    font-size: 1.1em;
+.nav-item {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
-
-.social-icons {
-    display: flex;
-    gap: 15px;
+.nav-item:hover {
+    background-color: #bdbdbd;
+    transform: scale(1.1);
 }
-
-.social-icons a {
+.nav-item.answered-correct {
+    background-color: #4CAF50;
     color: #fff;
-    font-size: 1.2em;
-    transition: color 0.3s;
+}
+.nav-item.answered-incorrect {
+    background-color: #F44336;
+    color: #fff;
+}
+.nav-item.active {
+    border: 2px solid var(--primary-color);
 }
 
-.social-icons a:hover {
-    color: #81C784; /* Verde suave al pasar el cursor */
+/* Botones de Navegación "Anterior" y "Siguiente" dentro de la pregunta */
+.navigation-controls-inline {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
 }
-
-/* Responsividad */
-@media (max-width: 768px) {
-    .button-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .load-button {
-        width: 80%;
-        max-width: 300px;
-    }
-
-    .difficulty-button {
-        width: 80%;
-        max-width: 300px;
-    }
-
-    .upload-section {
-        padding: 20px;
-    }
-
-    .score {
-        font-size: 18px;
-    }
-
-    .question-text {
-        font-size: 1em;
-    }
+.nav-button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    .load-button, .difficulty-button {
-        width: 90%;
-        font-size: 14px;
-        padding: 10px 15px;
-    }
-
-    .upload-icon {
-        font-size: 40px;
-    }
-
-    .score {
-        font-size: 16px;
-    }
-
-    .question-text {
-        font-size: 0.95em;
-    }
-
-    .feedback {
-        font-size: 0.9em;
-    }
-
-    /* Burbuja de Puntuación Estilo Messenger */
-    #scoreBubble {
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-        padding: 10px 15px;
-        max-width: 150px;
-    }
-
-    .bubble-content {
-        gap: 10px;
-    }
-
-    .correct-icon, .incorrect-icon {
-        font-size: 1.2em;
-    }
-
-    #scoreBubble span {
-        font-size: 1em;
-    }
+.nav-button:disabled {
+    background-color: #a0a0a0;
+    cursor: not-allowed;
+}
+.nav-button:hover:not(:disabled) {
+    background-color: #0d47a1;
+    transform: scale(1.02);
 }
 
 /* Burbuja de Puntuación Estilo Messenger */
@@ -446,7 +366,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #0084ff; /* Color similar al de Messenger */
+    background-color: #0084ff;
     color: #fff;
     padding: 15px 20px;
     border-radius: 20px;
@@ -457,56 +377,145 @@ footer {
     max-width: 200px;
     transition: transform 0.3s ease-in-out;
 }
-
 #scoreBubble:hover {
     transform: scale(1.05);
 }
-
 .bubble-content {
     display: flex;
     align-items: center;
     gap: 15px;
 }
-
 .icon-count {
     display: flex;
     align-items: center;
     gap: 5px;
 }
-
 .correct-icon {
-    color: #28a745; /* Verde para correctas */
+    color: #28a745;
     font-size: 1.5em;
 }
-
 .incorrect-icon {
-    color: #dc3545; /* Rojo para incorrectas */
+    color: #dc3545;
     font-size: 1.5em;
 }
-
 #scoreBubble span {
     font-weight: bold;
     font-size: 1.2em;
 }
 
-/* Responsividad */
+/* Pie de Página */
+footer {
+    background-color: #1565C0;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1em;
+    border-top: none;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.footer-content p {
+    margin: 0;
+    font-size: 1.1em;
+}
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+.social-icons a {
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #81C784;
+}
+
+/* Responsividad (max-width:768px) */
+@media (max-width: 768px) {
+    .button-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .load-button {
+        width: 80%;
+        max-width: 300px;
+    }
+    .difficulty-button {
+        width: 80%;
+        max-width: 300px;
+    }
+    .upload-section {
+        padding: 20px;
+    }
+    .score {
+        font-size: 18px;
+    }
+    .question-text {
+        font-size: 1em;
+    }
+    .nav-button {
+        width: 100%;
+    }
+    .navigation-controls-inline {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-item {
+        width: 25px;
+        height: 25px;
+        font-size: 0.9em;
+    }
+}
+
+/* Responsividad (max-width:480px) */
 @media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    .load-button, .difficulty-button {
+        width: 90%;
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    .upload-icon {
+        font-size: 40px;
+    }
+    .score {
+        font-size: 16px;
+    }
+    .question-text {
+        font-size: 0.95em;
+    }
+    .feedback {
+        font-size: 0.9em;
+    }
     #scoreBubble {
         bottom: 10px;
         right: 10px;
         padding: 10px 15px;
         max-width: 150px;
     }
-
     .bubble-content {
         gap: 10px;
     }
-
     .correct-icon, .incorrect-icon {
         font-size: 1.2em;
     }
-
     #scoreBubble span {
         font-size: 1em;
+    }
+    .nav-button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    .nav-item {
+        width: 20px;
+        height: 20px;
+        font-size: 0.8em;
     }
 }
