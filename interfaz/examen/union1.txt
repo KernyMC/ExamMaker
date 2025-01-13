@@ -4,7 +4,7 @@ B. Suficiencia
 C. Eficiencia
 D. Mantenibilidad
 E. Durabilidad
-ANSWERS: C, D
+ANSWERS: C
 
 En Ingeniería de software, en análisis de dominio consiste en analizar sistemas o software relacionados en un dominio, con la finalidad de encontrar:
 A. Sus partes comunes y partes que los diferencian
