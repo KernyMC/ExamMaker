@@ -248,7 +248,7 @@ ANSWER: A
                         selectedAnswer: null, 
                         isCorrect: false 
                     };
-                } else if (line.match(/^[A-D][.)]\s+/)) {
+                } else if (line.match(/^[A-H][.)]\s+/)) {
                     question.options.push(line.substring(3).trim());
                 } else if (line.match(/^ANSWER:\s+[A-D]/)) {
                     const letter = line.substring(8).trim().toUpperCase();

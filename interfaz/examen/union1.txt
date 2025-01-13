@@ -4,7 +4,16 @@ B. Suficiencia
 C. Eficiencia
 D. Mantenibilidad
 E. Durabilidad
-ANSWERS: C
+
+ANSWER: C
+
+Los patrones de diseño más utilizados se clasifican en tres categorías principales, que son:
+A. Creativos – modelados - diseñados
+B. Correlacionales – descriptivos – prescriptivos 
+C. Correlativos – imperativos – definidos 
+D. Creacionales – estructurales – comportamiento 
+ANSWER: D
+
 
 En Ingeniería de software, en análisis de dominio consiste en analizar sistemas o software relacionados en un dominio, con la finalidad de encontrar:
 A. Sus partes comunes y partes que los diferencian
@@ -27,12 +36,6 @@ C. Vulnerabilidad – información
 D. Actividad – estructura
 ANSWER: C
 
-Los patrones de diseño más utilizados se clasifican en tres categorías principales, que son:
-A. Creativos – modelados - diseñados
-B. Correlacionales – descriptivos – prescriptivos 
-C. Correlativos – imperativos – definidos 
-D. Creacionales – estructurales – comportamiento 
-ANSWER: D
 
 En el patrón de arquitectura Modelo Vista Controlador (MVC), el controlador maneja la entrada del usuario. La vista y el controlador en conjunto constituyen: la interfaz de usuario. Un cambio en el mecanismo de propagación garantiza la coherencia entre la interfaz de usuario y el modelo.”
 A. El elemento importante 
