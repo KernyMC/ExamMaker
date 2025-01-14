@@ -12,6 +12,12 @@
     <!-- Estilos (puedes guardarlo en styles.css si lo prefieres) -->
 
 </head>
+
+    <!-- Botón de Modo Oscuro -->
+    <button id="darkModeToggle" class="dark-mode-toggle">
+       Modo Oscuro
+    </button>
+
 <body>
     <!-- ========== ENCABEZADO ========== -->
     <header>
@@ -116,7 +122,15 @@ ANSWER: A
 
     <!-- Script de Mammoth (para .docx) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.0/mammoth.browser.min.js"></script>
-
+    <!-- Scripts -->
+    <script>
+        document.getElementById('darkModeToggle').addEventListener('click', function () {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+            const isDarkMode = body.classList.contains('dark-mode');
+            this.textContent = isDarkMode ? 'Desactivar Modo Oscuro' : 'Activar Modo Oscuro';
+        });
+    </script>
     <!-- ========== SCRIPT PRINCIPAL ========== -->
     <script>
         let totalQuestions = 0;
