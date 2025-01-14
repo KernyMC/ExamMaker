@@ -678,3 +678,9 @@ body.dark-mode .nav-item.active {
     background-color: #263238; /* Azul grisáceo oscuro */
 }
 
+/* Estilo para el título de la pregunta en modo oscuro */
+body.dark-mode .question-number {
+    color: #90caf9; /* Azul claro */
+    font-weight: bold;
+    font-size: 1.2em;
+}
