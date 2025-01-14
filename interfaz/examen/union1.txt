@@ -673,8 +673,6 @@ B. Si X juega [2,1]; entonces O jugara [2,2] que empata el juego; El valor de es
 C. Si X juega [2,2]; entonces la X ganara el juego; El valor de este movimiento es +10.
 D. Ninguna de las anteriores.
 ANSWER: A
-TEXTO_CORRECTA: 
-ETIQUETAS: Segundo Parcial, Examen Fin Carrera
 
 Considere la siguiente clase del juego del Zig-Zag: 
 public class Player : MonoBehaviour {}
@@ -684,8 +682,7 @@ B. void Update() {}
 C. void FixedUpdate() {}
 D. void OnTriggerEnter(Collider Obj) {} 
 ANSWER: A
-TEXTO_CORRECTA: 
-ETIQUETAS: Segundo Parcial, Examen Fin Carrera
+
 
 Considere la siguiente clase del juego del Game-Labyrinth: 
 public class Player : MonoBehaviour {}
@@ -695,8 +692,7 @@ B. void Update() {}
 C. void OnTriggerEnter(Collider Obj) {} 
 D. Ninguna de las anteriores.
 ANSWER: D
-TEXTO_CORRECTA: 
-ETIQUETAS: Segundo Parcial, Examen Fin Carrera
+
 
 Considere la siguiente clase del juego del Zig-Zag: 
 public class Player : MonoBehaviour {}
@@ -706,8 +702,6 @@ B. void Update() {}
 C. void OnTriggerEnter(Collider Obj) {} 
 D. Ninguna de las anteriores.
 ANSWER: C
-TEXTO_CORRECTA: 
-ETIQUETAS: Segundo Parcial, Examen Fin Carrera
 
 Para controlar el movimiento del ratón con el clic derecho se utiliza la función _________ y con el clic izquierdo se utiliza la función _________.
 A. Input.GetMouseButtonDown(0), Input.GetMouseButtonDown(1)
@@ -715,8 +709,7 @@ B. Input.GetMouseButtonDown(1), Input.GetMouseButtonDown(0)
 C. Input.GetMouseButtonDown(0), Input.GetMouseButtonDown(2)
 D. Ninguna de las anteriores.
 ANSWER: B
-TEXTO_CORRECTA: 
-ETIQUETAS: Segundo Parcial, Examen Fin Carrera
+
 
 Si se quisiera controlar el movimiento del ratón con el clic izquierdo la posición hacia Abajo y a la Izquierda se debería utilizar una estructura de selección if-else, donde los valores del Vector3 para la dirección deben ser _________ y _________.
 A. (0, 0, -1); (-1, 0, 0)
@@ -724,8 +717,7 @@ B. (0, 0, 1); (-1, 0, 0)
 C. (0, 0, 1); (1, 0, 0)
 D. (0, 0, -1); (1, 0, 0)
 ANSWER: D
-TEXTO_CORRECTA: 
-ETIQUETAS: Segundo Parcial, Examen Fin Carrera
+
 
 Si se quisiera controlar el movimiento del ratón con el clic derecho la posición hacia Arriba y a la Derecha se debería utilizar una estructura de selección if-else, donde los valores del Vector3 para la dirección deben ser _________ y _________.
 A. (0, 0, -1); (-1, 0, 0)
@@ -733,8 +725,6 @@ B. (0, 0, 1); (-1, 0, 0)
 C. (0, 0, 1); (1, 0, 0)
 D. (0, 0, -1); (1, 0, 0)
 ANSWER: B
-TEXTO_CORRECTA: 
-ETIQUETAS: Segundo Parcial, Examen Fin Carrera
 
 Verdadero o falso: A. En el juego del Laberinto, la clase global GameStatus define sus datos miembro como privados y sus descriptores de acceso son públicos y de tipo static; B. Para acceder a los getters y setters de una clase global se debe utilizar la misma clase en cualquier parte del programA.  
 A. Verdadero, Verdadero
@@ -742,8 +732,7 @@ B. Verdadero, Falso
 C. Falso, Verdadero
 D. Falso, Falso
 ANSWER: C
-TEXTO_CORRECTA: 
-ETIQUETAS: Segundo Parcial, Examen Fin Carrera
+
 
 Verdadero o falso: A. En el juego del Laberinto, el Player debe tener habilitada la propiedad Is Trigger del Sphere Collider para poder colisionar con los coins; B. En el juego del Laberinto, cada uno de los coins debe tener deshabilitada la propiedad Is Trigger del Sphere Collider para poder colisionar con el Player. 
 A. Verdadero, Verdadero
@@ -751,17 +740,14 @@ B. Verdadero, Falso
 C. Falso, Verdadero
 D. Falso, Falso
 ANSWER: D
-TEXTO_CORRECTA: 
-ETIQUETAS: Segundo Parcial, Examen Fin Carrera
 
 Para reemplazar la instrucción obsoleta: Application.loadedLevelName == "MainScene"; se debe utilizar la siguiente instrucción: __________, que permite identificar la escena en la cual se encuentra el Player.
 A. SceneManager.LoadScene(SceneManager.GetActiveScene().name.Equals("MainScene");
-B. SceneManager.GetActiveScene().name.Equals("MainScene")
+B. SceneManager.GetActiveScene().name.Equals("MainScene")A. Para que el juego sea mas interesante.
 C. SceneManager.GetActiveScene().name.Equals(Index(1));
 D. Ninguna de las anteriores.
 ANSWER: B
-TEXTO_CORRECTA: 
-ETIQUETAS: Segundo Parcial, Examen Fin Carrera
+
 
 ¿Cuál es el propósito principal del lenguaje DDL (Data Definition LanguagE. en las bases de datos?
 A.  Definir la estructura de la base de datos
