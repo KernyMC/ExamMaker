@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Exam Maker</title>
     <!-- Google Fonts: Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <!-- Hoja de estilos CSS -->
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- Iconos (opcional, para mejor estética) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Estilos (puedes guardarlo en styles.css si lo prefieres) -->
+
 </head>
 <body>
-    <!-- Encabezado -->
+    <!-- ========== ENCABEZADO ========== -->
     <header>
         <h1>Exam Maker</h1>
     </header>
 
-    <!-- Contenido Principal -->
+    <!-- ========== CONTENIDO PRINCIPAL ========== -->
     <main>
         <!-- Sección de Botones Principales -->
         <section class="button-section">
             <button id="loadDefaultExam" class="load-button default-exam">Cargar Examen Normal</button>
             <button id="loadRandomExam" class="load-button random-exam">🎲 Cargar Examen Aleatorio</button>
             <button id="chooseDifficulty" class="load-button difficulty-exam">Escoger Dificultad</button>
-            <!-- Nuevo Botón Añadido -->
             <button id="loadOldExams" class="load-button old-exam">EXAMENES VIEJOS</button>
+            <!-- Botones de Vistas -->
+            <button id="moodleView" class="load-button view-button">Vista Moodle</button>
+            <button id="listView" class="load-button view-button">Vista Lista</button>
         </section>
 
         <!-- Sección de Dificultad (Desplegable) -->
@@ -49,7 +52,7 @@
 
         <!-- Sección de Subida de Archivos -->
         <section class="upload-section" onclick="document.getElementById('fileInput').click();">
-            <input type="file" id="fileInput" accept=".txt,.docx" hidden>
+            <input type="file" id="fileInput" accept=".txt,.docx" hidden onchange="handleFileSelect(event)" />
             <label for="fileInput" class="upload-label">
                 <i class="fas fa-upload upload-icon"></i>
                 <span>Arrastra tu archivo o haz clic para seleccionarlo</span>
@@ -57,7 +60,11 @@
             <!-- Guía sobre Formato Aiken -->
             <div class="aiken-guide">
                 <h2>¿Cómo preparar tu archivo en formato Aiken?</h2>
-                <p>Para subir tus preguntas, asegúrate de que tu archivo sea un <strong>.txt</strong> y siga el <strong>formato Aiken</strong>. A continuación, te mostramos un ejemplo:</p>
+                <p>
+                    Para subir tus preguntas, asegúrate de que tu archivo sea 
+                    un <strong>.txt</strong> y siga el <strong>formato Aiken</strong>. 
+                    A continuación, te mostramos un ejemplo:
+                </p>
                 <pre>
 ¿Quién escribió "Cien años de soledad"?
 A. Gabriel García Márquez
@@ -66,24 +73,27 @@ C. Isabel Allende
 D. Julio Cortázar
 ANSWER: A
                 </pre>
-                <p>Puedes seguir esta estructura para todas tus preguntas. Asegúrate de indicar correctamente la respuesta correcta con <code>ANSWER: </code> seguido de la letra correspondiente.</p>
+                <p>
+                    Asegúrate de indicar correctamente la respuesta con 
+                    <code>ANSWER: </code> seguido de la letra correspondiente.
+                </p>
             </div>
         </section>
 
         <!-- Sección de Calificación -->
         <section id="score" class="score"></section>
 
-        <!-- Contenedor de Preguntas (Estilo Moodle, mostrando solo 1 a la vez) -->
-        <section id="questionsContainer" class="questions-container">
-            <!-- Contenedor para la Pregunta Actual -->
+        <!-- Contenedor de Preguntas -->
+        <section id="questionsContainer" class="questions-container moodle-view">
+            <!-- Vista Moodle: Contenedor de Pregunta Actual -->
             <div id="currentQuestion" class="question"></div>
 
-            <!-- Navegador de Preguntas (Botones numerados) -->
+            <!-- Navegador de Preguntas -->
             <div id="questionNavigator" class="question-navigator"></div>
         </section>
     </main>
 
-    <!-- Burbuja de Puntuación Estilo Messenger -->
+    <!-- Burbuja de Puntuación -->
     <div id="scoreBubble">
         <div class="bubble-content">
             <div class="icon-count">
@@ -104,28 +114,59 @@ ANSWER: A
         </div>
     </footer>
 
-    <!-- Librerías y Scripts -->
+    <!-- Script de Mammoth (para .docx) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.0/mammoth.browser.min.js"></script>
+
+    <!-- ========== SCRIPT PRINCIPAL ========== -->
     <script>
         let totalQuestions = 0;
         let correctAnswers = 0;
         let allQuestions = [];
-        // Almacena las preguntas mostradas (para checkAnswer).
         let displayedQuestions = [];
-        // Índice de la pregunta actual
         let currentQuestionIndex = 0;
 
-        // Al cargar la ventana, por defecto: Examen Normal
+        // Esta variable guardará la vista actual: "moodle" o "list"
+        let currentView = 'moodle';
+
+        // Al cargar la ventana, por defecto cargamos el examen normal
         window.onload = loadDefaultExam;
 
-        // Asignar eventos a los botones principales
-        document.getElementById('loadDefaultExam').addEventListener('click', loadDefaultExam);
-        document.getElementById('loadRandomExam').addEventListener('click', loadRandomExam);
-        document.getElementById('chooseDifficulty').addEventListener('click', toggleDifficultySection);
-        document.getElementById('loadOldExams').addEventListener('click', loadOldExams);
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('loadDefaultExam').addEventListener('click', loadDefaultExam);
+            document.getElementById('loadRandomExam').addEventListener('click', loadRandomExam);
+            document.getElementById('chooseDifficulty').addEventListener('click', toggleDifficultySection);
+            document.getElementById('loadOldExams').addEventListener('click', loadOldExams);
 
-        // Evento al subir archivo
-        document.getElementById('fileInput').addEventListener('change', handleFileSelect);
+            // Botones de cambio de vista
+            document.getElementById('moodleView').addEventListener('click', () => changeView('moodle'));
+            document.getElementById('listView').addEventListener('click', () => changeView('list'));
+        });
+
+        /* ========== CAMBIAR VISTA ========== */
+        function changeView(viewType) {
+            const container = document.getElementById('questionsContainer');
+
+            // Guardamos en la variable global
+            currentView = viewType;
+
+            // Quitamos clases anteriores y agregamos la nueva
+            container.classList.remove('list-view', 'moodle-view');
+            container.classList.add(viewType === 'moodle' ? 'moodle-view' : 'list-view');
+
+            // Dependiendo de la vista, volvemos a mostrar las preguntas
+            if (displayedQuestions.length > 0) {
+                if (currentView === 'moodle') {
+                    // Volvemos a 0 y mostramos la primera pregunta
+                    currentQuestionIndex = 0;
+                    displayCurrentQuestion();
+                    setupQuestionNavigator();
+                } else {
+                    // Mostramos todas las preguntas en una sola página
+                    displayAllQuestions();
+                }
+                updateScore();
+            }
+        }
 
         /* ========== MOSTRAR / OCULTAR SECCIÓN DE DIFICULTAD ========== */
         function toggleDifficultySection() {
@@ -153,7 +194,7 @@ ANSWER: A
                 .then(response => response.text())
                 .then(text => {
                     allQuestions = parseQuestions(text);
-                    displayQuestions(allQuestions, true); // Aleatorio
+                    displayQuestions(allQuestions, true); // aleatorio
                 })
                 .catch(error => console.error('Error:', error));
         }
@@ -176,7 +217,7 @@ ANSWER: A
                 });
         }
 
-        // Al subir un archivo
+        /* ========== SUBIR ARCHIVOS .TXT O .DOCX ========== */
         function handleFileSelect(event) {
             const file = event.target.files[0];
             resetUI();
@@ -207,7 +248,7 @@ ANSWER: A
         function loadQuestionsByDifficulty(count) {
             resetUI();
             if (!allQuestions.length) {
-                // Si no hay preguntas, cargamos examenFinal.txt
+                // Si no hay preguntas en allQuestions, cargamos examenFinal.txt
                 fetch('examen/examenFinal.txt')
                     .then(response => response.text())
                     .then(text => {
@@ -248,15 +289,16 @@ ANSWER: A
                         selectedAnswer: null, 
                         isCorrect: false 
                     };
-                } else if (line.match(/^[A-H][.)]\s+/)) {
+                } else if (line.match(/^[A-Z][.)]\s+/)) {
                     question.options.push(line.substring(3).trim());
-                } else if (line.match(/^ANSWER:\s+[A-D]/)) {
+                } else if (line.match(/^ANSWER:\s+[A-Z]/)) {
                     const letter = line.substring(8).trim().toUpperCase();
                     const letterIndex = letter.charCodeAt(0) - 65;
                     question.correctAnswer = question.options[letterIndex] || '';
                     questions.push(question);
                     question = null;
                 } else {
+                    // Continúa la pregunta en caso de que ocupe varias líneas
                     question.text += ' ' + line;
                 }
             });
@@ -264,31 +306,125 @@ ANSWER: A
             return questions;
         }
 
-        /* ========== MOSTRAR PREGUNTAS (MODO MOODLE) ========== */
+        /* ========== MOSTRAR PREGUNTAS (LÓGICA PRINCIPAL) ========== */
         function displayQuestions(questions, randomize) {
             displayedQuestions = questions;
             totalQuestions = questions.length;
             correctAnswers = 0;
 
+            // Mezclar opciones (si es aleatorio)
             if (randomize) {
-                // Mezclar opciones de cada pregunta
                 displayedQuestions.forEach(q => {
                     q.options = shuffleArray(q.options);
                 });
             }
 
-            // Empezamos con la primera pregunta
-            currentQuestionIndex = 0;
+            // Dependiendo de la vista actual, mostramos
+            if (currentView === 'moodle') {
+                currentQuestionIndex = 0;
+                displayCurrentQuestion();
+                setupQuestionNavigator();
+            } else {
+                displayAllQuestions();
+            }
 
-            // Mostrar la primera pregunta
-            displayCurrentQuestion();
-            // Armar el navegador de preguntas
-            setupQuestionNavigator();
-            // Actualizar calificación
             updateScore();
         }
 
-        /* ========== MOSTRAR PREGUNTA ACTUAL ========== */
+        /* ========== MOSTRAR TODAS LAS PREGUNTAS (VISTA LISTA) ========== */
+        function displayAllQuestions() {
+            // Ocultamos el navegador (no aplica en vista lista)
+            document.getElementById('questionNavigator').innerHTML = '';
+            
+            const questionDiv = document.getElementById('currentQuestion');
+            questionDiv.innerHTML = ''; // Limpiamos
+
+            // Generamos cada pregunta en un contenedor
+            displayedQuestions.forEach((q, index) => {
+                const container = document.createElement('div');
+                container.className = 'question';
+
+                // Número de pregunta
+                const questionNumber = document.createElement('div');
+                questionNumber.className = 'question-number';
+                questionNumber.textContent = `Pregunta ${index + 1} de ${displayedQuestions.length}`;
+
+                // Texto de la pregunta
+                const questionText = document.createElement('div');
+                questionText.className = 'question-text';
+                questionText.textContent = q.text;
+
+                // Opciones
+                const optionsDiv = document.createElement('div');
+                optionsDiv.className = 'options';
+
+                q.options.forEach((opt, i) => {
+                    const optionDiv = document.createElement('div');
+                    optionDiv.className = 'option';
+
+                    const radioInput = document.createElement('input');
+                    radioInput.type = 'radio';
+                    radioInput.id = `q${index}opt${i}`;
+                    radioInput.name = `q${index}`; // Importante que usen el mismo "name" para agrupar
+                    radioInput.value = opt;
+
+                    // Al hacer clic, verificamos la respuesta
+                    radioInput.onclick = () => checkAnswer(index, opt);
+
+                    // Si la pregunta ya fue respondida antes...
+                    if (q.answered) {
+                        radioInput.disabled = true;
+                        if (opt === q.selectedAnswer) {
+                            radioInput.checked = true;
+                        }
+                    }
+
+                    const label = document.createElement('label');
+                    label.htmlFor = `q${index}opt${i}`;
+                    label.textContent = `${String.fromCharCode(65 + i)}. ${opt}`;
+
+                    optionDiv.appendChild(radioInput);
+                    optionDiv.appendChild(label);
+                    optionsDiv.appendChild(optionDiv);
+                });
+
+                // Feedback
+                const feedbackDiv = document.createElement('div');
+                feedbackDiv.className = 'feedback';
+
+                // Respuesta Correcta
+                const correctAnswerDiv = document.createElement('div');
+                correctAnswerDiv.className = 'correctAnswer';
+                correctAnswerDiv.innerHTML = `<hr><strong>Respuesta correcta:</strong> ${q.correctAnswer}`;
+
+                // Si la pregunta ya fue respondida
+                if (q.answered) {
+                    feedbackDiv.style.display = 'block';
+                    correctAnswerDiv.style.display = 'block';
+                    if (q.isCorrect) {
+                        container.classList.add('correct');
+                        feedbackDiv.textContent = '✓ ¡Correcto!';
+                        feedbackDiv.style.color = '#d4edda';
+                    } else {
+                        container.classList.add('incorrect');
+                        feedbackDiv.textContent = '✗ Incorrecto';
+                        feedbackDiv.style.color = '#f8d7da';
+                    }
+                }
+
+                // Añadimos todo al contenedor
+                container.appendChild(questionNumber);
+                container.appendChild(questionText);
+                container.appendChild(optionsDiv);
+                container.appendChild(feedbackDiv);
+                container.appendChild(correctAnswerDiv);
+
+                // Agregamos el contenedor al DOM
+                questionDiv.appendChild(container);
+            });
+        }
+
+        /* ========== MOSTRAR PREGUNTA ACTUAL (VISTA MOODLE) ========== */
         function displayCurrentQuestion() {
             const questionDiv = document.getElementById('currentQuestion');
             questionDiv.innerHTML = '';
@@ -300,7 +436,6 @@ ANSWER: A
 
             const q = displayedQuestions[currentQuestionIndex];
 
-            // Contenedor de la pregunta
             const container = document.createElement('div');
             container.className = 'question';
 
@@ -328,10 +463,8 @@ ANSWER: A
                 radioInput.name = `q${currentQuestionIndex}`;
                 radioInput.value = opt;
 
-                // Al hacer clic, verificamos la respuesta
                 radioInput.onclick = () => checkAnswer(currentQuestionIndex, opt);
 
-                // Si la pregunta ya fue respondida antes
                 if (q.answered) {
                     radioInput.disabled = true;
                     if (opt === q.selectedAnswer) {
@@ -352,12 +485,12 @@ ANSWER: A
             const feedbackDiv = document.createElement('div');
             feedbackDiv.className = 'feedback';
 
-            // Respuesta Correcta
+            // Respuesta correcta
             const correctAnswerDiv = document.createElement('div');
             correctAnswerDiv.className = 'correctAnswer';
             correctAnswerDiv.innerHTML = `<hr><strong>Respuesta correcta:</strong> ${q.correctAnswer}`;
 
-            // Si la pregunta ya fue respondida
+            // Si está respondida
             if (q.answered) {
                 feedbackDiv.style.display = 'block';
                 correctAnswerDiv.style.display = 'block';
@@ -372,18 +505,16 @@ ANSWER: A
                 }
             }
 
-            // Controles de Navegación dentro de la pregunta
+            // Controles de Navegación
             const navControls = document.createElement('div');
             navControls.className = 'navigation-controls-inline';
 
-            // Botón Anterior
             const prevButton = document.createElement('button');
             prevButton.className = 'nav-button';
             prevButton.textContent = 'Anterior';
             prevButton.onclick = prevQuestion;
             prevButton.disabled = (currentQuestionIndex === 0);
 
-            // Botón Siguiente
             const nextButton = document.createElement('button');
             nextButton.className = 'nav-button';
             nextButton.textContent = 'Siguiente';
@@ -393,7 +524,6 @@ ANSWER: A
             navControls.appendChild(prevButton);
             navControls.appendChild(nextButton);
 
-            // Añadimos todo al contenedor
             container.appendChild(questionNumber);
             container.appendChild(questionText);
             container.appendChild(optionsDiv);
@@ -403,11 +533,11 @@ ANSWER: A
 
             questionDiv.appendChild(container);
 
-            // Marcar en el navegador de preguntas la activa
+            // Resaltamos en el navegador de preguntas la pregunta actual
             highlightNavigator(currentQuestionIndex);
         }
 
-        /* ========== NAVEGADOR DE PREGUNTAS ========== */
+        /* ========== NAVEGADOR DE PREGUNTAS (VISTA MOODLE) ========== */
         function setupQuestionNavigator() {
             const navigatorDiv = document.getElementById('questionNavigator');
             navigatorDiv.innerHTML = '';
@@ -418,27 +548,21 @@ ANSWER: A
                 btn.textContent = index + 1;
                 btn.onclick = () => goToQuestion(index);
 
-                // Si está respondida, coloreamos
                 if (q.answered) {
                     btn.classList.add(q.isCorrect ? 'answered-correct' : 'answered-incorrect');
                 }
-
                 navigatorDiv.appendChild(btn);
             });
         }
 
-        // Marcar la pregunta actual (active) en el navegador
         function highlightNavigator(index) {
             const allNavItems = document.querySelectorAll('.nav-item');
-            // Quitar .active de todos
             allNavItems.forEach(item => item.classList.remove('active'));
-            // Agregar .active al item actual
             if (allNavItems[index]) {
                 allNavItems[index].classList.add('active');
             }
         }
 
-        /* ========== NAVEGACIÓN ENTRE PREGUNTAS ========== */
         function goToQuestion(index) {
             currentQuestionIndex = index;
             displayCurrentQuestion();
@@ -470,9 +594,16 @@ ANSWER: A
             if (question.isCorrect) {
                 correctAnswers++;
             }
-            displayCurrentQuestion();
+
+            // Si estamos en Moodle, refrescamos solo la pregunta actual
+            // Si estamos en Lista, refrescamos toda la lista
+            if (currentView === 'moodle') {
+                displayCurrentQuestion();
+                setupQuestionNavigator();
+            } else {
+                displayAllQuestions();
+            }
             updateScore();
-            setupQuestionNavigator();
         }
 
         /* ========== ACTUALIZAR CALIFICACIÓN ========== */
@@ -492,7 +623,7 @@ ANSWER: A
                 scoreDiv.innerHTML = '';
             }
 
-            // Actualizar la burbuja de puntuación
+            // Burbuja de puntuación
             document.getElementById('correctCount').textContent = correctAnswers;
             document.getElementById('incorrectCount').textContent = displayedQuestions.length - correctAnswers;
         }
