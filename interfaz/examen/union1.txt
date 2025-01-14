@@ -175,7 +175,9 @@ A.  Implementa un bucle de manera secuencial compartiendo la variable A en una s
 B.  Implementa un bucle en paralelo, donde la variable A es compartida y la variable i es privada
 C.  Implementa un bucle en paralelo, donde la variable A es privada y la variable i es compartida
 D.  Implementa un bucle con 100 iteraciones en donde se dividen para los i hilos y el resultado se almacena en una matriz A que es compartida por todos.
-ANSWER: BEn el lenguaje de programación JavA. ¿Qué método se utiliza para iniciar la ejecución del método run() en una clase que hereda de la clase Thread?
+ANSWER: B
+
+En el lenguaje de programación JavA. ¿Qué método se utiliza para iniciar la ejecución del método run() en una clase que hereda de la clase Thread?
 A.  init()
 B.  start()
 C.  run()
@@ -3242,12 +3244,14 @@ C. Listas
 D. Tablas
 E. Titulos
 ANSWER: B
+
 En HTML, para crear un hipervínculo se emplea la etiqueta
 A. <link>
 B. <href>
 C. <a>
 D. NINGUNA DE LAS OPCIONES PROPUESTAS
 ANSWER: C
+
 En HTML, para indicar el orden de tabulación entre los controles de un formulario se emplea el atributo
 A. alt
 B. index
