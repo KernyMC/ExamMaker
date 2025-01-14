@@ -5875,14 +5875,16 @@ A. EL SISTEMA DEBERÁ FUNCIONAR CORRECTAMENTE EN CUALQUIER NAVEGADOR.
 B. EL SISTEMA NO DEBERÁ TARDAR MÁS DE CINCO SEGUNDOS EN MOSTRAR LOS RESULTADOS DE UNA BÚSQUEDA.  
 C. EL SISTEMA DEBERÁ PERMITIRLE AL USUARIO LA POSIBILIDAD DE BUSCAR DISPONIBILIDAD DE ASIENTOS Y COSTO DE LOS VUELOS.
 D. EL SISTEMA DEBERÁ PERMITIRLE AL USUARIO BUSCAR DISPONIBILIDAD DE ASIENTOS Y COSTO DE LOS VUELOS UTILIZANDO COMO CRITERIOS:  FECHA Y TIPO DE VUELO.
-ANSWER: D﻿El estudio de caso
+ANSWER: D
+
+El estudio de caso:
 A. permite recolectar información estandarizada de una población específicA. 
 B. mide el efecto de manipular variables.
 C. Este tipo de investigación pretende cambiar el fenómeno estudiado.
 D. es un estudio de campo u observacional.
 ANSWER: D
 
-Un experimento
+Un experimento:
 A. permite recolectar información estandarizada de una población específicA. 
 B. es un estudio de campo u observaciones.
 C. Este tipo de investigación pretende cambiar el fenómeno estudiado.
