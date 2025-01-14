@@ -561,7 +561,9 @@ A.  Pintar las caras desde el fondo hacia el frente
 B.  Utilizar una estructura de datos para almacenar las coordenadas de las caras
 C.  Pintar las caras desde el frente hacia el fondo
 D.  Eliminar todas las caras internas de un objeto
-ANSWER: A¿Por qué aplicar Ingeniería de Software en videojuegos?
+ANSWER: A
+
+¿Por qué aplicar Ingeniería de Software en videojuegos?
 A.  Para que el juego sea mas interesante.
 B.  Para cumplir con las normas y estandares.
 C.  Para asegurar que el software cumple con el propósito para el que fue creado.
@@ -2031,7 +2033,8 @@ A.  Tiempo que toma para que una solicitud de E/S sea completadA.
 B.  Proceso de liberar memoria no utilizadA. 
 C.  Técnica para almacenar datos frecuentemente accedidos en una memoria más rápidA. 
 D.  Proceso de cambiar el control de la CPU de un proceso a otro.
-ANSWER: A¿Cuál de las siguientes acciones es fundamental realizar durante la fase de inicio de un proyecto de software?
+ANSWER: A
+¿Cuál de las siguientes acciones es fundamental realizar durante la fase de inicio de un proyecto de software?
 A.  Definir el alcance del proyecto y los objetivos.
 B.  Desarrollar el software según las especificaciones.
 C.  Realizar pruebas de integración del sistemA. 
@@ -4674,7 +4677,8 @@ A.  Se emplea como complemento a los test de usabilidad, pues es útil para llev
 B.  Se prefiere a la realización de test de usabilidad, pues los expertos en usabilidad saben mas sobre la utilización del sistema que los usuarios.
 C.  Comprende las técnicas de medición del rendimiento, test retrospectivo y co descubrimiento.
 D.  Es una evaluación de usabilidad realizada por un sistema experto.
-ANSWER: A¿Cuál es el código correcto para insertar una imagen en XHTML?
+ANSWER: A
+¿Cuál es el código correcto para insertar una imagen en XHTML?
 A. <img src=imagen.jpg>
 B. <img src="imagen.jpg">
 C. <img src="imagen.jpg" />
@@ -4887,7 +4891,9 @@ A.  Inspección.
 B.  Revisión Informal.
 C.  Revisión TécnicA. 
 D.  Revisión GuiadA. 
-ANSWER: A¿Qué opción no describe un proceso de desarrollo de software?
+ANSWER: A
+
+¿Qué opción no describe un proceso de desarrollo de software?
 A.  Un proceso ordenado de subactividades debidamente estructuras y ordenadas.
 B.  Provee la oportunidad de introducir mejores prácticas de la industriA. 
 C.  Permite entender que las herramientas deben ser utilizadas para soportar un proceso.
