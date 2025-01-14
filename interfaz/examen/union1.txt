@@ -101,7 +101,8 @@ A. La capacidad de un sistema para ocultar la complejidad de su infraestructura 
 B. La división de tareas en partes más pequeñas que se pueden ejecutar en paralelo.
 C. La posibilidad de que un sistema distribuido se recupere automáticamente de fallos.
 D. La capacidad de un sistema para distribuir datos de manera uniforme entre todos los nodos.
-ANSWER: AIndique cuál fue una(s) de la(s) necesidad(es) para la aparición de la computación paralela
+ANSWER: A
+Indique cuál fue una(s) de la(s) necesidad(es) para la aparición de la computación paralela
 A.  Modelado y simulación numérica a problemas
 B.  Costos altos de los cálculos iterativos
 C.  Problemas que requieren mayor tiempo de computo
