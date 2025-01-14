@@ -474,7 +474,7 @@ ANSWER: B
 En una aplicación web que sigue el patrón MVC, ¿Cuál es la función principal del "Controlador"?
 A. Representar la interfaz de usuario y su diseño visual.
 B. Almacenar y gestionar la lógica de negocio y los datos de la aplicación.
-C. Procesar las peticiones del usuario, coordinar la interacción entre Modelo y Vista, y devolver una ANSWER.
+C. Procesar las peticiones del usuario, coordinar la interacción entre Modelo y Vista, y devolver una respuesta.
 D. Transformar el código en formato JSON para su visualización en la página.
 ANSWER: C
 
@@ -2296,7 +2296,7 @@ C. W3C- “User Agent Accesibility Guidelines (UAAG).
 D. W3C- “User Agent Accesibility Guidelines (UAAG).
 
 ANSWER: C
-Un proceso de software es un conjunto de ____________ que conducen a la creación de un producto de software: (Seleccione una ANSWER)
+Un proceso de software es un conjunto de ____________ que conducen a la creación de un producto de software: (Seleccione una respuesta)
 A. Personas
 B. Actividades
 C. Pruebas
@@ -2359,7 +2359,7 @@ C. XP
 D. KANBAN
 ANSWER: C
 
-Es un Software que permite modelar y documentar procesos de negocio basado en el estándar conocido como Business Process Model and Notation (BPMN) (Seleccione una ANSWER)
+Es un Software que permite modelar y documentar procesos de negocio basado en el estándar conocido como Business Process Model and Notation (BPMN) (Seleccione una respuesta)
 A. Bizagi
 B. Rational Rose
 C. Microsoft Visio
