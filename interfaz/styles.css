@@ -629,3 +629,52 @@ body.dark-mode .correctAnswer {
     color: #b0bec5; /* Texto gris claro */
     border-top-color: #616161; /* Borde gris oscuro */
 }
+
+
+/* Modo Oscuro para los mensajes de "Correcto" e "Incorrecto" */
+body.dark-mode .feedback {
+    color: #ffffff; /* Texto claro */
+    background-color: #424242; /* Fondo gris oscuro */
+    border: 1px solid #616161; /* Borde gris intermedio */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+body.dark-mode .correct .feedback {
+    color: #a5d6a7; /* Texto verde claro */
+    background-color: #1e4620; /* Verde oscuro */
+    border-color: #2e7d32; /* Verde intermedio */
+}
+
+body.dark-mode .incorrect .feedback {
+    color: #ef9a9a; /* Texto rojo claro */
+    background-color: #4a2020; /* Rojo oscuro */
+    border-color: #c62828; /* Rojo intermedio */
+}
+
+/* Modo Oscuro para los botones del navegador de preguntas (vista Moodle) */
+body.dark-mode .nav-item {
+    background-color: #424242; /* Fondo gris oscuro */
+    color: #ffffff; /* Texto claro */
+    border: 1px solid #616161; /* Borde gris */
+}
+
+body.dark-mode .nav-item:hover {
+    background-color: #616161; /* Gris más claro al pasar el ratón */
+}
+
+body.dark-mode .nav-item.answered-correct {
+    background-color: #1e4620; /* Verde oscuro */
+    color: #a5d6a7; /* Verde claro */
+}
+
+body.dark-mode .nav-item.answered-incorrect {
+    background-color: #4a2020; /* Rojo oscuro */
+    color: #ef9a9a; /* Rojo claro */
+}
+
+body.dark-mode .nav-item.active {
+    border-color: #90caf9; /* Azul claro */
+    background-color: #263238; /* Azul grisáceo oscuro */
+}
+
