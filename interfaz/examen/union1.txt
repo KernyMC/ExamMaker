@@ -280,7 +280,9 @@ A.  La capacidad de los sistemas para mostrar su ubicación geográfica exactA.
 B.  La capacidad de los usuarios y aplicaciones para interactuar con el sistema sin conocer la ubicación física de los componentes.
 C.  La habilidad del sistema para cifrar datos en tránsito.
 D.  La capacidad del sistema para operar sin conexión a una reD. 
-ANSWER: BIndique el concepto que más represente el concepto de Informática o Computación Gráfica
+ANSWER: B
+
+Indique el concepto que más represente el concepto de Informática o Computación Gráfica
 A.  Es un área de Informática que se dedica a los videojuegos
 B.  Es un área de la Computación que trata solamente de la rasterización de imágenes (representación de una imagen como matriz de píxeles) 
 C.  Rama de la informática dedicada al diseño de imágenes en 2D 
