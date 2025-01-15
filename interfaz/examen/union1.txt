@@ -821,14 +821,6 @@ C.  Extracción de datos, modelado dimensional, carga de datos y definición de 
 D.  Desarrollo de algoritmos de minería de datos, procesamiento de lenguaje natural, análisis de sentimientos y visualización de datos.
 ANSWER: C
 
-
-
-
-
-
-
-
-
 ¿En que‚ nivel de abstracción se centra en la representación independiente del sistema de gestión de base de datos (SGDB.?
 A.  Nivel Físico
 B.  Nivel Lógico
@@ -2020,11 +2012,12 @@ B.  Proceso de liberar memoria no utilizadA.
 C.  Técnica para almacenar datos frecuentemente accedidos en una memoria más rápidA. 
 D.  Proceso de cambiar el control de la CPU de un proceso a otro.
 ANSWER: A
+
 ¿Cuál de las siguientes acciones es fundamental realizar durante la fase de inicio de un proyecto de software?
-A.  Definir el alcance del proyecto y los objetivos.
-B.  Desarrollar el software según las especificaciones.
-C.  Realizar pruebas de integración del sistemA. 
-D.  Implementar el software en el entorno de producción.
+A. Definir el alcance del proyecto y los objetivos.
+B. Desarrollar el software según las especificaciones.
+C. Realizar pruebas de integración del sistemA. 
+D. Implementar el software en el entorno de producción.
 ANSWER: A
 
 En el análisis de requerimientos de un proyecto de software, ¿qué técnica se utiliza para priorizar las necesidades del cliente en función de su importancia y viabilidad?
