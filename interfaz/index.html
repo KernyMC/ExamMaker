@@ -263,7 +263,7 @@ ANSWER: A
             resetUI();
             if (!allQuestions.length) {
                 // Si no hay preguntas en allQuestions, cargamos examenFinal.txt
-                fetch('examen/examenFinal.txt')
+                fetch('examen/union1.txt')
                     .then(response => response.text())
                     .then(text => {
                         allQuestions = parseQuestions(text);

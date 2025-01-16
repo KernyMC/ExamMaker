@@ -3864,7 +3864,8 @@ A. 	Microservices / Layered
 B. 	Client-Server / Monolithic
 C. 	Pipe-and-Filter / Event-Driven
 D. 	MVC / SOA
-ANSWER: AEn una auditoria
+ANSWER: A
+En una auditoria
 A.  Las reuniones se hacen solo en auditorías externas.
 B.  Las reuniones de apertura y cierre son opcionales.
 C.  Las reuniones de apertura y cierre son necesarias en todo tipo de auditoríA.   
