@@ -4562,7 +4562,8 @@ A.  4,2,1,3,5
 B.  4,3,1,5,2
 C.  5,2,1,3,4
 D.  3,4,1,5,2
-ANSWER: B﻿El diseño centrado en el usuario se lo define como
+ANSWER: B
+El diseño centrado en el usuario se lo define como
 A. Un enfoque de desarrollo seguido en el campo de HCI para producir sistemas software con un adecuado nivel de usabilidaD.  Se basa en centrarse en las necesidades de los usuarios en todo el desarrollo.
 B. Un enfoque de desarrollo seguido en el campo de la HCI para producir sistemas software con un adecuado nivel de usabilidaD.  Se basa en centrarse en las necesidades de los desarrolladores en todo el desarrollo.
 C. Un enfoque de desarrollo seguido en el campo de la HCI para producir sistemas software con un adecuado nivel de funcionalidaD.  Se basa en centrarse en las necesidades de los usuarios en todo el desarrollo.
@@ -4770,7 +4771,9 @@ A. Una variable cuyo nombre termine en un número o índice
 B. Una constante tipo lista
 C. Una variable cualquiera
 D. Una instancia del objeto array
-ANSWER: D¿Cuál es la primera fase del ciclo de vida de pruebas de software?
+ANSWER: D
+
+¿Cuál es la primera fase del ciclo de vida de pruebas de software?
 A.  Planificación de pruebas.
 B.  Diseño de pruebas.
 C.  Ejecución de pruebas.
