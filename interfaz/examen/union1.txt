@@ -3968,7 +3968,9 @@ A.  Seguridad es sub característica
 B.  Eficiencia en el desempeño es su característica
 C.  Fiabilidad es sub característica
 D.  Portabilidad es sub característica 
-ANSWER: B¿Cuál de las siguientes actividades es parte de la fase de Elaboración en el proceso de desarrollo de software?
+ANSWER: B
+
+¿Cuál de las siguientes actividades es parte de la fase de Elaboración en el proceso de desarrollo de software?
 A. Definición del alcance del proyecto
 B. Construcción del producto
 C. Planificación detallada de los casos de uso
