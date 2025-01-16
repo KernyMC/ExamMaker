@@ -5051,7 +5051,9 @@ A.  Partes normativas, optimizado, partes no normativas,
 B.  Partes normativas, partes no normativas.
 C.  Predecible, optimizado, parte normativas.
 D.  Realizado, partes normativas, gestionado, partes normativas
-ANSWER: B¿Qué significa la abreviatura "HTML5"?
+ANSWER: B
+
+¿Qué significa la abreviatura "HTML5"?
 A. HyperText Markup Language 5.
 B. High-level Text Management Language 5.
 C. HyperTransfer Markup Language 5.
