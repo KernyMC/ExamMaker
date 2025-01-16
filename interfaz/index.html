@@ -9,14 +9,13 @@
     <!-- Iconos (opcional, para mejor estética) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <!-- Estilos (puedes guardarlo en styles.css si lo prefieres) -->
 
 </head>
 
-    <!-- Botón de Modo Oscuro -->
-    <button id="darkModeToggle" class="dark-mode-toggle">
-       Modo Oscuro
-    </button>
+<!-- Botón de Modo Oscuro -->
+<button id="darkModeToggle" class="dark-mode-toggle">
+   Modo Oscuro
+</button>
 
 <body>
     <!-- ========== ENCABEZADO ========== -->
@@ -29,8 +28,11 @@
         <!-- Sección de Botones Principales -->
         <section class="button-section">
             <button id="loadDefaultExam" class="load-button default-exam">Cargar Examen Normal</button>
-            <button id="loadRandomExam" class="load-button random-exam">🎲 Cargar Examen Aleatorio</button>
+            
+            <button id="randomizeExam" class="load-button random-exam"> 🎲 Randomizar Examen</button>
+
             <button id="chooseDifficulty" class="load-button difficulty-exam">Escoger Dificultad</button>
+            <button id="loadFinalExam" class="load-button final-exam">Examen Final 💀</button>
             <button id="loadOldExams" class="load-button old-exam">EXAMENES VIEJOS</button>
             <!-- Botones de Vistas -->
             <button id="moodleView" class="load-button view-button">Vista Moodle</button>
@@ -40,19 +42,24 @@
         <!-- Sección de Dificultad (Desplegable) -->
         <section id="difficultySection" class="difficulty-section">
             <button class="load-button difficulty-button ultrafacil" 
-                    onclick="setDifficultySelected(this); loadQuestionsByDifficulty(1)">Ultrafácil
+                    onclick="setDifficultySelected(this); loadQuestionsByDifficulty(1)">
+                Ultrafácil
             </button>
             <button class="load-button difficulty-button facil" 
-                    onclick="setDifficultySelected(this); loadQuestionsByDifficulty(20)">Fácil
+                    onclick="setDifficultySelected(this); loadQuestionsByDifficulty(20)">
+                Fácil
             </button>
             <button class="load-button difficulty-button medio" 
-                    onclick="setDifficultySelected(this); loadQuestionsByDifficulty(80)">Medio
+                    onclick="setDifficultySelected(this); loadQuestionsByDifficulty(80)">
+                Medio
             </button>
             <button class="load-button difficulty-button dificil" 
-                    onclick="setDifficultySelected(this); loadQuestionsByDifficulty(260)">Difícil
+                    onclick="setDifficultySelected(this); loadQuestionsByDifficulty(260)">
+                Difícil
             </button>
             <button class="load-button difficulty-button ultrahardcore" 
-                    onclick="setDifficultySelected(this); loadQuestionsByDifficulty('all')">Ultrahardcore
+                    onclick="setDifficultySelected(this); loadQuestionsByDifficulty('all')">
+                Ultrahardcore
             </button>
         </section>
 
@@ -122,7 +129,7 @@ ANSWER: A
 
     <!-- Script de Mammoth (para .docx) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.0/mammoth.browser.min.js"></script>
-    <!-- Scripts -->
+    <!-- Script para Modo Oscuro -->
     <script>
         document.getElementById('darkModeToggle').addEventListener('click', function () {
             const body = document.body;
@@ -131,6 +138,7 @@ ANSWER: A
             this.textContent = isDarkMode ? 'Desactivar Modo Oscuro' : 'Activar Modo Oscuro';
         });
     </script>
+
     <!-- ========== SCRIPT PRINCIPAL ========== -->
     <script>
         let totalQuestions = 0;
@@ -139,7 +147,7 @@ ANSWER: A
         let displayedQuestions = [];
         let currentQuestionIndex = 0;
 
-        // Esta variable guardará la vista actual: "moodle" o "list"
+        // Vista actual: "moodle" o "list"
         let currentView = 'moodle';
 
         // Al cargar la ventana, por defecto cargamos el examen normal
@@ -147,10 +155,13 @@ ANSWER: A
 
         document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('loadDefaultExam').addEventListener('click', loadDefaultExam);
-            document.getElementById('loadRandomExam').addEventListener('click', loadRandomExam);
+            
+            // Botón renombrado
+            document.getElementById('randomizeExam').addEventListener('click', randomizeExam);
+            
             document.getElementById('chooseDifficulty').addEventListener('click', toggleDifficultySection);
             document.getElementById('loadOldExams').addEventListener('click', loadOldExams);
-
+            document.getElementById('loadFinalExam').addEventListener('click', loadFinalExam);
             // Botones de cambio de vista
             document.getElementById('moodleView').addEventListener('click', () => changeView('moodle'));
             document.getElementById('listView').addEventListener('click', () => changeView('list'));
@@ -159,23 +170,16 @@ ANSWER: A
         /* ========== CAMBIAR VISTA ========== */
         function changeView(viewType) {
             const container = document.getElementById('questionsContainer');
-
-            // Guardamos en la variable global
             currentView = viewType;
-
-            // Quitamos clases anteriores y agregamos la nueva
             container.classList.remove('list-view', 'moodle-view');
             container.classList.add(viewType === 'moodle' ? 'moodle-view' : 'list-view');
 
-            // Dependiendo de la vista, volvemos a mostrar las preguntas
             if (displayedQuestions.length > 0) {
                 if (currentView === 'moodle') {
-                    // Volvemos a 0 y mostramos la primera pregunta
                     currentQuestionIndex = 0;
                     displayCurrentQuestion();
                     setupQuestionNavigator();
                 } else {
-                    // Mostramos todas las preguntas en una sola página
                     displayAllQuestions();
                 }
                 updateScore();
@@ -203,14 +207,28 @@ ANSWER: A
                 .catch(error => console.error('Error:', error));
         }
 
-        function loadRandomExam() {
-            fetch('examen/examenFinal.txt')
-                .then(response => response.text())
-                .then(text => {
-                    allQuestions = parseQuestions(text);
-                    displayQuestions(allQuestions, true); // aleatorio
-                })
-                .catch(error => console.error('Error:', error));
+        // Eliminamos la lógica anterior de "loadRandomExam" y creamos en su lugar la función "randomizeExam"
+        function randomizeExam() {
+            // Si no hay preguntas mostradas, no se puede randomizar
+            if (displayedQuestions.length === 0) {
+                alert('No hay un examen cargado para randomizar.');
+                return;
+            }
+            // Barajar el orden de las preguntas
+            displayedQuestions = shuffleArray(displayedQuestions);
+            // Barajar las opciones de cada pregunta
+            displayedQuestions.forEach(q => {
+                q.options = shuffleArray(q.options);
+            });
+
+            // Volver a mostrar en la vista actual
+            if (currentView === 'moodle') {
+                currentQuestionIndex = 0;
+                displayCurrentQuestion();
+                setupQuestionNavigator();
+            } else {
+                displayAllQuestions();
+            }
         }
 
         function loadOldExams() {
@@ -229,6 +247,17 @@ ANSWER: A
                     console.error('Error al cargar EXAMENES VIEJOS:', error);
                     alert('Hubo un problema al cargar EXAMENES VIEJOS. Por favor, inténtalo de nuevo.');
                 });
+        }
+
+        // Cargar examen total
+        function loadFinalExam() {
+            fetch('examen/examenTotal.txt')
+                .then(response => response.text())
+                .then(text => {
+                    allQuestions = parseQuestions(text);
+                    displayQuestions(allQuestions, false);
+                })
+                .catch(error => console.error('Error al cargar el Examen Final:', error));
         }
 
         /* ========== SUBIR ARCHIVOS .TXT O .DOCX ========== */
@@ -262,7 +291,7 @@ ANSWER: A
         function loadQuestionsByDifficulty(count) {
             resetUI();
             if (!allQuestions.length) {
-                // Si no hay preguntas en allQuestions, cargamos examenFinal.txt
+                // Si no hay preguntas en allQuestions, cargamos examenFinal.txt (o union1.txt, según tu preferencia)
                 fetch('examen/union1.txt')
                     .then(response => response.text())
                     .then(text => {
@@ -312,7 +341,7 @@ ANSWER: A
                     questions.push(question);
                     question = null;
                 } else {
-                    // Continúa la pregunta en caso de que ocupe varias líneas
+                    // Si la pregunta ocupa varias líneas, las acumulamos
                     question.text += ' ' + line;
                 }
             });
@@ -326,14 +355,13 @@ ANSWER: A
             totalQuestions = questions.length;
             correctAnswers = 0;
 
-            // Mezclar opciones (si es aleatorio)
+            // Si queremos randomizar las opciones desde el inicio
             if (randomize) {
                 displayedQuestions.forEach(q => {
                     q.options = shuffleArray(q.options);
                 });
             }
 
-            // Dependiendo de la vista actual, mostramos
             if (currentView === 'moodle') {
                 currentQuestionIndex = 0;
                 displayCurrentQuestion();
@@ -341,19 +369,15 @@ ANSWER: A
             } else {
                 displayAllQuestions();
             }
-
             updateScore();
         }
 
         /* ========== MOSTRAR TODAS LAS PREGUNTAS (VISTA LISTA) ========== */
         function displayAllQuestions() {
-            // Ocultamos el navegador (no aplica en vista lista)
             document.getElementById('questionNavigator').innerHTML = '';
-            
             const questionDiv = document.getElementById('currentQuestion');
-            questionDiv.innerHTML = ''; // Limpiamos
+            questionDiv.innerHTML = '';
 
-            // Generamos cada pregunta en un contenedor
             displayedQuestions.forEach((q, index) => {
                 const container = document.createElement('div');
                 container.className = 'question';
@@ -379,10 +403,8 @@ ANSWER: A
                     const radioInput = document.createElement('input');
                     radioInput.type = 'radio';
                     radioInput.id = `q${index}opt${i}`;
-                    radioInput.name = `q${index}`; // Importante que usen el mismo "name" para agrupar
+                    radioInput.name = `q${index}`;
                     radioInput.value = opt;
-
-                    // Al hacer clic, verificamos la respuesta
                     radioInput.onclick = () => checkAnswer(index, opt);
 
                     // Si la pregunta ya fue respondida antes...
@@ -406,12 +428,11 @@ ANSWER: A
                 const feedbackDiv = document.createElement('div');
                 feedbackDiv.className = 'feedback';
 
-                // Respuesta Correcta
+                // Respuesta correcta
                 const correctAnswerDiv = document.createElement('div');
                 correctAnswerDiv.className = 'correctAnswer';
                 correctAnswerDiv.innerHTML = `<hr><strong>Respuesta correcta:</strong> ${q.correctAnswer}`;
 
-                // Si la pregunta ya fue respondida
                 if (q.answered) {
                     feedbackDiv.style.display = 'block';
                     correctAnswerDiv.style.display = 'block';
@@ -426,14 +447,12 @@ ANSWER: A
                     }
                 }
 
-                // Añadimos todo al contenedor
                 container.appendChild(questionNumber);
                 container.appendChild(questionText);
                 container.appendChild(optionsDiv);
                 container.appendChild(feedbackDiv);
                 container.appendChild(correctAnswerDiv);
 
-                // Agregamos el contenedor al DOM
                 questionDiv.appendChild(container);
             });
         }
@@ -449,7 +468,6 @@ ANSWER: A
             }
 
             const q = displayedQuestions[currentQuestionIndex];
-
             const container = document.createElement('div');
             container.className = 'question';
 
@@ -476,7 +494,6 @@ ANSWER: A
                 radioInput.id = `q${currentQuestionIndex}opt${i}`;
                 radioInput.name = `q${currentQuestionIndex}`;
                 radioInput.value = opt;
-
                 radioInput.onclick = () => checkAnswer(currentQuestionIndex, opt);
 
                 if (q.answered) {
@@ -504,7 +521,6 @@ ANSWER: A
             correctAnswerDiv.className = 'correctAnswer';
             correctAnswerDiv.innerHTML = `<hr><strong>Respuesta correcta:</strong> ${q.correctAnswer}`;
 
-            // Si está respondida
             if (q.answered) {
                 feedbackDiv.style.display = 'block';
                 correctAnswerDiv.style.display = 'block';
@@ -547,7 +563,6 @@ ANSWER: A
 
             questionDiv.appendChild(container);
 
-            // Resaltamos en el navegador de preguntas la pregunta actual
             highlightNavigator(currentQuestionIndex);
         }
 
@@ -609,8 +624,6 @@ ANSWER: A
                 correctAnswers++;
             }
 
-            // Si estamos en Moodle, refrescamos solo la pregunta actual
-            // Si estamos en Lista, refrescamos toda la lista
             if (currentView === 'moodle') {
                 displayCurrentQuestion();
                 setupQuestionNavigator();
@@ -637,7 +650,7 @@ ANSWER: A
                 scoreDiv.innerHTML = '';
             }
 
-            // Burbuja de puntuación
+            // Actualizamos la burbuja de puntuación
             document.getElementById('correctCount').textContent = correctAnswers;
             document.getElementById('incorrectCount').textContent = displayedQuestions.length - correctAnswers;
         }

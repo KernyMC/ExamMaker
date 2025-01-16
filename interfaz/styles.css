@@ -96,6 +96,14 @@ button {
     background: linear-gradient(135deg, #616161 0%, #424242 100%);
 }
 
+.final-exam {
+    background: linear-gradient(135deg, #f666e5 0%, #f33dde 100%);
+}
+.final-exam {
+    background: linear-gradient(135deg, #f33dde 0%, #f791eb 100%);
+}
+
+
 .view-button {
     background: linear-gradient(135deg, #2196F3 0%, #1E88E5 100%);
 }
