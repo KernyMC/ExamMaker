@@ -5858,7 +5858,9 @@ A.  Como reproducir el fallo
 B.  Resultados reales y esperados
 C.  Gravedad, prioridad
 D.  Como solucionar el fallo
-ANSWER: D¿Qué es un sistema distribuido?
+ANSWER: D
+
+¿Qué es un sistema distribuido?
 A.  Un sistema con una sola unidad de procesamiento.
 B.  Un sistema que utiliza energía distribuidA. 
 C.  Un sistema con múltiples unidades de procesamiento conectadas.
