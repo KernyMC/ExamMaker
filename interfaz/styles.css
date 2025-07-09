@@ -111,6 +111,20 @@ button {
     background: linear-gradient(135deg, #1E88E5 0%, #1976D2 100%);
 }
 
+.exam2025-button {
+    background: linear-gradient(90deg, #a259c6 0%, #6e45e2 100%);
+    color: #fff;
+    border: none;
+    box-shadow: 0 2px 8px rgba(162,89,198,0.15);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.exam2025-button:hover {
+    background: linear-gradient(90deg, #6e45e2 0%, #a259c6 100%);
+    color: #fff;
+    transform: scale(1.05);
+}
+
 /* ========== SECCIÓN DE DIFICULTAD ========== */
 .difficulty-section {
     display: none;

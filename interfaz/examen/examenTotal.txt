@@ -8520,7 +8520,9 @@ A. El proceso sistemático de recopilación y análisis de información (datos) 
 B. El proceso sincrónico de recopilación y análisis de información (datos) para aumentar la comprensión sobre el fenómeno que nos concierne o nos interesa
 C. El proceso sistemático de creación y análisis de información (datos) para aumentar la comprensión sobre el fenómeno que nos concierne o nos interesa
 D. El proceso sistemático de síntesis de información (datos) para aumentar la comprensión sobre el fenómeno que nos concierne o nos interesA. 
-ANSWER: AEn la investigación de procesos académico/científicos el aspecto ____________, define del escenario su ______________; es decir lo que es, ________________ y lo que podría llegar a ser
+ANSWER: A
+
+En la investigación de procesos académico/científicos el aspecto ____________, define del escenario su ______________; es decir lo que es, ________________ y lo que podría llegar a ser
 A.   Sistémico-razón de ser-en realidad
 B.   Ontológico-naturaleza-lo que no es
 C.   Inductivo-particularidad-en esencia
@@ -8658,7 +8660,9 @@ A.  IMRAD se refiere a la recolección de datos a través de métodos innovadore
 B.  IMRAD organiza una publicación en secciones de Introducción, MetodologíA. Resultados y Discusión.
 C.  IMRAD se utiliza para destacar la importancia del estudio y su relevancia en la literatura existente.
 D.  IMRAD es un enfoque para la revisión crítica de literatura relevante antes de iniciar la investigación.
-ANSWER: B¿Cuál de las siguientes opciones indica las etapas del proceso de experimentación en SE en el orden adecuado?
+ANSWER: 
+
+B¿Cuál de las siguientes opciones indica las etapas del proceso de experimentación en SE en el orden adecuado?
 A. Definición del alcance, Planificación, Operación, Análisis e interpretación, Presentación y difusión.
 B. Definición del objeto, Planteamiento, Operacionalización, Arreglo e interpelación, Prestación y discreción.
 C. Planificación, Definición del alcance, Operación, Análisis e interpretación, Presentación y difusión.
