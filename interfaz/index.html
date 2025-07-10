@@ -45,6 +45,7 @@
             <button id="moodleView" class="load-button view-button">Vista Moodle</button>
             <button id="listView" class="load-button view-button">Vista Lista</button>
             <button id="loadExam2025" class="load-button exam2025-button">Examen 2025</button>
+            <button id="loadCompiladoNuevo" class="load-button compilado-nuevo-button">202451 V1</button>
         </section>
 
         <!-- Sección de Dificultad (Desplegable) -->
@@ -171,6 +172,8 @@ ANSWER: A
             document.getElementById('listView').addEventListener('click', () => changeView('list'));
             // Botón Examen 2025
             document.getElementById('loadExam2025').addEventListener('click', loadExam2025);
+            // Botón Compilado Nuevo
+            document.getElementById('loadCompiladoNuevo').addEventListener('click', loadCompiladoNuevo);
         });
 
         function loadExam2025() {
@@ -181,6 +184,16 @@ ANSWER: A
                     displayQuestions(allQuestions, false);
                 })
                 .catch(error => console.error('Error al cargar Examen 2025:', error));
+        }
+
+        function loadCompiladoNuevo() {
+            fetch('examen/compilado_nuevo.txt')
+                .then(response => response.text())
+                .then(text => {
+                    allQuestions = parseQuestions(text);
+                    displayQuestions(allQuestions, false);
+                })
+                .catch(error => console.error('Error al cargar Compilado Nuevo:', error));
         }
 
         /* ========== CAMBIAR VISTA ========== */
