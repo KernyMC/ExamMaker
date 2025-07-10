@@ -706,3 +706,70 @@ body.dark-mode .question-number {
     font-weight: bold;
     font-size: 1.2em;
 }
+
+/* ========== POPUP MOTIVACIONAL ========== */
+.motivational-popup {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(30, 30, 30, 0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.motivational-popup .popup-content {
+    position: relative;
+    background: #fff;
+    border-radius: 18px;
+    padding: 30px 30px 20px 30px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    text-align: center;
+    max-width: 350px;
+    width: 90vw;
+    animation: popupScale 0.5s;
+}
+@keyframes popupScale {
+    from { transform: scale(0.8);}
+    to { transform: scale(1);}
+}
+.motivational-popup img {
+    max-width: 220px;
+    width: 100%;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    transition: transform 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.motivational-popup img:hover {
+    transform: scale(1.13);
+    cursor: pointer;
+}
+.close-popup {
+    position: absolute;
+    top: 10px; right: 10px;
+    background: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 32px; height: 32px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.close-popup:hover {
+    background: #c62828;
+}
+@media (max-width: 480px) {
+    .motivational-popup .popup-content {
+        padding: 15px 5px 10px 5px;
+        max-width: 95vw;
+    }
+    .motivational-popup img {
+        max-width: 150px;
+    }
+}

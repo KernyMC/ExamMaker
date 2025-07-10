@@ -18,6 +18,13 @@
 </button>
 
 <body>
+    <!-- Motivational Popup -->
+    <div id="motivationalPopup" class="motivational-popup">
+        <div class="popup-content">
+            <img id="motivationalImg" src="" alt="Motivación para el examen" />
+            <button class="close-popup" id="closePopupBtn" title="Cerrar">&times;</button>
+        </div>
+    </div>
     <!-- ========== ENCABEZADO ========== -->
     <header>
         <h1>Exam Maker</h1>
@@ -686,6 +693,26 @@ ANSWER: A
             }
             return array;
         }
+
+        // Motivational Popup Logic con imagen random
+        window.addEventListener('DOMContentLoaded', () => {
+            const popup = document.getElementById('motivationalPopup');
+            const closeBtn = document.getElementById('closePopupBtn');
+            const img = document.getElementById('motivationalImg');
+            // Número aleatorio entre 1 y 5
+            const randomNum = Math.floor(Math.random() * 5) + 1;
+            img.src = `assets/${randomNum}.png`;
+
+            popup.style.display = 'flex';
+
+            closeBtn.addEventListener('click', () => {
+                popup.style.display = 'none';
+            });
+
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 5000);
+        });
     </script>
 </body>
 </html>
