@@ -724,43 +724,47 @@ body.dark-mode .question-number {
 }
 .motivational-popup .popup-content {
     position: relative;
-    background: #fff;
-    border-radius: 18px;
-    padding: 30px 30px 20px 30px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
-    text-align: center;
-    max-width: 350px;
-    width: 90vw;
-    animation: popupScale 0.5s;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 @keyframes popupScale {
     from { transform: scale(0.8);}
     to { transform: scale(1);}
 }
 .motivational-popup img {
-    max-width: 220px;
+    max-width: 320px;
     width: 100%;
-    margin-bottom: 18px;
-    border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
     transition: transform 0.3s cubic-bezier(.25,.8,.25,1);
+    display: block;
 }
+
 .motivational-popup img:hover {
     transform: scale(1.13);
     cursor: pointer;
 }
 .close-popup {
     position: absolute;
-    top: 10px; right: 10px;
+    top: 10px;
+    right: 10px;
     background: #f44336;
     color: #fff;
     border: none;
     border-radius: 50%;
-    width: 32px; height: 32px;
+    width: 32px;
+    height: 32px;
     font-size: 1.5em;
     cursor: pointer;
     transition: background 0.2s;
+    z-index: 2;
 }
+
 .close-popup:hover {
     background: #c62828;
 }
