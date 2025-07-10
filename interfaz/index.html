@@ -699,9 +699,17 @@ ANSWER: A
             const popup = document.getElementById('motivationalPopup');
             const closeBtn = document.getElementById('closePopupBtn');
             const img = document.getElementById('motivationalImg');
-            // Número aleatorio entre 1 y 5
-            const randomNum = Math.floor(Math.random() * 5) + 1;
-            img.src = `assets/${randomNum}.png`;
+            // Número aleatorio entre 1 y 100 para que el 6 sea raro
+            const rare = Math.random();
+            let imgNum;
+            if (rare < 0.98) {
+                // 98% de probabilidad: imágenes 1 a 5
+                imgNum = Math.floor(Math.random() * 5) + 1;
+            } else {
+                // 2% de probabilidad: imagen 6
+                imgNum = 6;
+            }
+            img.src = `assets/${imgNum}.png`;
 
             popup.style.display = 'flex';
 
@@ -718,7 +726,7 @@ ANSWER: A
 
             setTimeout(() => {
                 popup.style.display = 'none';
-            }, 5000);
+            }, 20000);
         });
     </script>
 </body>
