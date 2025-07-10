@@ -745,9 +745,24 @@ body.dark-mode .question-number {
     display: block;
 }
 
-.motivational-popup img:hover {
-    transform: scale(1.13);
-    cursor: pointer;
+@media (max-width: 600px) {
+    .motivational-popup .popup-content {
+        max-width: 98vw;
+        padding: 0;
+    }
+    .motivational-popup img {
+        max-width: 90vw;
+        width: 90vw;
+        min-width: 0;
+        border-radius: 12px;
+    }
+    .close-popup {
+        top: 4px;
+        right: 4px;
+        width: 28px;
+        height: 28px;
+        font-size: 1.2em;
+    }
 }
 .close-popup {
     position: absolute;
