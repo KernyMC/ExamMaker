@@ -709,6 +709,13 @@ ANSWER: A
                 popup.style.display = 'none';
             });
 
+            // Cerrar si el usuario hace click fuera del popup-content
+            popup.addEventListener('click', (e) => {
+                if (e.target === popup) {
+                    popup.style.display = 'none';
+                }
+            });
+
             setTimeout(() => {
                 popup.style.display = 'none';
             }, 5000);
