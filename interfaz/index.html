@@ -1,673 +1,804 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exam Maker</title>
     <!-- Google Fonts: Roboto -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
     <!-- Iconos (opcional, para mejor estética) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Librería para efecto de confeti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  </head>
 
-</head>
+  <!-- Botón de Modo Oscuro -->
+  <button id="darkModeToggle" class="dark-mode-toggle">Modo Oscuro</button>
 
-<!-- Botón de Modo Oscuro -->
-<button id="darkModeToggle" class="dark-mode-toggle">
-   Modo Oscuro
-</button>
-
-<body>
+  <body>
     <!-- Motivational Popup -->
     <div id="motivationalPopup" class="motivational-popup">
-        <div class="popup-content">
-            <img id="motivationalImg" src="" alt="Motivación para el examen" />
-            <button class="close-popup" id="closePopupBtn" title="Cerrar">&times;</button>
-        </div>
+      <div class="popup-content">
+        <img id="motivationalImg" src="" alt="Motivación para el examen" />
+        <button class="close-popup" id="closePopupBtn" title="Cerrar">
+          &times;
+        </button>
+      </div>
     </div>
     <!-- ========== ENCABEZADO ========== -->
     <header>
-        <h1>Exam Maker</h1>
+      <h1>Exam Maker</h1>
     </header>
 
     <!-- ========== CONTENIDO PRINCIPAL ========== -->
     <main>
-        <!-- Sección de Botones Principales -->
-        <section class="button-section">
-            <button id="loadDefaultExam" class="load-button default-exam">Cargar Examen Normal</button>
-            
-            <button id="randomizeExam" class="load-button random-exam"> 🎲 Randomizar Examen</button>
+      <!-- Sección de Botones Principales -->
+      <section class="button-section">
+        <button id="loadDefaultExam" class="load-button default-exam">
+          Cargar Examen Normal
+        </button>
 
-            <button id="chooseDifficulty" class="load-button difficulty-exam">Escoger Dificultad</button>
-            <button id="loadFinalExam" class="load-button final-exam">Examen Final 💀</button>
-            <button id="loadOldExams" class="load-button old-exam">EXAMENES VIEJOS</button>
-            <!-- Botones de Vistas -->
-            <button id="moodleView" class="load-button view-button">Vista Moodle</button>
-            <button id="listView" class="load-button view-button">Vista Lista</button>
-            <button id="loadExam2025" class="load-button exam2025-button">Examen 2025</button>
-            <button id="loadCompiladoNuevo" class="load-button compilado-nuevo-button">202451 V1</button>
-        </section>
+        <button id="randomizeExam" class="load-button random-exam">
+          🎲 Randomizar Examen
+        </button>
 
-        <!-- Sección de Dificultad (Desplegable) -->
-        <section id="difficultySection" class="difficulty-section">
-            <button class="load-button difficulty-button ultrafacil" 
-                    onclick="setDifficultySelected(this); loadQuestionsByDifficulty(1)">
-                Ultrafácil
-            </button>
-            <button class="load-button difficulty-button facil" 
-                    onclick="setDifficultySelected(this); loadQuestionsByDifficulty(20)">
-                Fácil
-            </button>
-            <button class="load-button difficulty-button medio" 
-                    onclick="setDifficultySelected(this); loadQuestionsByDifficulty(80)">
-                Medio
-            </button>
-            <button class="load-button difficulty-button dificil" 
-                    onclick="setDifficultySelected(this); loadQuestionsByDifficulty(260)">
-                Difícil
-            </button>
-            <button class="load-button difficulty-button ultrahardcore" 
-                    onclick="setDifficultySelected(this); loadQuestionsByDifficulty('all')">
-                Ultrahardcore
-            </button>
-        </section>
+        <button id="chooseDifficulty" class="load-button difficulty-exam">
+          Escoger Dificultad
+        </button>
+        <button id="loadFinalExam" class="load-button final-exam">
+          Examen Final 💀
+        </button>
+        <button id="loadOldExams" class="load-button old-exam">
+          EXAMENES VIEJOS
+        </button>
+        <!-- Botones de Vistas -->
+        <button id="moodleView" class="load-button view-button">
+          Vista Moodle
+        </button>
+        <button id="listView" class="load-button view-button">
+          Vista Lista
+        </button>
+        <button id="loadExam2025" class="load-button exam2025-button">
+          Examen 2025
+        </button>
+        <button
+          id="loadCompiladoNuevo"
+          class="load-button compilado-nuevo-button"
+        >
+          202451 V1
+        </button>
+        <button id="loadExam2026Julio" class="load-button exam2026-button">
+          Examen 2026 - Julio
+        </button>
+      </section>
 
-        <!-- Sección de Subida de Archivos -->
-        <section class="upload-section" onclick="document.getElementById('fileInput').click();">
-            <input type="file" id="fileInput" accept=".txt,.docx" hidden onchange="handleFileSelect(event)" />
-            <label for="fileInput" class="upload-label">
-                <i class="fas fa-upload upload-icon"></i>
-                <span>Arrastra tu archivo o haz clic para seleccionarlo</span>
-            </label>
-            <!-- Guía sobre Formato Aiken -->
-            <div class="aiken-guide">
-                <h2>¿Cómo preparar tu archivo en formato Aiken?</h2>
-                <p>
-                    Para subir tus preguntas, asegúrate de que tu archivo sea 
-                    un <strong>.txt</strong> y siga el <strong>formato Aiken</strong>. 
-                    A continuación, te mostramos un ejemplo:
-                </p>
-                <pre>
+      <!-- Sección de Dificultad (Desplegable) -->
+      <section id="difficultySection" class="difficulty-section">
+        <button
+          class="load-button difficulty-button ultrafacil"
+          onclick="
+            setDifficultySelected(this);
+            loadQuestionsByDifficulty(1);
+          "
+        >
+          Ultrafácil
+        </button>
+        <button
+          class="load-button difficulty-button facil"
+          onclick="
+            setDifficultySelected(this);
+            loadQuestionsByDifficulty(20);
+          "
+        >
+          Fácil
+        </button>
+        <button
+          class="load-button difficulty-button medio"
+          onclick="
+            setDifficultySelected(this);
+            loadQuestionsByDifficulty(80);
+          "
+        >
+          Medio
+        </button>
+        <button
+          class="load-button difficulty-button dificil"
+          onclick="
+            setDifficultySelected(this);
+            loadQuestionsByDifficulty(260);
+          "
+        >
+          Difícil
+        </button>
+        <button
+          class="load-button difficulty-button ultrahardcore"
+          onclick="
+            setDifficultySelected(this);
+            loadQuestionsByDifficulty('all');
+          "
+        >
+          Ultrahardcore
+        </button>
+      </section>
+
+      <!-- Sección de Subida de Archivos -->
+      <section
+        class="upload-section"
+        onclick="document.getElementById('fileInput').click()"
+      >
+        <input
+          type="file"
+          id="fileInput"
+          accept=".txt,.docx"
+          hidden
+          onchange="handleFileSelect(event)"
+        />
+        <label for="fileInput" class="upload-label">
+          <i class="fas fa-upload upload-icon"></i>
+          <span>Arrastra tu archivo o haz clic para seleccionarlo</span>
+        </label>
+        <!-- Guía sobre Formato Aiken -->
+        <div class="aiken-guide">
+          <h2>¿Cómo preparar tu archivo en formato Aiken?</h2>
+          <p>
+            Para subir tus preguntas, asegúrate de que tu archivo sea un
+            <strong>.txt</strong> y siga el <strong>formato Aiken</strong>. A
+            continuación, te mostramos un ejemplo:
+          </p>
+          <pre>
 ¿Quién escribió "Cien años de soledad"?
 A. Gabriel García Márquez
 B. Mario Vargas Llosa
 C. Isabel Allende
 D. Julio Cortázar
 ANSWER: A
-                </pre>
-                <p>
-                    Asegúrate de indicar correctamente la respuesta con 
-                    <code>ANSWER: </code> seguido de la letra correspondiente.
-                </p>
-            </div>
-        </section>
+                </pre
+          >
+          <p>
+            Asegúrate de indicar correctamente la respuesta con
+            <code>ANSWER: </code> seguido de la letra correspondiente.
+          </p>
+        </div>
+      </section>
 
-        <!-- Sección de Calificación -->
-        <section id="score" class="score"></section>
+      <!-- Sección de Calificación -->
+      <section id="score" class="score"></section>
 
-        <!-- Contenedor de Preguntas -->
-        <section id="questionsContainer" class="questions-container moodle-view">
-            <!-- Vista Moodle: Contenedor de Pregunta Actual -->
-            <div id="currentQuestion" class="question"></div>
+      <!-- Contenedor de Preguntas -->
+      <section id="questionsContainer" class="questions-container moodle-view">
+        <!-- Vista Moodle: Contenedor de Pregunta Actual -->
+        <div id="currentQuestion" class="question"></div>
 
-            <!-- Navegador de Preguntas -->
-            <div id="questionNavigator" class="question-navigator"></div>
-        </section>
+        <!-- Navegador de Preguntas -->
+        <div id="questionNavigator" class="question-navigator"></div>
+      </section>
     </main>
 
     <!-- Burbuja de Puntuación -->
     <div id="scoreBubble">
-        <div class="bubble-content">
-            <div class="icon-count">
-                <i class="fas fa-check-circle correct-icon"></i>
-                <span id="correctCount">0</span>
-            </div>
-            <div class="icon-count">
-                <i class="fas fa-times-circle incorrect-icon"></i>
-                <span id="incorrectCount">0</span>
-            </div>
+      <div class="bubble-content">
+        <div class="icon-count">
+          <i class="fas fa-check-circle correct-icon"></i>
+          <span id="correctCount">0</span>
         </div>
+        <div class="icon-count">
+          <i class="fas fa-times-circle incorrect-icon"></i>
+          <span id="incorrectCount">0</span>
+        </div>
+      </div>
     </div>
 
     <!-- Pie de Página -->
     <footer>
-        <div class="footer-content">
-            <p>Desarrollado por <strong>Kevinsaurio</strong> &copy; 2025</p>
-        </div>
+      <div class="footer-content">
+        <p>Desarrollado por <strong>Kevinsaurio</strong> &copy; 2025</p>
+      </div>
     </footer>
 
     <!-- Script de Mammoth (para .docx) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.0/mammoth.browser.min.js"></script>
     <!-- Script para Modo Oscuro -->
     <script>
-        document.getElementById('darkModeToggle').addEventListener('click', function () {
-            const body = document.body;
-            body.classList.toggle('dark-mode');
-            const isDarkMode = body.classList.contains('dark-mode');
-            this.textContent = isDarkMode ? 'Modo Claro' : 'Modo Oscuro';
+      document
+        .getElementById("darkModeToggle")
+        .addEventListener("click", function () {
+          const body = document.body;
+          body.classList.toggle("dark-mode");
+          const isDarkMode = body.classList.contains("dark-mode");
+          this.textContent = isDarkMode ? "Modo Claro" : "Modo Oscuro";
         });
     </script>
 
     <!-- ========== SCRIPT PRINCIPAL ========== -->
     <script>
-        let totalQuestions = 0;
-        let correctAnswers = 0;
-        let allQuestions = [];
-        let displayedQuestions = [];
-        let currentQuestionIndex = 0;
+      let totalQuestions = 0;
+      let correctAnswers = 0;
+      let allQuestions = [];
+      let displayedQuestions = [];
+      let currentQuestionIndex = 0;
 
-        // Vista actual: "moodle" o "list"
-        let currentView = 'moodle';
+      // Vista actual: "moodle" o "list"
+      let currentView = "moodle";
 
-        // Al cargar la ventana, por defecto cargamos el examen normal
-        window.onload = loadDefaultExam;
+      // Al cargar la ventana, por defecto cargamos el examen normal
+      window.onload = loadDefaultExam;
 
-        document.addEventListener('DOMContentLoaded', () => {
-            document.getElementById('loadDefaultExam').addEventListener('click', loadDefaultExam);
-            document.getElementById('randomizeExam').addEventListener('click', randomizeExam);
-            document.getElementById('chooseDifficulty').addEventListener('click', toggleDifficultySection);
-            document.getElementById('loadOldExams').addEventListener('click', loadOldExams);
-            document.getElementById('loadFinalExam').addEventListener('click', loadFinalExam);
-            document.getElementById('moodleView').addEventListener('click', () => changeView('moodle'));
-            document.getElementById('listView').addEventListener('click', () => changeView('list'));
-            // Botón Examen 2025
-            document.getElementById('loadExam2025').addEventListener('click', loadExam2025);
-            // Botón Compilado Nuevo
-            document.getElementById('loadCompiladoNuevo').addEventListener('click', loadCompiladoNuevo);
+      document.addEventListener("DOMContentLoaded", () => {
+        document
+          .getElementById("loadDefaultExam")
+          .addEventListener("click", loadDefaultExam);
+        document
+          .getElementById("randomizeExam")
+          .addEventListener("click", randomizeExam);
+        document
+          .getElementById("chooseDifficulty")
+          .addEventListener("click", toggleDifficultySection);
+        document
+          .getElementById("loadOldExams")
+          .addEventListener("click", loadOldExams);
+        document
+          .getElementById("loadFinalExam")
+          .addEventListener("click", loadFinalExam);
+        document
+          .getElementById("moodleView")
+          .addEventListener("click", () => changeView("moodle"));
+        document
+          .getElementById("listView")
+          .addEventListener("click", () => changeView("list"));
+        // Botón Examen 2025
+        document
+          .getElementById("loadExam2025")
+          .addEventListener("click", loadExam2025);
+        // Botón Compilado Nuevo
+        document
+          .getElementById("loadCompiladoNuevo")
+          .addEventListener("click", loadCompiladoNuevo);
+        document
+          .getElementById("loadExam2026Julio")
+          .addEventListener("click", loadExam2026Julio);
+      });
+
+      function loadExam2025() {
+        fetch("examen/ExamenFinal2025.txt")
+          .then((response) => response.text())
+          .then((text) => {
+            allQuestions = parseQuestions(text);
+            displayQuestions(allQuestions, false);
+          })
+          .catch((error) =>
+            console.error("Error al cargar Examen 2025:", error),
+          );
+      }
+
+      function loadCompiladoNuevo() {
+        fetch("examen/compilado_nuevo.txt")
+          .then((response) => response.text())
+          .then((text) => {
+            allQuestions = parseQuestions(text);
+            displayQuestions(allQuestions, false);
+          })
+          .catch((error) =>
+            console.error("Error al cargar Compilado Nuevo:", error),
+          );
+      }
+
+      function loadExam2026Julio() {
+        fetch("examen/examenFinal2026Julio.txt")
+          .then((response) => response.text())
+          .then((text) => {
+            allQuestions = parseQuestions(text);
+            displayQuestions(allQuestions, false);
+          })
+          .catch((error) =>
+            console.error("Error al cargar Examen 2026 - Julio:", error),
+          );
+      }
+
+      /* ========== CAMBIAR VISTA ========== */
+      function changeView(viewType) {
+        const container = document.getElementById("questionsContainer");
+        currentView = viewType;
+        container.classList.remove("list-view", "moodle-view");
+        container.classList.add(
+          viewType === "moodle" ? "moodle-view" : "list-view",
+        );
+
+        if (displayedQuestions.length > 0) {
+          if (currentView === "moodle") {
+            currentQuestionIndex = 0;
+            displayCurrentQuestion();
+            setupQuestionNavigator();
+          } else {
+            displayAllQuestions();
+          }
+          updateScore();
+        }
+      }
+
+      /* ========== MOSTRAR / OCULTAR SECCIÓN DE DIFICULTAD ========== */
+      function toggleDifficultySection() {
+        const sec = document.getElementById("difficultySection");
+        sec.style.display =
+          sec.style.display === "none" || sec.style.display === ""
+            ? "block"
+            : "none";
+      }
+      function setDifficultySelected(button) {
+        document
+          .querySelectorAll(".difficulty-button")
+          .forEach((b) => b.classList.remove("selected"));
+        button.classList.add("selected");
+      }
+
+      /* ========== CARGAS DE EXÁMENES ========== */
+      function loadDefaultExam() {
+        fetch("examen/examenFinal.txt")
+          .then((response) => response.text())
+          .then((text) => {
+            allQuestions = parseQuestions(text);
+            displayQuestions(allQuestions, false);
+          })
+          .catch((error) => console.error("Error:", error));
+      }
+
+      // Eliminamos la lógica anterior de "loadRandomExam" y creamos en su lugar la función "randomizeExam"
+      function randomizeExam() {
+        // Si no hay preguntas mostradas, no se puede randomizar
+        if (displayedQuestions.length === 0) {
+          alert("No hay un examen cargado para randomizar.");
+          return;
+        }
+        // Barajar el orden de las preguntas
+        displayedQuestions = shuffleArray(displayedQuestions);
+        // Barajar las opciones de cada pregunta
+        displayedQuestions.forEach((q) => {
+          q.options = shuffleArray(q.options);
         });
 
-        function loadExam2025() {
-            fetch('examen/ExamenFinal2025.txt')
-                .then(response => response.text())
-                .then(text => {
-                    allQuestions = parseQuestions(text);
-                    displayQuestions(allQuestions, false);
-                })
-                .catch(error => console.error('Error al cargar Examen 2025:', error));
+        // Volver a mostrar en la vista actual
+        if (currentView === "moodle") {
+          currentQuestionIndex = 0;
+          displayCurrentQuestion();
+          setupQuestionNavigator();
+        } else {
+          displayAllQuestions();
         }
+      }
 
-        function loadCompiladoNuevo() {
-            fetch('examen/compilado_nuevo.txt')
-                .then(response => response.text())
-                .then(text => {
-                    allQuestions = parseQuestions(text);
-                    displayQuestions(allQuestions, false);
-                })
-                .catch(error => console.error('Error al cargar Compilado Nuevo:', error));
-        }
-
-        /* ========== CAMBIAR VISTA ========== */
-        function changeView(viewType) {
-            const container = document.getElementById('questionsContainer');
-            currentView = viewType;
-            container.classList.remove('list-view', 'moodle-view');
-            container.classList.add(viewType === 'moodle' ? 'moodle-view' : 'list-view');
-
-            if (displayedQuestions.length > 0) {
-                if (currentView === 'moodle') {
-                    currentQuestionIndex = 0;
-                    displayCurrentQuestion();
-                    setupQuestionNavigator();
-                } else {
-                    displayAllQuestions();
-                }
-                updateScore();
+      function loadOldExams() {
+        fetch("examen/union1.txt")
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("No se pudo cargar el archivo union1.txt");
             }
-        }
-
-        /* ========== MOSTRAR / OCULTAR SECCIÓN DE DIFICULTAD ========== */
-        function toggleDifficultySection() {
-            const sec = document.getElementById('difficultySection');
-            sec.style.display = (sec.style.display === 'none' || sec.style.display === '') ? 'block' : 'none';
-        }
-        function setDifficultySelected(button) {
-            document.querySelectorAll('.difficulty-button').forEach(b => b.classList.remove('selected'));
-            button.classList.add('selected');
-        }
-
-        /* ========== CARGAS DE EXÁMENES ========== */
-        function loadDefaultExam() {
-            fetch('examen/examenFinal.txt')
-                .then(response => response.text())
-                .then(text => {
-                    allQuestions = parseQuestions(text);
-                    displayQuestions(allQuestions, false);
-                })
-                .catch(error => console.error('Error:', error));
-        }
-
-        // Eliminamos la lógica anterior de "loadRandomExam" y creamos en su lugar la función "randomizeExam"
-        function randomizeExam() {
-            // Si no hay preguntas mostradas, no se puede randomizar
-            if (displayedQuestions.length === 0) {
-                alert('No hay un examen cargado para randomizar.');
-                return;
-            }
-            // Barajar el orden de las preguntas
-            displayedQuestions = shuffleArray(displayedQuestions);
-            // Barajar las opciones de cada pregunta
-            displayedQuestions.forEach(q => {
-                q.options = shuffleArray(q.options);
-            });
-
-            // Volver a mostrar en la vista actual
-            if (currentView === 'moodle') {
-                currentQuestionIndex = 0;
-                displayCurrentQuestion();
-                setupQuestionNavigator();
-            } else {
-                displayAllQuestions();
-            }
-        }
-
-        function loadOldExams() {
-            fetch('examen/union1.txt')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('No se pudo cargar el archivo union1.txt');
-                    }
-                    return response.text();
-                })
-                .then(text => {
-                    allQuestions = parseQuestions(text);
-                    displayQuestions(allQuestions, false);
-                })
-                .catch(error => {
-                    console.error('Error al cargar EXAMENES VIEJOS:', error);
-                    alert('Hubo un problema al cargar EXAMENES VIEJOS. Por favor, inténtalo de nuevo.');
-                });
-        }
-
-        // Cargar examen total
-        function loadFinalExam() {
-            fetch('examen/examenTotal.txt')
-                .then(response => response.text())
-                .then(text => {
-                    allQuestions = parseQuestions(text);
-                    displayQuestions(allQuestions, false);
-                })
-                .catch(error => console.error('Error al cargar el Examen Final:', error));
-        }
-
-        /* ========== SUBIR ARCHIVOS .TXT O .DOCX ========== */
-        function handleFileSelect(event) {
-            const file = event.target.files[0];
-            resetUI();
-
-            if (file) {
-                if (file.name.endsWith('.docx')) {
-                    const reader = new FileReader();
-                    reader.onload = function(e) {
-                        mammoth.extractRawText({arrayBuffer: e.target.result})
-                            .then(result => {
-                                allQuestions = parseQuestions(result.value);
-                                displayQuestions(allQuestions, false);
-                            });
-                    };
-                    reader.readAsArrayBuffer(file);
-                } else {
-                    const reader = new FileReader();
-                    reader.onload = function(e) {
-                        allQuestions = parseQuestions(e.target.result);
-                        displayQuestions(allQuestions, false);
-                    };
-                    reader.readAsText(file, 'UTF-8');
-                }
-            }
-        }
-
-        /* ========== CARGAR POR DIFICULTAD ========== */
-        function loadQuestionsByDifficulty(count) {
-            resetUI();
-            if (!allQuestions.length) {
-                // Si no hay preguntas en allQuestions, cargamos examenFinal.txt (o union1.txt, según tu preferencia)
-                fetch('examen/union1.txt')
-                    .then(response => response.text())
-                    .then(text => {
-                        allQuestions = parseQuestions(text);
-                        showSubset(allQuestions, count);
-                    });
-            } else {
-                showSubset(allQuestions, count);
-            }
-        }
-        function showSubset(questions, count) {
-            const shuffled = shuffleArray([...questions]);
-            let subset = [];
-            if (count === 'all') {
-                subset = shuffled;
-            } else {
-                subset = shuffled.slice(0, count);
-            }
-            displayQuestions(subset, true);
-        }
-
-        /* ========== PARSEAR PREGUNTAS (FORMATO AIKEN) ========== */
-        function parseQuestions(text) {
-            const questions = [];
-            const lines = text.split('\n');
-            let question = null;
-
-            lines.forEach(line => {
-                line = line.trim();
-                if (line.length === 0) return;
-                
-                if (!question) {
-                    question = { 
-                        text: line, 
-                        options: [], 
-                        correctAnswer: '', 
-                        answered: false, 
-                        selectedAnswer: null, 
-                        isCorrect: false 
-                    };
-                } else if (line.match(/^[A-Z][.)]\s+/)) {
-                    question.options.push(line.substring(3).trim());
-                } else if (line.match(/^ANSWER:\s+[A-Z]/)) {
-                    const letter = line.substring(8).trim().toUpperCase();
-                    const letterIndex = letter.charCodeAt(0) - 65;
-                    question.correctAnswer = question.options[letterIndex] || '';
-                    questions.push(question);
-                    question = null;
-                } else {
-                    // Si la pregunta ocupa varias líneas, las acumulamos
-                    question.text += ' ' + line;
-                }
-            });
-
-            return questions;
-        }
-
-        /* ========== MOSTRAR PREGUNTAS (LÓGICA PRINCIPAL) ========== */
-        function displayQuestions(questions, randomize) {
-            displayedQuestions = questions;
-            totalQuestions = questions.length;
-            correctAnswers = 0;
-
-            // Si queremos randomizar las opciones desde el inicio
-            if (randomize) {
-                displayedQuestions.forEach(q => {
-                    q.options = shuffleArray(q.options);
-                });
-            }
-
-            if (currentView === 'moodle') {
-                currentQuestionIndex = 0;
-                displayCurrentQuestion();
-                setupQuestionNavigator();
-            } else {
-                displayAllQuestions();
-            }
-            updateScore();
-        }
-
-        /* ========== MOSTRAR TODAS LAS PREGUNTAS (VISTA LISTA) ========== */
-        function displayAllQuestions() {
-            document.getElementById('questionNavigator').innerHTML = '';
-            const questionDiv = document.getElementById('currentQuestion');
-            questionDiv.innerHTML = '';
-
-            displayedQuestions.forEach((q, index) => {
-                const container = document.createElement('div');
-                container.className = 'question';
-
-                // Número de pregunta
-                const questionNumber = document.createElement('div');
-                questionNumber.className = 'question-number';
-                questionNumber.textContent = `Pregunta ${index + 1} de ${displayedQuestions.length}`;
-
-                // Texto de la pregunta
-                const questionText = document.createElement('div');
-                questionText.className = 'question-text';
-                questionText.textContent = q.text;
-
-                // Opciones
-                const optionsDiv = document.createElement('div');
-                optionsDiv.className = 'options';
-
-                q.options.forEach((opt, i) => {
-                    const optionDiv = document.createElement('div');
-                    optionDiv.className = 'option';
-
-                    const radioInput = document.createElement('input');
-                    radioInput.type = 'radio';
-                    radioInput.id = `q${index}opt${i}`;
-                    radioInput.name = `q${index}`;
-                    radioInput.value = opt;
-                    radioInput.onclick = () => checkAnswer(index, opt);
-
-                    // Si la pregunta ya fue respondida antes...
-                    if (q.answered) {
-                        radioInput.disabled = true;
-                        if (opt === q.selectedAnswer) {
-                            radioInput.checked = true;
-                        }
-                    }
-
-                    const label = document.createElement('label');
-                    label.htmlFor = `q${index}opt${i}`;
-                    label.textContent = `${String.fromCharCode(65 + i)}. ${opt}`;
-
-                    optionDiv.appendChild(radioInput);
-                    optionDiv.appendChild(label);
-                    optionsDiv.appendChild(optionDiv);
-                });
-
-                // Feedback
-                const feedbackDiv = document.createElement('div');
-                feedbackDiv.className = 'feedback';
-
-                // Respuesta correcta
-                const correctAnswerDiv = document.createElement('div');
-                correctAnswerDiv.className = 'correctAnswer';
-                correctAnswerDiv.innerHTML = `<hr><strong>Respuesta correcta:</strong> ${q.correctAnswer}`;
-
-                if (q.answered) {
-                    feedbackDiv.style.display = 'block';
-                    correctAnswerDiv.style.display = 'block';
-                    if (q.isCorrect) {
-                        container.classList.add('correct');
-                        feedbackDiv.textContent = '✓ ¡Correcto!';
-                        feedbackDiv.style.color = '#d4edda';
-                    } else {
-                        container.classList.add('incorrect');
-                        feedbackDiv.textContent = '✗ Incorrecto';
-                        feedbackDiv.style.color = '#f8d7da';
-                    }
-                }
-
-                container.appendChild(questionNumber);
-                container.appendChild(questionText);
-                container.appendChild(optionsDiv);
-                container.appendChild(feedbackDiv);
-                container.appendChild(correctAnswerDiv);
-
-                questionDiv.appendChild(container);
-            });
-        }
-
-        /* ========== MOSTRAR PREGUNTA ACTUAL (VISTA MOODLE) ========== */
-        function displayCurrentQuestion() {
-            const questionDiv = document.getElementById('currentQuestion');
-            questionDiv.innerHTML = '';
-
-            if (currentQuestionIndex < 0 || currentQuestionIndex >= displayedQuestions.length) {
-                questionDiv.innerHTML = '<p>No hay preguntas para mostrar.</p>';
-                return;
-            }
-
-            const q = displayedQuestions[currentQuestionIndex];
-            const container = document.createElement('div');
-            container.className = 'question';
-
-            // Número de pregunta
-            const questionNumber = document.createElement('div');
-            questionNumber.className = 'question-number';
-            questionNumber.textContent = `Pregunta ${currentQuestionIndex + 1} de ${displayedQuestions.length}`;
-
-            // Texto de la pregunta
-            const questionText = document.createElement('div');
-            questionText.className = 'question-text';
-            questionText.textContent = q.text;
-
-            // Opciones
-            const optionsDiv = document.createElement('div');
-            optionsDiv.className = 'options';
-
-            q.options.forEach((opt, i) => {
-                const optionDiv = document.createElement('div');
-                optionDiv.className = 'option';
-
-                const radioInput = document.createElement('input');
-                radioInput.type = 'radio';
-                radioInput.id = `q${currentQuestionIndex}opt${i}`;
-                radioInput.name = `q${currentQuestionIndex}`;
-                radioInput.value = opt;
-                radioInput.onclick = () => checkAnswer(currentQuestionIndex, opt);
-
-                if (q.answered) {
-                    radioInput.disabled = true;
-                    if (opt === q.selectedAnswer) {
-                        radioInput.checked = true;
-                    }
-                }
-
-                const label = document.createElement('label');
-                label.htmlFor = `q${currentQuestionIndex}opt${i}`;
-                label.textContent = `${String.fromCharCode(65 + i)}. ${opt}`;
-
-                optionDiv.appendChild(radioInput);
-                optionDiv.appendChild(label);
-                optionsDiv.appendChild(optionDiv);
-            });
-
-            // Feedback
-            const feedbackDiv = document.createElement('div');
-            feedbackDiv.className = 'feedback';
-
-            // Respuesta correcta
-            const correctAnswerDiv = document.createElement('div');
-            correctAnswerDiv.className = 'correctAnswer';
-            correctAnswerDiv.innerHTML = `<hr><strong>Respuesta correcta:</strong> ${q.correctAnswer}`;
-
-            if (q.answered) {
-                feedbackDiv.style.display = 'block';
-                correctAnswerDiv.style.display = 'block';
-                if (q.isCorrect) {
-                    container.classList.add('correct');
-                    feedbackDiv.textContent = '✓ ¡Correcto!';
-                    feedbackDiv.style.color = '#d4edda';
-                } else {
-                    container.classList.add('incorrect');
-                    feedbackDiv.textContent = '✗ Incorrecto';
-                    feedbackDiv.style.color = '#f8d7da';
-                }
-            }
-
-            // Controles de Navegación
-            const navControls = document.createElement('div');
-            navControls.className = 'navigation-controls-inline';
-
-            const prevButton = document.createElement('button');
-            prevButton.className = 'nav-button';
-            prevButton.textContent = 'Anterior';
-            prevButton.onclick = prevQuestion;
-            prevButton.disabled = (currentQuestionIndex === 0);
-
-            const nextButton = document.createElement('button');
-            nextButton.className = 'nav-button';
-            nextButton.textContent = 'Siguiente';
-            nextButton.onclick = nextQuestion;
-            nextButton.disabled = (currentQuestionIndex === displayedQuestions.length - 1);
-
-            navControls.appendChild(prevButton);
-            navControls.appendChild(nextButton);
-
-            container.appendChild(questionNumber);
-            container.appendChild(questionText);
-            container.appendChild(optionsDiv);
-            container.appendChild(feedbackDiv);
-            container.appendChild(correctAnswerDiv);
-            container.appendChild(navControls);
-
-            questionDiv.appendChild(container);
-
-            highlightNavigator(currentQuestionIndex);
-        }
-
-        /* ========== NAVEGADOR DE PREGUNTAS (VISTA MOODLE) ========== */
-        function setupQuestionNavigator() {
-            const navigatorDiv = document.getElementById('questionNavigator');
-            navigatorDiv.innerHTML = '';
-
-            displayedQuestions.forEach((q, index) => {
-                const btn = document.createElement('button');
-                btn.className = 'nav-item';
-                btn.textContent = index + 1;
-                btn.onclick = () => goToQuestion(index);
-
-                if (q.answered) {
-                    btn.classList.add(q.isCorrect ? 'answered-correct' : 'answered-incorrect');
-                }
-                navigatorDiv.appendChild(btn);
-            });
-        }
-
-        function highlightNavigator(index) {
-            const allNavItems = document.querySelectorAll('.nav-item');
-            allNavItems.forEach(item => item.classList.remove('active'));
-            if (allNavItems[index]) {
-                allNavItems[index].classList.add('active');
-            }
-        }
-
-        function goToQuestion(index) {
-            currentQuestionIndex = index;
-            displayCurrentQuestion();
-        }
-        function prevQuestion() {
-            if (currentQuestionIndex > 0) {
-                currentQuestionIndex--;
-                displayCurrentQuestion();
-            }
-        }
-        function nextQuestion() {
-            if (currentQuestionIndex < displayedQuestions.length - 1) {
-                currentQuestionIndex++;
-                displayCurrentQuestion();
-            }
-        }
-
-        /* ========== VERIFICAR RESPUESTA ========== */
-        function checkAnswer(questionIndex, selectedValue) {
-            const question = displayedQuestions[questionIndex];
-            if (question.answered) return;
-
-            question.answered = true;
-            question.selectedAnswer = selectedValue;
-            question.isCorrect = (
-                selectedValue.trim().toLowerCase() === question.correctAnswer.trim().toLowerCase()
+            return response.text();
+          })
+          .then((text) => {
+            allQuestions = parseQuestions(text);
+            displayQuestions(allQuestions, false);
+          })
+          .catch((error) => {
+            console.error("Error al cargar EXAMENES VIEJOS:", error);
+            alert(
+              "Hubo un problema al cargar EXAMENES VIEJOS. Por favor, inténtalo de nuevo.",
             );
+          });
+      }
 
-            if (question.isCorrect) {
-                correctAnswers++;
-            }
+      // Cargar examen total
+      function loadFinalExam() {
+        fetch("examen/examenTotal.txt")
+          .then((response) => response.text())
+          .then((text) => {
+            allQuestions = parseQuestions(text);
+            displayQuestions(allQuestions, false);
+          })
+          .catch((error) =>
+            console.error("Error al cargar el Examen Final:", error),
+          );
+      }
 
-            if (currentView === 'moodle') {
-                displayCurrentQuestion();
-                setupQuestionNavigator();
-            } else {
-                displayAllQuestions();
-            }
-            updateScore();
+      /* ========== SUBIR ARCHIVOS .TXT O .DOCX ========== */
+      function handleFileSelect(event) {
+        const file = event.target.files[0];
+        resetUI();
+
+        if (file) {
+          if (file.name.endsWith(".docx")) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+              mammoth
+                .extractRawText({ arrayBuffer: e.target.result })
+                .then((result) => {
+                  allQuestions = parseQuestions(result.value);
+                  displayQuestions(allQuestions, false);
+                });
+            };
+            reader.readAsArrayBuffer(file);
+          } else {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+              allQuestions = parseQuestions(e.target.result);
+              displayQuestions(allQuestions, false);
+            };
+            reader.readAsText(file, "UTF-8");
+          }
+        }
+      }
+
+      /* ========== CARGAR POR DIFICULTAD ========== */
+      function loadQuestionsByDifficulty(count) {
+        resetUI();
+        if (!allQuestions.length) {
+          // Si no hay preguntas en allQuestions, cargamos examenFinal.txt (o union1.txt, según tu preferencia)
+          fetch("examen/union1.txt")
+            .then((response) => response.text())
+            .then((text) => {
+              allQuestions = parseQuestions(text);
+              showSubset(allQuestions, count);
+            });
+        } else {
+          showSubset(allQuestions, count);
+        }
+      }
+      function showSubset(questions, count) {
+        const shuffled = shuffleArray([...questions]);
+        let subset = [];
+        if (count === "all") {
+          subset = shuffled;
+        } else {
+          subset = shuffled.slice(0, count);
+        }
+        displayQuestions(subset, true);
+      }
+
+      /* ========== PARSEAR PREGUNTAS (FORMATO AIKEN) ========== */
+      function parseQuestions(text) {
+        const questions = [];
+        const lines = text.split("\n");
+        let question = null;
+
+        lines.forEach((line) => {
+          line = line.trim();
+          if (line.length === 0) return;
+
+          if (!question) {
+            question = {
+              text: line,
+              options: [],
+              correctAnswer: "",
+              answered: false,
+              selectedAnswer: null,
+              isCorrect: false,
+            };
+          } else if (line.match(/^[A-Z][.)]\s+/)) {
+            question.options.push(line.substring(3).trim());
+          } else if (line.match(/^ANSWER:\s+[A-Z]/)) {
+            const letter = line.substring(8).trim().toUpperCase();
+            const letterIndex = letter.charCodeAt(0) - 65;
+            question.correctAnswer = question.options[letterIndex] || "";
+            questions.push(question);
+            question = null;
+          } else {
+            // Si la pregunta ocupa varias líneas, las acumulamos
+            question.text += " " + line;
+          }
+        });
+
+        return questions;
+      }
+
+      /* ========== MOSTRAR PREGUNTAS (LÓGICA PRINCIPAL) ========== */
+      function displayQuestions(questions, randomize) {
+        displayedQuestions = questions;
+        totalQuestions = questions.length;
+        correctAnswers = 0;
+
+        // Si queremos randomizar las opciones desde el inicio
+        if (randomize) {
+          displayedQuestions.forEach((q) => {
+            q.options = shuffleArray(q.options);
+          });
         }
 
-        /* ========== ACTUALIZAR CALIFICACIÓN ========== */
-        function updateScore() {
-            const scoreDiv = document.getElementById('score');
-            if (displayedQuestions.length > 0) {
-                const percentage = Math.round((correctAnswers / displayedQuestions.length) * 100);
-                scoreDiv.innerHTML = `
+        if (currentView === "moodle") {
+          currentQuestionIndex = 0;
+          displayCurrentQuestion();
+          setupQuestionNavigator();
+        } else {
+          displayAllQuestions();
+        }
+        updateScore();
+      }
+
+      /* ========== MOSTRAR TODAS LAS PREGUNTAS (VISTA LISTA) ========== */
+      function displayAllQuestions() {
+        document.getElementById("questionNavigator").innerHTML = "";
+        const questionDiv = document.getElementById("currentQuestion");
+        questionDiv.innerHTML = "";
+
+        displayedQuestions.forEach((q, index) => {
+          const container = document.createElement("div");
+          container.className = "question";
+
+          // Número de pregunta
+          const questionNumber = document.createElement("div");
+          questionNumber.className = "question-number";
+          questionNumber.textContent = `Pregunta ${index + 1} de ${displayedQuestions.length}`;
+
+          // Texto de la pregunta
+          const questionText = document.createElement("div");
+          questionText.className = "question-text";
+          questionText.textContent = q.text;
+
+          // Opciones
+          const optionsDiv = document.createElement("div");
+          optionsDiv.className = "options";
+
+          q.options.forEach((opt, i) => {
+            const optionDiv = document.createElement("div");
+            optionDiv.className = "option";
+
+            const radioInput = document.createElement("input");
+            radioInput.type = "radio";
+            radioInput.id = `q${index}opt${i}`;
+            radioInput.name = `q${index}`;
+            radioInput.value = opt;
+            radioInput.onclick = () => checkAnswer(index, opt);
+
+            // Si la pregunta ya fue respondida antes...
+            if (q.answered) {
+              radioInput.disabled = true;
+              if (opt === q.selectedAnswer) {
+                radioInput.checked = true;
+              }
+            }
+
+            const label = document.createElement("label");
+            label.htmlFor = `q${index}opt${i}`;
+            label.textContent = `${String.fromCharCode(65 + i)}. ${opt}`;
+
+            optionDiv.appendChild(radioInput);
+            optionDiv.appendChild(label);
+            optionsDiv.appendChild(optionDiv);
+          });
+
+          // Feedback
+          const feedbackDiv = document.createElement("div");
+          feedbackDiv.className = "feedback";
+
+          // Respuesta correcta
+          const correctAnswerDiv = document.createElement("div");
+          correctAnswerDiv.className = "correctAnswer";
+          correctAnswerDiv.innerHTML = `<hr><strong>Respuesta correcta:</strong> ${q.correctAnswer}`;
+
+          if (q.answered) {
+            feedbackDiv.style.display = "block";
+            correctAnswerDiv.style.display = "block";
+            if (q.isCorrect) {
+              container.classList.add("correct");
+              feedbackDiv.textContent = "✓ ¡Correcto!";
+              feedbackDiv.style.color = "#d4edda";
+            } else {
+              container.classList.add("incorrect");
+              feedbackDiv.textContent = "✗ Incorrecto";
+              feedbackDiv.style.color = "#f8d7da";
+            }
+          }
+
+          container.appendChild(questionNumber);
+          container.appendChild(questionText);
+          container.appendChild(optionsDiv);
+          container.appendChild(feedbackDiv);
+          container.appendChild(correctAnswerDiv);
+
+          questionDiv.appendChild(container);
+        });
+      }
+
+      /* ========== MOSTRAR PREGUNTA ACTUAL (VISTA MOODLE) ========== */
+      function displayCurrentQuestion() {
+        const questionDiv = document.getElementById("currentQuestion");
+        questionDiv.innerHTML = "";
+
+        if (
+          currentQuestionIndex < 0 ||
+          currentQuestionIndex >= displayedQuestions.length
+        ) {
+          questionDiv.innerHTML = "<p>No hay preguntas para mostrar.</p>";
+          return;
+        }
+
+        const q = displayedQuestions[currentQuestionIndex];
+        const container = document.createElement("div");
+        container.className = "question";
+
+        // Número de pregunta
+        const questionNumber = document.createElement("div");
+        questionNumber.className = "question-number";
+        questionNumber.textContent = `Pregunta ${currentQuestionIndex + 1} de ${displayedQuestions.length}`;
+
+        // Texto de la pregunta
+        const questionText = document.createElement("div");
+        questionText.className = "question-text";
+        questionText.textContent = q.text;
+
+        // Opciones
+        const optionsDiv = document.createElement("div");
+        optionsDiv.className = "options";
+
+        q.options.forEach((opt, i) => {
+          const optionDiv = document.createElement("div");
+          optionDiv.className = "option";
+
+          const radioInput = document.createElement("input");
+          radioInput.type = "radio";
+          radioInput.id = `q${currentQuestionIndex}opt${i}`;
+          radioInput.name = `q${currentQuestionIndex}`;
+          radioInput.value = opt;
+          radioInput.onclick = () => checkAnswer(currentQuestionIndex, opt);
+
+          if (q.answered) {
+            radioInput.disabled = true;
+            if (opt === q.selectedAnswer) {
+              radioInput.checked = true;
+            }
+          }
+
+          const label = document.createElement("label");
+          label.htmlFor = `q${currentQuestionIndex}opt${i}`;
+          label.textContent = `${String.fromCharCode(65 + i)}. ${opt}`;
+
+          optionDiv.appendChild(radioInput);
+          optionDiv.appendChild(label);
+          optionsDiv.appendChild(optionDiv);
+        });
+
+        // Feedback
+        const feedbackDiv = document.createElement("div");
+        feedbackDiv.className = "feedback";
+
+        // Respuesta correcta
+        const correctAnswerDiv = document.createElement("div");
+        correctAnswerDiv.className = "correctAnswer";
+        correctAnswerDiv.innerHTML = `<hr><strong>Respuesta correcta:</strong> ${q.correctAnswer}`;
+
+        if (q.answered) {
+          feedbackDiv.style.display = "block";
+          correctAnswerDiv.style.display = "block";
+          if (q.isCorrect) {
+            container.classList.add("correct");
+            feedbackDiv.textContent = "✓ ¡Correcto!";
+            feedbackDiv.style.color = "#d4edda";
+          } else {
+            container.classList.add("incorrect");
+            feedbackDiv.textContent = "✗ Incorrecto";
+            feedbackDiv.style.color = "#f8d7da";
+          }
+        }
+
+        // Controles de Navegación
+        const navControls = document.createElement("div");
+        navControls.className = "navigation-controls-inline";
+
+        const prevButton = document.createElement("button");
+        prevButton.className = "nav-button";
+        prevButton.textContent = "Anterior";
+        prevButton.onclick = prevQuestion;
+        prevButton.disabled = currentQuestionIndex === 0;
+
+        const nextButton = document.createElement("button");
+        nextButton.className = "nav-button";
+        nextButton.textContent = "Siguiente";
+        nextButton.onclick = nextQuestion;
+        nextButton.disabled =
+          currentQuestionIndex === displayedQuestions.length - 1;
+
+        navControls.appendChild(prevButton);
+        navControls.appendChild(nextButton);
+
+        container.appendChild(questionNumber);
+        container.appendChild(questionText);
+        container.appendChild(optionsDiv);
+        container.appendChild(feedbackDiv);
+        container.appendChild(correctAnswerDiv);
+        container.appendChild(navControls);
+
+        questionDiv.appendChild(container);
+
+        highlightNavigator(currentQuestionIndex);
+      }
+
+      /* ========== NAVEGADOR DE PREGUNTAS (VISTA MOODLE) ========== */
+      function setupQuestionNavigator() {
+        const navigatorDiv = document.getElementById("questionNavigator");
+        navigatorDiv.innerHTML = "";
+
+        displayedQuestions.forEach((q, index) => {
+          const btn = document.createElement("button");
+          btn.className = "nav-item";
+          btn.textContent = index + 1;
+          btn.onclick = () => goToQuestion(index);
+
+          if (q.answered) {
+            btn.classList.add(
+              q.isCorrect ? "answered-correct" : "answered-incorrect",
+            );
+          }
+          navigatorDiv.appendChild(btn);
+        });
+      }
+
+      function highlightNavigator(index) {
+        const allNavItems = document.querySelectorAll(".nav-item");
+        allNavItems.forEach((item) => item.classList.remove("active"));
+        if (allNavItems[index]) {
+          allNavItems[index].classList.add("active");
+        }
+      }
+
+      function goToQuestion(index) {
+        currentQuestionIndex = index;
+        displayCurrentQuestion();
+      }
+      function prevQuestion() {
+        if (currentQuestionIndex > 0) {
+          currentQuestionIndex--;
+          displayCurrentQuestion();
+        }
+      }
+      function nextQuestion() {
+        if (currentQuestionIndex < displayedQuestions.length - 1) {
+          currentQuestionIndex++;
+          displayCurrentQuestion();
+        }
+      }
+
+      /* ========== VERIFICAR RESPUESTA ========== */
+      function checkAnswer(questionIndex, selectedValue) {
+        const question = displayedQuestions[questionIndex];
+        if (question.answered) return;
+
+        question.answered = true;
+        question.selectedAnswer = selectedValue;
+        question.isCorrect =
+          selectedValue.trim().toLowerCase() ===
+          question.correctAnswer.trim().toLowerCase();
+
+        if (question.isCorrect) {
+          correctAnswers++;
+          // Disparar confeti si la respuesta es correcta
+          confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 },
+          });
+        }
+
+        if (currentView === "moodle") {
+          displayCurrentQuestion();
+          setupQuestionNavigator();
+        } else {
+          displayAllQuestions();
+        }
+        updateScore();
+      }
+
+      /* ========== ACTUALIZAR CALIFICACIÓN ========== */
+      function updateScore() {
+        const scoreDiv = document.getElementById("score");
+        if (displayedQuestions.length > 0) {
+          const percentage = Math.round(
+            (correctAnswers / displayedQuestions.length) * 100,
+          );
+          scoreDiv.innerHTML = `
                     Calificación: ${correctAnswers}/${displayedQuestions.length} (${percentage}%)
                     ${
                       percentage >= 60
@@ -675,72 +806,73 @@ ANSWER: A
                         : '<span class="not-approved">✗ No aprobado</span>'
                     }
                 `;
-            } else {
-                scoreDiv.innerHTML = '';
-            }
-
-            // Actualizamos la burbuja de puntuación
-            document.getElementById('correctCount').textContent = correctAnswers;
-            document.getElementById('incorrectCount').textContent = displayedQuestions.length - correctAnswers;
+        } else {
+          scoreDiv.innerHTML = "";
         }
 
-        /* ========== RESETEAR UI ========== */
-        function resetUI() {
-            const container = document.getElementById('questionsContainer');
-            container.innerHTML = `
+        // Actualizamos la burbuja de puntuación
+        document.getElementById("correctCount").textContent = correctAnswers;
+        document.getElementById("incorrectCount").textContent =
+          displayedQuestions.length - correctAnswers;
+      }
+
+      /* ========== RESETEAR UI ========== */
+      function resetUI() {
+        const container = document.getElementById("questionsContainer");
+        container.innerHTML = `
                 <div id="currentQuestion" class="question"></div>
                 <div id="questionNavigator" class="question-navigator"></div>
             `;
-            totalQuestions = 0;
-            correctAnswers = 0;
-            displayedQuestions = [];
-            currentQuestionIndex = 0;
-            updateScore();
+        totalQuestions = 0;
+        correctAnswers = 0;
+        displayedQuestions = [];
+        currentQuestionIndex = 0;
+        updateScore();
+      }
+
+      /* ========== FUNCIÓN AUXILIAR: Shuffle Array ========== */
+      function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
         }
+        return array;
+      }
 
-        /* ========== FUNCIÓN AUXILIAR: Shuffle Array ========== */
-        function shuffleArray(array) {
-            for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
-            }
-            return array;
+      // Motivational Popup Logic con imagen random
+      window.addEventListener("DOMContentLoaded", () => {
+        const popup = document.getElementById("motivationalPopup");
+        const closeBtn = document.getElementById("closePopupBtn");
+        const img = document.getElementById("motivationalImg");
+        // Número aleatorio entre 1 y 100 para que el 6 sea raro
+        const rare = Math.random();
+        let imgNum;
+        if (rare < 0.98) {
+          // 98% de probabilidad: imágenes 1 a 5
+          imgNum = Math.floor(Math.random() * 5) + 1;
+        } else {
+          // 2% de probabilidad: imagen 6
+          imgNum = 6;
         }
+        img.src = `assets/${imgNum}.png`;
 
-        // Motivational Popup Logic con imagen random
-        window.addEventListener('DOMContentLoaded', () => {
-            const popup = document.getElementById('motivationalPopup');
-            const closeBtn = document.getElementById('closePopupBtn');
-            const img = document.getElementById('motivationalImg');
-            // Número aleatorio entre 1 y 100 para que el 6 sea raro
-            const rare = Math.random();
-            let imgNum;
-            if (rare < 0.98) {
-                // 98% de probabilidad: imágenes 1 a 5
-                imgNum = Math.floor(Math.random() * 5) + 1;
-            } else {
-                // 2% de probabilidad: imagen 6
-                imgNum = 6;
-            }
-            img.src = `assets/${imgNum}.png`;
+        popup.style.display = "flex";
 
-            popup.style.display = 'flex';
-
-            closeBtn.addEventListener('click', () => {
-                popup.style.display = 'none';
-            });
-
-            // Cerrar si el usuario hace click fuera del popup-content
-            popup.addEventListener('click', (e) => {
-                if (e.target === popup) {
-                    popup.style.display = 'none';
-                }
-            });
-
-            setTimeout(() => {
-                popup.style.display = 'none';
-            }, 20000);
+        closeBtn.addEventListener("click", () => {
+          popup.style.display = "none";
         });
+
+        // Cerrar si el usuario hace click fuera del popup-content
+        popup.addEventListener("click", (e) => {
+          if (e.target === popup) {
+            popup.style.display = "none";
+          }
+        });
+
+        setTimeout(() => {
+          popup.style.display = "none";
+        }, 20000);
+      });
     </script>
-</body>
+  </body>
 </html>
