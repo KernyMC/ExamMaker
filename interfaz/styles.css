@@ -66,6 +66,7 @@ button {
     transform 0.2s,
     box-shadow 0.3s;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative; /* Necesario para posicionar el badge */
 }
 
 .load-button:active {
@@ -152,6 +153,27 @@ button {
 .exam2026-button:hover {
   background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
   transform: scale(1.05);
+}
+
+/* Estilo para el badge de "NUEVO" */
+.with-badge {
+  overflow: visible; /* Permite que el badge se vea fuera del botón */
+}
+
+.new-badge {
+  position: absolute;
+  top: -10px;
+  right: -15px;
+  background-color: #e74c3c; /* Rojo llamativo */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  transform: rotate(15deg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  pointer-events: none; /* Evita que el badge interfiera con el clic del botón */
 }
 
 /* ========== SECCIÓN DE DIFICULTAD ========== */
