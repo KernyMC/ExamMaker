@@ -45,12 +45,20 @@
           Cargar Examen Normal
         </button>
 
-        <button id="randomizeExam" class="load-button random-exam">
+        <button
+          id="randomizeExam"
+          class="load-button random-exam"
+          title="Mezcla las preguntas y respuestas del examen actual"
+        >
           🎲 Randomizar Examen
         </button>
 
-        <button id="chooseDifficulty" class="load-button difficulty-exam">
-          Escoger Dificultad
+        <button
+          id="chooseDifficulty"
+          class="load-button difficulty-exam"
+          title="Crea un examen con un número específico de preguntas"
+        >
+          <i class="fas fa-layer-group"></i> Escoger Dificultad
         </button>
         <button id="loadFinalExam" class="load-button final-exam">
           Examen Final 💀
@@ -59,11 +67,19 @@
           EXAMENES VIEJOS
         </button>
         <!-- Botones de Vistas -->
-        <button id="moodleView" class="load-button view-button">
-          Vista Moodle
+        <button
+          id="moodleView"
+          class="load-button view-button"
+          title="Muestra una pregunta a la vez, como en Moodle"
+        >
+          <i class="fas fa-file-alt"></i> Vista Moodle
         </button>
-        <button id="listView" class="load-button view-button">
-          Vista Lista
+        <button
+          id="listView"
+          class="load-button view-button"
+          title="Muestra todas las preguntas en una sola página"
+        >
+          <i class="fas fa-list"></i> Vista Lista
         </button>
         <button id="loadExam2025" class="load-button exam2025-button">
           Examen 2025
@@ -232,7 +248,7 @@ ANSWER: A
       let currentView = "moodle";
 
       // Al cargar la ventana, por defecto cargamos el examen normal
-      window.onload = loadDefaultExam;
+      window.onload = loadExam2026Julio;
 
       document.addEventListener("DOMContentLoaded", () => {
         document
